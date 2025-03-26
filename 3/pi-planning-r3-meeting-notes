@@ -1,0 +1,591 @@
+		￼
+		 HQ-Opportunity Contact. There are a few more mandatory elements.
+		We'll find whatever
+		WK Witold Karpeta00:00:08 Example, for example, because in this endpoint we are supposed to pass stuff like prices.
+		like like some relationships between older items. Like, for example,
+		￼
+		 HQ-Opportunity00:00:26 Share is better.
+		WK Witold Karpeta00:00:27 Yeah, price increase terms. Oh.
+		so are there any validations on that? For example, if prices that are passed are actually correct.
+		this is just one
+		￼
+		 HQ-Opportunity00:00:38 No.
+		okay, for example, price. So we're not going to do any validation, the price, because whatever price will be sent by upfront system that will be honored
+		WK Witold Karpeta00:00:54 Okay? So the client of this endpoint should validate the prices and and do this. And what about for this? Those relationships between order items. What if someone will send and send the like? We, for example, will not send any
+		any relationships
+		￼
+		 HQ-Opportunity00:01:18 Okay. If you not send any relatency, then obviously, the product structure not going to create order, it will error out.
+		And we, we send response, the respective error code that this
+		has this error, and in that case correction need to be done.
+		WK Witold Karpeta00:01:42 Okay, so the order. So the order will fail in in such a case. Okay? And what if?
+		Because, for example, in in the payload that we are provided as an example. I couldn't find some relationships. So maybe I'm not aware about those. But, for example, there were circuits and and other items for circuits, and I couldn't find any relation from those to actual cabinets that would be order ordered, so that what which circuits will go. To which Cabinet
+		more proof
+		￼
+		 HQ-Opportunity00:02:17 Okay 1, 1 second. Let me join that. Zoom
+		then you're talking about the sample which I shared the sample Api, or you are looking at the on the which one you're looking right now.
+		WK Witold Karpeta00:02:33 I'm looking at the pay sample payload
+		￼
+		 HQ-Opportunity00:02:38 Alright!
+		WK Witold Karpeta00:02:39 Sorry to interrupt you, but like we've never met. So I'm not sure if you're talking to Jagan. Actually.
+		okay, thanks. Yeah. So so so I'm talking about this payload that you sent
+		￼
+		 HQ-Opportunity00:02:56 Okay? 1, 1 second. I'm just joining the group.
+		Okay.
+		okay, choose.
+		Yeah. It's in the let me send you the invite. If you want.
+		I think we can focus it much better. What do you think if you join here? It will much better. I did, actually. But it's not showing up. I don't know why.
+		Yeah, I did join this room. Okay, yeah. Let me at least send you guys the invite oh.
+		can read it out, share screen and then sharing keys. Keywords.
+		Okay, yeah. One second. So actually, you you want to share. Yes, so that it'll be easy to communicate. Actually, what? So that you can. Okay, queue can you? Oh, yeah.
+		okay, that's good. Thank you.
+		Okay, let me check
+		for today so that he can jump on.
+		No shared on zoom.
+		This is opportunity. This is opportunity.
+		opportunity not to be mistaken with the domain.
+		Yes.
+		money she can send. Right?
+		Oh.
+		but
+		okay, okay, okay, okay, muted. Unmute.
+		WK Witold Karpeta00:05:51 Broken up.
+		￼
+		 HQ-Opportunity00:05:52 Spitted, but you can share your screen. Everybody is on the zoom
+		WK Witold Karpeta00:05:59 We can see. We can. We can see your screen
+		￼
+		 HQ-Opportunity00:06:01 Okay, okay, thanks for joining. Okay, let me. This is the one the sample payload. Which I said earlier.
+		So okay, your question is, you did not able to find the Residency call right? So
+		WK Witold Karpeta00:06:23 There are circuits. There are some circuits, order items which has this relationship to like main power order items, I understand. But then there is no relation to actual cabinets.
+		Also, the other question is, where actually we can send the Cabinet numbers
+		￼
+		 HQ-Opportunity00:06:42 Oh, okay, okay, got it. So cabinet in the payload cabinet not coming to picture the Cabinet is a service.
+		So in the payload it's always any source system. Basically, it could be any portal operator, portal, Ec portal, or any source system frontend system or or E 6 portal. Everybody will send the payload with the P part product part.
+		So the as question for a cabinet cabinet, Ssrp, those are the service product. Those will be automatically get created. Once the order will be decomposition, and a terminal got created
+		WK Witold Karpeta00:07:23 Yeah.
+		So could you repeat, that's what does have to do with like matching between circuit and the cabinet
+		￼
+		 HQ-Opportunity00:07:34 Okay, let me walk through the process.
+		No, it's not connecting to.
+		Okay. So this is, for example, express.
+		Wow, perfect. Thank you. Thank you second express. So it has what the structure is given by for product primary team. So 1st is the space.
+		then power, then circuits
+		WK Witold Karpeta00:08:08 Sorry.
+		Connected. Okay, with power.
+		￼
+		 HQ-Opportunity00:08:12 It's power is just in P.
+		And finally, the space instructions definitely
+		So this is the the, this is our sellable product which we sell to customer.
+		Okay? So when any, any, any upfront system, basically we call it, could be we call portals any portal something, let me call it this portal instead of a Ecx Ecp. Or operator portal. Whenever they release the capture the order, and send to the order system. It has only the this product owners to flow
+		the structure. If you, if you look on this, and the sample data is given. This has only with respect to P. This is called Vp of the secret express and space power. So this is with this order will be created.
+		So once this order get created, this order will be, go for some kind of orchestration process, which we call as a deprocution.
+		When the decomposition of a decomposition has a 3 part, one is s. 1 is Psr. What we call Psr. Model. Everybody heard about this call period. This is called domain model. Altogether.
+		This is all together call as a domain order, and this tomato content.
+		product, order, service, order, and resource order, so as per if if, as per, the when numbers walk through yesterday or earlier, also walk through how the product structure is them. They are saying that this, when the secret can express, will be decomposition. This is a P product, will be the secret can express
+		space. Space will be.
+		It will be the competitive space and service will be your cabinet under password
+		Sanjeev. If you want to pay us not anything you want to, we can add on. So this will be this this product will be. It will be decomposition into 2 models. Basically. So face will be decompositioned to cabrian and automatically based on the
+		cavi number of cabinets sent as part of the space configurations. Basically suppose in the space configuration you are sending me a cavi hash cabbage called Hash cabinet number. If you're sending the for example 4,
+		then this will be
+		WK Witold Karpeta00:10:46 But cabinet number, or quantity of cabinets.
+		￼
+		 HQ-Opportunity00:10:50 It's it's quantity, so it will be 4 times
+		WK Witold Karpeta00:10:53 This is the other question, is there, or will there be any possibility to pass the the like? Physical numbers? Unique space ids for those cabinets
+		￼
+		 HQ-Opportunity00:11:04 No space. Id. We are not going to pass space id, because space ids come from the Btc system based on the cap id
+		WK Witold Karpeta00:11:12 Yeah. And and so here, because for for circuits like, someone can order several cabinets. And someone can choose to like have one cabinet, with, let's say, one single pair of of circuits, the other one with 2 pair of circuits, and so on. And so how to actually
+		match those requests with 4 different pairs of of cabinets, which circuits will be actually. And those circuits can have different also, like different
+		configurations in in theory. So so how
+		￼
+		 HQ-Opportunity00:11:49 How can it be matched?
+		Okay, let okay. Good, good question. Let me bring this circuit housekeep power. When power decomposition happened, it will only power. Let me this, then your question will automatically get answered. Here, then, when circuit decomposition happened, this circuit will be here. The circuit and each circuit based on the number quantity.
+		Nope.
+		okay, this circuit, based on the number of circuit Ss circuit, will get created.
+		So now
+		the combination. So one Ss field is for primary. This is for primary, and one is for predominant.
+		Okay, so this is, this is a typical typical of the ticket question happened, what we are right now we are respecting. Once happen.
+		the Cap Id is we are going to call, because before you send to this order to the service. Now you already have the do. The reserve capacity with the Bdc. So Bdc. Bdc. Will response you a call, cap. Id.
+		It's called Cap. Id, it should be response as part of the reservation. So that cap Id is part of the space that's called attribute called Cap id. You have populated so based on the Cap Id, we are going to call the Bdc.
+		We are go. We are going to call the Bdc. System. So Bdc. Will going to give me all the cabinet reserve. Ignite this cap. Id, and we go and populate all the cabinets
+		and corresponding Ss updates.
+		So
+		WK Witold Karpeta00:13:28 This is so weird
+		also to ask, What is this? Cap? Id. Okay. Now I understand this one. So please.
+		￼
+		 HQ-Opportunity00:13:33 Okay, so this is
+		WK Witold Karpeta00:13:34 Capacity, capacity, idea, okay.
+		￼
+		 HQ-Opportunity00:13:36 Yes, exactly. Cap id is not more capacity. Id, which is a unique id. With respect to that customer and particular, that particular space
+		WK Witold Karpeta00:13:47 Yeah. But but okay, because in the payload that you provided there were like one cup id for like, there were like number of cabinets, 2 quantity, 2 and one cup id. So so
+		what exactly is this cap? Id
+		￼
+		 HQ-Opportunity00:14:02 Okay? So okay, Cap, Id is nothing. But, as I said, is a combination of the customer
+		customer, plus with combination of the the space for that space for that customer. What is the cap capacity, Id. This capacity tell you, under this customer, under this space, how many cabinet reserve? And what is the power reserve for them
+		WK Witold Karpeta00:14:25 Okay. But then this requires us to get this from where? From? Vdc, okay, don't really cool
+		any endpoint to get this
+		￼
+		 HQ-Opportunity00:14:34 Because no this is the cap id you are going to get when you do, they don't reserve it right?
+		So when you
+		WK Witold Karpeta00:14:44 We do excuse me sorry when we do what I couldn't hear what
+		￼
+		 HQ-Opportunity00:14:48 So before you are sending the order creation, you are going to call the Bdc. To do the capacity available or not right, and when you do the feasibility, check request.
+		When you do the feasibility, check, request that time you are calling to capacity system to check on the specified configuration of the
+		WK Witold Karpeta00:15:11 Actually we were said that there will be no soft reservations in in capacity so so
+		￼
+		 HQ-Opportunity00:15:17 Yes, fine! Yes.
+		WK Witold Karpeta00:15:18 Kind of confusing.
+		￼
+		 HQ-Opportunity00:15:20 So. So you have to call this check capacity visibility request, and based on the availability, on availability. They availability. They will send you a reserve, and they send. Once they reserve, they send you this cap. Id, because with respect to reservation, they respond to a cap. Id. Okay.
+		WK Witold Karpeta00:15:39 Sorry to interrupt you. Could you please send me like some info? About which endpoint I should? I should call because I like. As I said. I don't recall any any such endpoint in Vdc.
+		￼
+		 HQ-Opportunity00:15:50 Okay, fine. Okay? So we'll we'll involve the Bdc team to share their endpoint. So that just no problem. But here you understood what, how exactly things are working on right? Any question on here
+		WK Witold Karpeta00:16:19 More, more or less, I think. Yes, no questions
+		￼
+		 HQ-Opportunity00:16:24 Know that we are
+		sorry. Just one second. So at what point are we opening tasks at this? Or we are waiting till we get this response, and then we open. We are waiting till you get the response. We cannot send for ultimate
+		KB Karthik Balasubramanian00:16:47 Have a question here. Thank you.
+		Last week I discussed with you. Right? It's related to a contacts under the related party. We have a contacts, and we don't have any role for not doing contacts that will be added or
+		￼
+		 HQ-Opportunity00:17:02 Contact will be there. You can see here in the in the payload. I even related party account in account. This is a Mdm. Id of the customer, and there's a contact
+		KB Karthik Balasubramanian00:17:16 But there is no ordering contact role. Right? I I
+		￼
+		 HQ-Opportunity00:17:22 Yeah, this is audio contact, nothing but the customer contact.
+		The role is custom contact, this role contact owner. This is a technical contact this. These are the 3 you can see here the sample I given audit contact, nothing but the customer contact. The role is customer contact
+		KB Karthik Balasubramanian00:17:38 Got it. And another question is the characteristics which we are sending? Right? So let's say, some Bmmr required, or is related to cross, connect. So what is the default value in service now, are you
+		having any default value, or ignoring that? Or what is it
+		￼
+		 HQ-Opportunity00:17:55 So which one sorry can you repeat
+		KB Karthik Balasubramanian00:17:58 The Bmr extension record or the the characteristics right? We which we need to send the characteristics right
+		￼
+		 HQ-Opportunity00:18:05 Correct.
+		KB Karthik Balasubramanian00:18:06 So that one is there is any default value. Is there set in service now? Or let's say, if you are not sending, it's not a mandatory, and if you are not sending, what is that actually
+		￼
+		 HQ-Opportunity00:18:18 So if it is not mandatory, if it is not mandatory.
+		there's no default value needed for it, so we are not going to have it any default value for that. But if it is a mandatory, and then it is the validation on the portal to send all the attributes, mandatory attributes. There we have a choice of making a default. If customer input is not required. But we, we will give that default value from product, primary perspective
+		KB Karthik Balasubramanian00:18:49 Probably something.
+		￼
+		 HQ-Opportunity00:18:51 So at net net. We are expecting
+		in the product primary, whatever the as per the product definition, whatever they define as mandatory, we expecting those those value has to be passed, rest will be automatically take care if it's required in the domain level, or it will take care of the fulfillment
+		KB Karthik Balasubramanian00:19:12 Yes, go ahead!
+		￼
+		 HQ-Opportunity00:19:15 Can I ask a question? What are the I'm assuming relationship? Relationship type is an enum
+		relation type is. No, it's not enough.
+		So what are the values that are possible for it? Hash side hash, parent, and we are expecting hash, parent.
+		Hi! Let's see, I don't recall at a
+		parent, child or child, parent either direction.
+		So that's why. Here it's a hash parent is there, and if you go to the offering level I'll send you all our places. Hash parent is there.
+		It's defined. When you create the product model at moment of time it will be defined and automatically. That is part of your product. The reason I'm asking that question is because, see not all the time.
+		once you get into bundle, okay, you will have to build concepts of depends on.
+		Yes. Okay. So is that factored in. And one because I'll give an example. Pmc, okay, packet Metro connect today essentially consists of 2 ports and one connections, or potentially 4 ports and 2 connections. Now, we want to sell as a bundle. Okay, what that means is when he's ordering. He'll he'll select that bundle.
+		and that bundle will essentially say, you know what this Vc. Is associated with these 2 ports. So you need to. 1st do port one and 2 together, provision it, and only then fulfill the connection. Now, if if we are keeping it off this, if you want to manage it systematically. Then you need to create. That depends on versus a parent child is more restrictive
+		good that they give an example to a visualization. You're talking the bundle bundle in that bundle that multiple offerings
+		multiple piece correct. This is another offering, and that is another offering the the connectivities. But here, within the offering, within the offering.
+		We are talking about. I I agree. But but what I'm saying is, we have fabric. We have acr or anything else. Yeah, now you want to create a bundle on top of it for and other things that flexibility we have, we create a bundle. Accordingly, the relationships will be automatically defined on that it will out of the box will work.
+		Only you have to orchestrate your thing. As you said. 1st 2. 1, st 2 orchestration. Are you depending on the application product side to do it, or Om side to do it or fulfillment side to do it into the system, or it's dependent on the Apa spec is what my question is, if it's going to be coded into the system.
+		and then then there's a law that okay, we should want. We would want it to driven, be driven by this relationship type versus have it coded into the system?
+		No, it's not in. It's not that in opposite, because
+		we expecting everything we configured to, then it will come to us. So when you were saying that
+		the moment you are realizing this calling the Api. The the baseline assumption is that each and every product
+		configured.
+		Okay, there's no further confession order level.
+		This relationship type has no influence on
+		this is with respect to your product model, how it lands and how the things are like correct.
+		But how bundle will be planning? We'll just touch base on that. But this is more on the within the offering.
+		How it's elements are tied each other, that's all.
+		Any other questions. Team
+		WK Witold Karpeta00:23:34 I have.
+		Unfortunately, I need to drop soon. So really I, if possible, I would like to have a a separate column
+		cover all my questions
+		￼
+		 HQ-Opportunity00:23:47 Okay, sure, Jagan, could we cover?
+		Yes, please, for compared to external, very, very simple. In this case. So fabric
+		the product is ignorance fabric.
+		This is the offering, and this this only offering. There's nothing else in the fabric. Okay, so one, this basically this content, you know for number of lags and everything they provide. So this based on this port
+		our decomposition rule or work based on the lack, if suppose for example, when the decomposition happened. So this will be your fabric.
+		every port. This will be your port service.
+		and this will be a decomposition. Ncc, okay, so your resource will be Ncc. Service will be for service. So in this case. So, for example, they given, let's talk about they given the. Let's talk about happy Path. Then I'll talk about the lack part. So, for example, not after decomposition, we are just creating the order tax here.
+		and we hand over to the
+		what is port manager, port-port managers?
+		Okay, support managers text, and they go for the provisioning. Okay, they go for the provisioning and necessary
+		and which are the port.
+		And this update me back in this, this particular one. They'll update me all those switch details switch. And these are details. Okay? And once I update that successful, I send response back to the
+		Port manager that, okay, I received this one. Now they come and close. This auto task doesn't mean that we go and close the port because Ncc. Is not corrected. We not close port on a sense is not close. So then immediately what we'll do
+		based on this switch. And these are details. We configure the auto, compute the Ncc, this will auto configure the Ncc and we go and create a auto task for this
+		and send for the IP expert. So what is auto configuration here? Is it additional characteristics? And after that we create auto task. And until we hand over this in this type.
+		this is for the request, I guess, fulfillment. And just to recap back to one step when I'm sending the part time the port. The
+		request type is digital so based on that type port team port managers the system for them, and they go for provisioning. So once you, once the I completed, they go and close this or a task.
+		Okay, the moment they close, the system will automatically, close with Ncc, then automatically get close the port service, then automatically get close the port fabric port. Then then the order line, get close, then order will get close, so everything will be automatically get close and also respective system will communicate. Okay, this order is closed. Communicate to customer and all the
+		whatever the domains we have to update, we'll update, got it.
+		So I have a couple of questions on the fabric on the port manager side. I actually have questions on the Api domain. Order Api, so can we go with those first.st
+		So
+		so, okay, so we went over the the header header level attributes, we have a bunch of Tvcs there. But I'm assuming that you'll be answering those questions separately. But now so external product inventory. How is this used? So this is for when you do change order.
+		Okay, so this is when I do change order. So are you saying that this is this is mapped over the uid. My system for that essay it will be sold inventory product inventory, which I given the reference that that reference, when the when I send a product inventory to the operator portal. They have this reference
+		with respect, this reference. They send me the okay for this product inventory we modified when we go to the change order, I think that you okay, okay, I I'll need to double click on. Where are we going to? Where is family going to be able to source this attribute from, Okay, yeah, this is
+		no, no. I would like to get the Api. But let's let's keep it on hold for now. Okay, the next part is id, I think you you covered that part. This is just a just a number sequence for this line. Item id. Yes, whatever id is mentioned, it is just any secret number you give. But make sure it's unique for that payload
+		for that payload. Not across all the payloads. No, okay, cool. Thank you. The item rises. We still have that open question with respect to why is value a string value. Okay, this is I talked with our di team.
+		Looks like. I said, we are sending number. Why isn't it looks like they Nps
+		to avoid the
+		country pricing automatically essential means that decimal some right, some country 0 0 some country so they.
+		as it taken a unified format as every privileged stream which anything we define as the number they consider as a string, and they for every Api they consider as a stream
+		that seems non standard, so that they can handle the decimals, non decimals, number of digits. And they said across the platform in Di. They did that. It's not that, only this Api. I remember that.
+		But having said that, I hope you agree that Pmf. Standard very generally calls out that value is going to be a integer. Okay, so look at it. How how confusing it is going to be from my, from a customer public Apis. You want to put it as an integer. You're going to send it as an integer. Then you want to do a data type conversion here and then again, a data type conversion there at the back end again, because on service. Now, layer, your prices are all integers. Float 64 solid float. 64. Okay? So so
+		it sounds like, I totally agree. The second part is right. You are expecting the point of sale to enter the value. So that means the logic of converting that data type conversion is is is spread across multiple portals. Now. Yes, it it is going to be a highly error prone because this is what I got the response. When I go, they said, it's not only this.
+		Across the platform, di platform every Api, I'll again check how the software uploaded. But I'll check with again. With Peter. Can you check existing ap already? Slot of a page? Go through Di, not in the old transformation. Is that what they mentioned? It's a number of stream, because they said, That's how they from day one they are going with the that model. Only. So let's let's let's open old pricing. Api. Yes. Okay.
+		Why is it in v 1
+		across the platform they any number? They make a listing. Yeah.
+		yeah, I know. I know I was coming to this one so separately, but it sounds incorrect.
+		What other they can across the platform. They can change
+		fair enough. Okay, okay, okay. Okay.
+		Okay. So whatever whatever is finally decided, you will be the line there. But I'm just like trying to call out that it sounds Iffy to me. Okay? And then total Mrc, and total. Nrc, again, we agreed that it's not. It's not marked as mandatory. You're not trying to send.
+		Why? Because I'm passing the item. Prices array away right? So item, prices array should have it.
+		See? Can we go? This is not mandatory if you do not share. No, no, my point is, why do I need to calculate? See? Why? Why do I? Why do we need derived? You're sending the unit price, are you saying?
+		No, you're sending the item price, though. Yes, item price array will be sent across. So then we have a calculation. I have item prices as well as total. Mrc, total. My point is this is going to be derived from item prices. So why? Why do I need to send. If I'm sending item prices, why do I need total when you are giving the price Api call?
+		You are getting item prices. That is your unit price or list price. Along with that you are also getting the total price total amount of the total enders.
+		Now you have something called bundles, and all those concepts individually, you will get the price, the list price, and the total Mrc and Nrc. That you are going to display to the customer. Correct.
+		So Api Price Api is structured in a way to return you that only the thing is the same has to be passed to the order management. With respect to your order, so that your prices which you are showing to the customer are intact, and the same, if there is no other manipulation or calculation behind the same thing
+		at any other system.
+		And these things are getting already
+		KB Karthik Balasubramanian00:34:41 Today. Right? We are not saving any prices to the backend systems. Right? So. But that that's the decision made. And then you start
+		￼
+		 HQ-Opportunity00:34:50 To send the price.
+		I think today what we show on the Ecpr. Portal says, all tentative price.
+		It can change it reprice, but tomorrow's 1. We don't want to go. That route.
+		Whatever you are displaying to the customer should be charged in the ordering systems or billing systems. There's no
+		KB Karthik Balasubramanian00:35:12 But we have to be more sensitive. If it end as 0, then it will be 0. Right? So
+		￼
+		 HQ-Opportunity00:35:18 Yeah, we are removing those. Because those complexity we are removing as part of this program because you are showing something in customer. And then, when come to brand simple, recalculate, and give me another price, sometimes change the price. So we are removing those kind of complexity. Whatever will be content. Application, or so same price has to carry forward, because
+		customers who sign the price going forward
+		KB Karthik Balasubramanian00:35:47 Let's see, it seems. Okay, it's upon the price. That's right. I have one more question. Sorry.
+		So today we are sending customer can agree those files we are sending some attributes. All I agree or disagree right? So
+		the the
+		￼
+		 HQ-Opportunity00:36:02 There's a legal statement retaining that this is a tentative price and your final price will be shown order once order get created, and if we communicated. That's why they just go. And means agree on that. Because we send the auto receive notification to customer. Okay, this is order received. This is your conclusion, as per is the price. Return
+		KB Karthik Balasubramanian00:36:29 So so where I can send that agree the customer they are showing, asking a customer to agree or disagree, and we are sending that attribute to our faults.
+		So, but I don't see anywhere in this.
+		They know that flow
+		￼
+		 HQ-Opportunity00:36:43 We don't have anything. No, we don't have anything in the new system. You're talking about Catholic
+		KB Karthik Balasubramanian00:36:48 Yes, yes, in the existing system we will be sending the price agreement, whether through or call through that before
+		kidding
+		￼
+		 HQ-Opportunity00:36:56 But no, no new system. We don't have anything
+		KB Karthik Balasubramanian00:36:59 So it's me
+		￼
+		 HQ-Opportunity00:37:01 Hey? One second Karthik existing customer is agreeing to a price. Are you sending? Are you sending some flag
+		KB Karthik Balasubramanian00:37:08 Yes, yes, it's a million. Flash
+		￼
+		 HQ-Opportunity00:37:13 As far as we know, there's nothing sent to Sible with respect to that, that's all of the that's all. In a product. It's handled there
+		KB Karthik Balasubramanian00:37:24 Okay, I'll double check for that. Actually, because the slots we send 54 today along with the tracking id.
+		and then the agreement, okay, fine
+		￼
+		 HQ-Opportunity00:37:36 See? My, my my, my concern. The the with, the with the Api structure itself is okay. So so
+		is that a price for a product line. Okay? But essentially, you could have. And the reason we have item prices is because you would like to capture in a systematic way the the total price, including including tax one aspect, the recurring charge period. Okay?
+		And the price type that is recurring or not. Okay by by creating an aggregation at the top level. Okay, which is essentially
+		you you are. You are limiting yourself for future enhancements. No, even the line level by total. Mrc, total. Mrc, I'm saying that item prices has everything in it. Okay? But by by putting a derived attribute essentially, you're limiting your Api spec of future
+		changes any future. I'll give an example. Even a small change like changing the the billing period from a month to an annual will require contract level changes
+		because total, you are putting your same total. Mrc, Mrc. Versus annual. So whereas whereas the item prices by itself, if you look at it. Recurring charge period essentially supports month annual by annual half yearly. Whatever it is, it is supported out of the box, but by adding these derived attributes which are not a part of the Tmf standard.
+		Let's be very clear. Total. Mrc is not a part of the team standard. It is not there on solicit is not there true? But in our
+		system order system, that is there because we send you the billing system. I agree. So that derivation logic. You put it at your end. Why are you complicating the interface by complicating the interface? We are not using the pricing enhancements. We are not using the pricing engine of service now.
+		No, no, there's no pricing engine here. Total. Mrc, total, Nrc is not just like summation of your unit price. It's not unit prices either. Right? Exactly so. Whatever your pricing engine is giving you total. Mrc, Nrc.
+		that is returned to your customer to show it.
+		Now, now let's come back to the pricing. Api. Then, okay, I'm questioning the pricing Api as well. Now, okay, if you look at the pricing Api, shouldn't your pricing Api also have the same kind of a of a structure where you're saying item prices where you're saying whether it's a price type is recurring, non-recurring it is. And recurring charge period. There's no recurring charge period, because pricing engine is not your billing engine.
+		They can charge. Period is not needed for pricing.
+		That's a billing concept.
+		That's a billing option.
+		What pricing engine has to give this part number this configuration. Give me the unit price.
+		If it is a whole together a total unit price you. Now you are saying, unit price is 1st of assuming. It's recurring or non recurring. We are not assuming it's defined.
+		And that is what I'm trying to say tomorrow, if we decide to change that structure, shouldn't your schema be be open for any future announcements? Is what I'm trying to call out, see here, here's what I'm trying to say today in my pricing Api as well. If you look at it, we have. We've already put in total as the I'm sharing that on the screen. Okay, as as values. So we are saying, we are locking ourselves down to monthly recurring concept
+		or non recurring concept. We we have, we have locked our schema down. Then. Okay, the reason why why industry has this concept of item prices where it is it you? You define the the period of the recurring recurring charge period as an independent.
+		that is only price type is 2 different, either recurring or non-recurring, recurring charge period is done when you are really charging the customer invoicing the customer. Okay.
+		I will take an intelligent license. I do. Month on month. It says, $5. I do an annual billing. It's $48. Correct. Okay, so now, are you saying, that's a billing thing, or that's a pricing. That's surprising. That's what I'm trying to say. Wait, wait, hold on you are. You're mixing 2 things, one, you are saying that how my product should be priced.
+		You are saying how my product should be priced. My, these are my pricing dimensions. I want to dimension based on term length. I want to dimension based on so and so that is your unit price getting out of it. But when I really charge the customer, whether I charge him annually, monthly or bi-weekly. That is your billing concept.
+		What I'm trying to say is Mrc. As a concept, it does not exist, is what I'm trying to say. Recurring charge with a unit period is how it exists. Okay, the unit period can be variable. What you're doing is your your schema. You've locked it down to the concept of Mrc. That's all. I'm coming up so tomorrow, if that is changing, you have to change your Api specs all over the place.
+		Just be aware of that part of it. So first, st no, I.
+		Standard is not total. Ms. Is not there. But our business model is like that.
+		I know. But then I I see, here's here's what I'm trying to say. A business model today is like that. The reason those schemas are defined, the way they are defined is tomorrow, if the business model changes, so are you saying that I don't. If I don't send it, and I just send item prices, we will find it at the line level.
+		I don't know if you know.
+		because you're getting from the price effects. See? The objective is that because
+		price effects is giving as total energy. You have that if you don't have, I'm fine. Okay, but you are half that. That's why you not put mandatory. You put the optional expect? Okay, if you already have, just send to us, then then why is item prices there? Item, price per to unit price? No right item. Prices is tax included amount.
+		It's not this price. If you go to the item, price is unit price. It's not. Max Price will be on. See the the you can see my screen, right? It says, tax included amount for item price.
+		if there is any tax. Yeah. Yeah. So where am I going to get that from price effects? So price effects is going to be so then,
+		this is not something.
+		All this informational prices will give.
+		So price effects. Here's my, here's my question. Okay? So price effects. Api, which aspect? What what value will be? Will I be transferring and putting into that value. Item prices. What? How do I convert item prices? How do I derive item prices from the response of pricing? Api, okay, that's your question. Unit price to item price. How you map it? Yes.
+		that's fine. We'll answer them. Okay? Because I I would like to get a response from price effect. Pricing Api call map to item prices. How does that look like the structure sample data, how to map to the order data we give you? Then then we can show how it's mapped.
+		I think it can pause, for civility cannot
+		can. We have cross, connect team on the call as well. Since you are here. Ashwin? Can we take cross, connect questions? They're from Singapore right now on the call, is that okay? Yeah. Okay. Alright. So so now we and you guys want to maybe talk about the questions you have 1st
+		SP Sonalee Panda00:45:57 Alicia. Thanks. Appreciate it right? So
+		we have shared the list earlier, and I believe that Karthik is almost clarified. I mean, in our offline sessions. We have clarified most of the items. The one item I'm more keen to understand is how we are going to address the signature flow right, especially
+		for the self Service thing, because we could not conclude in our last meeting, if you remember, especially for the request account, support, flow
+		where the order will be like I mean, it will be submitted as a quote, right and will that be addressed in the new stack service? Now, is that going to be addressed now, or it will be parked for later stage. So that is one open question I'm more interested to understand
+		so that we can lock the scope right, or freeze the scope
+		￼
+		 HQ-Opportunity00:46:48 Yeah, so on on that one Sonali, I think there was a discussion yesterday. There is also a discussion happening right now. On this another room. So it it actually the the one that you're talking about. Signature flow affects all products flows.
+		So this is a broad, common issue that needs to be solved. So I think this one, we may have to come back to you, maybe potentially tomorrow, based on all the discussions that are happening here and let you know what we are thinking.
+		Team is still figuring out, okay, so
+		go to another one. Yeah, go ahead.
+		SP Sonalee Panda00:47:30 No, I was just saying that you will. Let us know once the decision is made. Of course we need to have a detailed discussion to see the impact and how it is going to fit into the cross, connect, flow as well. Right? So once any decision has been made. Probably we need to have a detailed analysis from the cross connect aspect as well. Yeah.
+		￼
+		 HQ-Opportunity00:47:52 Yeah, no, for sure any other questions or open items that we can discuss
+		KB Karthik Balasubramanian00:47:58 Yeah, yeah, actually, I have one question,
+		￼
+		 HQ-Opportunity00:48:00 I like to tell you the customer flow. How constant flow is that it's a change in the customer flow.
+		Want to. Other team is aligned or not. I want to just double click on that. Okay, can we do that first? st
+		KB Karthik Balasubramanian00:48:16 Can you please go ahead and seconds, please.
+		￼
+		 HQ-Opportunity00:48:18 I think the Z side. Okay, so
+		SP Sonalee Panda00:48:34 Sorry, Dugan, just to be on same page. We are talking about the Add new Provider flow right
+		￼
+		 HQ-Opportunity00:48:45 What are the cross current process is there, and how the interaction happening between the systems? I'm going to talk about that. So
+		it's it's a issue or our customer. Okay?
+		So
+		SP Sonalee Panda00:48:59 Okay.
+		￼
+		 HQ-Opportunity00:49:00 There are 2 part the customer can be ordered from the, and customer can be ordered from the portal, so
+		so mostly portal part if you have seen the product definition right? CC, there's no other elements in the cross current and the one the cross current decomposing happen. So
+		I'll go here. I'll just remove this button.
+		Sorry guys. One second, it will clear here if a little more.
+		So we have acquiring more. Yeah.
+		okay. So the offering is in order. Offering is the cross connect it come from? Either it could be, or it come from the portal to the source or operator portal can be okay in future. So the product is cross, connect, and when cross connect comes in order, we only expecting the only cross net. There's no other. If with respect to characteristics, then nothing is a very simple step for product, one line where a decompression happen, it will be cross, connect.
+		and there's no sncc so system.
+		Okay, this automatic one. But where? What the the CAD is here which I'm trying to explain here.
+		Suppose if I might seen the product primary in cross current there are around, put in mandatory
+		characteristics are defined a side G side, all details right? But so so think about when the cost comes from portal.
+		Very happy, but because customer enter our user, enter all the mandatory Si visa details, and it come to create order and order to progress through, to fulfillment this complete, happy. But there's no concern as such. There's Sonaly last last time your question, what will happen if customer
+		enter half information. And this one
+		KB Karthik Balasubramanian00:51:21 This. Yeah, exactly. See 1st time for the new Logos
+		to what we are showing in the resell product what what we need to show? Because today, right?
+		Yeah, sure, we
+		SP Sonalee Panda00:51:32 It is not only that, not only
+		￼
+		 HQ-Opportunity00:51:34 From later
+		SP Sonalee Panda00:51:35 Do. You're gonna
+		point right? There are scenarios where user might not have filled all the necessary information. Right? It's not available with them. So the current I mean in the current world, what happens is they have access to see Bill. So they go and update over there, since we don't allow that in service. Now.
+		where is that feasibility or flexibility for them to go into the system and update by the internal users, I mean Gsd. On behalf of customer. Right? So we are talking about that particular scenario
+		￼
+		 HQ-Opportunity00:52:07 So I I think the that the same question applies for us as well. Yeah, for 3rd party scenarios. And and whatever solution that we put together should work for. Yeah. So so the the again, this is tentative Sonali and team. But this is what we have discussed as a potential solution is that
+		there'll be a mechanism where an internal team will be notified
+		that internal team will be able to go into operator portal
+		SP Sonalee Panda00:52:39 Yeah, okay.
+		￼
+		 HQ-Opportunity00:52:40 And see the same view as the customer
+		in terms of the order, details, and the start configuration button. As an example. Okay.
+		they will be able to go in
+		if they have the right permissions and all that. Here's the thing sorry for interrupting manish. But essentially what we are doing is, we are replacing whatever Gst used to do in Siebil with Gst. Doing it with service now with the operator so. But why? Why don't we try to make the digital mandatory and and digitize that whole experience versus keep this error flow on the manual approach. No, there is. There is some constraint around it
+		we can talk about it. Heard that there was a constraint around
+		SP Sonalee Panda00:53:27 I think money is that great idea right? In fact, we all voted for that
+		￼
+		 HQ-Opportunity00:53:31 8,
+		SP Sonalee Panda00:53:31 Why not to
+		￼
+		 HQ-Opportunity00:53:34 Just 1 1 last part. So today, the Gst entering manual details does result in error. It does result in. I'll give you an example, it does result in
+		of fabric board being connected to a cage cabinet from a party that was not even authorized. No, okay, that is such a huge security risk. Let me pause you there, Ashwin. There are. There are problems with the digital loa today. I will. We will talk about it. I have heard about there are existing digital loa has some issues need to be solved. We cannot. Just
+		it. May, makes more sense to fix those as a part of this effort versus try to port what is there, and then fix it
+		so we'll we'll we'll consider this. I'm not saying we won't. But if we have to keep the digital loa aside.
+		they will go into order details page.
+		they will click on start configuration.
+		And the idea currently is that
+		all the fields that are not yet
+		provided which were required fields.
+		the internal persona will be able to edit, including the new provider.
+		field, which they will be able to have access with the internal. You know system showing up all the accounts.
+		and they will be able to select and finish all that
+		complete configuration at that moment, like they do it in Sibo. And then it proceeds for sorry, manish couple of questions. So how does gst, I'm assuming this is gst, that we're talking about. Right? How are they informed that there is a configuration that's waiting for them? We we still have to figure it out technically. What I'm what I'm hearing is order is created.
+		Psr is ready. It's ready for configuration. Something is going to be triggered to Gst, that requests that there is a manual effort that's required a manual human touch required to fill out the details once it's completed, configuration is over. That's correct. Okay.
+		MN Michael Nehall00:55:53 And sorry. I'll take the opportunity team while I heard the topic around digital always.
+		It's Mike Nihal. By the way, I wouldn't say that something's functionally wrong with it. What I would say is, there's room for improvement around the digital. Always it does work, but adoption is really low.
+		￼
+		 HQ-Opportunity00:56:14 Got it. Now, one question on that, Michael. Are all customers able to use that
+		if let's say, if we use it right. Whatever state it is?
+		Are there scenarios where some customers cannot use it?
+		MN Michael Nehall00:56:33 I think there and I I'll ask the way. And I think there are very many customers that don't use it. They're legacy based. They don't have the deep. They don't have the systems that track this stuff appropriately, or they built the required integrations to accept the digital all the way token.
+		and they rely on paper based letter of authorizations. But, sonly, please weigh in with what you're aware of
+		SP Sonalee Panda00:56:57 So manish before answering that question right? The reason I put that on hold, or I said that we need further evaluation. It is not only for from the portal front, right, we need to have that assessment from the new stack per se as well, because the port reservation comes into picture.
+		So want to ensure that our new stack is ready to consume the digital alloy, token usage, or the file upload right? So we did not discuss at all that feature at all from the new stack per se. So my request is, we start looking into it because that is a really good potential business opportunity to enhance in this case.
+		When I spoke with the Csm. And Gst. In the last couple of days, they were also keen. That why don't we impose the digital loa impose in the sense kind of
+		lean forward about that business opportunity part of this new platform, because it's a standard format. There is very least chance that Gst. Will make any mistake while filling out the form right?
+		So we
+		￼
+		 HQ-Opportunity00:58:02 Well, yeah. But but Sonali, I think, going back to Michael's question, I think it's important, right? Yes, we want it right. It will, it will simplify our flow. It will make less mistakes, all sorts of things at the end of the day, if customers cannot adopt it, or they don't want to adopt it. Game over. I mean, you know, we, we can only dictate. So the question really is, can we dictate to all customers that? Hey? This is the process
+		SP Sonalee Panda00:58:29 So let me answer that as well right
+		￼
+		 HQ-Opportunity00:58:33 Right sorry. Sonali question is I I know you talked about analyzing or doing an impact analysis for new stack. I'm just wondering going forward. Considering there's a bunch of training that needs to be done. There is learning that's gonna happen for this whole digital transformation. Could we enforce this going with the new stack, saying that this is going to be the process. Yeah, I think so. See again. We have to now understand. What
+		is it that is stopping some of the customers to not implement it. If it has nothing to do with training, if it has completely like Michael was saying, right.
+		I just cannot.
+		I just have those processes which I need to follow. So that's where I'm going. Do? Do we have insights around customers saying that
+		SP Sonalee Panda00:59:14 Of course. Yeah, sorry. Sorry. Let me stop you there. Let me put some light insights over there, right about about those items. So basically, it is not that they are not saying we cannot use it right? So there are little bit of learning curve that is involved in this area. There is little bit of exposure. Not every customer has
+		understood that there is a digital alloy that is available. They're supposed to use it right. Also, it is kind of the old school method. They are so comfortable with the traditional way the transformation is taking a little bit of time, right? So it's a combination of multiple factors. Of course, there is little bit of functional flow that is need improvisation where the approval process we are trying to bring it to the application service rather than making it over the email that is happening
+		in silo at this point. Right? So once that is being done, I don't see any flaw in the functional or technical flow of digital loa right? And to answer to Mike's point or your point.
+		even though the adoption is low. But we have seen our top 10 customers has really used digital in the past 2 years. I mean, there is a good amount of usage from their side. So I see this is a very good opportunity for us to improvise, educate the customers, and
+		put the learning session whatever is required. But definitely, I'm not able to commit it for R. 3. Because we need to assess it. Whether we are ready from the new stack per se as well, not from the training training per se, but from the implementation wise
+		￼
+		 HQ-Opportunity01:00:56 Yeah, understand?
+		SP Sonalee Panda01:00:58 Yeah. Cleo, yeah.
+		￼
+		 HQ-Opportunity01:00:59 No, that that's fine. I think that's clear. What I was now thinking is that if you go back to now, assuming for a second that let's say we are not ready yet internally, to make this happen. You know there are,
+		open items, and r 3. We just have 3 sprints or 4 sprints left, right? So that flow that we just discussed about Gst coming to operator portal doing exactly what he does in the civil, and so on, so forth. Any any questions or you know concerns around that if we implement it and pro publish the flow
+		SP Sonalee Panda01:01:34 No, I'm I'm I'm on boarded for this approach. In fact, we discussed in the last call, and I'm fine with it.
+		So if gst need any additional information training, we can, of course, conduct that. But this should be our short term plan. Manish. Yeah. Because I don't find any other way where
+		￼
+		 HQ-Opportunity01:01:54 Yeah.
+		SP Sonalee Panda01:01:54 Can really put this request. I'm very sure that many flow many flows will go through this. Add new provider flow. So it is a must to have, and without that I think the flow itself will be stuck. The install install flow here
+		￼
+		 HQ-Opportunity01:02:10 Okay.
+		because we need several other people here to talk about that. So I think we will take that as a separate breakout, we have to take care. So now, what I was telling the team here.
+		So this, if cost anyway, today's world, 90 to 95% come from the Portal section. So if it's come from Portal, it's very happy path. But the the costing more is equal. If if it is coming from equity. Then they, out of out of 14 attributes, manage attributes. They only have the 4
+		for mandatory activity need to be, and they send the cost to it.
+		They send the cross connect when it could be sent across card we. We did decompose the cross card.
+		Okay? Then we emit this.
+		We create a auto task for this.
+		and we are going to send to the portal. So my question is, so once we send this portal, so Portal has to be configured. Rest of 10 mandatory items
+		from out of 14 and my computing a side G side, all details again send a response back update to one
+		on the terminal done so so
+		KB Karthik Balasubramanian01:03:48 So this one's again, so we'll be invoking an auto Api with all those remaining 10 attributes
+		populating it, and then we'll be again sending it or
+		￼
+		 HQ-Opportunity01:03:59 Correct.
+		So if this is, this means the pro is fine for you guys. Right?
+		SP Sonalee Panda01:04:06 Yeah, this is fine, Jagan. Yeah, I think we touched upon in the last call. So
+		KB Karthik Balasubramanian01:04:11 1 1 question, actually your as we discussed last time life. Think verification with whatever comes from Epp, we'll take the value and send it. We'll not allow the customer to bother
+		￼
+		 HQ-Opportunity01:04:23 If it is a pricing. Yes, we should not change it right
+		KB Karthik Balasubramanian01:04:28 Oh, okay, can you send this? What is the 4 mandatory attributes and 14 mandatory attributes? It's 1 of the product.
+		What's called
+		￼
+		 HQ-Opportunity01:04:35 Yeah, product. Yeah, product primary will give you that. How many are 14 as mandatory for portals and what are mandatory at the Eqp. We. I mean, we had mandatory as one flag in the past, but recently we are changing that design. So that is not in the product primary Api. But I'm working with team to to have it. So maybe you'll get by next week.
+		KB Karthik Balasubramanian01:05:00 May I know, whatever reason, actually, why we are limiting that attributes any specific reason
+		￼
+		 HQ-Opportunity01:05:08 Limiting on Eqp
+		KB Karthik Balasubramanian01:05:10 Oh yes, yes.
+		￼
+		 HQ-Opportunity01:05:11 Because if we sales sales don't know about the all details sales, just they want to enter only the sales piece which just media type and 2, 3 afterwards. So they don't have the sales team don't have those information. They not capture upfront when they deal with the customer
+		SP Sonalee Panda01:05:33 So, Jagan and Karthik, right? I mean, I I just want to make sure that I understood it correctly. So my understanding was when the in the Eqp. The quote is getting generated. It is hardly 2 to 3 parameters. The sales team will be filling in right Ibx media type, and
+		￼
+		 HQ-Opportunity01:05:49 You're like.
+		SP Sonalee Panda01:05:50 Is, yeah. But apart from that, we will have the facility, or we give the provision in the portal for user to start the configuration of the other parameters, which is mandator
+		￼
+		 HQ-Opportunity01:06:01 Take care!
+		SP Sonalee Panda01:06:02 Yeah, for the ordering flow. Right?
+		￼
+		 HQ-Opportunity01:06:05 Yes.
+		SP Sonalee Panda01:06:05 And back to your point. Right? Are we going to change any mandatory optional field to mandate, or mandatory, to optional
+		to the current design attributes
+		￼
+		 HQ-Opportunity01:06:15 No, no.
+		SP Sonalee Panda01:06:16 Okay.
+		yeah. Yeah. So, Karthik, then there is no change. What we discussed in the last time. I think we have a good understanding
+		￼
+		 HQ-Opportunity01:06:22 Unless you want to change, unless you want to make a change and simplify something that okay, this is not needed. And this is a pain point in current world. And then can we simplify that thing? If you give that up to us? We are happy to do that
+		SP Sonalee Panda01:06:37 Got it. So you're not changing much part of R. 3. So R. 3, whatever the list that we had proposed to disable it in.
+		Okay.
+		it is not being supported in the new stack, I mean for a temporary period of time. So those things we have called it out. I believe that we all are on same page.
+		If not, we can just have a quick walkthrough on that. Yeah.
+		￼
+		 HQ-Opportunity01:06:59 Is that all at once.
+		if they send all at once in the new order, flow so in in so another point here, which I want to understand from you. All the all the attributes total will send it once right
+		for the 1st connection
+		SP Sonalee Panda01:07:15 Should be.
+		￼
+		 HQ-Opportunity01:07:17 But because we are not doing validation in the system. Whether they have sent 1st set second check.
+		Once they come, they have to close the auto tax
+		their side before that, they can update any number of times. It's okay. So technically, suppose if you want to update this cost connector in this multiple times, technical, possible. Everything's fine.
+		So this auto task which I'm emitted for to hand over. Okay, there's a cost. Please go and configure. Once you close. There's no further update. Once you close the no further update, because this will be, proceed further the ncc configuration and automatically go for the fulfillment. But till that time you can N number of update can be possible in the system. There's no restriction on that
+		SP Sonalee Panda01:08:13 Yeah. Understood. Yeah. So, Karthik, you don't see any challenge in that right
+		KB Karthik Balasubramanian01:08:17 No, thank you for
+		SP Sonalee Panda01:08:18 Submitting. Yeah, before submitting whatever changes we have to do, we will do otherwise. It's done
+		AS Ajay Singh01:08:24 Can you come again like? What? What are you proposing, Sonali? Sorry, I
+		SP Sonalee Panda01:08:28 No, no, we are not proposing anything, ajay. So what we have discussed earlier, we are just reevaluating that. So basically, we are talking
+		be 2
+		￼
+		 HQ-Opportunity01:08:38 Okay.
+		SP Sonalee Panda01:08:38 Think so. Right?
+		So Jagan's point was, whatever is coming part of Eqp fine. Once the user starts
+		updating the mandatory values in the form
+		and submission, it'll happen at one go once it is submitted. We cannot do any changes which is the current existing flow as well. Right
+		once it is submitted, you cannot do any further modification
+		￼
+		 HQ-Opportunity01:09:01 Good evening with our customer Sonali, and
+		SP Sonalee Panda01:09:07 Yeah.
+		￼
+		 HQ-Opportunity01:09:08 Sorry. I just have a generic question, I think. Just trying to understand this a little better. From a cross connect perspective, there is order we are talking about just configuration, right? Configuration of an order.
+		There is no fulfillment perspective, right? No. Because we were talking about the orchestration and trying to define that separately. So I want to make sure the requirements are clear to Og, because we have to tell them that there are future States where certain products we might have to break that down here we only do the ibx. So once I get a response back for closure, I kick off the Ibx fulfillment.
+		So the configuration of Ncc. Is happening again from order.
+		And this is where the 2 types that we have the 2 type where we have ibx fulfillment. Maybe we need to change that to Ibx configuration and something like, I just feel like, you know, I want to have that because we close the audit task
+		before Ncc. Generate, then, in that case, because the auditor should not close the the product, it doesn't in fabric.
+		When the public port is, they get close, we not close public. Similarly, if, when the they send us the auto task close, that means there's no further update on this Nc. Cost correct.
+		Then we go for configure. The Ncc. And hand over CC. Will get close. It's fine. It's fine
+		AS Ajay Singh01:10:52 So 1 1 question I had right. So if I'm repeating, forgive me. So this order task closure. Who is responsible for this as a, as a client, as a means
+		￼
+		 HQ-Opportunity01:11:04 Portal portal, because this is the my end. State that I'll once you send me auto, closure the status to close complete. Then I'll I'll ensure there's no further update on the CC
+		is it?
+		System? Can system can end time. If you operate, you can do. You can sync the update anytime, and and N number of times. So that's that's the flexible. We are providing here
+		AS Ajay Singh01:11:31 So what is the implication that we don't send you this event? The order, task, closer event, or like whatever is there
+		￼
+		 HQ-Opportunity01:11:38 If you not send, then we're not going to compute the Ncc.
+		AS Ajay Singh01:11:44 Hmm.
+		￼
+		 HQ-Opportunity01:11:45 And we're not going to configure incis, and we're not going to send to the fulfillment. So this order gets stuck and wait for the final update from the portal
+		￼
+		 Niraj’s01:11:56 But enjoy it.
+		When you say we will not configure the Ncc. The Ncc. Will be configured by the customer itself. Right? And that's 1. The
+		that's close right
+		￼
+		 HQ-Opportunity01:12:06 And this is not complete customer. CC is configured by the customer or end user.
+		Okay.
+		and this is ajay. This is purely for for equity, but cross current coming to the portal very happy, because portal itself individual all the mandatory 14 items. There's no no such thing, sir, the only scenario it will come, and this auto task will get only scenario. It could be where it could be, only sending 3 for attribute and rest will be configured in the portal side
+		AS Ajay Singh01:12:40 Yeah, because I think there's a follow up discussion on that. But you know, right from Portal. Also, it's possible you will not get all the attributes, but
+		but I think that discussion can have
+		￼
+		 HQ-Opportunity01:12:52 Yeah, that discussion under this one, instead of we had something, and money should again touch base on those things.
+		AS Ajay Singh01:13:01 Sure, no
+		￼
+		 HQ-Opportunity01:13:02 Not at a close. Actually, we have to again for few more discussion. What we do. But right now, decision is that
+		if customer is not providing fast at all in motion. Then it come to operator, portal operator, gst login, and do all confusion I can send so in that route. So that's a route will be considered for a 3 right now. So maybe
+		AS Ajay Singh01:13:23 So 1 1 question. So one question is that let's say I don't provide you right z side Mdmid. Right? So what will be the status of the order. I'm just saying
+		￼
+		 HQ-Opportunity01:13:36 The by status of what are the in progress right now?
+		No, I'm
+		AS Ajay Singh01:13:39 That domain, domain, order, right, like
+		￼
+		 HQ-Opportunity01:13:42 In progress in progress. No, that's in draft, which one domain order stays in draft.
+		It's not in in progress, in progress when it goes to. Yeah, once auto task is created.
+		No, but the configuration is not completed. We cannot call it as in pro. I mean, it's basically we have qualified at the domain order.
+		Right? We don't have in progress at the token in progress. Is your Ponr status, or like post
+		configuration. But you want to check that, because right now, domain order is qualified. Right now, whenever we're creating order tasks, we can double click.
+		It's because it's because all we are. We don't have any mandatory attributes in the system, so for us to move it to in progress is when we dispatch the order task for the for that particular
+		SS Samruddhi Sawant01:14:45 Yes, Jagan
+		￼
+		 HQ-Opportunity01:14:46 In in the February port scenario, when we, sending the fee to Port-port manager to provisioning what is the status currently maintaining this in progress or draft
+		SS Samruddhi Sawant01:15:01 Oh, so it is for configuring the mandatory characteristics right from
+		￼
+		 HQ-Opportunity01:15:07 A fabric code. Yeah.
+		we are doing in progress because we are not checking any mandatory attribute in the system. Are we expecting the status from them?
+		￼
+		 Niraj’s01:15:30 Hey? Hey, Jagan? 1 1 question right. Most most of our customers right will order. Say a new cabinet. Right? A secure cab express and then order the cross connecting the same order. Right? If you talk about Eqp. Flow right in in this scenario, right? When the cage is not installed
+		right. Are we giving an option for the customers to go to the Ecp. And configure that where the a side cabinet might not be installed yet.
+		So is it going to be like delayed for them to get into the configuration? Or how is that flow is going to work, or are we going to send the cabin information, even though it's not installed
+		￼
+		 HQ-Opportunity01:16:14 Yeah, we we send. We embed this one, but then it cannot configure, unless otherwise the cabinet is not closed.
+		AS Ajay Singh01:16:22 Okay, now, Ecp. Cannot work. Ecp. Cannot work without fulfillment as of today, because
+		￼
+		 HQ-Opportunity01:16:28 Yes.
+		AS Ajay Singh01:16:29 Because the asset is gonna come from the Seabel. Right? So for us, unless the the the Cabinet activity is completed, we cannot configure the cross, connect
+		￼
+		 HQ-Opportunity01:16:41 Yes, so Kevin has to be could be faster. Then they can. They get the asset data, and then they can able to configure the to connect across.
+		Okay.
+		that is a regular process. Nothing to. We are not blocking the transition to progress. But yes, till the time cabin is not. They're not able to configure the CC.
+		Sorry we've got
+		￼
+		 Niraj’s01:17:11 It might be like it might be like 1 1 month, right after, or maybe a week's time or 2 weeks time before the cabinet gets fully installed, then they can come to the portal and start configuring. The cross connects right
+		￼
+		 HQ-Opportunity01:17:23 Yes, yes.
+		sorry. We have change order that's kicking off in the other room. We they're all waiting for us. We've got to go so any other questions that we could get to actually smart hanks.
+		smart hands team has. It's not r 3. We're not working on it. Right? Yeah. R. 3 dot. Yeah, I was told. I was told. Let's take this offline. I was told that we irrespective of it. We need to nail smart hands, but we continue to do that, hey? Rashmi and team
+		RR RASHMI RAJA01:18:00 Hi Aisha, my name.
+		￼
+		 HQ-Opportunity01:18:01 Yeah, you you heard it? So we sorry about that. Looks like, there is this another meeting that is happening right now, which requires Jagan and team to go. So we will come back to smart hands. I will set up a separate meeting. Is that okay?
+		RR RASHMI RAJA01:18:20 Sounds good. I've actually posted all the questions in a team. So please, if
+		￼
+		 HQ-Opportunity01:18:25 Okay. Thank you. Guys, can you go join back the main zoom? We're gonna go talk about change orders.
+		SP Sonalee Panda01:18:38 Alright! Thanks everyone.
+		￼
+		 HQ-Opportunity Bye.
