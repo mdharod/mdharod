@@ -1,0 +1,2102 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:00.445
+Ashwin Kamath: Oh,
+
+2
+00:00:02.740 --> 00:00:19.750
+Ashwin Kamath: yeah. So I would like to thank all the folks who responded yesterday with all the details. Sanjeev the the the link you ping was very helpful. Praveen updated Jagan from your team as well. All the information that was updated was very helpful.
+
+3
+00:00:20.261 --> 00:00:22.249
+Ashwin Kamath: So I've been going through it
+
+4
+00:00:22.965 --> 00:00:31.444
+Ashwin Kamath: and then trying to align things. So from that perspective,
+
+5
+00:00:32.360 --> 00:00:48.589
+Ashwin Kamath: can you see my screen. Yeah. So I have a couple of questions. At this point of time I'm I'm still I'm putting together. The input. That came in was very helpful Sanjeev and Jagan so I got a lot more information than I had Dave yesterday.
+
+6
+00:00:49.083 --> 00:01:07.126
+Ashwin Kamath: But Sanjeev. So a couple of questions that I wanted to double, click on and and make sure I understood them correctly, and let me share the specs as well. So reference. Number. Okay, reference. Oh, reference number transaction, id transaction number was for the pricing Api call
+
+7
+00:01:09.170 --> 00:01:29.760
+Ashwin Kamath: Let me pull up the specs as well. So reference. Number it, it says, is a unique number for a given transaction, so can I generate it. Is this is this only for my reference that that it is, or as invokers reference, or it is it is, it is. It is used in some way and shape and form internally as well at at the pricing Api end
+
+8
+00:01:30.550 --> 00:01:37.670
+Sanjeev Kumar Yadav: No, we are not using as a pricing Api, and with respect to any price, engine calculation, it is more of
+
+9
+00:01:38.230 --> 00:01:43.009
+Sanjeev Kumar Yadav: our unique reference number, so that we uniquely
+
+10
+00:01:43.260 --> 00:01:49.819
+Sanjeev Kumar Yadav: map out the transaction payload and response with respect to it for observability and reliability purposes.
+
+11
+00:01:50.110 --> 00:02:10.769
+Ashwin Kamath: Okay, okay, cool. I can use this. Then, essentially, I can use this. I can assign every pricing call uniquely and map it to the order at my end, so that I know which how I determine the price from my perspective. In case I ever need to go back and determine how was the price determined for an order so I could use this number is what you're saying is that is, that
+
+12
+00:02:10.770 --> 00:02:11.740
+Sanjeev Kumar Yadav: Yeah, yeah.
+
+13
+00:02:12.030 --> 00:02:12.780
+Ashwin Kamath: Okay.
+
+14
+00:02:13.336 --> 00:02:24.190
+Ashwin Kamath: and and that's an input and and does it come back as an output? Yes, it does come back. So essentially, whatever I pass in is what I'm what I'm going to get back as a reference number is what you're saying. Essentially right.
+
+15
+00:02:24.190 --> 00:02:30.159
+Sanjeev Kumar Yadav: Yeah, whether you need it or not, it's fine. But we need to have that payload and response. Yeah.
+
+16
+00:02:30.590 --> 00:02:38.949
+Ashwin Kamath: Got okay, cool. That is observability. Let me open note. I will have better notes next time. Observability.
+
+17
+00:02:39.130 --> 00:02:40.539
+Ashwin Kamath: But yeah.
+
+18
+00:02:43.740 --> 00:03:07.180
+Ashwin Kamath: okay, transaction. Id. Okay? I see transaction id as well. So transaction. Id. What? What has been said in the documents is essentially transaction identifier is a unique id for the price request. And it will, for example, it could will be the quote Id, so that the same quote pricing Api will know that, you know, it's the same code that is getting updated. So
+
+19
+00:03:07.260 --> 00:03:21.785
+Ashwin Kamath: so from my perspective, I'm just talking, thinking out aloud, could I pass the resource. Id here, or is that is that okay? Resource uid, essentially that way? I know it's just for this resource that I was trying to find the price for does that make sense, or or you would recommend
+
+20
+00:03:22.190 --> 00:03:24.669
+Ashwin Kamath: not using the resource uid. Here.
+
+21
+00:03:25.600 --> 00:03:31.400
+Ashwin Kamath: Sanjeev, how is this used? From your, from your your side from the pricing side. Sorry
+
+22
+00:03:31.400 --> 00:03:33.337
+Sanjeev Kumar Yadav: So if you have something like
+
+23
+00:03:33.930 --> 00:03:39.210
+Sanjeev Kumar Yadav: customer, unique, Id, or something like that, you can use it as per your business needs.
+
+24
+00:03:40.490 --> 00:03:53.300
+Sanjeev Kumar Yadav: It is more of for quoting and sable purposes that we have repurpose, or we have these fields because we wanted to tag to the corresponding quote, number and order numbers, Jagan, you can chime in here.
+
+25
+00:03:53.840 --> 00:04:01.730
+Sanjeev Kumar Yadav: Yeah, so. But whatever unique transaction number for the customer you want to maintain, you can tag to those
+
+26
+00:04:02.550 --> 00:04:04.023
+Jagannath Sahoo: Yes, basically,
+
+27
+00:04:05.120 --> 00:04:22.350
+Jagannath Sahoo: this is kind it required when some kind of audit happen, or some backtracking happened. What? Exactly price a path, the data to revalidate in the past. This will helpful. So basically, it's kind of history will maintain within the price effects
+
+28
+00:04:23.620 --> 00:04:24.210
+Ashwin Kamath: Hmm.
+
+29
+00:04:24.540 --> 00:04:48.429
+Ashwin Kamath: okay. So so then, if that is the case, then can I use a resource uid here? Because see in fabric use case, right for self service. Essentially, every action happens in the context of a single resource. Okay, so any reprising I do will also happen in the context of a single resource at least based on what we have today. Okay, so so if I pass the resource uid essentially, that that can be a great indicator that it happened in the context of that resource. Does that make sense
+
+30
+00:04:48.430 --> 00:04:49.910
+Sanjeev Kumar Yadav: Yeah, so far.
+
+31
+00:04:49.910 --> 00:04:50.650
+Jagannath Sahoo: Quick to you
+
+32
+00:04:51.030 --> 00:04:55.029
+Sanjeev Kumar Yadav: For a resource, there can be multiple price. Api call, you want to make, maybe.
+
+33
+00:04:55.030 --> 00:05:01.169
+Sanjeev Kumar Yadav: Yeah. Yeah. So so in that case, your reference number keeps changing uniquely. But your
+
+34
+00:05:01.450 --> 00:05:05.069
+Sanjeev Kumar Yadav: transaction, id, or the rep, yeah, that remains the same. Make
+
+35
+00:05:05.070 --> 00:05:20.239
+Ashwin Kamath: Okay. So at least, for now I I'll probably double click again. But before I finalize, I'll definitely document everything and then share it with you just to make sure that we are all aligned. But for now the thought process is dollar resource type, dollar resource. Uid. Okay, resource.
+
+36
+00:05:20.350 --> 00:05:22.020
+Ashwin Kamath: Uuid. Okay?
+
+37
+00:05:22.300 --> 00:05:23.200
+Ashwin Kamath: How many?
+
+38
+00:05:23.350 --> 00:05:25.999
+Ashwin Kamath: Yeah, Manjarat, you had something to add there. Sorry
+
+39
+00:05:26.950 --> 00:05:38.279
+Manjunath Bavikatte Andanappa: No, I always thought this transaction Id is for that specific transaction. It is a identifier that is used between the Api calls to identify. That was a transaction between 2 systems
+
+40
+00:05:39.400 --> 00:05:45.329
+Ashwin Kamath: Yeah. So for us, right for us, we really have nothing like that. Right? Manjuna for us. Every single operation is atomic in nature right?
+
+41
+00:05:45.950 --> 00:05:48.560
+Ashwin Kamath: Do we have something like that from your perspective?
+
+42
+00:05:50.470 --> 00:05:52.109
+Ashwin Kamath: Let's discuss offline as well
+
+43
+00:05:52.710 --> 00:05:53.349
+Manjunath Bavikatte Andanappa: Sure. Yeah.
+
+44
+00:05:53.350 --> 00:06:02.460
+Ashwin Kamath: Because from for me, my understanding is today, we don't have anything like that in our systems. Okay, if we do want to add it then, then, now is the time to think about it. Yeah, sure.
+
+45
+00:06:02.909 --> 00:06:03.230
+Ashwin Kamath: Sure
+
+46
+00:06:03.230 --> 00:06:05.189
+Manjunath Bavikatte Andanappa: Yeah, we can take it offline. Thanks.
+
+47
+00:06:06.335 --> 00:06:09.939
+Ashwin Kamath: Fabric perspective. Okay, fabric do we want?
+
+48
+00:06:10.040 --> 00:06:14.310
+Ashwin Kamath: Do you want transactional
+
+49
+00:06:14.940 --> 00:06:41.210
+Ashwin Kamath: support? Okay, I'm not sure if I worded it right. But I think we get the gist. Okay, transaction number transaction number. Now, this is very interesting, because so I believe, and Ajay have built an Api for deriving the transaction number right now the format is one, yy one dash yy p or q or o, and then 6 d. Is that
+
+50
+00:06:41.210 --> 00:06:44.499
+Jagannath Sahoo: Basically that the Cata stands for the source system
+
+51
+00:06:44.860 --> 00:07:00.859
+Ashwin Kamath: Yes, yeah. So essentially, it's a 1 month. Yy, where P. Or Q. So essentially, P is for Portal Q is for quoting, and O is for ordering, if I understood correctly. And and then we have 60. Okay, that's the format we have today.
+
+52
+00:07:03.520 --> 00:07:10.679
+Ashwin Kamath: okay, do we have any concerns if we add one more alphabet here. Jagan, from a systems perspective. Do you think
+
+53
+00:07:10.680 --> 00:07:12.509
+Jagannath Sahoo: No, no, no, no, not not at all.
+
+54
+00:07:12.630 --> 00:07:14.169
+Ashwin Kamath: Yeah, so for now for now.
+
+55
+00:07:14.170 --> 00:07:15.440
+Jagannath Sahoo: What's the purpose? It's a
+
+56
+00:07:15.700 --> 00:07:17.760
+Ashwin Kamath: Yeah, I got it. Yeah, sorry.
+
+57
+00:07:17.760 --> 00:07:21.509
+Jagannath Sahoo: As opposed to source system. Because some of the business
+
+58
+00:07:21.850 --> 00:07:24.929
+Dhrubajyoti Chakraborty: Only thing is that the number should not exceed 9
+
+59
+00:07:25.070 --> 00:07:31.670
+Ashwin Kamath: Yeah, yeah, we'll not. We'll not. So essentially, I'm talking about one more character is essentially instead of P, we'll have something else as well, is what I'm suggesting
+
+60
+00:07:31.670 --> 00:07:33.929
+Jagannath Sahoo: Okay, no problem. Go ahead. Go ahead. Go ahead. No problem.
+
+61
+00:07:33.930 --> 00:07:40.070
+Ashwin Kamath: So whatever we finalize, I'll definitely validate and verify with just
+
+62
+00:07:40.070 --> 00:07:44.809
+Ajay: But but but, like Ashwin, why do you need that separate like any reason for that?
+
+63
+00:07:44.810 --> 00:08:00.879
+Ashwin Kamath: Yeah, yeah. So so we potentially will use the same api ajay. But but but if there are issues raised about depending on where I create that transaction number it shouldn't happen that because that Api is down now, my entire flow is broken. Ajay.
+
+64
+00:08:00.880 --> 00:08:16.630
+Ashwin Kamath: the I get a lot of reliability concerns raised across the board for every single new dependency. I add, there are a lot of questions that I need to answer. That's the reason I'm just putting it out there, just in case that gets flagged. There may be a thought process for transaction numbers. We shouldn't depend on other systems. That's the thought process. Okay.
+
+65
+00:08:16.630 --> 00:08:24.960
+Ajay: But the the problem is that if you don't rely there will be a duplication in the solution hour. Right? I would say somewhere, it needs to be centralized right?
+
+66
+00:08:24.960 --> 00:08:35.830
+Ashwin Kamath: Yeah, yeah, I hear your point. But that depends upon the if if I have a separate alphabet allocated purely for digging essentially, then then it won't happen. Right? Ajay.
+
+67
+00:08:36.500 --> 00:08:41.530
+Ashwin Kamath: yeah. So we why, we have P or Q or O, and the same
+
+68
+00:08:41.530 --> 00:08:59.720
+Dhrubajyoti Chakraborty: But Ashwin, just one context, right? We have validated because simplified. Sorry. The classic Eqp is already started. The using those numbers we have validated, and we found that P. And the Q are the only 2 characters that we have not had any transactions. That's why, from a
+
+69
+00:09:00.279 --> 00:09:10.470
+Dhrubajyoti Chakraborty: business perspective and leadership perspective. We agreed upon these 2 numbers. If you want to get another digit defined after P. You can see PEPO. PP.
+
+70
+00:09:10.610 --> 00:09:26.379
+Dhrubajyoti Chakraborty: That as long as P. Is there, we for sure we know that it's that number has not yet been used, so we can share say that this has been from the simplified track, so I would request you not to change P. But instead add Pd. For
+
+71
+00:09:26.380 --> 00:09:41.299
+Ashwin Kamath: Adding, adding, Will not work. Drew Jagan. Let me know if my understanding is correct. The because I was aware I was present in those discussions that we ever had. The thought process was, the single 1st alphabet will decide the channel, and everything else is going to be digits. That's what I was agreed upon so essentially the reason
+
+72
+00:09:41.300 --> 00:09:44.950
+Dhrubajyoti Chakraborty: Was agreed upon. But again, I think that he
+
+73
+00:09:45.090 --> 00:09:55.150
+Dhrubajyoti Chakraborty: so then, in that case, P. Is also defined and agreed upon. We cannot literally change P. To any other characters. It cannot be D, or E, or F.
+
+74
+00:09:55.410 --> 00:09:55.860
+Ashwin Kamath: Joseph.
+
+75
+00:09:55.860 --> 00:09:59.800
+Dhrubajyoti Chakraborty: But we, because we have some codes
+
+76
+00:10:00.520 --> 00:10:01.820
+Jagannath Sahoo: Is it
+
+77
+00:10:02.840 --> 00:10:05.870
+Ashwin Kamath: Transaction number used. That's what I'm trying to understand. How is it used
+
+78
+00:10:05.870 --> 00:10:10.210
+Dhrubajyoti Chakraborty: Number is today is like how civil order number is. That is the transaction number
+
+79
+00:10:11.080 --> 00:10:26.159
+Ashwin Kamath: So then the format really doesn't matter as long as it match matches the syntax, approved syntax right? If I understood the correctly, the the it's a string, and and as long as the string is unique, that that's all that matters right. There are no analytics run on the type of transaction, if I understood correctly.
+
+80
+00:10:26.160 --> 00:10:31.120
+Dhrubajyoti Chakraborty: No, there is no only thing that we are keeping as a constant is a B, and the queue
+
+81
+00:10:33.150 --> 00:10:36.949
+Ashwin Kamath: It's a string, right? Are you saying that there is a regex on that string?
+
+82
+00:10:41.000 --> 00:10:41.630
+Dhrubajyoti Chakraborty: Hello!
+
+83
+00:10:41.810 --> 00:10:42.520
+Ashwin Kamath: Hello!
+
+84
+00:10:42.960 --> 00:10:46.730
+Dhrubajyoti Chakraborty: Yeah, I sorry I'm driving back. So I got cut out. What what was the question
+
+85
+00:10:46.730 --> 00:10:49.160
+Ashwin Kamath: Are! Are you saying there's a Regex constraint on that string
+
+86
+00:10:50.490 --> 00:10:52.190
+Dhrubajyoti Chakraborty: No, no, it's today. No.
+
+87
+00:10:52.750 --> 00:11:03.480
+Ajay: Yeah. So let me take that. So there's no like technical constraint. So I think we have like technical service desk and all that team. Also to follow a pattern. Right means not really
+
+88
+00:11:03.480 --> 00:11:18.849
+Ashwin Kamath: I agree. I agree. I agree, ajay, and that's the reason I'm I'm trying to say we potentially will reuse the Api that you're using, but that you've shared. But if if there are any questions raised about about the the scalability perspective, we may create this. This approach is what I'm trying to call out
+
+89
+00:11:18.960 --> 00:11:20.779
+Ajay: Sure. Sure. Okay. Okay.
+
+90
+00:11:20.780 --> 00:11:34.880
+Ashwin Kamath: And I believe that the I was aware, because I went through the wiki that Sriva shared as well the the wiki clearly talks about federated approach, which is essentially what new characters. Jagan, I believe.
+
+91
+00:11:34.880 --> 00:12:01.570
+Jagannath Sahoo: No, no, I I do agree, completely agree with you. 100%. There's no doubt on this. It's a predicted number, which which source will be this one. So Drew, just take this off and see whether his business is okay to something or not. Just double click and double check and confirm means, we said, from engineering side or technical perspective, all about the business interpretations.
+
+92
+00:12:01.640 --> 00:12:11.340
+Jagannath Sahoo: So that's why you are. The deal is that I don't see any challenges a big deal to introduce another character based on the source
+
+93
+00:12:12.110 --> 00:12:12.500
+Ashwin Kamath: Cool.
+
+94
+00:12:12.500 --> 00:12:16.964
+Jagannath Sahoo: But yeah, it's your call just have a
+
+95
+00:12:17.370 --> 00:12:19.979
+Dhrubajyoti Chakraborty: Yeah, I'll check. I'll check with.
+
+96
+00:12:20.360 --> 00:12:26.089
+Dhrubajyoti Chakraborty: I'll check with Jagdish and get back to that we can park that one. Yeah, let's go move forward
+
+97
+00:12:26.850 --> 00:12:27.620
+Ashwin Kamath: Already.
+
+98
+00:12:28.380 --> 00:12:42.666
+Ashwin Kamath: Okay? So the next one is, yeah. So the rest, I think we were all okay, at least based on the initial check with the portal with the pricing. Api.
+
+99
+00:12:44.028 --> 00:13:10.909
+Ashwin Kamath: so Sanjeev, but just 1 1 question. I I think we we had potentially discussed that before, and I I potentially never understood it the 1st time we discussed about it. But sales quantity and lack count. I understand, lack count is also sent as a as an attribute additional info but it's not used as a pricing attribute. Instead of saying, instead of that? Are we expecting to update sales? Quantity? Is that is that what the thought process is? Sanjeev
+
+100
+00:13:14.310 --> 00:13:24.489
+Sanjeev Kumar Yadav: So yeah, we want sales quantity to be updated as per the lack one like count, because, like count, is not a pricing dimension, and we are not setting up the prices based on the like. Count
+
+101
+00:13:25.750 --> 00:13:26.590
+Ashwin Kamath: Okay.
+
+102
+00:13:26.740 --> 00:13:27.230
+Ashwin Kamath: Okay.
+
+103
+00:13:27.230 --> 00:13:29.200
+Sanjeev Kumar Yadav: I can give you one mapping sheet.
+
+104
+00:13:29.320 --> 00:13:31.640
+Sanjeev Kumar Yadav: how it end to end maps.
+
+105
+00:13:31.820 --> 00:13:35.299
+Sanjeev Kumar Yadav: Okay, with different product models or different products.
+
+106
+00:13:35.460 --> 00:13:42.490
+Sanjeev Kumar Yadav: It will give you more clear picture, like what is the usage of sales, quantity, and quantity, and how we want to use in our business scenarios
+
+107
+00:13:43.090 --> 00:13:43.790
+Ashwin Kamath: That will be
+
+108
+00:13:43.790 --> 00:13:48.750
+Jagannath Sahoo: And adjust to one just Jane.
+
+109
+00:13:48.850 --> 00:13:58.339
+Jagannath Sahoo: Mostly the sales quantity renamed to sales unit. But we are waiting to get confirmation business side. So this will rename to sales unit
+
+110
+00:13:58.660 --> 00:14:04.539
+Jagannath Sahoo: moving forward mostly mostly. So in in one or 2 days will be get confirmed.
+
+111
+00:14:05.100 --> 00:14:06.329
+Jagannath Sahoo: Ambridge and deep
+
+112
+00:14:06.330 --> 00:14:09.109
+Sanjeev Kumar Yadav: Yeah, that's correct. Waiting for Raj on that
+
+113
+00:14:10.060 --> 00:14:10.859
+Ashwin Kamath: Okay
+
+114
+00:14:12.380 --> 00:14:17.440
+Ashwin Kamath: Cynji, if you think I'm opening out a can of worms feel free to say, let's not discuss
+
+115
+00:14:17.440 --> 00:14:18.989
+Sanjeev Kumar Yadav: No, no, it's okay. Totally
+
+116
+00:14:18.990 --> 00:14:28.580
+Ashwin Kamath: But but but just just curious to know any particular reason why we do not use lack count as is, and and try to use another attribute on the on the payload
+
+117
+00:14:28.730 --> 00:14:39.789
+Sanjeev Kumar Yadav: It's not an attribute. It's I mean, you can say, as an attribute. But it's not a attribute. It's a field, basically. And to explain you little deeper on that.
+
+118
+00:14:40.140 --> 00:14:44.770
+Sanjeev Kumar Yadav: I can pull out that sheet so that you can understand. I can quickly reference that as well
+
+119
+00:14:44.770 --> 00:14:47.450
+Ashwin Kamath: Otherwise you can probably ping it to me. I can read through it, and if I have questions
+
+120
+00:14:47.450 --> 00:14:47.960
+Sanjeev Kumar Yadav: Fine, then
+
+121
+00:14:47.960 --> 00:14:48.420
+Ashwin Kamath: Helping it.
+
+122
+00:14:48.420 --> 00:14:53.380
+Sanjeev Kumar Yadav: Yeah, okay, perfectly fine. You can go through that. And then we can have an offline discussion on it.
+
+123
+00:14:53.380 --> 00:14:57.790
+Ashwin Kamath: Sure. Sure. That sounds fine.
+
+124
+00:15:03.300 --> 00:15:04.950
+Ashwin Kamath: adding a product. Okay?
+
+125
+00:15:05.660 --> 00:15:14.716
+Ashwin Kamath: Sorry. I'm I'm just. I'm just trying to make a note of pricing Api is basically I I there are a ton of additional attributes on it. I'm not sure.
+
+126
+00:15:15.740 --> 00:15:26.810
+Ashwin Kamath: I I need to know all of them at this point of time Sanjeev. But the attributes that I feel I need to use I'll I'll probably document them, and I'll I'll I'll
+
+127
+00:15:27.370 --> 00:15:28.000
+Sanjeev Kumar Yadav: Perfect.
+
+128
+00:15:28.000 --> 00:15:36.580
+Ashwin Kamath: Them and socialize it with you, and then, if there are so, there is something missing. I'm I'm counting on you to validate and tell us that these are additional attributes that you'll have to consider
+
+129
+00:15:37.140 --> 00:15:49.534
+Sanjeev Kumar Yadav: Totally fine. Yeah. So the yeah, we have already documented those request payloads with respect to operate portal for these products. So we are good, and then you have any doubt you can.
+
+130
+00:15:49.910 --> 00:16:12.890
+Ashwin Kamath: Yeah, yeah, I tried using it for connections. But I think, yeah, Drew, I had a sync up with Drew and Drew confirmed that prices for connections has not been loaded yet. Once it loads, it will start working. Okay, yeah. Okay, just one question, though, if a price attribute just on the behavior of the Api itself. Sanjeev. Okay. If the if if I pass in incorrect attributes attribute values for some reason.
+
+131
+00:16:13.000 --> 00:16:25.900
+Ashwin Kamath: essentially, I'm getting $0 value back right now. Is that is that how supposed to be working? Or or is there any way for me to for you to tell me that you know what no rules are picked up, and that's the reason you're getting $0 is
+
+132
+00:16:26.401 --> 00:16:30.429
+Sanjeev Kumar Yadav: It will say price and not found
+
+133
+00:16:34.110 --> 00:16:38.080
+Ashwin Kamath: I did not see that. But let me check once again, just to be sure
+
+134
+00:16:38.080 --> 00:16:39.210
+Sanjeev Kumar Yadav: Yeah, if
+
+135
+00:16:39.210 --> 00:16:47.439
+Sanjeev Kumar Yadav: if not, then probably I'll I'll work with team, because we don't want to return $0. In that case we will. We should return. Price not found
+
+136
+00:16:48.750 --> 00:16:53.640
+Ashwin Kamath: Okay. Okay, yeah. Because for cool
+
+137
+00:16:54.540 --> 00:16:58.371
+Ashwin Kamath: connections, at least right now, I am seeing
+
+138
+00:17:01.330 --> 00:17:06.169
+Ashwin Kamath: $0 values. But I you know it might not have been set up correctly, so
+
+139
+00:17:06.170 --> 00:17:07.009
+Sanjeev Kumar Yadav: I'll check with the team
+
+140
+00:17:07.010 --> 00:17:10.959
+Ashwin Kamath: Sure. Sure I probably you know I'm I'm not 100% accurate, so I don't want to put
+
+141
+00:17:10.960 --> 00:17:14.579
+Sanjeev Kumar Yadav: No, no good point good to call out. We'll get get it validated
+
+142
+00:17:14.589 --> 00:17:30.379
+Ashwin Kamath: What I wanted to, what I would like to confirm. I'll also validate the behavior currently. And then what I would like to confirm is, how would I know if no rules are picked up? And that's the reason I'm getting the price or or so. That differentiation is what I wanted to check on, so that we have the right, like right kind of integration.
+
+143
+00:17:30.640 --> 00:17:33.670
+Sanjeev Kumar Yadav: You will always always get the price not found as an error
+
+144
+00:17:35.010 --> 00:17:41.400
+Sanjeev Kumar Yadav: in in cases where there's no setup or setup is missing or wrong value passed, so that
+
+145
+00:17:41.540 --> 00:17:44.059
+Sanjeev Kumar Yadav: on on that corresponding value there is no price
+
+146
+00:17:44.670 --> 00:17:45.340
+Ashwin Kamath: Okay.
+
+147
+00:17:45.780 --> 00:17:56.639
+Ashwin Kamath: cool. That sounds good to me. Cool. Thank you. Okay. So I'll probably validate that as well. Just to make sure the error, error case error case error case.
+
+148
+00:17:57.245 --> 00:18:05.050
+Ashwin Kamath: I'll probably if you have a sample that'll be great, or else I'll generate one and and confirm with you, Sanjeev. Okay. Pvc.
+
+149
+00:18:05.960 --> 00:18:16.180
+Ashwin Kamath: Will return a error when no rules are matched, no rules managed or input criteria.
+
+150
+00:18:18.260 --> 00:18:31.007
+Ashwin Kamath: Okay, cool. That is cool. Now, reporting bucket. How is reporting bucket used? sanjeev or I I'm not sure I I think it's a direct question
+
+151
+00:18:31.830 --> 00:18:35.609
+Jagannath Sahoo: I think, bucket. I think this you might have seen in the order Api, right
+
+152
+00:18:35.610 --> 00:18:36.570
+Ashwin Kamath: Yes, yes.
+
+153
+00:18:36.570 --> 00:18:40.247
+Jagannath Sahoo: It's optional. Just ignore. We are going to remove this one. And
+
+154
+00:18:42.500 --> 00:18:47.018
+Jagannath Sahoo: there is no need. We-we are in the inter interpret
+
+155
+00:18:47.915 --> 00:18:55.600
+Jagannath Sahoo: interest to source and send this one. But now we are not in not going to take from source. It will be auto calculated
+
+156
+00:18:58.440 --> 00:19:04.359
+Niraj Agarwal: And then what about the source source will be? Are we still trying to define the source for it?
+
+157
+00:19:04.870 --> 00:19:07.450
+Niraj Agarwal: For the orders coming from Ecx.
+
+158
+00:19:08.949 --> 00:19:10.189
+Jagannath Sahoo: Sx source
+
+159
+00:19:11.860 --> 00:19:21.859
+Jagannath Sahoo: right now everything. If any anything, come from the portal, it is internal portal. What source ashin? Last time we talked about, you are going to say, give some good name in the source
+
+160
+00:19:22.370 --> 00:19:22.960
+Ashwin Kamath: You know.
+
+161
+00:19:22.960 --> 00:19:26.000
+Jagannath Sahoo: Or you want to give some good name. I'm open
+
+162
+00:19:26.757 --> 00:19:42.260
+Ashwin Kamath: Yeah, yeah, I I think we talked about it. But you know what? See? I'll tell you what my challenge is. Okay. Let me bring that share. The put this other screen in just one sec. So I I know we talked about it. And and this is what we talked about. So let me share my screen, and we can talk through it.
+
+163
+00:19:42.843 --> 00:19:45.949
+Ashwin Kamath: So desktop one desktop, one. Okay, share.
+
+164
+00:19:46.200 --> 00:19:55.859
+Ashwin Kamath: So let me know when you can see my screen. If the font is too small, do let me know I can, I can expand it. So the question was, so. So here, here's the thing right
+
+165
+00:19:55.860 --> 00:19:58.789
+Jagannath Sahoo: Yeah. Please. Please. Zoom in, actually.
+
+166
+00:19:58.790 --> 00:19:59.400
+Ashwin Kamath: Okay, okay.
+
+167
+00:20:00.060 --> 00:20:10.590
+Ashwin Kamath: okay, okay, so process name app source channel. Okay? So I I see all 3 are there. So so my question was.
+
+168
+00:20:11.320 --> 00:20:17.120
+Ashwin Kamath: when do we use which one? And what is the what is the intention of each of them is is something that I wanted to click on
+
+169
+00:20:17.120 --> 00:20:22.619
+Jagannath Sahoo: This process name is not for portal or upsource is not for anybody
+
+170
+00:20:23.291 --> 00:20:25.599
+Jagannath Sahoo: only the uses. A Channel
+
+171
+00:20:27.110 --> 00:20:44.670
+Jagannath Sahoo: process name is is that this process name is coming from 2 different commerce. So to to identify. They have given this one. But for rest of our portal channel is the only only source which we are talking about. Who is the source? It will decide by the channel
+
+172
+00:20:48.350 --> 00:20:48.950
+Ashwin Kamath: Hmm.
+
+173
+00:20:49.270 --> 00:21:02.999
+Ashwin Kamath: So what you're saying is process name is just to make sure I I'm I'm calling it out correctly. So what you're saying is process. Name is not something that is important. App source is also not important. Channel is the only thing that really matters
+
+174
+00:21:03.000 --> 00:21:03.680
+Jagannath Sahoo: Correct.
+
+175
+00:21:04.230 --> 00:21:09.829
+Ashwin Kamath: Okay, okay, is there any plan to then remove those, or or or rationalize those
+
+176
+00:21:09.830 --> 00:21:17.280
+Jagannath Sahoo: This is as this is, Api is generally for irrespect of any domain tomorrow or today. on boarded them right?
+
+177
+00:21:17.400 --> 00:21:22.763
+Jagannath Sahoo: So, for every application has some kind of a phone needs
+
+178
+00:21:23.665 --> 00:21:26.819
+Jagannath Sahoo: process up there. So that's why we introduced this one
+
+179
+00:21:27.820 --> 00:21:37.400
+Jagannath Sahoo: apps process is nothing. That is this purely solutional perspective, only processing which company could be. Because of that, they have to multiple 2 commerce process right now.
+
+180
+00:21:37.580 --> 00:21:40.879
+Jagannath Sahoo: So you can ignore. This is not a mandatory. Actually, it's optional. One
+
+181
+00:21:41.100 --> 00:21:50.800
+Ashwin Kamath: Yeah. Yeah. Got it? Okay? Perfectly fine. My, my, I have a follow up question, though, on channel. Okay? The the follow up question on channel is cancel and stop cancel. Okay, what happened?
+
+182
+00:21:51.770 --> 00:22:05.570
+Ashwin Kamath: Okay, yeah. Okay, so channel, right here, here's what I noticed. Okay? And and and and let me know if I'm incorrect here. So if you look at it right? So it seems like there is a system where we are defining channels is this is this, is, this
+
+183
+00:22:06.170 --> 00:22:20.470
+Ashwin Kamath: is accurate. Jagan. So my question is again, for channel, there is an Id call id field. Okay? Which seems like it's not validated. But my question is, are we, are we keeping a a set of channels defined somewhere? And I should use a specific id to indicate this
+
+184
+00:22:20.470 --> 00:22:26.100
+Jagannath Sahoo: Yeah, this is enum. Basically, it is enum. It has to be dependent service now on the dice level.
+
+185
+00:22:26.530 --> 00:22:28.986
+Jagannath Sahoo: because the end of all end ups are in
+
+186
+00:22:29.470 --> 00:22:31.329
+Jagannath Sahoo: Okay, still, 38,
+
+187
+00:22:31.550 --> 00:22:40.400
+Ashwin Kamath: Yeah, because see? Right now, if you look at it right channel, we are not standardizing it, anyway. Okay? So if you look at channel where it goes. Sorry. Just give me a second. I will
+
+188
+00:22:40.400 --> 00:22:47.918
+Jagannath Sahoo: Yeah, I know who right now, there's so many information there. Those are. Those are mostly out of box. Okay?
+
+189
+00:22:48.670 --> 00:22:49.880
+Sanjeev Kumar Yadav: Don't get price
+
+190
+00:22:50.080 --> 00:22:53.606
+Ashwin Kamath: Yeah, yeah, I realized it. Sorry. Yeah.
+
+191
+00:22:54.110 --> 00:22:54.700
+Jagannath Sahoo: Yeah, yeah.
+
+192
+00:22:54.700 --> 00:23:00.099
+Ashwin Kamath: Panel details here. Yeah, so this is an id unique identifier. It cannot be an enum. Is my understanding
+
+193
+00:23:00.240 --> 00:23:04.169
+Jagannath Sahoo: No, no, no name, name, name is is. You can see an example zone right
+
+194
+00:23:04.170 --> 00:23:09.859
+Ashwin Kamath: Okay, but then, but then, but then, right now, in my catalog Api, it seems like it's an identity uid
+
+195
+00:23:09.860 --> 00:23:30.279
+Jagannath Sahoo: Yeah, yeah, no, this is not a actually this id, what? What we are referring to. But what about naming convention? Suppose you want to keep that will be considered as a source, or we can continue, if you like, continuous, we can continue the Ecs
+
+196
+00:23:30.730 --> 00:23:41.779
+Ashwin Kamath: Okay, okay, but okay, not to stretch it further. But, Jagan, I I think right. What I'm trying to say is, are we planning to create a single source of truth for channels is my question. I had okay in any
+
+197
+00:23:41.780 --> 00:23:44.529
+Jagannath Sahoo: Single single source of truth, channel.
+
+198
+00:23:44.820 --> 00:23:50.059
+Ashwin Kamath: So, but which system is which? Api, which system will keep? It is my question, where are we planning to keep track of it?
+
+199
+00:23:50.340 --> 00:23:51.070
+Ashwin Kamath: If I
+
+200
+00:23:51.070 --> 00:23:51.710
+Jagannath Sahoo: Isn't service now.
+
+201
+00:23:51.710 --> 00:23:55.590
+Ashwin Kamath: I mean. I may be right now, but but it's something that we may want to keep in mind
+
+202
+00:23:56.040 --> 00:24:03.509
+Jagannath Sahoo: Yeah, it is right now in service. Now we are maintaining the single source of truth. Okay? And So
+
+203
+00:24:03.510 --> 00:24:12.869
+Ashwin Kamath: If I want to onboard my system as a channel, then I can. I can add it, add myself in there, and then use the id from there as my id as a standard lockdown. Id right
+
+204
+00:24:12.870 --> 00:24:24.849
+Jagannath Sahoo: Yes. So if you suppose you want to use because your source, you tell me the what channel. So that setup we need to do in so it will be similar slow.
+
+205
+00:24:25.270 --> 00:24:41.019
+Ashwin Kamath: Awesome cool. Thank you. That was very clear. That helpful thank you. Thank you. That that clarifies so essentially what we're saying is, sanjeev, do you have? Do you have any concerns with this? Then, essentially, we are saying, we'll use channel and not, we will not be sending process anymore, app source is that, okay.
+
+206
+00:24:41.530 --> 00:24:43.979
+Sanjeev Kumar Yadav: For get price. Api. We don't have a service. We
+
+207
+00:24:43.980 --> 00:24:51.550
+Ashwin Kamath: Yeah, yeah, I know, I know, I know. But but yeah, for order. Api, I understand. If the do you see any concerns from a 3rd party perspective Sanjeev
+
+208
+00:24:51.800 --> 00:24:53.690
+Sanjeev Kumar Yadav: No, I think it should be
+
+209
+00:24:53.959 --> 00:25:02.569
+Niraj Agarwal: Can you make? And channel should be mandatory like you? You mentioned that all the attributes are non mandatory. That should not be the case we should have at least channel mandatory
+
+210
+00:25:02.570 --> 00:25:16.946
+Ashwin Kamath: Yeah, yeah, you know. Actually, you know, what see? Channel is not marked as mandatory. Id is marked as mandatory. But you're right. 100% right? Neeraj agreed. Channel should be mandatory, and I think that is what? Yes, let me make a note, and and and and then we'll we'll channel should be mandatory. Yes, yes,
+
+211
+00:25:18.710 --> 00:25:27.569
+Ashwin Kamath: auto Api Jonathan, in mandatory.
+
+212
+00:25:28.860 --> 00:25:29.695
+Ashwin Kamath: Okay.
+
+213
+00:25:30.640 --> 00:25:46.940
+Ashwin Kamath: cool. That is neat so like I called out at the beginning of the meeting as well. Right, Jagan. Sanjeev. A lot of information came my way yesterday night. So so so I'm still digesting it, and that's the reason my level of questions. I'm I'm not very structured with my questions.
+
+214
+00:25:46.940 --> 00:25:51.559
+Jagannath Sahoo: No, no rejection. We are always our level. We are not going in there
+
+215
+00:25:52.350 --> 00:25:56.799
+Jagannath Sahoo: anytime. You have some time you want to discuss with us just ping and call
+
+216
+00:25:57.190 --> 00:26:07.500
+Ashwin Kamath: Yeah, no, no, this is really good. Now, I have a couple of more questions. Okay, so here's here's my question. And this is more about. I wanted to understand how. How should I integrate? Okay, so external product inventory.
+
+217
+00:26:08.390 --> 00:26:10.416
+Ashwin Kamath: Id, okay.
+
+218
+00:26:14.200 --> 00:26:17.750
+Jagannath Sahoo: Id. We are providing as part of the product inventory
+
+219
+00:26:18.210 --> 00:26:30.169
+Ashwin Kamath: Oh, okay. So now my question is, will this be available when I make a get call on the order? When I make a get call on the closed order. Essentially, if I get, do a search, di H.
+
+220
+00:26:30.170 --> 00:26:36.120
+Jagannath Sahoo: No, it it won't be available in the get order. It will available in. Get product inventory
+
+221
+00:26:36.770 --> 00:26:41.279
+Ashwin Kamath: But here's the question. Now see in inventory. How will I search for it?
+
+222
+00:26:42.230 --> 00:26:44.529
+Ashwin Kamath: My question is, I don't have this number.
+
+223
+00:26:44.890 --> 00:26:45.410
+Ashwin Kamath: Okay.
+
+224
+00:26:45.410 --> 00:26:49.100
+Jagannath Sahoo: No, you don't need to know. Your inventory is based on the account of right
+
+225
+00:26:49.440 --> 00:26:54.239
+Ashwin Kamath: Yeah, yeah. But but okay, so my my question is, let's assume I create something here.
+
+226
+00:26:54.720 --> 00:26:55.450
+Ashwin Kamath: Okay.
+
+227
+00:26:55.977 --> 00:27:02.219
+Ashwin Kamath: Using this Api. Now, which entry was created here by that order, how would I know that
+
+228
+00:27:04.220 --> 00:27:08.020
+Jagannath Sahoo: Which entry you want to with right now. We don't have a user
+
+229
+00:27:08.020 --> 00:27:12.799
+Ashwin Kamath: Which which sold inventory which sold inventory was created by that order
+
+230
+00:27:13.410 --> 00:27:14.439
+Ashwin Kamath: How would I know that
+
+231
+00:27:15.532 --> 00:27:18.700
+Jagannath Sahoo: I don't so far. Okay, week. If you want
+
+232
+00:27:18.910 --> 00:27:21.145
+Ashwin Kamath: No, no, I'm
+
+233
+00:27:21.890 --> 00:27:22.299
+Jagannath Sahoo: I can do
+
+234
+00:27:22.300 --> 00:27:23.220
+Ashwin Kamath: Right now, Jagan, but
+
+235
+00:27:23.220 --> 00:27:34.050
+Jagannath Sahoo: No, no, right now we not. We so far depend upon the all cross functional domain or applications. Whatever use cases they're given based on that the Api is built.
+
+236
+00:27:34.360 --> 00:27:35.239
+Ashwin Kamath: Okay. Okay. Okay.
+
+237
+00:27:35.240 --> 00:27:38.500
+Jagannath Sahoo: On your case which you're asking. Nobody asked for that
+
+238
+00:27:38.500 --> 00:27:39.120
+Ashwin Kamath: Okay. Okay.
+
+239
+00:27:39.120 --> 00:27:47.409
+Jagannath Sahoo: So if you want subject, so if you show me some use cases, and then we cannot build for a get. For with that query. So not in big account
+
+240
+00:27:47.410 --> 00:28:05.580
+Ashwin Kamath: Okay, great cool. Because, see, I I believe, and I may be wrong here. But, Jagan, my, my, I believe what may be required is okay, is Dhv to orders. Inventory search. Right now, you have account Id and product inventory number. Okay? So I have product inventory number and account.
+
+241
+00:28:06.250 --> 00:28:18.400
+Ashwin Kamath: id right? So so the question I have is, the question I have is we. We may be wanting to search, based on a specific order characteristic
+
+242
+00:28:20.590 --> 00:28:25.360
+Jagannath Sahoo: Okay, specific. No, that is, you will get and not now.
+
+243
+00:28:25.390 --> 00:28:55.309
+Jagannath Sahoo: If you want to search in the order of statistics that you'll get the once asset, Cdm. Will be ready in the post. Then you'll get a multiple Apis for all this use cases so right now, as since asset is not ready. It's on the discussion plate, so you will get those kind of. But right now, if you have 3, if you have something required, I'm happy to enable for you, for temporary purpose.
+
+244
+00:28:55.310 --> 00:29:00.980
+Ashwin Kamath: No, no. Okay. Then then here, here's I. I wouldn't want you to build anything throwaway to be very honest. Okay? So
+
+245
+00:29:00.980 --> 00:29:02.240
+Jagannath Sahoo: No, no, that's what I said.
+
+246
+00:29:02.240 --> 00:29:05.820
+Ashwin Kamath: I wouldn't want to do that. I wouldn't want you to do that either. Okay, so here's exactly
+
+247
+00:29:05.820 --> 00:29:10.020
+Ashwin Kamath: yeah. Here's my question. Okay? So my, here's my question now, what is integration? Id, then how is
+
+248
+00:29:10.020 --> 00:29:31.410
+Jagannath Sahoo: Okay required or not for add order. Basically, it is required for the change order. So for you, if it is you, if you're talking about, create order. Api, for add order. International, not required. It is, it is not required is optional for you
+
+249
+00:29:31.410 --> 00:29:34.600
+Ashwin Kamath: Okay for update order. Essentially, integration. Id will be, whatever is there
+
+250
+00:29:34.600 --> 00:29:43.290
+Jagannath Sahoo: Mandatory. Yes, and this invitation id you will get when you get the solid mantra you will get the invitation id as part part of the payload
+
+251
+00:29:43.710 --> 00:29:49.990
+Ashwin Kamath: Integration. Id. But here's my question. Okay, how is okay? My question is.
+
+252
+00:29:50.320 --> 00:29:56.920
+Ashwin Kamath: is, this is, is, this is, go as a part of the request payload, or this is a part of the response, payload. External product, inventory, inventory. Id. This
+
+253
+00:29:56.920 --> 00:29:59.929
+Jagannath Sahoo: It's it's basically response via payload
+
+254
+00:30:02.090 --> 00:30:05.249
+Ashwin Kamath: Hmm! But why do we have 2 values for the same
+
+255
+00:30:05.250 --> 00:30:31.409
+Jagannath Sahoo: So this is for, yeah. The okay. The okay. Let me tell you this, these are all the past. When you do a get special inventory. This is for all or every part of the response payload. Okay, so now you are doing something sometimes as change, you are doing some change in characteristics or adding some extra lag. For example, for your case, or change the package type for your case. Okay, so in this case.
+
+256
+00:30:31.580 --> 00:30:38.229
+Jagannath Sahoo: when you are sending the change. Order Api, in change of payday. We are expecting this external id and intention. Id
+
+257
+00:30:38.410 --> 00:30:39.790
+Ashwin Kamath: You're expecting both of them
+
+258
+00:30:39.790 --> 00:30:40.530
+Jagannath Sahoo: Yes.
+
+259
+00:30:41.360 --> 00:30:42.330
+Ashwin Kamath: Why 2.
+
+260
+00:30:42.866 --> 00:30:47.159
+Jagannath Sahoo: External id to associate the product. Intention. Id.
+
+261
+00:30:47.440 --> 00:30:54.540
+Jagannath Sahoo: It is for the Osm for subscription. To identify which of subscription price need to be changed
+
+262
+00:30:54.980 --> 00:31:01.799
+Ashwin Kamath: Okay. But, Mike, okay, so here's my question. Now, if a single order had 5 lines, then would they all have the same integration? Id
+
+263
+00:31:01.800 --> 00:31:04.439
+Jagannath Sahoo: No, all our different intention ids
+
+264
+00:31:04.700 --> 00:31:05.679
+Ashwin Kamath: Okay. Now, if I
+
+265
+00:31:05.680 --> 00:31:08.099
+Jagannath Sahoo: It's unique. It's unique. Across the platform
+
+266
+00:31:08.100 --> 00:31:16.239
+Ashwin Kamath: If it if I had one line, if I had one line with 5 quantity. Essentially, I'll essentially have 5 integration ids created
+
+267
+00:31:17.367 --> 00:31:23.959
+Jagannath Sahoo: If you're talking order. Yes, essentially, at the end of day you'll it will create 5. In addition. Ids.
+
+268
+00:31:23.960 --> 00:31:33.290
+Ashwin Kamath: Okay. So now, my question is, now, how is external product? Inventory? Id, where? Where is that? That is also generated at the sold inventory level.
+
+269
+00:31:34.380 --> 00:31:35.700
+Ashwin Kamath: Sorry. Sorry comment. Can you repeat
+
+270
+00:31:35.700 --> 00:31:40.080
+Ashwin Kamath: external product inventory? Id is also generated at the sold inventory level
+
+271
+00:31:40.766 --> 00:31:46.320
+Jagannath Sahoo: This isn't generated at sole inventory level when the sole inventory get created.
+
+272
+00:31:47.910 --> 00:31:53.720
+Jagannath Sahoo: but in person id generated at order line level. When order get created, there's a difference.
+
+273
+00:31:58.230 --> 00:32:05.870
+Ashwin Kamath: Hmm, okay, okay, okay, okay. Now, I think I get a point. So then, essentially, I should be able to get the integration Id from my domain. Order
+
+274
+00:32:06.300 --> 00:32:07.560
+Jagannath Sahoo: Yes, you'll get. Yes.
+
+275
+00:32:07.920 --> 00:32:08.819
+Ashwin Kamath: Okay, huh?
+
+276
+00:32:08.820 --> 00:32:12.480
+Jagannath Sahoo: Not dominator. When you get a sold short inventory, when you get
+
+277
+00:32:12.480 --> 00:32:20.600
+Ashwin Kamath: No, no, no! But here's here's my question now, see? And and that is what I was trying to understand. See, you heard if I look at it right right now, if integration Id is created at this level.
+
+278
+00:32:21.310 --> 00:32:25.180
+Ashwin Kamath: Okay, then, essentially on my domain order theoretically.
+
+279
+00:32:25.557 --> 00:32:31.450
+Ashwin Kamath: Jagan, okay, then, wouldn't my integration Id be available here at this point of time? Yes, it is there. Here, see
+
+280
+00:32:31.450 --> 00:32:34.822
+Jagannath Sahoo: It. It will be their intention. Id. But, for example,
+
+281
+00:32:35.330 --> 00:32:38.020
+Jagannath Sahoo: How? I'll give the example. Suppose you have the
+
+282
+00:32:38.230 --> 00:32:41.469
+Jagannath Sahoo: you are sending high port. Okay.
+
+283
+00:32:41.470 --> 00:32:41.940
+Ashwin Kamath: Yes.
+
+284
+00:32:41.940 --> 00:32:42.770
+Jagannath Sahoo: So we
+
+285
+00:32:42.770 --> 00:32:55.720
+Ashwin Kamath: And that will if I if I say 5 ports, let me give that example. Okay, great point. Okay, so let's say a 1 line, same port Abcd. And all characteristics are same. Quantity is 5. So then 5 domain orders will be created product domain
+
+286
+00:32:55.720 --> 00:33:04.889
+Jagannath Sahoo: Yeah, no, before you go to dominant. Yes, you are right, absolutely dominant of 5 created, but before even it the the 5 February 4th will be created 5
+
+287
+00:33:05.420 --> 00:33:07.359
+Jagannath Sahoo: high order line items.
+
+288
+00:33:07.530 --> 00:33:07.970
+Ashwin Kamath: Yes.
+
+289
+00:33:07.970 --> 00:33:08.410
+Jagannath Sahoo: Okay.
+
+290
+00:33:08.410 --> 00:33:10.280
+Ashwin Kamath: Oh, oh, order line items.
+
+291
+00:33:10.280 --> 00:33:11.000
+Jagannath Sahoo: Yes.
+
+292
+00:33:11.160 --> 00:33:32.110
+Jagannath Sahoo: So you are sending me one. Okay, in order one. But because it's a quantity 5. It will be passed on. Group into the 5 order line items. Okay? And each order line items has a 1 unique intention. Id, which refer by the subscription model in the Osm billing
+
+293
+00:33:32.110 --> 00:33:40.499
+Ashwin Kamath: Just just before you proceed. So my question is the order line I sent, and the order line that you decompose in into different term for it, or
+
+294
+00:33:40.840 --> 00:33:42.010
+Ashwin Kamath: 4th quarter is fine
+
+295
+00:33:42.010 --> 00:33:44.400
+Jagannath Sahoo: Yes, it's a different term, because before
+
+296
+00:33:44.890 --> 00:33:53.080
+Jagannath Sahoo: completion, first, st this quantity need to be. This order line need to be on group into 5, offering
+
+297
+00:33:54.790 --> 00:33:59.789
+Ashwin Kamath: Okay, got it. Okay, cool. I think I got it. So what we're saying is, order line post. The Comp
+
+298
+00:34:00.170 --> 00:34:03.360
+Jagannath Sahoo: Yeah, order each other line will be cooperative. Yes, you are right.
+
+299
+00:34:03.360 --> 00:34:05.479
+Ashwin Kamath: Post decom. Okay, cool.
+
+300
+00:34:06.340 --> 00:34:10.520
+Ashwin Kamath: Alrighty. Okay. Cool. I am not sure if I put it right. But yeah, I think
+
+301
+00:34:10.520 --> 00:34:13.309
+Jagannath Sahoo: No, no, you put right things so you don't
+
+302
+00:34:14.290 --> 00:34:15.290
+Ashwin Kamath: Yeah, okay.
+
+303
+00:34:16.250 --> 00:34:24.650
+Jagannath Sahoo: So that's how the sub means. Osm billing system works. Billing system cannot bill for a 5 port. It has to one.
+
+304
+00:34:24.650 --> 00:34:25.210
+Jagannath Sahoo: Yeah, yeah.
+
+305
+00:34:25.219 --> 00:34:25.859
+Jagannath Sahoo: What
+
+306
+00:34:25.860 --> 00:34:44.349
+Ashwin Kamath: Yeah, yeah, yeah, I I agree, I agree, I agree, okay, okay. But I I was not aware that you actually have, or you actually decompose the order line itself into multiple lines. I thought you did it at the domain order level. Okay? But cool. Got it. Okay. But now, but from my perspective. When I look at the order because I created one line, I'll still see one line right, or I'll see 5 lines. Now.
+
+307
+00:34:44.350 --> 00:34:45.780
+Jagannath Sahoo: You'll see pipelines.
+
+308
+00:34:47.800 --> 00:34:49.649
+Ashwin Kamath: With, now, how do you map that?
+
+309
+00:34:50.389 --> 00:34:55.690
+Ashwin Kamath: Okay, okay.
+
+310
+00:34:55.989 --> 00:35:04.350
+Ashwin Kamath: so how do you okay, okay, okay, now, how do you map the id that I sent into the file lines. Would you add one dot, 1, 1 dot, 2, 1 dot, 3 like that
+
+311
+00:35:04.670 --> 00:35:05.620
+Jagannath Sahoo: Which id
+
+312
+00:35:05.620 --> 00:35:13.959
+Ashwin Kamath: So so if you look at my sorry, I'm scrolling too fast, maybe. Okay, my question is, here we go. Okay. So this id that I put in this Id. I'm sending it right
+
+313
+00:35:15.832 --> 00:35:21.049
+Jagannath Sahoo: This id, this is normal time we're looking for a unique id. That's fine
+
+314
+00:35:21.050 --> 00:35:25.329
+Ashwin Kamath: Yeah. But now see, let's assume. I added a line item here, and I put Ps 5. Okay, do I
+
+315
+00:35:25.330 --> 00:35:25.730
+Jagannath Sahoo: Okay.
+
+316
+00:35:25.730 --> 00:35:27.159
+Ashwin Kamath: Here, yes, so
+
+317
+00:35:27.160 --> 00:35:34.829
+Jagannath Sahoo: No, the the that line id is used for the to depend to figure out any parent child relationship
+
+318
+00:35:34.830 --> 00:35:36.330
+Ashwin Kamath: Yes, yes, understand?
+
+319
+00:35:36.330 --> 00:35:37.250
+Jagannath Sahoo: For that purpose
+
+320
+00:35:37.250 --> 00:35:44.630
+Ashwin Kamath: I I agree, I agree, I agree, I agree. But the question is, now post decomposition. Now this Id will be showing up on 10 lines
+
+321
+00:35:45.300 --> 00:35:46.949
+Jagannath Sahoo: This Id. We are not showing anywhere
+
+322
+00:35:47.890 --> 00:35:49.919
+Ashwin Kamath: You're not showing in the response anywhere at all on the order
+
+323
+00:35:49.920 --> 00:35:55.260
+Jagannath Sahoo: No, no, if you want, then we we if you want your line to be passed
+
+324
+00:35:55.705 --> 00:36:01.840
+Jagannath Sahoo: back to you, then we will be create a new place order for you. But we are not right now. We are not storing that
+
+325
+00:36:01.840 --> 00:36:07.859
+Ashwin Kamath: Okay. Okay, okay, fair enough. Fair enough. Okay. Good to know. But thank you. I was not aware. I did not check the
+
+326
+00:36:08.893 --> 00:36:23.359
+Jagannath Sahoo: Right? So maybe your case, it is just one. Pom. Think of space, power.
+
+327
+00:36:23.360 --> 00:36:24.539
+Ashwin Kamath: Understand. I understand, I understand.
+
+328
+00:36:24.540 --> 00:36:24.910
+Jagannath Sahoo: Go.
+
+329
+00:36:24.910 --> 00:36:30.086
+Ashwin Kamath: Yes, yes, yes, no, no, I completely understand. I agree. I agree. I it's just that right.
+
+330
+00:36:32.540 --> 00:36:37.690
+Ashwin Kamath: I'll tell you where where I, I'm not saying there are issues, but
+
+331
+00:36:39.330 --> 00:37:05.650
+Ashwin Kamath: this, this has interesting side effects. Okay? Because Verizon and all right, they have integrated with Ips. And I'm not directly on point for those integrations. Ecp team is okay. So as I, yeah, if you're listening. And so I know you're not a part of Ecp, but then just calling that out, okay, so Ecp, so essentially, the Verizon has always raised issues about the fact that right? We do not decompose these lines
+
+332
+00:37:05.887 --> 00:37:17.752
+Ashwin Kamath: systematically. Okay, in all the cases in the same way. Especially for digital products. I don't have the exact use cases. But that was something that was raised probably a year and a half back. And then those calls still go on. I'll probably get more details around it
+
+333
+00:37:17.990 --> 00:37:34.320
+Jagannath Sahoo: Yeah, from system, from system, intuition, point of view, there is no such challenge. If if some system want the Id to be referred, and they want that id part of the response. If they have a specific use case, we can accommodate that one. But right now
+
+334
+00:37:34.320 --> 00:37:40.549
+Ashwin Kamath: No, no, no, I like. I don't have the exact use cases or issues, but whenever I get in those meetings I'll definitely
+
+335
+00:37:40.820 --> 00:37:47.479
+Jagannath Sahoo: We can discuss that time. No problem. But right now I'm not. We are going as it is. If you did, we will work out accordingly.
+
+336
+00:37:47.480 --> 00:38:08.678
+Ashwin Kamath: All, all good, all good, cool, and item prices again. so just just an fy right I got the information from Praveen on how to map pricing Api call responses to this one. So I'm I'm still going through it. it seems okay for now? Jagan Sanjeev.
+
+337
+00:38:10.052 --> 00:38:13.980
+Ashwin Kamath: That is that is that is it from my side
+
+338
+00:38:13.980 --> 00:38:15.140
+Jagannath Sahoo: Yeah. Good. To know.
+
+339
+00:38:15.580 --> 00:38:19.809
+Ashwin Kamath: Yeah, yeah, yeah. And product offering offering. Id?
+
+340
+00:38:22.150 --> 00:38:24.608
+Jagannath Sahoo: You, you'll get offering ids
+
+341
+00:38:25.100 --> 00:38:26.100
+Ashwin Kamath: From catalog right
+
+342
+00:38:26.100 --> 00:38:28.870
+Jagannath Sahoo: The catalog. Yes, for a time it will give you id
+
+343
+00:38:28.870 --> 00:38:37.049
+Ashwin Kamath: Yes, yes, yes. And then, order item, specification. Id, order. So product specification. Again, this is also from the catalog. Right?
+
+344
+00:38:37.050 --> 00:38:55.570
+Jagannath Sahoo: Yes, anything with respect to the specification written. Id that id is from catalog anything. No, no, with not not written as a under the product or anything that is nothing but transaction. Id is, which is a very unique in that payload. As long as sending the inuk in that payload it will be automatically, relation will be established
+
+345
+00:38:57.070 --> 00:39:00.766
+Ashwin Kamath: Okay, okay, okay,
+
+346
+00:39:02.010 --> 00:39:15.570
+Ashwin Kamath: So I. So I, I still have a couple of questions open about the end state flow in terms of closure of order. I don't have it documented right now. Probably. For tomorrow's meeting. I'll I'll have that in a much better shape.
+
+347
+00:39:16.067 --> 00:39:20.499
+Ashwin Kamath: So the thought process is, I want to close out on once an order is placed.
+
+348
+00:39:21.310 --> 00:39:26.500
+Ashwin Kamath: how will I get the integration? Ids.
+
+349
+00:39:26.930 --> 00:39:47.529
+Ashwin Kamath: okay, so how will I? How will I be able to map for this? So here's my, here's my challenge. Okay, and kindly hear me out on this one. Okay? So my challenge is, I have from my from my portal perspective. Right? I have a connection uid, for example. Okay? And I'm sure operator portal will have the same challenge as well. I have a connection. Uid. Okay. Now for a given connection.
+
+350
+00:39:47.660 --> 00:39:51.199
+Ashwin Kamath: How do I know? How do I know which inventory does it map to?
+
+351
+00:39:51.540 --> 00:39:52.490
+Ashwin Kamath: Okay?
+
+352
+00:39:53.672 --> 00:40:07.400
+Ashwin Kamath: Because here I I when I've closed out on the when order closure comes across to me, I know the order that was associated with this is closed. But now, how do I map which
+
+353
+00:40:07.894 --> 00:40:13.590
+Ashwin Kamath: I'll have to essentially. What you're saying is, I'll have to read through all the inventory associated with an account.
+
+354
+00:40:14.450 --> 00:40:20.190
+Ashwin Kamath: and then find out which is the
+
+355
+00:40:20.300 --> 00:40:31.090
+Ashwin Kamath: characteristic that matches with the uid I had sent, and and then and then derive the integration. Id and the product inventory number. Is that is that what you're suggesting
+
+356
+00:40:31.090 --> 00:40:34.839
+Jagannath Sahoo: Okay, let me, step by step, to help you out. Understand?
+
+357
+00:40:34.840 --> 00:40:35.250
+Ashwin Kamath: Yeah.
+
+358
+00:40:35.250 --> 00:40:38.119
+Jagannath Sahoo: So you initiated a public port order. Okay?
+
+359
+00:40:38.970 --> 00:40:51.610
+Jagannath Sahoo: Order. Can we have in different order lifecycle? We are always emitting the the transaction details to cap cut event. Okay? So you always can read the cup event right now. You are already trading in the domain address.
+
+360
+00:40:51.870 --> 00:41:20.139
+Jagannath Sahoo: So once, Dominator, get close in the close domino. You might you. There is, if you notice, in the dominator contract there is called product inventory. So product inventory might have populated when it, we get close and close. It's emitting. Okay, that's the one hint. Second hint. Is that so? Once you go. So with the same name, port and port service and then see
+
+361
+00:41:20.668 --> 00:41:26.520
+Jagannath Sahoo: sole inventory get created product inventory get created. Okay? So right now, if you
+
+362
+00:41:27.133 --> 00:41:42.480
+Jagannath Sahoo: call the Api get Api with account. It will give you all the inventory details, basically fabric across 3. All 3 will be there or we need Pd. Will be. Pd. Will be there. Okay, as I said.
+
+363
+00:41:42.940 --> 00:41:51.440
+Jagannath Sahoo: But if you want a specific scenario, specific use cases, just bring that one. We'll see how quickly we can enable for you
+
+364
+00:41:51.690 --> 00:42:01.210
+Ashwin Kamath: Okay. Okay, okay, I I think you know, I I'll probably need to spend some more time on this aspect before I have a a form. Ask on this one. Jagan, okay.
+
+365
+00:42:01.210 --> 00:42:14.950
+Jagannath Sahoo: Yeah, take your time. But yeah, but sooner you will get it easy, because we also need to build the contract and give to you. Walk through you that build in system. Then you'll continue and play around with that
+
+366
+00:42:16.380 --> 00:42:17.349
+Jagannath Sahoo: the last moment. Yeah.
+
+367
+00:42:17.350 --> 00:42:20.789
+Ashwin Kamath: Yeah, I completely agree. I I plan to close it out. In the next 3 days. Jalen
+
+368
+00:42:21.000 --> 00:42:22.210
+Jagannath Sahoo: Oh, okay, that's great. Yeah.
+
+369
+00:42:22.210 --> 00:42:40.249
+Ashwin Kamath: Okay. So I'm keeping a target of closing out my entire design, Doc, in the next 3 days. That's the target of kept internally. Okay, so I am recording. I shouldn't have said that. But anyways, yeah. So so the next part is essentially now on the sold inventory, right? Sold inventory product. Identifier. What is this essentially
+
+370
+00:42:42.650 --> 00:42:44.299
+Jagannath Sahoo: Sorry. Can you repeat me?
+
+371
+00:42:44.300 --> 00:42:49.079
+Ashwin Kamath: Sold inventory product identifier. Is this the uuid that I'm setting on the product side or
+
+372
+00:42:49.080 --> 00:42:52.760
+Jagannath Sahoo: It's a product name. Actually, this is a product identifier for industry
+
+373
+00:42:52.760 --> 00:43:04.840
+Ashwin Kamath: Oh, okay, okay, okay, okay. And and essentially, then what you're telling, what I'm able to get is essentially the Uu id that I'm sending across as a part of update
+
+374
+00:43:04.840 --> 00:43:07.660
+Jagannath Sahoo: Those are characteristics. Uuid is a part of characteristics
+
+375
+00:43:07.660 --> 00:43:16.120
+Ashwin Kamath: Okay? So here's my question. Now, okay, for connections for service for ports. I know we were patching the service domain order. We were never updating the product domain order.
+
+376
+00:43:16.810 --> 00:43:42.060
+Ashwin Kamath: Okay, so today, today, the way it works is right, if you look at it for ports, let me minimize this. I've just put out steps here. Okay? So I create a port. And then once I get the event, I'll search for the task. Okay? And then we search for the domain order product domain order, search for the service domain order. I think both of them is done using the single search Api today. Using the order. Okay? And then I patch the service domain order. That is what we do today. Okay.
+
+377
+00:43:42.060 --> 00:43:42.820
+Jagannath Sahoo: Correct, exactly
+
+378
+00:43:42.820 --> 00:43:45.750
+Ashwin Kamath: Okay. But I don't patch the product domain order today.
+
+379
+00:43:45.980 --> 00:43:49.450
+Ashwin Kamath: Okay, I I just, I pass the service, got it.
+
+380
+00:43:49.450 --> 00:44:08.949
+Ashwin Kamath: And I pass the update. And I update the order task. Okay? And the production order is updated. Okay? So my question is, the the uuid of the port is sent across as a part of the service domain order for ports. Okay? But my question is for orders for connections. How we? How do we plan to do it? Because I don't have a service there, if I understand correctly. Okay,
+
+381
+00:44:09.220 --> 00:44:25.049
+Ashwin Kamath: And and now, when when a task comes in for fulfillment, okay? So I search for the order task. Okay, I also search for the domain order associated with that order. Okay, so I I get the connection details. Now, who do I pass the connection uid across.
+
+382
+00:44:25.363 --> 00:44:32.209
+Ashwin Kamath: How do I? I do. I pass the product domain order. My understanding was that is not something that we we said is is okay.
+
+383
+00:44:32.210 --> 00:44:38.178
+Jagannath Sahoo: Okay, so for connection, basically virtual connection scenario, it will be product too many auto update. Because,
+
+384
+00:44:38.510 --> 00:44:39.270
+Ashwin Kamath: Okay. Horrible.
+
+385
+00:44:39.270 --> 00:44:41.310
+Jagannath Sahoo: We see there is no service
+
+386
+00:44:41.310 --> 00:44:43.629
+Ashwin Kamath: Yeah, yeah, I know, I know. Okay, cool.
+
+387
+00:44:43.790 --> 00:44:54.870
+Ashwin Kamath: Okay, yeah, perfectly fine. Okay, so then, then, I updated order task these, I still need to figure out, how do I derive the inventory? Id for that for that line? That is really what I
+
+388
+00:44:54.870 --> 00:45:20.290
+Jagannath Sahoo: Maybe I'll give a sample data to you, or you might have going in a sighted moment. If you're because a lot of people are testing. if you might have, you might have get already getting the events in your topic. You can just have a look. If any provider gets close, you might have seen the corresponding Pi Pi product inventory. It will be there. They may maybe call us Pi, or provide. Inventory
+
+389
+00:45:20.430 --> 00:45:25.219
+Jagannath Sahoo: has the value. Starting with the PI. 0, 1, 2, 3, 4, like that. The number will be
+
+390
+00:45:26.030 --> 00:45:27.390
+Ashwin Kamath: Okay. Okay.
+
+391
+00:45:27.660 --> 00:45:28.880
+Jagannath Sahoo: Or I'll give you sample data
+
+392
+00:45:28.880 --> 00:45:40.279
+Ashwin Kamath: Here. Here's here's a question. Okay? I'm just just throwing it out there. Okay, I understand. Auto task closure will send me an emit an event. Okay? Does sold inventory also have an event
+
+393
+00:45:41.335 --> 00:45:58.669
+Jagannath Sahoo: Sole inventory. Don't have event right now. If you are required, we will do right. Now. I do not receive any use case to solo, because sole inventories all our Api, which operator portal is looking for, we build a pay for them. So if you want event, we can do that event as well
+
+394
+00:45:59.650 --> 00:46:00.200
+Ashwin Kamath: Hmm!
+
+395
+00:46:00.560 --> 00:46:04.640
+Ashwin Kamath: I'm just trying to. You get my challenge. You get my thought process right? So essentially
+
+396
+00:46:04.640 --> 00:46:05.240
+Jagannath Sahoo: No, no! I got
+
+397
+00:46:06.990 --> 00:46:07.680
+Ashwin Kamath: What I'm
+
+398
+00:46:07.680 --> 00:46:20.400
+Jagannath Sahoo: No, I'm in line with you. I'm completely in line with you. Just take your time. Give me what you are expecting. I'll I'll ensure a service is enabled for you
+
+399
+00:46:21.690 --> 00:46:22.410
+Ashwin Kamath: Okay.
+
+400
+00:46:22.580 --> 00:46:23.280
+Ashwin Kamath: Cool.
+
+401
+00:46:24.220 --> 00:46:27.629
+Jagannath Sahoo: Either Api way or either event, way, whichever you like.
+
+402
+00:46:27.630 --> 00:46:32.570
+Ashwin Kamath: Okay, Api versus events, but which one would you prefer? Which one do you think scales better
+
+403
+00:46:33.349 --> 00:46:44.810
+Jagannath Sahoo: Event will be better, because if tomorrow another domain will be one, they they can also consume that event, and it is much better means it's
+
+404
+00:46:44.810 --> 00:46:45.250
+Ashwin Kamath: It's good
+
+405
+00:46:45.587 --> 00:46:46.600
+Jagannath Sahoo: It's much better
+
+406
+00:46:46.600 --> 00:46:51.729
+Ashwin Kamath: It will scale way. Better. Actually, to be very honest. Yeah, I agree. I agree. Yes, okay. I
+
+407
+00:46:52.134 --> 00:46:59.409
+Jagannath Sahoo: Already the already exist for solitatory, so that can be reused also at any point of time.
+
+408
+00:46:59.890 --> 00:47:06.289
+Ashwin Kamath: Hmm, yes, sir. Yes, sir. Okay. Good. Tending towards
+
+409
+00:47:06.840 --> 00:47:12.009
+Ashwin Kamath: events. Okay, I'll probably double click again. Okay.
+
+410
+00:47:12.550 --> 00:47:17.920
+Ashwin Kamath: yes, sir. So, because for me events will make it seamless, for across all products
+
+411
+00:47:18.170 --> 00:47:19.439
+Jagannath Sahoo: I'm happy to do that
+
+412
+00:47:19.440 --> 00:47:20.630
+Ashwin Kamath: Yeah, yeah, okay. Okay.
+
+413
+00:47:20.630 --> 00:47:22.960
+Jagannath Sahoo: Let's create a new topic, and we can do that
+
+414
+00:47:22.960 --> 00:47:25.601
+Ashwin Kamath: Yes, sir, yes, sir, okay,
+
+415
+00:47:26.430 --> 00:47:35.030
+Ashwin Kamath: that's it. Those are the questions I have. I'm not to be very honest. I've not been able to double click on the patch. Yet, Jagan, I intend to do that tomorrow. 1st thing
+
+416
+00:47:35.030 --> 00:47:35.410
+Jagannath Sahoo: Yes, sir.
+
+417
+00:47:35.580 --> 00:47:40.348
+Ashwin Kamath: Tomorrow's meeting. I'll have a hopefully have a a lot more questions around
+
+418
+00:47:41.030 --> 00:47:46.839
+Jagannath Sahoo: Take just just for a for a while this week. I'm in Dalatz
+
+419
+00:47:47.190 --> 00:47:51.039
+Jagannath Sahoo: corporately. Your Crm. Available anytime you can reach out to me so
+
+420
+00:47:51.040 --> 00:47:55.350
+Ashwin Kamath: No, that is flying back on the weekend. So still 3 days in our hand.
+
+421
+00:47:55.490 --> 00:48:07.319
+Ashwin Kamath: Oh, nice! Nice! That is really great. Okay? So then then I have a couple of questions on the pricing side. Sanjeev, etf. Okay, I I know. Etf was considered out of scope for price effects. Okay.
+
+422
+00:48:07.480 --> 00:48:09.610
+Ashwin Kamath: But what is the long term plan for Etfs
+
+423
+00:48:11.326 --> 00:48:16.360
+Sanjeev Kumar Yadav: Will never come from price effects. It will be. It is a separate domain. Api, provided by
+
+424
+00:48:16.360 --> 00:48:32.080
+Jagannath Sahoo: Which is come from the Osm, this Api they expose already. So you need to pass the input, they will necessary input, the 2, 3 inputs are there. They'll give the Atf
+
+425
+00:48:33.191 --> 00:48:36.088
+Ashwin Kamath: Is it? Is it documented anywhere? The Etf Apis
+
+426
+00:48:36.410 --> 00:48:49.700
+Jagannath Sahoo: Yeah. Api, it. It will be part of the Api part of the Osm team. So my can give you detail. I think it will be there somewhere in the yeah. So can you go? Yeah, go back here. Can you search the price? Sorry, Osm.
+
+427
+00:48:50.000 --> 00:48:52.360
+Jagannath Sahoo: Or billing something in the name
+
+428
+00:48:52.360 --> 00:48:54.670
+Ashwin Kamath: No subscription. Let me do subscription
+
+429
+00:48:55.890 --> 00:48:58.220
+Jagannath Sahoo: Documents. Api, 2, yeah. Just click on this one.
+
+430
+00:49:01.075 --> 00:49:04.629
+Jagannath Sahoo: Modified, yeah. Thomas, and Pr, this last one. Yes.
+
+431
+00:49:08.830 --> 00:49:09.440
+Ashwin Kamath: Huh?
+
+432
+00:49:09.880 --> 00:49:10.350
+Ashwin Kamath: Okay.
+
+433
+00:49:10.350 --> 00:49:15.339
+Jagannath Sahoo: It's a very, very simple, very simple input and they'll give the what is the Atf price
+
+434
+00:49:16.710 --> 00:49:20.992
+Ashwin Kamath: Offering offering. Id is my optional. So I just pass the integration. Id, and I'm good
+
+435
+00:49:21.260 --> 00:49:25.020
+Jagannath Sahoo: The in person. Id. That's what I'm saying. Osm always work with in person. Id
+
+436
+00:49:26.240 --> 00:49:26.880
+Ashwin Kamath: Okay.
+
+437
+00:49:27.890 --> 00:49:34.824
+Ashwin Kamath: Sounds good to me. Okay, I'll probably make a note of this one as well. Okay, cool.
+
+438
+00:49:37.402 --> 00:49:46.879
+Manjunath Bavikatte Andanappa: Just Fyi Ashwin. I don't think we are planning to display the exact etf for any of the products at this point
+
+439
+00:49:46.880 --> 00:49:51.370
+Ashwin Kamath: Yeah. Yeah. But, manjunath, see, here's the thing right the the way we are going right now is
+
+440
+00:49:51.550 --> 00:49:53.599
+Ashwin Kamath: we are saying the point of sale has to price.
+
+441
+00:49:55.270 --> 00:49:55.880
+Ashwin Kamath: Okay.
+
+442
+00:49:55.880 --> 00:49:58.970
+Manjunath Bavikatte Andanappa: Oh, that means we have to send this information downstream
+
+443
+00:49:58.970 --> 00:50:00.490
+Ashwin Kamath: That's my understanding.
+
+444
+00:50:00.490 --> 00:50:05.949
+Jagannath Sahoo: Or there is manju, there is no, there is no no more further price. Calculation in the downstream
+
+445
+00:50:05.950 --> 00:50:08.610
+Ashwin Kamath: Yeah, yeah, there's no validation at all. So so for me.
+
+446
+00:50:08.610 --> 00:50:11.339
+Jagannath Sahoo: Pop up past and left
+
+447
+00:50:11.480 --> 00:50:16.800
+Jagannath Sahoo: price calculation at source level, no downstream, no further calculation in the new stack
+
+448
+00:50:17.700 --> 00:50:18.630
+Manjunath Bavikatte Andanappa: That's perfect.
+
+449
+00:50:19.120 --> 00:50:19.980
+Manjunath Bavikatte Andanappa: Thank you.
+
+450
+00:50:20.950 --> 00:50:39.210
+Ashwin Kamath: Okay. So so, Jagan, I'm not sure if I've shared this with you, overall thought process on how we plan to go with it. So so that's why I was thinking so essentially. What you're saying is, if it's a termination, I need to do a get price to Dih Price Api, as well as the Osm price to get the Etfs as well. Is that is that what it is? It should be
+
+451
+00:50:39.210 --> 00:50:39.910
+Jagannath Sahoo: No?
+
+452
+00:50:40.430 --> 00:50:54.499
+Jagannath Sahoo: Okay. Small correction. You are right understanding. You need to the price. Api will give you a price related to a digital or the product price, but it won't give you etf etf you have to call, especially the
+
+453
+00:50:54.500 --> 00:50:56.960
+Ashwin Kamath: I know essentially, I have to make 2 Api calls
+
+454
+00:50:56.960 --> 00:51:00.580
+Jagannath Sahoo: Yes, exactly 2 epic call, yes, connected to epic call.
+
+455
+00:51:00.990 --> 00:51:16.670
+Ashwin Kamath: Okay, so probably I'll double click on that separately. Because I am. I. 1st of all, I'm not collated. My thoughts on it I'll need some time to digest it, and I would like to put it in paper before I put it out here, so that we don't go the same questions again. Jagan. So
+
+456
+00:51:16.670 --> 00:51:17.490
+Jagannath Sahoo: Okay. Sure.
+
+457
+00:51:17.490 --> 00:51:25.840
+Ashwin Kamath: So for the install. What attribute goes where what? Where is is something that I would like to double? Click hopefully in tomorrow's call.
+
+458
+00:51:27.010 --> 00:51:27.729
+Jagannath Sahoo: That's true.
+
+459
+00:51:28.675 --> 00:51:33.540
+Manish Dharod: Question. Actually, Jagan, you said you are in Dallas this week.
+
+460
+00:51:33.970 --> 00:51:35.659
+Jagannath Sahoo: Yeah, I'm in Dallas right now. I'm in Dallas
+
+461
+00:51:35.660 --> 00:51:47.549
+Manish Dharod: Okay, okay? So question, do you want to? Actually, you know, given that? That's the scenario. Do you want to meet in the afternoon tomorrow.
+
+462
+00:51:47.660 --> 00:51:53.209
+Manish Dharod: like as in like, maybe you know, one o'clock or 2 o'clock p. 2 pm. Ashwin with Jagan
+
+463
+00:51:53.340 --> 00:51:54.700
+Manish Dharod: to make it easier
+
+464
+00:51:55.500 --> 00:52:00.119
+Jagannath Sahoo: Yeah, we we can meet no problem 3, not 2, 3. Pm.
+
+465
+00:52:00.640 --> 00:52:05.130
+Manish Dharod: 3 pm. Okay. What do you think? 3 pm. Pacific, or 3 Pm. Sorry.
+
+466
+00:52:05.130 --> 00:52:09.739
+Jagannath Sahoo: Checking my calendar. Yeah, I think we are making that time. 3 Pm. Will better
+
+467
+00:52:11.350 --> 00:52:13.240
+Jagannath Sahoo: let me check one second quickly.
+
+468
+00:52:13.240 --> 00:52:13.819
+Manish Dharod: Sure, sure.
+
+469
+00:52:14.250 --> 00:52:17.170
+Sanjeev Kumar Yadav: 3 Pm. Central will be better, because
+
+470
+00:52:17.370 --> 00:52:20.960
+Sanjeev Kumar Yadav: normally we go for lunch also. During that time, one to 2
+
+471
+00:52:20.960 --> 00:52:22.050
+Jagannath Sahoo: Yeah. Correct.
+
+472
+00:52:23.048 --> 00:52:33.160
+Jagannath Sahoo: Manager. If your your respective calendar is available 3 pm. Central time better
+
+473
+00:52:34.080 --> 00:52:40.360
+Manish Dharod: Okay, so that is one pm, right? For for California time
+
+474
+00:52:40.360 --> 00:52:45.300
+Jagannath Sahoo: Yeah, it's 1. No, I think one or 2, 2 h. Yeah, 2 h. Yeah, wonderful.
+
+475
+00:52:45.300 --> 00:52:50.020
+Manish Dharod: 2 h. Yeah. So are you okay with that? Or you need more time. Ashwin.
+
+476
+00:52:56.330 --> 00:52:57.100
+Manish Dharod: Aisha
+
+477
+00:52:57.450 --> 00:53:07.309
+Ashwin Kamath: Oh, sorry I was talking. Yeah, I can join the discussion manish, but I'm not sure if I can have any approach or anything out here. But we can definitely have a conversation. Yeah.
+
+478
+00:53:07.720 --> 00:53:08.510
+Jagannath Sahoo: Yeah, let's
+
+479
+00:53:08.510 --> 00:53:10.220
+Manish Dharod: Do that! Oh, go ahead!
+
+480
+00:53:10.220 --> 00:53:13.989
+Jagannath Sahoo: So required. Otherwise, if you want to delay further, it's okay. We are available
+
+481
+00:53:14.470 --> 00:53:17.609
+Jagannath Sahoo: once you are ready. Just let's set up the call and go through
+
+482
+00:53:19.420 --> 00:53:25.099
+Manish Dharod: Yeah, I'm just thinking, let's at least do a 30 min at one pm, and then we can regroup again.
+
+483
+00:53:26.290 --> 00:53:26.780
+Ashwin Kamath: Sure.
+
+484
+00:53:27.160 --> 00:53:28.560
+Ashwin Kamath: That sounds that sounds good.
+
+485
+00:53:28.560 --> 00:53:29.210
+Manish Dharod: It's another thing.
+
+486
+00:53:29.210 --> 00:53:41.699
+Dhrubajyoti Chakraborty: Yeah, I have a thing like Ashwin the install fee. I don't think we have to discuss more, the reason being that fabric does not have the install fee for any of the 3 products
+
+487
+00:53:44.920 --> 00:53:52.939
+Dhrubajyoti Chakraborty: we have etf. For fabric, port and etf will come for Vcs and Fcr. But there will be no de install fee
+
+488
+00:53:53.070 --> 00:53:55.289
+Dhrubajyoti Chakraborty: for any of these 3 products
+
+489
+00:53:58.920 --> 00:54:06.829
+Ashwin Kamath: Yeah, I hear your point dhruv. But the way I would look at it is right. If if
+
+490
+00:54:06.980 --> 00:54:11.929
+Ashwin Kamath: wouldn't, we want to build those integrations in a way that standardizes that whole flow, and then
+
+491
+00:54:11.930 --> 00:54:31.269
+Dhrubajyoti Chakraborty: No, no, no, definitely, definitely. I'm just I'm just calling it out as of because we previously had, we moved it out as a digital interconnection perspective that we don't have to. We will not go with that install fee or the installation fee. That's why, again, we will definitely go ahead and build it. And just this was a Fyi kind of a thing
+
+492
+00:54:31.270 --> 00:54:36.629
+Ashwin Kamath: There's no building, right? So are you saying there'll be changes that will have to be done on the price effect side to support it.
+
+493
+00:54:38.231 --> 00:54:41.119
+Ashwin Kamath: Sorry I lost you. I actually what was it?
+
+494
+00:54:41.330 --> 00:54:42.679
+Ashwin Kamath: My question is.
+
+495
+00:54:43.209 --> 00:54:56.620
+Ashwin Kamath: is there a build required for it is my, was my question. When you say we'll need to build it? Is there some changes that will be required on the price effect to enable to for me to invoke those Apis? Then then I would. I would want to not have those call that code at my end at all. Then
+
+496
+00:55:02.520 --> 00:55:05.349
+Dhrubajyoti Chakraborty: Sorry, Ashwin, you have to repeat it once. I completely lost you
+
+497
+00:55:05.970 --> 00:55:07.369
+Ashwin Kamath: Okay, my question is.
+
+498
+00:55:08.131 --> 00:55:15.449
+Dhrubajyoti Chakraborty: Sorry. I I think I'm losing you. Maybe we can park it offline, and I'll be in office tomorrow. We can discuss in discuss in the morning.
+
+499
+00:55:15.710 --> 00:55:18.960
+Sanjeev Kumar Yadav: No development needed from Price fx. Side. Ashwin
+
+500
+00:55:19.750 --> 00:55:37.710
+Ashwin Kamath: Okay? Because no, because specifically talked about building. That's why I was concerned. Okay, okay, if there is no additional development required from Sanjeev, you can confirm that. Then then I think then, then, essentially, what I'm talking about is I'm not trying to have. I'm planning to have generic code essentially, for all flows. That's that is the thought process. Sanjeev. Okay.
+
+501
+00:55:37.710 --> 00:55:40.550
+Sanjeev Kumar Yadav: Yeah, these don't feel just like a product
+
+502
+00:55:40.870 --> 00:55:58.320
+Ashwin Kamath: Yeah, yeah, yeah. So that way, we don't have any product specific logic, even from a fabric perspective inside my orchestrator. But cool. Thank you. Yes, this helps. Yeah. Alrighty. I I think we are almost at the top of the 2 min back to everybody. So thank you. This is a great
+
+503
+00:55:58.320 --> 00:56:08.030
+Dhrubajyoti Chakraborty: Yeah, I'm I'm back, Ashwin, so sorry I could not hear. But I heard you say, thank you, but I am available now, if you have to ask the question, can you repeat
+
+504
+00:56:08.030 --> 00:56:08.690
+Ashwin Kamath: Hey! Sanjit!
+
+505
+00:56:08.690 --> 00:56:09.230
+Dhrubajyoti Chakraborty: Thank
+
+506
+00:56:09.230 --> 00:56:11.390
+Ashwin Kamath: Sanjeev, Sanjeev confirmed that
+
+507
+00:56:11.660 --> 00:56:21.889
+Ashwin Kamath: there is no build required from price effects, perspective or Dih price. Api perspective to support the install Api calls for.
+
+508
+00:56:21.890 --> 00:56:23.420
+Ashwin Kamath: yes. Definitely.
+
+509
+00:56:23.650 --> 00:56:24.480
+Ashwin Kamath: Yeah. Okay.
+
+510
+00:56:24.480 --> 00:56:26.110
+Dhrubajyoti Chakraborty: Definitely, we just have to set up
+
+511
+00:56:26.110 --> 00:56:29.690
+Dhrubajyoti Chakraborty: the price. Just set up the price list. And that's it.
+
+512
+00:56:29.690 --> 00:56:32.369
+Ashwin Kamath: Set up. Oh, you will still have to set up the price list. That's what you're saying.
+
+513
+00:56:32.370 --> 00:56:40.429
+Dhrubajyoti Chakraborty: Yeah price list set up right? Because the install fee we are talking about, right? So it's a fee. So how much the install fee we have to, so that price list has to be set up.
+
+514
+00:56:40.550 --> 00:56:42.030
+Dhrubajyoti Chakraborty: and we should be good to go
+
+515
+00:56:42.480 --> 00:56:54.750
+Ashwin Kamath: Okay, let me check with us once and see if we need to do that or not. But thank you. I I think I'll check once with us, just to make sure that if we really need to make it generic or not. But yeah, cool, I think
+
+516
+00:56:54.750 --> 00:57:10.360
+Dhrubajyoti Chakraborty: When I said the install fee like as is like how the price list fee is stored, so that, like the All the Mrc. So that way. The install fee setup set up. Only nothing to development, just to be clear, no development, nothing. Only the price list file
+
+517
+00:57:10.360 --> 00:57:12.840
+Ashwin Kamath: I got I got it. I got it. I got it cool. Thank you. Yes.
+
+518
+00:57:12.840 --> 00:57:36.109
+Manjunath Bavikatte Andanappa: Yeah, sure. And this is the install fee is not applicable for us. Ashwin. This is basically when we have a secure cabinets or cages. Right? There'll be some task that is involved for us to remove those cages, cabinets, and things like that. For that we charge the install fee. We used to charge the install fee for cross connect deletions from fabric site previously.
+
+519
+00:57:36.250 --> 00:57:42.100
+Manjunath Bavikatte Andanappa: But we no longer do that. But yes, definitely. We can check with this way. Digital production doesn't apply because
+
+520
+00:57:42.100 --> 00:57:52.589
+Ashwin Kamath: Yeah, yeah. Got it? Got it? Got it? Yes, sure, manjunath, I'll probably check, and we can probably take an internal call tomorrow on on whether we want to keep it generic or or not, have those calls at all. Manjunath
+
+521
+00:57:52.590 --> 00:57:53.280
+Manjunath Bavikatte Andanappa: Yeah.
+
+522
+00:57:53.280 --> 00:57:54.829
+Ashwin Kamath: Okay. Cool. Thank you.
+
+523
+00:57:55.500 --> 00:58:03.199
+Manish Dharod: Alright guys. Thank you much. I set up the one Pm. For tomorrow, and then the the 6 6 30 is still on. If
+
+524
+00:58:03.990 --> 00:58:04.590
+Ashwin Kamath: Thank you.
+
+525
+00:58:05.690 --> 00:58:07.659
+Manjunath Bavikatte Andanappa: Thanks, guys. Take care. Bye.
+
