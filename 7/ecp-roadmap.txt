@@ -1,0 +1,390 @@
+Executive Summary
+
+The Equinix Customer Portal (ECP) is intended to serve as our central hub for customers—a primary destination where they can easily make purchases, address issues, and configure their implementations with ease.
+
+However, users of the ECP encounter difficulties in effectively managing orders, reviewing billing and inventory, resolving problems, and deploying their implementations. These challenges result in longer time to value (TTV), delays in revenue generation, and an overall unsatisfactory customer experience.
+
+A disjointed and ineffective customer portal leads to operational inefficiencies, requiring our account and support teams to bridge the gaps. Additionally, managing multiple portals drives up our IT maintenance costs.
+
+Our vision is ECP is a unified platform that empowers users with seamless access, actionable insights, and comprehensive control. It enables them to effortlessly purchase, resolve issues, and configure their implementations with ease.
+
+
+Vision
+
+Equinix Customer Portal is a unified platform that empowers users with seamless access, actionable insights, and comprehensive control. It enables them to effortlessly purchase, resolve issues, and configure their implementations with ease.
+
+
+Problem
+
+Enterprise customers like Vanguard, Norges Bank and AT&T desire a unified and intuitive self-serve experience. Our ECP product strategy addresses the following portal limitations:
+
+•	Fragmented Support experiences causing long response times
+•	Lack of a single, comprehensive view of all support tickets
+•	Limited Product Discovery and Personalization
+•	Inefficient and Overly Complex Transactions
+•	Poor user onboarding experience
+•	Broken organization setup and access controls
+•	Lack of proactive communication for delays
+
+
+Objective
+
+The objective of the pilot is to deliver the following benefits:
+
+•	Increased Customer Satisfaction & Retention
+•	Operational Efficiency & Cost Reduction
+•	Faster Time-to-Value 
+•	Revenue Growth & Upsell Opportunities
+•	Competitive Differentiation
+
+GMPO Priority and Goals:
+
+•	2025 GMPO Priority: Single Portal
+•	2025 GMPO Goals:
+o	Solve Smarter: Develop & continuously improve a solutions portfolio grounded in customer needs.
+o	Goal 3: Simplify our value: Converge portals and simplify our product portfolio (IC focus), making the value we provide easier to access for customers & partners.
+
+
+Setting Context
+
+Establishing a shared understanding of the purpose of ECP is essential. 
+
+Use Cases
+
+Admin /Configuration	Account Management	Support	Other
+•	Knowledge Base
+•	User Management
+•	Onboarding
+•	Configuration/Setup
+•	Schedule a visit to an IBX
+•	View your notifications	•	Billing
+•	Asset Management
+•	Order Management
+•	Product Catalog
+•	Solution Builder
+•	Pricing Calculator	•	Creating tickets
+•	Managing tickets
+•	Ticket status	•	Marketplace
+•	Developer experience
+•	Community
+•	Reporting
+
+
+
+Equinix Portals Inventory
+
+Establishing a shared understanding of our portals and experiences is important.
+
+We currently have 3 portals and 13 ECP portal experiences. We identify the 3 different portals based on 3 distinct primary personas: 
+
+
+Portals	ECP Experiences
+•	ECP for customers
+•	Operator for Equinix employees
+•	Partner Central for resellers and partners	•	Pricing Calculator
+•	IAM
+•	Metal
+•	EMS
+•	Smart View
+•	Developer
+•	Insights Panel
+•	Communities
+•	Fabric
+•	IX
+•	EIA
+•	Marketplace
+•	Equinix Precision Time
+•	ECP•	
+
+For a definition see below
+
+IAM	We have two 2 IAMs systems - PDS and CRH.
+Metal	Metal portal is app for Metal users to manage their bare metal infrastructure.
+Equinix Managed Services	EMS portal to:
+
+•	Create new tickets (80% of portal usage)
+•	Request simple product upgrades 
+•	Access Product Specific pages 
+•	Check their Asset Inventory
+•	Follow up on ordered products or upgrades
+•	Access Document Center Access Knowledge Base articles
+•	Set granular permissions
+Smart View	Real-time, online infrastructure monitoring
+Developer	Portal for developers to seamlessly explore, subscribe, and get support for our APIs.
+Insights Panel	Portal for customers to share feedback via surveys, interviews, focus groups and design sessions.
+Communities	Portal for users to ask questions, find answers, and connect with Equinix Customers, Partners and Experts.
+Fabric	Portal for Fabric customers to:
+•	Order Fabric ports (available in ECP)
+•	create and provisioning connections/FCR
+•	Review products and pricing
+•	View inventory
+IX	Enables users to manage their interconnection services at Equinix Internet Exchanges.
+EIA	Enables users to manage their internet access services.
+Marketplace	Portal that connects businesses with service providers and solutions within the Equinix ecosystem. It serves as a digital marketplace where customers can discover, evaluate, and procure various services that complement their infrastructure needs.
+Equinix Precision Time	Provides accurate, secure, and reliable time to enterprise applications connected to Equinix Fabric.
+ECP	Central and main portal for customers to order, admin and get support.
+Operator	Internal portal to perform tasks on behalf of our customers
+Partner Central	Portal designed for partners / resellers to access resources, tools, and information that facilitate collaboration and business development.
+
+
+
+Personas
+
+External	•	Buyer
+•	Network Engineer
+•	Legal Counsel
+•	Finance Analyst
+•	Org. Admin
+Internal	•	CSM
+•	QSS & OM
+•	QO
+•	GSD
+•	Legal
+•	CRE
+•	PM
+•	Pricing Analyst
+
+
+Top Problems
+
+Support
+New Feature	UX
+•	Lack of a single, comprehensive view of all support tickets
+•	Lack of feedback mechanism	•	Fragmented Support experiences
+•	Long Response Times
+•	Inconsistent nomenclature
+
+Account Management
+New Feature	Bug	UX
+•	Lack of Centralized Repository
+•	Lack of Solution-Oriented Guidance
+•	Limited Product Discovery and Personalization
+•	Limited Order Visibility and Support
+•	Improved Search and Organization
+•	Streamlined Approvals
+•	Expanded Functionality
+•	Expanded Field Options
+•	Enhanced Flexibility	•	Product info and billing discrepancies
+•	Errors and delays when managing orders	•	Fragmented Purchase Experience
+•	Inefficient and Overly Complex Transactions
+
+Admin
+New Feature	Bug	UX
+•	Inability to report on data center access
+•	Access Management
+•	Lack of proactive communication for delays.
+•	Difficulties in managing accounts and permissions.
+•	Reservations extensions.	•	Fragmented notifications and alerts.
+•	Persistent login failures	•	Broken organization setup and access controls.
+•	Broken user onboarding experience.
+
+Miscellaneous
+Bug	UX
+•	"Invalid Request” or "System Error” errors.
+•	Data and reporting discrepancies.
+•	Utilization graphics or patch panel options fail.	•	UI element issues.
+•	Users face difficulties with portal flows, such as looping between unrelated pages or being unable to return to previous interfaces (e.g., "No way to go back to the Classical screen" or "Broken loop flow for Smart Hands requests").
+•	Buttons or actions are unresponsive or disappear (e.g., "Reply button doesn't work" or "Speed change button disappears immediately").
+•	Poor design elements, such as distorted images, unclickable text, or missing tooltips, hinder usability (e.g., "Text below icons should be clickable" or "Vendor pictures distorted on Safari").
+
+
+
+Proposed Plan
+
+Recommend Plans with options:
+
+Option 1 – Unified Portal | Consolidate Portals
+
+Phase 1 - Simplify	Phase 2 -Unify	Phase 3 - Reimagine	Phase 4 – Unify Data/Tech 	
+Common UI - Establish unified UI elements across all portals
+Improve dropdown menus, buttons, or other inputs not responding as expected
+Improve portal flows, such as looping between unrelated pages or being unable to return to previous interfaces
+Standardize nomenclature
+Poor design elements, such as distorted images, unclickable text, or missing tooltips, hinder usability.
+
+Unified JTBD
+Redesign common user flows like ticket creation and inconsistent product info pages.	Begin consolidates experiences
+Review Fabric, Smart View and EMS portal experiences and standardize design to ensure a consistent overall user experience.	•	Launch new Support experience
+•	Launch new Admin experience
+•	Launch new Reporting experience
+•	Launch new Notifications experience
+
+Continue consolidated experiences – IAM, other experiences	•	Implement single tech stack that supports scalability, security, and integration capabilities.
+•	Begin migrating data from existing portals to the new unified platform, ensuring data and minimal disruption.
+Complete ECP consolidation	•	Proactive support features
+•	Advance data analytics
+•	predictive analytics
+•	content curation
+•	automate complex customer interactions and processes
+•	Advanced predictive models
+•	AI-powered analytics
+•	Sentiment analysis
+•	Process optimization
+•	Converged Dashboards
+Centralized Report Center
+
+
+
+Top Problems Detailed
+
+Support
+New Feature	UX
+•	Lack of a single, comprehensive view of all support tickets -customers don't have full / comprehensive view of their issues.
+•	Lack of feedback mechanism - Customers can't crucial feedback required to improve support experience during ticket creation process	•	Fragmented Support experiences - Bespoke and multiple support experiences cause customer confusion and operational inefficiency.
+•	Long Response Times - A poor UX for ticket creation leads to significant response delays. Customers often submit tickets through the wrong portal, for the incorrect product, or with vague details, resulting in internal rerouting until the issues are resolved. Customers will then default to email which increases response times and inefficiency.
+•	Inconsistent nomenclature - Orders for visits and ordering new products, Trouble tickets, Support, Submit Trouble tickets, Submit case
+
+Account Management
+New Feature	Bug	UX
+•	Lack of Centralized Repository
+•	Lack of Solution-Oriented Guidance
+•	Limited Product Discovery and Personalization
+•	Limited Order Visibility and Support
+•	Improved Search and Organization: Suggestions include adding a search by OAR/order numbers and a search bar in the overview dashboard.
+•	Streamlined Approvals: Requests to remove redundant approval steps, such as the additional pricing approval after ticket submission. They emphasize that pricing is already approved when creating the ticket.
+•	Enhanced Efficiency: Proposals for combining deinstall and new Cross Connect requests so requests can be worked together.
+•	Expanded Functionality: Suggestions to export inventory data (e.g., ports inventory to CSV), modify order contacts in Shipment requests, and the ability to create customized user roles.
+•	Expanded Field Options: Requests to add specific fields like "LC Connectors Allowed" in patch panel orders for improved functionality.
+•	Enhanced Flexibility: Suggestions to broaden the scope of existing fields, such as allowing "Move/Replace Equipment/RMA" to support both inbound and outbound operations.	•	Product info and billing discrepancies
+•	Customers experience errors and delays when placing, tracking, and managing orders through the portal, leading to frustration and operational setbacks.	•	Fragmented and Inconsistent Purchase Experience
+•	Inefficient and Overly Complex Transactions
+•	Enable basic actions like copy/paste functionality in console fields.
+
+Admin
+New Feature	Bug	UX
+•	Inability to report / see which users have had access data center in the User Management page
+•	Access Management - for Colo, you have to tick (box) to select users, for DS you have to assign roles
+o	2 different models for managing users
+o	Inconsistent privileges - user is assigned permissions in one portal that is not maintained in another.
+•	Lack of proactive communication for delays.
+•	Difficulties in managing accounts and permissions—including adding users, merging accounts, and setting access levels—are causing operational disruptions.
+•	Request to increase meeting room reservation durations from 2 hours to 4 hours, addressing challenges with limited availability and frequent interruptions.
+•	 the ability to create customized user roles.	•	Fragmented and inconsistent notifications and alerts.
+•	Persistent login failures, account lockouts, and access errors prevent customers from utilizing the portal effectively.	•	Broken organization setup and access controls - Configurators don't know which tool to use (customer has FCR and wants to make a cross-connect but doesn't know where to start).
+•	Broken user onboarding experience.
+
+Miscellaneous
+Bug	UX
+•	Users encounter errors like "Invalid Request” or "System Error,” preventing them from completing actions.
+•	Customers highlight inaccuracies in data, reporting discrepancies, and limited access to necessary reports and documentation.
+•	Key features like connection utilization graphics or patch panel options fail to load or display correctly.	•	Issues with dropdown menus, buttons, or other inputs not responding as expected (e.g., "Submit Order button does nothing" or "Cannot select a provider for a new request”).
+•	Users face difficulties with portal flows, such as looping between unrelated pages or being unable to return to previous interfaces (e.g., "No way to go back to the Classical screen" or "Broken loop flow for Smart Hands requests").
+•	Buttons or actions are unresponsive or disappear (e.g., "Reply button doesn't work" or "Speed change button disappears immediately").
+•	Poor design elements, such as distorted images, unclickable text, or missing tooltips, hinder usability (e.g., "Text below icons should be clickable" or "Vendor pictures distorted on Safari").
+
+
+
+By The Numbers
+ 
+
+
+Outstanding Questions
+
+Notifs?
+Telemetry/Analytics
+IAMs
+Single tech stack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IGNORE SECTION
+
+
+
+Product Vision Board
+
+Vision	ECP is a unified platform that empowers users with seamless access, actionable insights, and comprehensive control. It enables them to effortlessly purchase, resolve issues, and configure their implementations with ease.
+Problem Statement	Equinix customers face challenges in efficiently managing and placing orders, reviewing billing and inventory, resolving issues, and deploying their implementations. This leads to increased time to value (TTV), delays in revenue, and an overall unsatisfactory experience.
+Needs	
+Product	
+Roadmap	•	
+Business Opportunity	•	Increased Customer Satisfaction & Retention
+•	Operational Efficiency & Cost Reduction
+•	Faster Time-to-Value for Customers
+•	Revenue Growth & Upsell Opportunities
+•	Competitive Differentiation
+GTM	•	
+Success Metrics	•	
+Market Trends	•	
+Risks	•	
+Resources	•	
+
+
+Presentation
+
+Story	1.	The NEW Equinix Customer Portal | Subtitle: Seamless, Intelligent, and Personalized
+2.	Exec Summary
+a.	What? Vision
+b.	Why?
+c.	Customer Problem
+d.	Business Opportunity
+3.	Portal Clarification
+a.	What are the current portals?
+b.	What should be unified? (Operator and Reseller should be separate)
+c.	9 – 1 isn’t the goal.
+4.	Customer Narrative
+a.	Top Problems
+b.	Customer quotes with logos
+5.	Roadmap
+a.	Short-term – Easy, Incremental improvements
+b.	Medium-term – New Experiences based on use case/journey
+c.	Long-term – Next Gen (Personalized, AI, Proactive)
+6.	Business Opportunity
+Exec Summary	What? Vision
+ECP is a unified platform that empowers users with seamless access, actionable insights, and comprehensive control. It enables them to effortlessly purchase, resolve issues, and configure their implementations with ease.  
+
+Why Now?
+•	Fragmented Customer Experience
+•	Increased Demand for Self-Service
+•	Competitive Advantage
+•	Operational Inefficiencies
+•	Increased Support Costs
+Customer Problem
+Equinix customers face challenges in efficiently managing and placing orders, reviewing billing and inventory, resolving issues, and deploying their implementations. This leads to increased time to value (TTV), delays in revenue, and an overall unsatisfactory experience
+Business Benefits
+•	Increased Customer Satisfaction & Retention
+•	Operational Efficiency & Cost Reduction – Self-service and automation lower support costs and reduce manual interventions.
+•	Faster Time-to-Value for Customers
+•	Revenue Growth & Upsell Opportunities
+•	Competitive Differentiation
+
+
+Detailed Product Strategy
+
+What is the purpose of 	ECP is a customer portal that enables customers to:
+
+•	Administer / Configure their Equinix
+•	Place and manage orders
+•	Get support
+•	Get reports and insights
+Use Cases	Administration / Configuration
+Account / Order Management
+Support
+Reporting
+Internal (Operator Portal)
+Other – Marketplace, Developer experience, Community
+
+
+
+
+
+
+
+
+
+
+
+
