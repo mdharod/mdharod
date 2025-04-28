@@ -1,0 +1,1162 @@
+WEBVTT
+
+1
+00:00:01.870 --> 00:00:06.000
+Manish Dharod: Okay, yeah, it's recording now. So
+
+2
+00:00:06.542 --> 00:00:09.077
+Manish Dharod: maybe you want to start Ashwin.
+
+3
+00:00:10.960 --> 00:00:16.570
+Ashwin Kamath: Yeah. So let me open the spec just to make sure I'm looking at the right one.
+
+4
+00:00:17.860 --> 00:00:24.240
+Ashwin Kamath: So, okay, one. Sec. Sorry. I
+
+5
+00:00:28.440 --> 00:00:30.389
+Ashwin Kamath: just making sure I have the right one open.
+
+6
+00:00:31.700 --> 00:00:36.780
+Ashwin Kamath: Yeah, this is Qtc.
+
+7
+00:00:37.570 --> 00:00:39.120
+Srimanth's iPhone: Hey? Guys, good evening.
+
+8
+00:00:40.220 --> 00:00:49.309
+Ashwin Kamath: Hey, Steven? Yeah, thanks. Thanks for joining Steven. So, yeah, yeah, yeah. So I'll just open it. Coexistence. Apis, here we are.
+
+9
+00:00:50.006 --> 00:00:54.749
+Ashwin Kamath: Yeah, thanks for sharing that ajay. We, the team has been going through it.
+
+10
+00:00:55.860 --> 00:00:58.289
+Ashwin Kamath: And and at this point of time
+
+11
+00:00:58.780 --> 00:01:03.130
+Ashwin Kamath: I I think it lock all looks good the only thing I wanted to confirm was.
+
+12
+00:01:03.615 --> 00:01:09.724
+Ashwin Kamath: this is, I know it's a typo. But just small thing. Efvc, that is what this is gonna be right.
+
+13
+00:01:10.740 --> 00:01:15.570
+Ashwin Kamath: that's my understanding, ajay, it sounds like a typo, but just confirming.
+
+14
+00:01:15.970 --> 00:01:19.199
+Ajay Singh: Okay, I will check the product sheet, and I will update you.
+
+15
+00:01:19.200 --> 00:01:19.710
+Ashwin Kamath: Yes, sir.
+
+16
+00:01:19.710 --> 00:01:21.689
+Ajay Singh: Yeah, I would check that. Yeah.
+
+17
+00:01:21.690 --> 00:01:26.689
+Ashwin Kamath: Yeah, cool and and and everything else seems right.
+
+18
+00:01:27.270 --> 00:01:33.060
+Ashwin Kamath: And and even when a connection is getting created for the 1st time we will send the connection uid
+
+19
+00:01:33.220 --> 00:01:36.850
+Ashwin Kamath: as well. In that case, Ranjit ajay, that should be all right. Right.
+
+20
+00:01:38.260 --> 00:01:42.259
+Ranjith Kumar Peddi: It'd be okay. But we don't need connection. Uid Ashwin.
+
+21
+00:01:42.811 --> 00:01:49.338
+Ashwin Kamath: So yes, we would look at it, maybe not as a part of R. 3, but subsequent update for R. 4 onwards. You may need that in
+
+22
+00:01:49.580 --> 00:01:51.679
+Ranjith Kumar Peddi: Yeah, yeah, probably. Probably. Yes. Yeah.
+
+23
+00:01:51.680 --> 00:01:52.360
+Ashwin Kamath: Yes.
+
+24
+00:01:52.520 --> 00:01:54.420
+Ranjith Kumar Peddi: But also for you to receive. Yeah.
+
+25
+00:01:54.630 --> 00:02:05.309
+Ashwin Kamath: Yeah, that's why I've kind of sort of put it in just so that right it it's there as a habit we can. Remote if we need. Don't need it subsequently, but I'm sure we'll need it. Post R. 4.
+
+26
+00:02:05.970 --> 00:02:06.770
+Ashwin Kamath: But yeah.
+
+27
+00:02:07.161 --> 00:02:19.689
+Ashwin Kamath: we may need operation as well, but for now this must is good enough is how I look at it. yeah, from our side. We Harry Sriman, Sriman, do you have any questions on this one, or we are good with this one.
+
+28
+00:02:20.230 --> 00:02:23.340
+Srimanth's iPhone: So far, no questions. Ashwin, yeah. Today, we reviewed it.
+
+29
+00:02:23.500 --> 00:02:31.000
+Harikrishna Bojja: Yeah, I have. I have some questions right? Hey, Ajay, we got a chance to review the contract this afternoon in our office?
+
+30
+00:02:31.587 --> 00:02:37.430
+Harikrishna Bojja: So we're just wondering, you know. What kind of role the Z side
+
+31
+00:02:37.920 --> 00:02:40.919
+Harikrishna Bojja: access point would play in this decision.
+
+32
+00:02:41.493 --> 00:02:45.299
+Harikrishna Bojja: If you can. Maybe you know. Help us explain a little bit. That'd be great.
+
+33
+00:02:45.850 --> 00:02:53.110
+Ajay Singh: Because I think that is pending for multiple to confirm. But what I learned is that multipoint connections which is z side
+
+34
+00:02:53.734 --> 00:02:57.280
+Ajay Singh: when the Z side access Point type is network.
+
+35
+00:02:57.450 --> 00:03:02.899
+Ajay Singh: The the new stack will not be up with applicable right? My purpose that.
+
+36
+00:03:02.900 --> 00:03:05.509
+Ranjith Kumar Peddi: No, that was a request from Ashpin, only.
+
+37
+00:03:06.920 --> 00:03:26.290
+Ashwin Kamath: Yeah. Yeah. So that my understanding was, that is that so? I'm not very clear on what is there on the new stack? With respect to the multipoint connections. I'll need to check once with Drew. But my understanding is that is what it is is is according to the the original design that we had way back in January, and that's the reason I asked for it. yes.
+
+38
+00:03:26.720 --> 00:03:27.480
+Ranjith Kumar Peddi: Okay.
+
+39
+00:03:28.040 --> 00:03:33.529
+Harikrishna Bojja: Could. Could you confirm that? Ajay? I mean we would. It's not that we don't want to send it.
+
+40
+00:03:34.140 --> 00:03:39.730
+Harikrishna Bojja: The more attributes, the more dependency we are creating between the systems. Right? So just want to see.
+
+41
+00:03:39.730 --> 00:03:45.730
+Ashwin Kamath: We. We need this one hurry. We will need it for multiple point connections being supported or not.
+
+42
+00:03:47.060 --> 00:03:50.870
+Mariprabha Chidambaram: So basically, Ashwin or Manju, the question here is.
+
+43
+00:03:51.030 --> 00:04:16.420
+Mariprabha Chidambaram: see, initially, the way we thought is, okay. If the A side I mean for a connection. If your a side is as long as the port is on the new stack then then probably the connection would would go to the new stack as well. But now that if we bring in the Z side, I mean, how do we? We really wanted to understand what are the different combinations
+
+44
+00:04:16.814 --> 00:04:24.839
+Mariprabha Chidambaram: that should go into the new stack, and and the rest that we need to consider to still go through legacy.
+
+45
+00:04:24.840 --> 00:04:28.800
+Ashwin Kamath: Yeah. Yeah. So, manjunath, can you confirm if multipoint is in for new stack?
+
+46
+00:04:30.860 --> 00:04:32.629
+Ashwin Kamath: Or we need Drew to confirm that.
+
+47
+00:04:35.510 --> 00:04:39.049
+Harikrishna Bojja: Change from a ordering point of view, even if we
+
+48
+00:04:39.830 --> 00:04:47.700
+Harikrishna Bojja: support or not support network on the news, I mean, why do we even actually take a call that, you know, network should not be supported on new stack
+
+49
+00:04:48.110 --> 00:04:50.710
+Harikrishna Bojja: from ordering point of view. How is it different?
+
+50
+00:04:54.500 --> 00:04:58.789
+Ashwin Kamath: I I think it was more of a setup on the Qtc. Side. That is my understanding.
+
+51
+00:04:59.280 --> 00:05:07.629
+Harikrishna Bojja: So. So in that case, so, Ashwin, rather than putting this in the contract which can be removed later, why don't we send all the network
+
+52
+00:05:07.840 --> 00:05:12.559
+Harikrishna Bojja: based, you know, connections to old Stack itself. Then from our side
+
+53
+00:05:13.540 --> 00:05:16.359
+Harikrishna Bojja: or not, maybe you know, I'm just thinking out loud, not.
+
+54
+00:05:16.360 --> 00:05:22.919
+Ashwin Kamath: So. So I I think here's here's the deal right? I I think. What what is it that we are really arguing over? I'm I'm very clear on that. So the Z.
+
+55
+00:05:22.920 --> 00:05:31.469
+Harikrishna Bojja: I'm not arguing. Basically. See, the idea is that whenever we are communicating with cross functional teams, right? And I mean outside fabric.
+
+56
+00:05:31.945 --> 00:05:39.539
+Harikrishna Bojja: the goal is to minimize the number of parameters that we exchange so that we don't create tight dependency between the systems.
+
+57
+00:05:39.730 --> 00:05:41.920
+Harikrishna Bojja: Again, like, you know, I'm not trying to argue.
+
+58
+00:05:41.920 --> 00:05:53.220
+Ashwin Kamath: All the attributes, all the all the attributes that you've called out here are something that are available as a part of the legacy flow is my understanding. These are all pricing attributes as well, and that's the reason they'll be continued to be there. If these are all pricing attributes, hurry
+
+59
+00:05:54.750 --> 00:05:59.759
+Ashwin Kamath: so they will be required irrespective of weather flow. They will all be available in that flow. That's how I look at it.
+
+60
+00:06:00.730 --> 00:06:02.640
+Harikrishna Bojja: So the network define whether the.
+
+61
+00:06:03.440 --> 00:06:04.110
+Mariprabha Chidambaram: I mean I.
+
+62
+00:06:04.110 --> 00:06:15.140
+Ashwin Kamath: Now now to the second question, whether network multipoint connections are enabled on the new Qtc. Or not, I think we need Drew to confirm that, because, based on the last conversation I've had with him, I was told that it's not in scope.
+
+63
+00:06:16.680 --> 00:06:17.060
+Manjunath Bavikatte Andanappa: Yeah, that.
+
+64
+00:06:17.060 --> 00:06:29.170
+Mariprabha Chidambaram: Okay, how does the basic question, how does it really impact? I mean, see, now, if if we just consider only the A side and not the Z side does it have any impact if it goes through the new stack.
+
+65
+00:06:29.780 --> 00:06:31.299
+Harikrishna Bojja: That's my question as well, yeah.
+
+66
+00:06:31.300 --> 00:06:34.909
+Ashwin Kamath: Hey? So who should be answering that question, Mari Prabha.
+
+67
+00:06:36.820 --> 00:06:40.879
+Harikrishna Bojja: It should be. I think the Eqtc. Team should be answering that.
+
+68
+00:06:40.880 --> 00:06:54.540
+Mariprabha Chidambaram: No, this is a generic question. See? Irrespective of whether we what what is getting on boarded, or what's getting implemented on the new stack. My generic question to the fabric team is.
+
+69
+00:06:56.090 --> 00:07:07.120
+Ashwin Kamath: For us. Okay? I can answer that question from fabric perspective, from fabric perspective, whether it goes to the old or new. I I don't think we it does not. It does not make a difference for us. Maripha.
+
+70
+00:07:07.360 --> 00:07:08.690
+Harikrishna Bojja: Yep, I agree.
+
+71
+00:07:10.810 --> 00:07:11.540
+Mariprabha Chidambaram: So.
+
+72
+00:07:11.780 --> 00:07:12.900
+Harikrishna Bojja: Yeah. Go ahead.
+
+73
+00:07:13.560 --> 00:07:33.570
+Mariprabha Chidambaram: Yeah, yeah, sorry. I'm just trying to make ourselves clear so that we don't add more combinations to validate before we give the response. Right? So if we can go with minimal attributes, I think we should be good. That's why I was just thinking for a fabric connection to go through the new stack. Is that okay? That if we consider
+
+74
+00:07:33.570 --> 00:07:47.098
+Mariprabha Chidambaram: if the port, if the A side access point right, if that is, I mean here, it's given colo, if at all. If that lies on the new stack, are we good to get the connection also on the new stack, or do we have to really.
+
+75
+00:07:47.380 --> 00:07:49.489
+Ashwin Kamath: Fine. We are fine with it. We are fine with it.
+
+76
+00:07:51.260 --> 00:08:04.640
+Harikrishna Bojja: Yeah, if you could take that question to a Qtc team, and then if you could, or you know, if you are, someone from the team could get that answer right? I mean, the goal is that basically to minimize the number of conditions. Only.
+
+77
+00:08:05.310 --> 00:08:12.039
+Harikrishna Bojja: I mean, like, Ashwin said, we don't really mind. But again, we don't want to create that tight dependency. At the same time, right.
+
+78
+00:08:12.040 --> 00:08:27.810
+Mariprabha Chidambaram: True. True, I did have a word earlier with Drew, but he was also on the same page. But I'm again going to reiterate this to see if there is any corner case that might get impacted. If we if at all. If we don't include it right, I mean.
+
+79
+00:08:27.920 --> 00:08:30.719
+Mariprabha Chidambaram: we'll have a discussion, and confirm that.
+
+80
+00:08:32.169 --> 00:08:41.709
+Ashwin Kamath: Fair enough, but but but connection uid still exists right Ranjit and ranjit and ajay, because the reason we'll need that is because for edit scenarios Post, R. 4.
+
+81
+00:08:42.260 --> 00:08:42.820
+Harikrishna Bojja: Yeah.
+
+82
+00:08:43.100 --> 00:08:46.660
+Mariprabha Chidambaram: This is for change orders, right? Basically connecting. Okay, okay.
+
+83
+00:08:46.660 --> 00:08:47.490
+Ashwin Kamath: Yeah, yeah.
+
+84
+00:08:47.490 --> 00:08:54.620
+Mariprabha Chidambaram: But again, Ajay, you had a question, right? Connection. U uid. Currently, we are seeing we cannot get it from Gnc, so.
+
+85
+00:08:54.970 --> 00:09:10.390
+Ajay Singh: Yeah. So yeah, so I think from the implementation wise, I think port is clear, but the connection uid. So we have like, so then, February port is clear. But from connection uid, we need some data source. Right? So from where this was ordered.
+
+86
+00:09:10.630 --> 00:09:11.170
+Ajay Singh: we can.
+
+87
+00:09:11.170 --> 00:09:15.219
+Harikrishna Bojja: Send the actual point access point uid if you want. Folks.
+
+88
+00:09:15.220 --> 00:09:17.829
+Ashwin Kamath: Access point Uid is being sent across. Okay.
+
+89
+00:09:17.830 --> 00:09:19.819
+Ashwin Kamath: it's already being sent across. Yeah, if you want to be.
+
+90
+00:09:19.820 --> 00:09:28.289
+Harikrishna Bojja: Connection. Uid connection. Uid is is something that should be available in the sold inventory on the product characteristics ajay.
+
+91
+00:09:28.290 --> 00:09:33.630
+Ajay Singh: That's because, yeah, sorry. Yeah. Anjit, go ahead.
+
+92
+00:09:33.630 --> 00:09:55.790
+Ranjith Kumar Peddi: Question right? So for the A/C access point. So where is this fulfilled? I think we discussed Ashpin. If you remember right, our conversation. Can you send the order number like the A said access point? Right? I think you know. Ajay was also showing one Api from the fabric. There's 1 Api, which you can return the order number for a given
+
+93
+00:09:55.930 --> 00:09:56.860
+Ranjith Kumar Peddi: port. Right?
+
+94
+00:09:57.807 --> 00:10:04.279
+Ranjith Kumar Peddi: The order, number sales order, single order, number as original order number.
+
+95
+00:10:04.520 --> 00:10:06.939
+Ranjith Kumar Peddi: Do you store it in fabric.
+
+96
+00:10:06.940 --> 00:10:10.079
+Ashwin Kamath: Not in this layer Ranjit.
+
+97
+00:10:11.010 --> 00:10:11.750
+Ranjith Kumar Peddi: Like that.
+
+98
+00:10:13.180 --> 00:10:27.289
+Ranjith Kumar Peddi: I mean, we need an additional attribute for connection to determine right. This port is, I mean, you're sending the port uid. But the the Cpa has to determine whether this port is fulfilled in the I mean it is in the new stack or old stack.
+
+99
+00:10:27.410 --> 00:10:33.420
+Ranjith Kumar Peddi: So for that right. If we can send some identifier which is upfront available for you.
+
+100
+00:10:33.730 --> 00:10:42.260
+Ranjith Kumar Peddi: that would be great. Otherwise, you know, this Apa has to make an Apa call to again to the new stacker, old stagger, you know. Maybe the Gnc.
+
+101
+00:10:42.720 --> 00:10:56.050
+Ashwin Kamath: So would it. Would it be possible? My, that is okay. Now, now I think I get the question. But here's the thing right for that my understanding was, and and and let keep keep it honest for me. My understanding was.
+
+102
+00:11:00.390 --> 00:11:08.220
+Ashwin Kamath: Yeah, that is where my understanding was. You will potentially be asking for an enhancement on this flow.
+
+103
+00:11:08.340 --> 00:11:16.570
+Ashwin Kamath: To return either, there is multiple ways to fix it. One is you potentially will be asking for
+
+104
+00:11:16.790 --> 00:11:19.490
+Ashwin Kamath: announcement in this flow to return
+
+105
+00:11:20.548 --> 00:11:22.541
+Ashwin Kamath: and let me open it.
+
+106
+00:11:25.280 --> 00:11:34.630
+Ranjith Kumar Peddi: no. So Ashwin from this side, right from Qdc side, we have multiple ways to solve. But my question is from fabric side. Is there any parameter which.
+
+107
+00:11:34.630 --> 00:11:40.379
+Ashwin Kamath: You see for us. What I'm trying to say is, if if you are depending on on us telling whether it went to the old or new.
+
+108
+00:11:40.910 --> 00:11:47.009
+Ashwin Kamath: that can potentially result in the same issues that we talked about. Right, Ranjit, with respect to migration and everything.
+
+109
+00:11:47.890 --> 00:11:48.570
+Ranjith Kumar Peddi: Okay.
+
+110
+00:11:49.120 --> 00:11:51.350
+Harikrishna Bojja: No, not just that. We will run
+
+111
+00:11:54.160 --> 00:11:55.620
+Ashwin Kamath: Your voice is breaking. Harry.
+
+112
+00:11:55.620 --> 00:11:59.769
+Harikrishna Bojja: Facing problems like, how about now, Ashwin?
+
+113
+00:12:01.670 --> 00:12:02.829
+Ashwin Kamath: Yeah. Now, it's better.
+
+114
+00:12:03.120 --> 00:12:04.640
+Harikrishna Bojja: Okay, so not.
+
+115
+00:12:05.210 --> 00:12:10.250
+Harikrishna Bojja: Is that right, you know, to add to your supporting point Ashwin. Right?
+
+116
+00:12:10.530 --> 00:12:27.339
+Harikrishna Bojja: Let's say, you know, we can get into this concurrency issues. Right? Let's say we placed an order. If we didn't get back the response on time. If someone placed an update order right? You know, we'll not be able to send that original order, and then we can eventually, those orders can eventually fail to process right? Depending on the original order number.
+
+117
+00:12:28.040 --> 00:12:33.239
+Ashwin Kamath: Not only will result all the issues that you talked about, but could we get into these situations? As well?
+
+118
+00:12:35.410 --> 00:12:36.790
+Ashwin Kamath: Yeah, yeah.
+
+119
+00:12:37.130 --> 00:12:37.730
+Ranjith Kumar Peddi: And so it's.
+
+120
+00:12:37.730 --> 00:12:41.930
+Manjunath Bavikatte Andanappa: Then follow when you say the connection, update is a connection, update.
+
+121
+00:12:43.210 --> 00:12:48.170
+Harikrishna Bojja: That's right. That's right. I mean just
+
+122
+00:12:48.170 --> 00:12:52.049
+Harikrishna Bojja: and seconds after the create. Also, you know, it's it's a possible use case.
+
+123
+00:12:52.270 --> 00:12:56.719
+Ranjith Kumar Peddi: It could happen, but you know it's always on the same port, right? Not a different port.
+
+124
+00:12:57.210 --> 00:12:58.159
+Harikrishna Bojja: That's right.
+
+125
+00:12:59.454 --> 00:13:22.700
+Manjunath Bavikatte Andanappa: Experience. And Siebil right? We actually always wanted to use a single virtual port uid as the identifier across all systems. That's why we were heading towards. And that's where we went. Made a lot of changes in a lot of systems to make it consistent.
+
+126
+00:13:23.380 --> 00:13:24.100
+Ranjith Kumar Peddi: Okay.
+
+127
+00:13:24.100 --> 00:13:25.230
+Manjunath Bavikatte Andanappa: So, yeah.
+
+128
+00:13:26.020 --> 00:13:29.280
+Ajay Singh: But one question to ask, when is, when you do a change order?
+
+129
+00:13:29.610 --> 00:13:33.880
+Ajay Singh: Would you just send a connection uuid, or you will send the aside point access uui.
+
+130
+00:13:33.880 --> 00:13:40.029
+Ashwin Kamath: We will. So here's the thing right. We will be sending this payload, irrespective of whether it's add update or delete.
+
+131
+00:13:40.610 --> 00:13:48.560
+Ajay Singh: So so, connection amids even the change order, can we just check what was the A side point? Access uuid.
+
+132
+00:13:49.910 --> 00:13:55.804
+Ashwin Kamath: Yes. So asap access point uid, we can send it across. But if you're telling me, I need to find out, where is this?
+
+133
+00:13:56.050 --> 00:14:06.329
+Ajay Singh: No, no, I meant to say if if because, since we are only supporting Colo and the phase one, you would be sending the port uid right, virtual port uid. Right in this value, correct.
+
+134
+00:14:07.930 --> 00:14:08.720
+Ashwin Kamath: Yes.
+
+135
+00:14:09.840 --> 00:14:16.309
+Ajay Singh: So can we just identify based on that? Or we still need to consider connection Uuid.
+
+136
+00:14:16.310 --> 00:14:32.629
+Ashwin Kamath: Oh, oh, oh, now I understood your question. Okay? Sorry. Ajay. Okay. So your question is, can you just consider based on this and the and the origin metro and and bake it off that one. That that's the question, or actually just the Asap access point uid you you you could do that. Yes.
+
+137
+00:14:33.270 --> 00:14:33.850
+Ajay Singh: Because.
+
+138
+00:14:33.850 --> 00:14:37.059
+Ashwin Kamath: Because after you for R. 3 for R. 3, yes.
+
+139
+00:14:38.460 --> 00:14:39.250
+Ajay Singh: Okay.
+
+140
+00:14:39.930 --> 00:14:46.909
+Mariprabha Chidambaram: But Ashwin question here is, so so when we say a side access point, right? That.
+
+141
+00:14:46.910 --> 00:14:56.900
+Ashwin Kamath: So for R. 3. So sorry, Maripha, I just want to complete. But I think I gave missing wrong this thing. There, Ajay ajay for R. 3, you'll have to consider a set access point type and access point uid. Both.
+
+142
+00:14:56.900 --> 00:15:02.450
+Ajay Singh: Yeah, yeah, I got that point. So, but I'm just thinking, do I really need to worry about connection? Uuid.
+
+143
+00:15:02.680 --> 00:15:06.590
+Ashwin Kamath: No, no, not for if you're looking at just plain R. 3, not really.
+
+144
+00:15:08.480 --> 00:15:09.840
+Ajay Singh: Okay, got it?
+
+145
+00:15:10.150 --> 00:15:34.679
+Manjunath Bavikatte Andanappa: Just think about this right, Ajay. When we go to release 4 release 3 is done. We deployed. We have connections created and release. 4. We have enabled additional Ib access, and there are connections that are created in the in those additional ibx's in the old stack right at that time. If you have not done your migrations from
+
+146
+00:15:34.680 --> 00:15:40.839
+Manjunath Bavikatte Andanappa: the old stack to the new stack for those new and in newly enabled Ibx's, we will still have that issue.
+
+147
+00:15:40.840 --> 00:16:00.430
+Ashwin Kamath: No, no, Majunath, I think our 4 conversations. Let's keep it on hold, for now I'm sorry for cutting you there, but here's the way I look at. I I think I'm getting a a if I understood Ajay's point. What what they're trying to say is a billing account for the connection is always the aside access point type. Okay? And as long as the aside access point is in the new stack.
+
+148
+00:16:00.510 --> 00:16:23.007
+Ashwin Kamath: the connection can go into the new stack is is the thought process, then okay, and and so if they do migration, let's say of the access inside access point, then post migration. If I understood correctly. Ajay, if you go if you go blindly by that approach, then essentially post migration, I'm assuming when you migrate the inside access point. You'll also migrate the associated connection as well.
+
+149
+00:16:23.791 --> 00:16:31.849
+Ashwin Kamath: Marie, provide. This is to you and and and essentially we'll handle it appropriately, is how we look at it. Post R. 4. But we can double click that separately. Subsequently.
+
+150
+00:16:32.190 --> 00:16:33.560
+Manjunath Bavikatte Andanappa: No, that makes sense. Thank you.
+
+151
+00:16:34.780 --> 00:16:35.490
+Ashwin Kamath: Ajay.
+
+152
+00:16:35.830 --> 00:16:37.720
+Ajay Singh: Yeah, yeah, sounds good. So
+
+153
+00:16:38.130 --> 00:17:04.730
+Ajay Singh: yeah. So for like, just to be clear now. So for R, 3 means payload, and we are not gonna change z side access points. Type has to be confirmed whether we still need it, but from the like, from just from the checking perspective, I will always check a side access point and a side access point type, and we'll make the decision in R. 3 we'll we'll revisit later. But for timing, that's how we will calculate. Yeah.
+
+154
+00:17:04.910 --> 00:17:05.490
+Harikrishna Bojja: Hey?
+
+155
+00:17:05.760 --> 00:17:13.680
+Harikrishna Bojja: And Ajay for R. 3. If I'm understanding the conversation right over the colo access.
+
+156
+00:17:14.589 --> 00:17:20.389
+Harikrishna Bojja: we'll go through the new stack, and everything else will go through the old stack. Is that right assumption? Or I'm wrong.
+
+157
+00:17:20.390 --> 00:17:20.900
+Manjunath Bavikatte Andanappa: Oh!
+
+158
+00:17:20.900 --> 00:17:22.459
+Ajay Singh: On the location point.
+
+159
+00:17:22.460 --> 00:17:31.870
+Manjunath Bavikatte Andanappa: There is also additional caveat to that right when we say collocation collocation plus the customer. Demarcation and tethered Ibx are in the same ibx.
+
+160
+00:17:31.870 --> 00:17:34.710
+Mariprabha Chidambaram: Yeah, it has to be standard, not campus.
+
+161
+00:17:34.950 --> 00:17:38.579
+Manjunath Bavikatte Andanappa: Yeah, you cannot have campus or fiber or metro connected Ibx's.
+
+162
+00:17:39.220 --> 00:17:49.919
+Mariprabha Chidambaram: Yeah. I was asking this question, if we go with this approach without checking on the connection uuid will that I I'm just wondering. Will that result
+
+163
+00:17:50.360 --> 00:17:55.939
+Mariprabha Chidambaram: in giving us the wrong stack? Because I'm just.
+
+164
+00:17:55.940 --> 00:17:59.640
+Ajay Singh: But so so we will not check connection. Uid right? So now
+
+165
+00:18:00.361 --> 00:18:20.079
+Ajay Singh: just to let me just tell you about a little bit implementation. So I would only check a side access point type. If it is a colo, I will. If it's not a colo, I would short circuit it. I mean, we'll return directly, and then, if it is a colo, then I will check the port where it was provisioned, and then we'll just return, based on that value.
+
+166
+00:18:21.450 --> 00:18:28.589
+Mariprabha Chidambaram: Okay, that is for the connection install right for the connection change
+
+167
+00:18:29.170 --> 00:18:37.320
+Mariprabha Chidambaram: change orders. Don't we have to refer to the connection u Uid, or we'll still go with the same approach as installed.
+
+168
+00:18:38.090 --> 00:18:44.479
+Ajay Singh: But but if install is on the new set, new new stack, the change will also go on the new stack. I would say.
+
+169
+00:18:44.640 --> 00:18:45.889
+Ajay Singh: I mean, do we really need.
+
+170
+00:18:45.890 --> 00:19:02.189
+Mariprabha Chidambaram: Correct, correct. I I get it. But when we say, see for the install we are for a connection install we are checking whether the port is installed on the new stack, and we are routing again. I'm just keeping it open because we still have to discuss on the Z side.
+
+171
+00:19:02.190 --> 00:19:24.619
+Ashwin Kamath: So what is the what is the issue with it? Maripha, if if let's assume, I'm just trying to think aloud here. Okay. Just for R, 3, post R, 3. Okay, that may not work. Post R, 4. Okay. Just calling that out as well. So, but for R. 3. Essentially, what we're saying is whether it's create, update, or delete of a connection. As long as it's on an on a port that's in the new stack. We are saying it will go to the new stack.
+
+172
+00:19:26.110 --> 00:19:33.070
+Mariprabha Chidambaram: Yeah, that is the current I mean current understanding as well. If a port is on the new stack, the Vc. Will go to the new stack.
+
+173
+00:19:33.070 --> 00:19:33.710
+Ashwin Kamath: Yes.
+
+174
+00:19:34.300 --> 00:19:41.800
+Mariprabha Chidambaram: Yeah, just that. I just wanted to reconfirm with Drew on the Z side access point alone. Yeah.
+
+175
+00:19:42.190 --> 00:19:42.950
+Ashwin Kamath: Agreed.
+
+176
+00:19:43.430 --> 00:19:49.980
+Ashwin Kamath: If if we confirm that Z side is supported, the multipoint connections are supported. I think, then, then, we are golden. There.
+
+177
+00:19:51.390 --> 00:19:52.520
+Mariprabha Chidambaram: Yes, yes.
+
+178
+00:19:53.030 --> 00:19:54.210
+Harikrishna Bojja: Yeah, so we could.
+
+179
+00:19:55.142 --> 00:20:07.099
+Manjunath Bavikatte Andanappa: So on that right from our side Ashwin. I think we don't have any issues right for doing it in for network or anything else does not matter for us.
+
+180
+00:20:07.100 --> 00:20:07.910
+Ashwin Kamath: Yes, sir.
+
+181
+00:20:08.100 --> 00:20:09.160
+Manjunath Bavikatte Andanappa: Okay. Cool. Thanks.
+
+182
+00:20:09.760 --> 00:20:10.300
+Harikrishna Bojja: Yeah.
+
+183
+00:20:10.690 --> 00:20:18.740
+Srimanth's iPhone: So, Ashwin, I have one more question, Ashwin team. I'm actually on my phone. So I don't have access to my laptop. Can I trouble you to open that
+
+184
+00:20:18.920 --> 00:20:20.153
+Srimanth's iPhone: product sheet
+
+185
+00:20:20.920 --> 00:20:28.500
+Srimanth's iPhone: So my question is around the skew value. Right? I I know we already touched upon it. We are, I think most of us are suspecting there is a typo there.
+
+186
+00:20:28.710 --> 00:20:39.829
+Srimanth's iPhone: but if I remember, off the top of my head the skew that comes for port or connection is, it usually has this prefix da dot, efp da dot efvc.
+
+187
+00:20:40.180 --> 00:20:46.159
+Srimanth's iPhone: If the values are maintained in the backend system in that way based on the offline order. I'm just thinking.
+
+188
+00:20:46.160 --> 00:20:55.599
+Ashwin Kamath: No, no, no, I I'll just quickly share. Okay. So when you look at it. So the way there we have mapped it is here, product product management product.
+
+189
+00:20:55.600 --> 00:20:56.429
+Srimanth's iPhone: Correct, correct.
+
+190
+00:20:56.430 --> 00:21:00.270
+Ashwin Kamath: Yeah, yeah, if you come to product management here, it's this queue, this this.
+
+191
+00:21:00.270 --> 00:21:01.679
+Srimanth's iPhone: Correct, correct.
+
+192
+00:21:01.680 --> 00:21:11.609
+Ashwin Kamath: And this queue is essentially going to be Efp, Efvc, sce, CC, and acc, okay. So if if we see for fabric virtual connection.
+
+193
+00:21:11.610 --> 00:21:12.010
+Srimanth's iPhone: Better.
+
+194
+00:21:12.010 --> 00:21:18.229
+Ashwin Kamath: We call fabric ports. So this is what I I believe is what we are saying will be this Q. And a number there in that Api
+
+195
+00:21:18.700 --> 00:21:31.039
+Srimanth's iPhone: Correct. I understand that. But actually, if I remember, the offline events that come right against the domain orders the same. The same parameter intelligence skews also there that helps us to determine.
+
+196
+00:21:31.040 --> 00:21:37.270
+Ashwin Kamath: Yeah, yeah. But in that case, so intelligence queue stands for different thing in different context. I, I understand your confusion. There.
+
+197
+00:21:37.270 --> 00:21:46.749
+Srimanth's iPhone: The reason is like because we are storing it in that way. And then when we are again trying to check for coexistence right? And if that value doesn't match, maybe I'm just.
+
+198
+00:21:46.750 --> 00:21:53.163
+Ashwin Kamath: No, no, we cannot use that one. So for us we I hear your point, but that's not what we can use. There.
+
+199
+00:21:54.380 --> 00:22:01.030
+Ajay Singh: Just to to tell you right? So that is what you see is product offering.
+
+200
+00:22:02.130 --> 00:22:11.400
+Ajay Singh: Sku. It means a logical selling sku, I mean to say, but the one which is the product domain order, that is, di dot dot something like that. Correct.
+
+201
+00:22:11.400 --> 00:22:14.609
+Srimanth's iPhone: Exactly the di dot efvc di dot efp.
+
+202
+00:22:14.610 --> 00:22:26.029
+Ajay Singh: This one is more from the like point of view, like what you are selling, so that will be always Tfc, or whatever are the possible values we are configuring on that only.
+
+203
+00:22:27.420 --> 00:22:28.670
+Mariprabha Chidambaram: Yeah, that's correct.
+
+204
+00:22:30.150 --> 00:22:35.920
+Ashwin Kamath: So this is at the offering level. sheena.
+
+205
+00:22:35.920 --> 00:22:36.640
+Srimanth's iPhone: Okay.
+
+206
+00:22:38.150 --> 00:22:47.719
+Srimanth's iPhone: yeah. So I mean, like, if you want, you understood my question. Right? I think because we we see this information from the offline systems. And we are storing this value, not storing in the sense we are repurposing this value for us.
+
+207
+00:22:47.720 --> 00:22:56.090
+Ashwin Kamath: But this. But no, no, this purpose, this value that is being used is different from that one, that this is offering level, that is more of a product, domain, order, level.
+
+208
+00:22:56.350 --> 00:22:57.280
+Srimanth's iPhone: Okay.
+
+209
+00:22:57.440 --> 00:23:00.000
+Ashwin Kamath: Okay, so that is a little more. 1 1 level down.
+
+210
+00:23:00.800 --> 00:23:02.680
+Srimanth's iPhone: Okay, got it. Okay. If there is.
+
+211
+00:23:06.260 --> 00:23:13.080
+Ashwin Kamath: Yeah. Any any other questions, Madi Prabha, from your perspective for us.
+
+212
+00:23:13.430 --> 00:23:15.530
+Ashwin Kamath: we are kind of clear on this one.
+
+213
+00:23:16.439 --> 00:23:22.430
+Ashwin Kamath: We need to double check on with Drew on on the Z side, whether multiple connections are supported or not.
+
+214
+00:23:23.187 --> 00:23:25.659
+Ashwin Kamath: I actually checked the
+
+215
+00:23:25.850 --> 00:23:33.554
+Ashwin Kamath: and Dt. 3 sheet right now it seems like it is in but but I would like to confirm it with Drew once, just to be sure!
+
+216
+00:23:34.440 --> 00:23:35.730
+Ashwin Kamath: it is truly in.
+
+217
+00:23:36.740 --> 00:23:41.819
+Harikrishna Bojja: So so, folks, you know. By the way, you know, the Z Side decision is not a blocker for us.
+
+218
+00:23:42.672 --> 00:23:54.919
+Harikrishna Bojja: We are good, you know, we we don't really mind whether sending it or not. As long as we are not creating data dependence. We are good, that's not. That's not a blocking decision. We will. We can start the development without that decision
+
+219
+00:23:55.810 --> 00:24:00.009
+Harikrishna Bojja: and one clarification. So we have a duke here in the call.
+
+220
+00:24:00.523 --> 00:24:06.859
+Harikrishna Bojja: I think Ajay and Maripha going forward. Duke will be in touch with you guys during the execution phase
+
+221
+00:24:07.437 --> 00:24:14.809
+Harikrishna Bojja: both now during execution and as well as Uit timeframe, for you know anything related to this coexistence? Logic.
+
+222
+00:24:16.140 --> 00:24:19.710
+Ajay Singh: Sure. But the Ap. Is already deployed. So maybe
+
+223
+00:24:20.303 --> 00:24:28.199
+Ajay Singh: like can test it out. But yeah, just can ping me if any technical question any logical question can ping my Prabha offline.
+
+224
+00:24:28.820 --> 00:24:32.260
+Harikrishna Bojja: Thank you. Are you available via the team, or slack.
+
+225
+00:24:33.020 --> 00:24:35.009
+Mariprabha Chidambaram: Teams. So.
+
+226
+00:24:35.170 --> 00:24:35.900
+Ajay Singh: Yeah.
+
+227
+00:24:36.990 --> 00:24:45.740
+Harikrishna Bojja: I I think we have an existing Teams group Duke. Maybe you know I or you know, Manju will add you into that group so that we can start conversing over there.
+
+228
+00:24:46.390 --> 00:24:47.250
+Duc Ha: Yes, please.
+
+229
+00:24:48.160 --> 00:24:52.299
+Harikrishna Bojja: Okay, yeah. Or you can start offline conversations anytime with Ajay or Mari Prabha.
+
+230
+00:24:54.600 --> 00:25:00.341
+Harikrishna Bojja: Okay, cool. Sounds good. Yeah. This Api is good for us from our side folks.
+
+231
+00:25:00.700 --> 00:25:05.170
+Ajay Singh: Yeah sku name, though I I just noted there's a typo. So I'll just update it.
+
+232
+00:25:05.550 --> 00:25:06.250
+Ashwin Kamath: Yes, sir.
+
+233
+00:25:07.180 --> 00:25:12.079
+Harikrishna Bojja: Duke, if you want to do a quick test. Ajay, you know, I think what we need is
+
+234
+00:25:12.700 --> 00:25:22.079
+Harikrishna Bojja: you know the host names and the proper URL working call. Maybe I think we have existing Api keys for dih, Apis!
+
+235
+00:25:22.631 --> 00:25:28.140
+Harikrishna Bojja: If you think that is good, I think we will go ahead and use them itself, unless you say, you know, we need a new ones.
+
+236
+00:25:29.090 --> 00:25:33.580
+Ajay Singh: I will share the call with like we we do
+
+237
+00:25:33.700 --> 00:25:36.339
+Ajay Singh: so maybe he can just try it, for from there.
+
+238
+00:25:37.240 --> 00:25:38.889
+Harikrishna Bojja: Okay. Sounds. Great.
+
+239
+00:25:39.230 --> 00:25:54.400
+Srimanth's iPhone: So. And yeah, regarding the Api key. So we, since we have already tested the Dah domain order Api updates and the task, can we just reuse, reuse the same Api key, or should we request one for this one? I I don't think so. There is a need right.
+
+240
+00:25:55.474 --> 00:25:58.319
+Ajay Singh: This is actually not applied in dih! But let me.
+
+241
+00:25:58.320 --> 00:25:59.680
+Srimanth's iPhone: Okay. Okay.
+
+242
+00:26:00.210 --> 00:26:03.109
+Harikrishna Bojja: For for every client you need to have one Api key right.
+
+243
+00:26:03.110 --> 00:26:13.829
+Srimanth's iPhone: Correct. Yeah, I think we requested one. Rf, we basically gave our client details and the Aps that we did. And in typical admin, we got an Api key, and we deployed that involved.
+
+244
+00:26:13.830 --> 00:26:21.090
+Ajay Singh: This is, this is still deploying the product. So let me confirm you if we can. Yeah.
+
+245
+00:26:21.090 --> 00:26:29.809
+Harikrishna Bojja: And on this Api do you have? You know what is the source of the origin? I mean, basically. Who's who's making the call?
+
+246
+00:26:31.071 --> 00:26:33.319
+Ajay Singh: Right now. That check is not there.
+
+247
+00:26:34.050 --> 00:26:37.570
+Ajay Singh: If you want that one, let me know. But we love it.
+
+248
+00:26:37.570 --> 00:26:46.715
+Harikrishna Bojja: It's for you, right? This is, by the way, Arif, so basically, this is for you as a platform, you should know. Right, you know who's making call, I mean for your audit purpose.
+
+249
+00:26:47.650 --> 00:26:55.160
+Harikrishna Bojja: because today it is just fabric. But you know, tomorrow it will be network has secured care. Blah blah blah, right? So you know, anybody can use this Api right.
+
+250
+00:26:55.540 --> 00:27:00.189
+Ajay Singh: Okay, yeah. Let me check on that. If you want to pass the app name along with the Api key. Yeah.
+
+251
+00:27:00.440 --> 00:27:08.339
+Harikrishna Bojja: Yeah. Yeah. Well, one last question is, is this exposed via gateway? Or, you know, are we talking to your
+
+252
+00:27:08.560 --> 00:27:20.270
+Harikrishna Bojja: one of the internal apg which we have to. The the reason I'm asking is, we have to make sure that you know our servers are able to talk to the host. Usually we hit these blockers at the end. Just want to make sure that you know we are good. There.
+
+253
+00:27:20.270 --> 00:27:28.852
+Ajay Singh: Definitely like, I think you're already consuming those host like sit ones. So I'm pretty certain that that would not be a problem
+
+254
+00:27:29.720 --> 00:27:35.039
+Harikrishna Bojja: So ajit ajay, if you can share the maybe sit uat and production as well. These hosts.
+
+255
+00:27:35.150 --> 00:27:37.689
+Harikrishna Bojja: we will raise a quick ticket or sre team.
+
+256
+00:27:38.135 --> 00:27:46.069
+Harikrishna Bojja: To see. Make sure, just to make sure that you know our communication is fine, otherwise they're hard to solve. Hard to solve. The you know
+
+257
+00:27:46.553 --> 00:27:51.540
+Harikrishna Bojja: the firewall issues in the last minute. Usually we always at the end.
+
+258
+00:27:51.950 --> 00:27:56.920
+Ajay Singh: Sure. Sure I will share all the all. The host sit uitn products in the yeah.
+
+259
+00:27:57.480 --> 00:28:10.200
+Harikrishna Bojja: Yeah, yeah, I mean, if it is dih, we are good because we're already talking to dih, we had the same issue with Dih, establishing this communication at the end. Just want to make sure that we are not repeating the same.
+
+260
+00:28:12.640 --> 00:28:19.779
+Harikrishna Bojja: so can can I ask one question. So this Api does it have any dependency on service now? Uptime.
+
+261
+00:28:20.250 --> 00:28:28.769
+Ajay Singh: No, there is no dependency on service now. Uptime it calls the domain orders, which is like offline cache.
+
+262
+00:28:29.090 --> 00:28:31.829
+Ajay Singh: So even service now is down. This Api will work.
+
+263
+00:28:32.490 --> 00:28:33.140
+Harikrishna Bojja: Okay.
+
+264
+00:28:33.400 --> 00:28:46.180
+Harikrishna Bojja: Okay, yeah. Just if I right, this is going to be a breaking change. Guys, I mean, what I mean to say is, a breaking integration. Right? If if this Api fails, basically will not be able to place the order.
+
+265
+00:28:47.000 --> 00:28:52.170
+Harikrishna Bojja: Yeah, it's a synchronous integration. So just keep that in mind.
+
+266
+00:28:52.717 --> 00:28:56.490
+Harikrishna Bojja: You know high availability is the key here. Folks.
+
+267
+00:28:56.630 --> 00:29:02.370
+Ajay Singh: So so one question to my Prabha, if the Apa fails, Whoa!
+
+268
+00:29:02.840 --> 00:29:05.530
+Ajay Singh: What should we block the order? Go to old Stack.
+
+269
+00:29:05.530 --> 00:29:13.170
+Srimanth's iPhone: Exactly. I think they had the same question, do we have a default approach where there is an Api failure? Do we stall the order as such, or.
+
+270
+00:29:13.170 --> 00:29:15.960
+Ranjith Kumar Peddi: At least we are talking ajay like.
+
+271
+00:29:18.050 --> 00:29:23.800
+Ajay Singh: Would be anything like. Imagine just something can go wrong in a technical Ops world.
+
+272
+00:29:23.800 --> 00:29:28.230
+Ranjith Kumar Peddi: If it is a network issue. Let's let's say, if this aph is not available right.
+
+273
+00:29:28.230 --> 00:29:35.670
+Ajay Singh: Api is because I'm searching the domain order that's not available. I will be not able to serve means
+
+274
+00:29:36.020 --> 00:29:50.969
+Ajay Singh: even. I'm trying 3 times. But let's say it does not work, or it is taking a lot of time to search the order, then sometime it can go wrong. Right? That's means we have to document that right. What's the behavior? If something goes wrong, should we stop the order or
+
+275
+00:29:51.230 --> 00:29:54.459
+Ajay Singh: go to the old stack? So I think that one you need to.
+
+276
+00:29:54.720 --> 00:30:00.930
+Ranjith Kumar Peddi: Yeah, is there any network issue timeout issues that we need to sort out? I mean, the Api should be always up.
+
+277
+00:30:01.130 --> 00:30:03.539
+Ranjith Kumar Peddi: and there shouldn't be any connectivity issues.
+
+278
+00:30:03.760 --> 00:30:12.382
+Ranjith Kumar Peddi: But in terms of you know, if Api is not able to determine whether it should go to New Stack or Old Stack, the default should be the legacy
+
+279
+00:30:12.920 --> 00:30:14.020
+Srimanth's iPhone: Oh, okay.
+
+280
+00:30:16.590 --> 00:30:41.660
+Mariprabha Chidambaram: But again, if if we put that if we get to that understanding right, ajay, maybe the logic of assuming if the port is a new stack, then the Vcs. Will be on the new stack is something little. I I think we'll have to really think about it, because for some reason, if you really send the connection to the legacy stack right?
+
+281
+00:30:41.690 --> 00:30:48.009
+Mariprabha Chidambaram: But we are going with the assumption that if port is on new stack connection will also be on the new stack.
+
+282
+00:30:49.920 --> 00:31:03.160
+Ashwin Kamath: But from our side, from our side. What we are saying essentially is Maripha and Ranjit and Ajay is that let me make the call. So we are making this call only for new stack logos, new stack accounts. Okay?
+
+283
+00:31:03.560 --> 00:31:10.730
+Ashwin Kamath: I still need the details on, how am I going to get from the Dih Api. Whether the account is on the new stack or the old stack, we need to double click on that part.
+
+284
+00:31:11.253 --> 00:31:24.290
+Ashwin Kamath: But I'm assuming that attribute will be added Ajay. And Ranjit Ranjit Ranjit, I think, and and based on that conversation only if it's new stack we are going to make this check coexistence Api.
+
+285
+00:31:24.510 --> 00:31:36.689
+Ashwin Kamath: And and if the Api fails then essentially, we'll block the order until that Api works for us. Just just an Fa, okay? Because, we will. We are not very comfortable moving ahead on the old or the new without clear.
+
+286
+00:31:36.690 --> 00:31:42.319
+Ranjith Kumar Peddi: Yeah, I agree. I think you should stage until unless the Api. So if Api itself is down, yeah, you will not be able to determine.
+
+287
+00:31:42.920 --> 00:31:43.650
+Ashwin Kamath: Cool.
+
+288
+00:31:44.067 --> 00:31:50.482
+Ashwin Kamath: So so, Ajay, the blast radius is low. Okay, just an low in terms of we are not going to bombard you with calls
+
+289
+00:31:50.750 --> 00:31:57.319
+Ajay Singh: No problem. I need to drop off. So thank you. If any question ping me offline. Yeah, thank you.
+
+290
+00:31:58.840 --> 00:31:59.450
+Mariprabha Chidambaram: Do you want.
+
