@@ -1,0 +1,1034 @@
+WEBVTT
+
+1
+00:00:00.540 --> 00:00:07.419
+Ajay Singh: Okay. So thanks, everybody for joining. So I set up this call to, I have some questions, high level questions
+
+2
+00:00:07.866 --> 00:00:11.849
+Ajay Singh: I was reviewing the contract which was shared shared with us last week.
+
+3
+00:00:12.150 --> 00:00:15.530
+Ajay Singh: So with that I will start sharing my screen.
+
+4
+00:00:15.780 --> 00:00:19.140
+Ajay Singh: And please let me know if you can see my screen.
+
+5
+00:00:20.110 --> 00:00:28.009
+Ajay Singh: So so, yeah, so like from our side, the main objective is to have a similar.
+
+6
+00:00:28.180 --> 00:00:39.140
+Ajay Singh: We have some changes, of course, in the New World. But the objective is gonna be same like we are. Just gonna show the timeline of the events for for flowing for the activity.
+
+7
+00:00:39.510 --> 00:00:48.220
+Ajay Singh: So I looked at the contact which was shared with me. So from the this green check boxes, like like the activity status, I understood
+
+8
+00:00:48.320 --> 00:00:50.779
+Ajay Singh: like how it's gonna work.
+
+9
+00:00:50.910 --> 00:00:58.999
+Ajay Singh: But the thing which I couldn't understand is that how any like activity update
+
+10
+00:00:59.310 --> 00:01:06.710
+Ajay Singh: is associated with a note like, if there is any note on that particular update how to get that value.
+
+11
+00:01:06.840 --> 00:01:16.439
+Ajay Singh: So let me tell you what I meant by that is, is one second. So hold on a minute.
+
+12
+00:01:16.920 --> 00:01:20.270
+Ajay Singh: Let me just this around. Give me a second.
+
+13
+00:01:22.690 --> 00:01:34.470
+Ajay Singh: Yeah. So here in the audit search, I'm gonna use this Api right to to paint, start painting my screen like, especially the the green check boxes.
+
+14
+00:01:34.580 --> 00:01:39.909
+Ajay Singh: so I would be only looking towards like. Let me open this.
+
+15
+00:01:40.980 --> 00:01:46.399
+Ajay Singh: I would be only looking towards like yeah, or this one.
+
+16
+00:01:46.710 --> 00:01:52.120
+Ajay Singh: So I would be only looking towards my audits, which are kind of a header.
+
+17
+00:01:52.610 --> 00:01:56.730
+Ajay Singh: And like like like this one activity statuses.
+
+18
+00:01:56.960 --> 00:02:14.859
+Ajay Singh: So with that, having said that right? So I was not able to correlate. So this is fine, like activity is moving from one state to another, and field name is there new and old values there. So which is good. I can paint my screen, especially the activity view.
+
+19
+00:02:14.970 --> 00:02:19.660
+Ajay Singh: But I couldn't get a hold of how I would know
+
+20
+00:02:20.120 --> 00:02:23.249
+Ajay Singh: what is the note associated with it, or like.
+
+21
+00:02:23.790 --> 00:02:31.390
+Ajay Singh: how how do I correlate those values right? Even they might not be coming now, maybe in phase one I don't know. But
+
+22
+00:02:31.870 --> 00:02:50.490
+Ajay Singh: since it's a long term contract, right? I want to understand like. For like, let's say this, this update, right? This update contains some notes, right? It it's very much possible. Right? So I want to understand, how would I associate this update with a note like which of the note is associated with this update?
+
+23
+00:02:50.991 --> 00:02:56.330
+Ajay Singh: Because in the notes section, whatever is in the activity. Id. I cannot find.
+
+24
+00:02:56.500 --> 00:03:01.030
+Ajay Singh: Like like that kind of association. Let me bring that up. Hold on
+
+25
+00:03:02.910 --> 00:03:07.349
+Ajay Singh: so. Nobody's having his own id, which is not linked up with the status update.
+
+26
+00:03:07.908 --> 00:03:17.070
+Ajay Singh: So I just want to understand, like, how this activity update will link back to the note like this status has this note
+
+27
+00:03:17.280 --> 00:03:19.249
+Ajay Singh: like even they might not be coming.
+
+28
+00:03:19.250 --> 00:03:28.100
+Srikanth Reddy: Understood. Yeah, understood. Ajay. So this particular Api based on the story, right? So we are only sharing the
+
+29
+00:03:28.100 --> 00:03:50.580
+Srikanth Reddy: any update that is happening on the activity level. So this is basically a audit history that we are sharing as part of this. Apa. Okay, if a note is added at what time it is added. If a attachment or characteristics update or labor hours or material updates update right? So this is basically an update api, anything that is updated on the activity
+
+30
+00:03:51.200 --> 00:03:53.800
+Srikanth Reddy: we are publishing as part of this Api, that is, top point
+
+31
+00:03:54.130 --> 00:04:02.300
+Srikanth Reddy: step 2. I understood. There are certain cases, maybe this, whatever you are mentioning, right? The status to note relationship
+
+32
+00:04:02.500 --> 00:04:07.220
+Srikanth Reddy: that mainly happens during a two-way communication.
+
+33
+00:04:07.340 --> 00:04:16.539
+Srikanth Reddy: right when technician wants to interact with the customer or customer wants to interact with the technician working on the ticket. Right? So that's when we have the relationship.
+
+34
+00:04:16.649 --> 00:04:24.240
+Srikanth Reddy: But as of now, to my knowledge, we don't have any status to notes relationship built anywhere.
+
+35
+00:04:24.650 --> 00:04:27.410
+Srikanth Reddy: Maybe, Una, you can correct. Correct me.
+
+36
+00:04:27.800 --> 00:04:31.049
+Ajay Singh: So sorry sorry to jump in, but I would say.
+
+37
+00:04:33.082 --> 00:04:41.660
+Ajay Singh: Do we consider these these kind of things also as 2 way, like like a completion note.
+
+38
+00:04:41.680 --> 00:04:46.380
+Srikanth Reddy: Completion. Note. Mean, I don't know how we can get it to
+
+39
+00:04:47.440 --> 00:04:52.369
+Srikanth Reddy: existing stack, or even in the new stack. Maybe Una can help me understand that.
+
+40
+00:04:52.940 --> 00:04:53.370
+Ajay Singh: It's like.
+
+41
+00:04:53.370 --> 00:05:16.909
+Unnamalai Subramanian: Yeah, this completion. Notice also current. Currently, it is tied to the 2 way. Okay, because user will close the activity with the 2 way communication in it. Okay? But in the new world, definitely, we wanted to separate these 2, because this is more like a completion. Notice? Right? Like, okay, we completed your notes. Here is what the steps that we followed, what? Not right like whatever Tech wanted to share it with the customer. That could be a completion note. But
+
+42
+00:05:16.910 --> 00:05:24.259
+Unnamalai Subramanian: this is not necessarily a 2 way communication in the new World. Okay, that's something that we wanted to separate it out as a process.
+
+43
+00:05:25.100 --> 00:05:29.760
+Unnamalai Subramanian: But in today's world, in legacy world this is tied to the two-way communication.
+
+44
+00:05:31.730 --> 00:05:33.770
+Ajay Singh: So I have one question right? So
+
+45
+00:05:34.060 --> 00:05:36.560
+Ajay Singh: since smart hands also building up right? So
+
+46
+00:05:37.030 --> 00:05:48.639
+Ajay Singh: some of the smart hands like, especially the picture, request right, they will definitely need this completion. Note available on the day one right? Otherwise, how we will share the pictures with the customer.
+
+47
+00:05:48.950 --> 00:06:15.889
+Unnamalai Subramanian: Correct, correct. So that's where it it will become completion. Notice will also be a mandatory one. But what we are saying is a 2 way communication meaning. There are some doubts between customer and tech. Let let that be a 2 way communication which is going back and forth. This is more like a 1 way communication. Right? We we finished it. Here's what you asked for. Here is attachment of your picture that can be more like an external facing which can come to the customer. But need they don't have to really respond back to that.
+
+48
+00:06:17.450 --> 00:06:24.299
+Ajay Singh: So, yeah, so today, I understand out of scope for now. But but I just want to understand how this will come to me
+
+49
+00:06:24.480 --> 00:06:28.100
+Ajay Singh: like in which Api this would come. And how would I associate
+
+50
+00:06:28.210 --> 00:06:39.749
+Ajay Singh: like like like as a timeline? Right? Because here is that the modification will be also there. Right, Una. So are we saying the modification will be also 2 way, like considered as 2 way.
+
+51
+00:06:41.660 --> 00:07:05.950
+Unnamalai Subramanian: So we have to discuss through this one more. I mean, most likely this completion notice will be part of the activity status update. Okay, like, whenever there is an update that's going to happen where we say the activity is equal to resolved. Okay, then, definitely, there will be notes, attachments which will be given by the technician, and then the activity can be marked as resolved. Okay, but this will not be tied to the 2 way in the New World.
+
+52
+00:07:07.400 --> 00:07:18.379
+Ajay Singh: Okay? And so like, like going bit technical. Then where it would appear like in the in this, in this, like in this like in which of the Aps that would appear like.
+
+53
+00:07:18.550 --> 00:07:21.879
+Unnamalai Subramanian: Activity. Things right like get activity. Api details.
+
+54
+00:07:22.080 --> 00:07:24.009
+Unnamalai Subramanian: I don't know if that's the same one.
+
+55
+00:07:24.010 --> 00:07:26.110
+Srikanth Reddy: Id, right? The very 1st one.
+
+56
+00:07:26.480 --> 00:07:30.090
+Srikanth Reddy: Yeah, if you see here, right? So it will have
+
+57
+00:07:32.080 --> 00:07:44.059
+Srikanth Reddy: updates. I mean, so the tagging right? Maybe if there is like back and forth here, rights in the note section, right? Maybe when 2 way is enabled right? And again, what we haven't designed the 2 way in the new stack.
+
+58
+00:07:44.620 --> 00:07:49.129
+Srikanth Reddy: and which we are planning to take it up in 3.1 or 3.2. It is.
+
+59
+00:07:49.430 --> 00:08:05.330
+Srikanth Reddy: but we haven't designed how this 2 way looks in the new stack, but if it, if I want to compare it with the civil stack, right? Maybe there should be some correlation. Id that we will be maintaining in the note section. Assuming the customer has initiated a 2 way.
+
+60
+00:08:05.630 --> 00:08:08.260
+Srikanth Reddy: Right then that note, Id.
+
+61
+00:08:08.620 --> 00:08:34.270
+Srikanth Reddy: You have to generate that note. Id, because that Ecp will be having that note from the customer, and will be sent to Siebel. Or maybe, if the same design exists in service now, right? So that maybe Ecp, note Id or something that you will be passing it to us, we will be capturing it, and whenever that 2 way happens between customer and even technician now responds back to customer. Right? Everything will be based on that.
+
+62
+00:08:34.480 --> 00:08:46.319
+Srikanth Reddy: Ecp note, Id. We'll be sharing it back and forth. So that way we can correlate right when based on the logins. Whether it is a customer initiated. So then we'll be tagging it with technician initiated one.
+
+63
+00:08:46.580 --> 00:08:51.870
+Srikanth Reddy: So that way we can tag. But as of now, I don't have any requirements on 2 way
+
+64
+00:08:52.080 --> 00:08:52.969
+Srikanth Reddy: for the new start.
+
+65
+00:08:54.140 --> 00:09:05.320
+Ajay Singh: Okay. So so if I get it correctly for phase one only, the status update would be there. And the closing note, that's it. Right, Una? Or is there anything else.
+
+66
+00:09:06.970 --> 00:09:13.430
+Srikanth Reddy: Even closing note. I don't know, because if the 2 way is not initiated right then even a closing note will not be there.
+
+67
+00:09:13.890 --> 00:09:24.790
+Unnamalai Subramanian: That's right. We will send that closing notes will be there, but it will be a visibility internal at this point in time. Right? But this is where we were also asking, so manish if we want
+
+68
+00:09:25.080 --> 00:09:47.350
+Unnamalai Subramanian: at the time of the closure, if we want it to be more like a 1 way, communication especially for, say, smart hands, or for the light link verification. If we want to keep the visibility to be external, we have to still discuss through that. Okay, but for now, for R. 3, release. What we agreed is, every note will be note, and attachment will be of visibility internal only
+
+69
+00:09:47.550 --> 00:09:49.640
+Unnamalai Subramanian: because there is no two-way communication.
+
+70
+00:09:51.380 --> 00:09:57.989
+Ajay Singh: Okay? Because I'm just, I'm just thinking, like for smart hands Def, definitely, we need to expose it.
+
+71
+00:09:58.430 --> 00:10:08.360
+Ajay Singh: If we are exposing R 3, dot one, because close like, because there's 1 special type of smart hands like picture request, right? So that will not work right? So
+
+72
+00:10:08.490 --> 00:10:14.990
+Ajay Singh: if we are supporting that in the windows chat so so Manishani.
+
+73
+00:10:17.670 --> 00:10:20.530
+Manish Dharod: So this is for the R. 3 dot one right.
+
+74
+00:10:22.130 --> 00:10:24.939
+Ajay Singh: No, I'm just thinking from the overall design. So like.
+
+75
+00:10:25.676 --> 00:10:30.960
+Ajay Singh: yeah, so yeah, I think when the smart hand is supported at least
+
+76
+00:10:31.934 --> 00:10:37.280
+Ajay Singh: like a way for customer to be shared. A pictures has to be there like a screenshots.
+
+77
+00:10:37.380 --> 00:10:41.860
+Ajay Singh: So whether that comes as a completion note or update, I don't know, but
+
+78
+00:10:42.220 --> 00:10:46.920
+Ajay Singh: like like, as soon as the smart hands is rolled out which has to be there.
+
+79
+00:10:47.950 --> 00:10:58.490
+Manish Dharod: No make sense. I mean, I can. I can write it down on a paper Una, and then send it to you. We can talk about it.
+
+80
+00:10:58.980 --> 00:11:04.669
+Manish Dharod: and you know, smart hands team. If if needed, we can have them as well on the call. Would that.
+
+81
+00:11:04.670 --> 00:11:05.370
+Unnamalai Subramanian: Yeah.
+
+82
+00:11:05.370 --> 00:11:06.719
+Manish Dharod: Be the next step. Okay.
+
+83
+00:11:06.990 --> 00:11:32.609
+Unnamalai Subramanian: Yeah. And one more thing that we have to close out. Now, at least, smartrants is going to be 3.1 manish. So we are still okay there. One other open item for our 3 releases, this cross, connect lightlink verification in the previous call. Also, when we discussed, we all agreed that light link verification can come from the Eqp. Right. Sales assisted flow, and then in the Ecp. Side we are just going to display it. So with that said.
+
+84
+00:11:32.610 --> 00:11:37.970
+Unnamalai Subramanian: Do. We wanted to send the lightlink test results to the customer
+
+85
+00:11:38.160 --> 00:11:51.400
+Unnamalai Subramanian: that that's 1 open item. Maybe this is something that we have to check with Sonali, and then, if she says yes, then in that case, then notes and the attachments, the visibility should be external, and that is something which has to come into Ecp.
+
+86
+00:11:52.970 --> 00:11:54.810
+Ajay Singh: Because they didn't like.
+
+87
+00:11:55.070 --> 00:12:03.780
+Ajay Singh: yeah. So I think live link testing. If if they are asked, I think they expect that result in the close closing note, or somewhere. Right?
+
+88
+00:12:03.950 --> 00:12:06.800
+Ajay Singh: So, yeah, so, yeah.
+
+89
+00:12:07.250 --> 00:12:17.590
+Manish Dharod: So is is that I'm just wondering. Una, can you? Can you ask that question to Sonali on that team's chat so that we don't have to like. Wait for another call.
+
+90
+00:12:17.590 --> 00:12:23.489
+Unnamalai Subramanian: Yeah, yeah, sure. And then I'll add it to our CC. That Wiki page also. So that next week we'll have the chat there.
+
+91
+00:12:23.980 --> 00:12:25.420
+Manish Dharod: Yeah, that sounds good. Yeah.
+
+92
+00:12:25.430 --> 00:12:26.380
+Unnamalai Subramanian: Okay. Cool.
+
+93
+00:12:26.930 --> 00:12:42.640
+Ajay Singh: Okay, so so manish just to reiterate. So like for all 3 whatever you see in the green check boxes that will be only available in Ecp, so we will be not having any update user request modification and the completion note, unless Una confirms it, could be there.
+
+94
+00:12:42.890 --> 00:12:52.259
+Ajay Singh: So for Ecp, right now, at this space, R. 3, we will be only have painting the green check boxes. What you see on the screen is that fine? Right?
+
+95
+00:12:52.260 --> 00:12:55.479
+Manish Dharod: Yeah, yeah, that makes sense. Yeah, that that's fine. Yeah. For now.
+
+96
+00:12:55.820 --> 00:12:57.679
+Ajay Singh: So she can't now not do.
+
+97
+00:13:04.340 --> 00:13:09.590
+Srikanth Reddy: So I think the current Api should. Will be okay. Right? Okay? In that case.
+
+98
+00:13:09.710 --> 00:13:12.630
+Srikanth Reddy: yeah, yeah, for green.
+
+99
+00:13:12.630 --> 00:13:20.029
+Ajay Singh: For for green check boxes. I'm good. The Api is fine, so I can. I I think I have all the things which needed for this one.
+
+100
+00:13:20.544 --> 00:13:31.890
+Ajay Singh: So I think, yeah, unless, like, Una confirms on the completion note, I would be just. You'll be just showing this for time being. The green boxes. So yeah, so I think
+
+101
+00:13:32.050 --> 00:13:37.429
+Ajay Singh: from that perspective, I think then we are good. I don't have any further question so.
+
+102
+00:13:37.430 --> 00:13:51.080
+Unnamalai Subramanian: Just update one other thing on the light link verification, right? Like one more thing that I want to call out is even though we are supporting it from Jarvis side. Okay, they have marked this one as a stitch
+
+103
+00:14:02.160 --> 00:14:17.639
+Unnamalai Subramanian: with that also. Maybe I'll I'll post all of this in the Channel manish. So maybe, even though we are showing the lightly verification right like, I don't know whether we can really test this end to end for our 3 releases, because from charm's side they are saying it's reachable for them.
+
+104
+00:14:19.610 --> 00:14:20.790
+Manish Dharod: Oh! Is it.
+
+105
+00:14:21.240 --> 00:14:21.860
+Unnamalai Subramanian: Yes.
+
+106
+00:14:23.610 --> 00:14:26.721
+Manish Dharod: Okay, okay, so do we need then,
+
+107
+00:14:27.290 --> 00:14:32.270
+Manish Dharod: like, a meeting with the Jarvis team, or or what do you.
+
+108
+00:14:33.498 --> 00:14:58.170
+Unnamalai Subramanian: I think from with considering their capacity right. They have put this out after the 4 4 sprints right like right now we are in our second sprint now, so 2 more sprints to go. After that they are saying they can take this. So which means, during our sat timeframe support, they will start working on from our side fulfillment. Ltc fulfillment side. We have already developed this activity. So if even if we have to do our testings
+
+109
+00:14:58.410 --> 00:15:08.170
+Unnamalai Subramanian: with the upstream systems. I think we can still try to do between, say, Ecp and the service. Now, activities, for now and once Jarvis is ready, then we can try the end to end.
+
+110
+00:15:08.990 --> 00:15:15.449
+Manish Dharod: Okay, okay? So yeah, I mean, we can. We can highlight that as one of the risks in our.
+
+111
+00:15:15.760 --> 00:15:17.809
+Manish Dharod: you know, common call that we have.
+
+112
+00:15:18.470 --> 00:15:19.160
+Unnamalai Subramanian: Shit.
+
+113
+00:15:19.270 --> 00:15:25.509
+Unnamalai Subramanian: So that's why I'm saying, maybe rightly. But if that is the case, probably this will become 3 dot one for us lightly also
+
+114
+00:15:25.620 --> 00:15:35.000
+Unnamalai Subramanian: right? And then at that point in time, even whatever we identify, whether the visibility should be external meaning. Okay, the notes and attachments can also be visible to our customers.
+
+115
+00:15:37.100 --> 00:15:44.549
+Manish Dharod: Okay, okay, let me let me put this down as a potential risk, and then let's have a have a discussion on this with the right folks
+
+116
+00:15:44.710 --> 00:15:48.680
+Manish Dharod: to ensure that everybody is on the same page, and agrees that this is okay.
+
+117
+00:15:49.140 --> 00:15:50.690
+Unnamalai Subramanian: Yeah, yeah, makes sense.
+
+118
+00:15:50.900 --> 00:15:56.230
+Unnamalai Subramanian: So this is another item that we wanted to track it separately, right? Like, for the risks and dependencies.
+
+119
+00:15:56.850 --> 00:15:58.040
+Manish Dharod: Sure, yeah, yeah.
+
+120
+00:15:58.410 --> 00:16:01.349
+Unnamalai Subramanian: Maybe, should we be adding this to the Luda's excel sheet?
+
+121
+00:16:01.350 --> 00:16:04.160
+Manish Dharod: I think so. That's where I was thinking to add it.
+
+122
+00:16:04.540 --> 00:16:05.789
+Unnamalai Subramanian: Okay, cool, cool.
+
+123
+00:16:06.200 --> 00:16:16.340
+Unnamalai Subramanian: So there, we will add this as a risk or a dependency, and then on the other side for Sonali, we will put it out in the team. I'll put it out in the teams channel as well as in the tricky page. What Mitya is tracking.
+
+124
+00:16:16.340 --> 00:16:19.330
+Manish Dharod: Yes, yes, that'll help. Thank you.
+
+125
+00:16:19.330 --> 00:16:19.990
+Unnamalai Subramanian: Sure.
+
+126
+00:16:22.310 --> 00:16:29.790
+Ajay Singh: As we can. One last question. So this, this, the the activity number, right? I don't see that value in the Omt anywhere.
+
+127
+00:16:29.940 --> 00:16:38.099
+Ajay Singh: So is that fine? We search by domain order like like what is the domain order under that the task is there? Is that fine, or like.
+
+128
+00:16:38.485 --> 00:16:41.954
+Srikanth Reddy: They are not so. They are not showing anything
+
+129
+00:16:42.540 --> 00:16:47.499
+Srikanth Reddy: in the Omtrj agree with you. Activity number is not showed at the Domain order level.
+
+130
+00:16:48.480 --> 00:16:54.469
+Srikanth Reddy: But you guys can do it with the domain order number, because every domain order number, at least, for now
+
+131
+00:16:54.890 --> 00:16:56.050
+Srikanth Reddy: for R. 3.
+
+132
+00:16:56.851 --> 00:17:02.130
+Srikanth Reddy: It will have only one activity associated to it, but but
+
+133
+00:17:02.130 --> 00:17:04.490
+Srikanth Reddy: future, when we have the segmented
+
+134
+00:17:04.630 --> 00:17:08.150
+Srikanth Reddy: cross connects right? Then maybe I don't know how that will be tagged.
+
+135
+00:17:08.650 --> 00:17:12.780
+Srikanth Reddy: There can be multiple odd activities under one domain order. Maybe in future.
+
+136
+00:17:13.839 --> 00:17:20.119
+Ajay Singh: But if I remember when I was saying, if there's a light link, verification, will you not spin out a different activity? Go for that.
+
+137
+00:17:20.849 --> 00:17:24.399
+Srikanth Reddy: Yes, we will spin up a new activity.
+
+138
+00:17:24.649 --> 00:17:28.739
+Srikanth Reddy: but it will not have any reference in Omd.
+
+139
+00:17:31.130 --> 00:17:34.190
+Ajay Singh: No, no! What what I meant to say. Let's say, if I
+
+140
+00:17:34.740 --> 00:17:46.820
+Ajay Singh: the if I have Ncc. Right, the domain order would be one for me, right? Which will be network cable connection, domain order, right? So my question is under that, how many activities would be there under that.
+
+141
+00:17:46.820 --> 00:17:49.859
+Srikanth Reddy: Okay, that you want to search using the domain order number.
+
+142
+00:17:50.750 --> 00:17:52.240
+Ajay Singh: Yes. So there'll be. Yeah.
+
+143
+00:17:52.240 --> 00:17:58.260
+Srikanth Reddy: Yeah, I think then then we can do it because we are capturing the domain order number in fulfillment.
+
+144
+00:17:58.380 --> 00:18:00.640
+Srikanth Reddy: So that way, you can get this number.
+
+145
+00:18:01.590 --> 00:18:03.249
+Srikanth Reddy: So so, yeah.
+
+146
+00:18:03.250 --> 00:18:09.900
+Ajay Singh: In. So just from the Us perspective, I'm trying to understand there'll be one or 2 for the light link verification activities.
+
+147
+00:18:11.090 --> 00:18:16.309
+Srikanth Reddy: I think, for so far it is only one light link under one Ncc.
+
+148
+00:18:19.060 --> 00:18:25.859
+Ajay Singh: And one Ncc one and network cable connection, activity, and one like.
+
+149
+00:18:26.195 --> 00:18:28.210
+Srikanth Reddy: Or likely. Yeah, like, linger fish.
+
+150
+00:18:28.710 --> 00:18:32.839
+Ajay Singh: Okay, so 2, in total 2 activities. Okay, ordered.
+
+151
+00:18:34.830 --> 00:18:42.320
+Srikanth Reddy: But this audit Api, right? Maybe. So. This audit Api is related to one activity, as I.
+
+152
+00:18:42.680 --> 00:18:46.780
+Ajay Singh: Yeah, Mitch, yeah, I got that. Yeah, I got the point, actually.
+
+153
+00:18:47.320 --> 00:18:50.990
+Ajay Singh: But but then, if it is having a 2, which one, it will return.
+
+154
+00:18:53.090 --> 00:18:55.120
+Srikanth Reddy: So come again, Ajay, if it is true.
+
+155
+00:18:56.357 --> 00:19:01.589
+Ajay Singh: One second. Give me a moment. Let me just. I'm just checking the response. Give me a sorry sorry. Give me a moment.
+
+156
+00:19:01.590 --> 00:19:02.949
+Srikanth Reddy: Like, no. Problem, yeah, yeah.
+
+157
+00:19:03.250 --> 00:19:05.679
+Ajay Singh: So just checking.
+
+158
+00:19:06.020 --> 00:19:06.690
+Srikanth Reddy: Okay.
+
+159
+00:19:08.060 --> 00:19:11.609
+Ajay Singh: Oh, this is object. Right? So let's say, if I have.
+
+160
+00:19:12.424 --> 00:19:25.840
+Ajay Singh: if I if I give you Ncc order, number and domain order number, right? So so there'll be 2 activities under it. Right? One is network cable install, and one is patch. Sorry one is light link verification right, then
+
+161
+00:19:26.550 --> 00:19:27.640
+Ajay Singh: which one it will return.
+
+162
+00:19:27.640 --> 00:19:28.320
+Srikanth Reddy: Lab.
+
+163
+00:19:33.750 --> 00:19:44.680
+Srikanth Reddy: no. So this is this search is based on one activity only, Ajay, either you can currently right? So the way it is designed is
+
+164
+00:19:45.020 --> 00:19:49.789
+Srikanth Reddy: one is to one, but we haven't developed it for one too many.
+
+165
+00:19:51.680 --> 00:19:58.420
+Ajay Singh: So my question is, then how do I know how many activities are under a domain order?
+
+166
+00:19:58.730 --> 00:20:00.300
+Ajay Singh: So which Api would give me that.
+
+167
+00:20:00.300 --> 00:20:01.959
+Srikanth Reddy: Not yet available.
+
+168
+00:20:02.470 --> 00:20:03.620
+Ajay Singh: Okay.
+
+169
+00:20:04.270 --> 00:20:09.779
+Ajay Singh: So if it is more than one, I will just show the 1st one like is, that
+
+170
+00:20:10.440 --> 00:20:12.339
+Ajay Singh: is, is that fine? For now?
+
+171
+00:20:19.040 --> 00:20:19.810
+Ajay Singh: Hello.
+
+172
+00:20:20.660 --> 00:20:27.749
+Srikanth Reddy: So we can target maybe in the future again. But for now, right, we don't have any requirement right for now
+
+173
+00:20:29.110 --> 00:20:32.220
+Srikanth Reddy: to support multiple activities in this audit. Api.
+
+174
+00:20:32.960 --> 00:20:36.990
+Srikanth Reddy: because audit is targeted to one activity at a time.
+
+175
+00:20:38.760 --> 00:20:39.310
+Ajay Singh: Okay.
+
+176
+00:20:39.940 --> 00:20:41.710
+Unnamalai Subramanian: Think more than
+
+177
+00:20:42.170 --> 00:20:49.050
+Unnamalai Subramanian: I don't know whether it will be part of the audit Api, I think, to Ajay's question right right now, even in R, 3, release.
+
+178
+00:20:49.430 --> 00:20:57.460
+Unnamalai Subramanian: we will have 2 activities which is network cable connection and the lightly verification for the same domain. Order, cross, connect Ncc.
+
+179
+00:20:58.120 --> 00:20:58.840
+Srikanth Reddy: Correct.
+
+180
+00:20:59.590 --> 00:21:12.659
+Unnamalai Subramanian: So now in Ecp to the customer, should we just leave it as network cable connection? And then, whatever the parent one, should, we just leave it with that, or it for for our customers, should we? Because they, they asked lightly, as an add on
+
+181
+00:21:12.900 --> 00:21:18.030
+Unnamalai Subramanian: right, so should we be showing that progress of the light light link test. Also.
+
+182
+00:21:20.090 --> 00:21:22.869
+Unnamalai Subramanian: I think that is good of a question for manish right, like.
+
+183
+00:21:22.870 --> 00:21:25.759
+Srikanth Reddy: Requirement. Right? That is more of a requirement question. Yeah.
+
+184
+00:21:26.990 --> 00:21:32.469
+Unnamalai Subramanian: Yep, I think, based on that. We can determine from our end how to build the Aba.
+
+185
+00:21:32.870 --> 00:21:36.750
+Manish Dharod: Sorry, can you? Can you repeat that once again? Sorry I missed it.
+
+186
+00:21:36.750 --> 00:21:47.739
+Unnamalai Subramanian: So right now there will be one domain order manish for the cross. Connect right under the cross connect, let's say our customers are asking, Hey, give me a cross connect, and then also do the lightly verification test on it.
+
+187
+00:21:48.100 --> 00:21:54.650
+Unnamalai Subramanian: So for doing the light link verification, there will be one more activity for Ibx operations, right? So which means.
+
+188
+00:21:54.650 --> 00:21:54.990
+Manish Dharod: Okay.
+
+189
+00:21:54.990 --> 00:21:58.520
+Unnamalai Subramanian: We are working on 2 tasks for one prospect order.
+
+190
+00:21:59.140 --> 00:22:17.179
+Unnamalai Subramanian: So portal currently for network cable connection, there is one activity where we are showing all the progress. Right? Okay, this particular activity is open. It is in progress getting closed. Right? So now, Ajay is asking what I mean. Where do we show the lightly verification? Should that be more like?
+
+191
+00:22:17.640 --> 00:22:22.569
+Unnamalai Subramanian: Ask for the cross, connect for the network cable connection itself? And
+
+192
+00:22:22.920 --> 00:22:28.130
+Unnamalai Subramanian: should do? We wanted to give the visibility to our customers in terms of how that lightly verification is progressing.
+
+193
+00:22:28.630 --> 00:22:39.790
+Manish Dharod: Shouldn't it be? I mean, I'm just thinking about just in terms of intuitiveness. Right? Shouldn't it be part? Isn't this activity part of the fulfillment.
+
+194
+00:22:40.560 --> 00:22:43.040
+Unnamalai Subramanian: And so shouldn't it come.
+
+195
+00:22:43.250 --> 00:22:48.849
+Manish Dharod: So it it should come. It should show up in the ui. If that's the question.
+
+196
+00:22:49.030 --> 00:22:53.550
+Manish Dharod: it should show up under the fulfillment right.
+
+197
+00:22:54.020 --> 00:22:54.979
+Unnamalai Subramanian: As a second.
+
+198
+00:22:54.980 --> 00:23:05.080
+Unnamalai Subramanian: but only thing is right. Now we are doing a 1-to-one mapping. Right? Okay, here is a network cable connection. Here is a corresponding activity. Get the data from there, and then show it in the Ecp way.
+
+199
+00:23:05.830 --> 00:23:06.800
+Manish Dharod: Okay. Okay.
+
+200
+00:23:06.800 --> 00:23:12.329
+Unnamalai Subramanian: Now for lightlink. It is a separate child activity for Ncc. Which is on the fulfillment side.
+
+201
+00:23:13.550 --> 00:23:14.919
+Manish Dharod: Hmm, okay. Got it.
+
+202
+00:23:14.920 --> 00:23:19.440
+Unnamalai Subramanian: Now, should we also have a corresponding one on the Ecp. To our customers also.
+
+203
+00:23:21.510 --> 00:23:30.250
+Manish Dharod: Yeah, I I believe so right? I mean, I think we you know, basically, that is what customer is expecting intuitively like, basically, it's part of.
+
+204
+00:23:30.650 --> 00:23:37.980
+Manish Dharod: So if we want to show if if they are asking for a specific you know, light link verification for a given cross, connect
+
+205
+00:23:38.090 --> 00:23:44.959
+Manish Dharod: under that. Ncc, then that's what we need to show. Also. Right? That's my my view of it.
+
+206
+00:23:45.950 --> 00:23:46.629
+Unnamalai Subramanian: Yeah, yep.
+
+207
+00:23:47.670 --> 00:24:15.980
+Unnamalai Subramanian: that's totally fine manish. I think I more and more we talk about the slight link verification right? Like, I think we have to call this out as a risk, right? So that overall, maybe as a pro at the program level, maybe even in the Eqp. Also. For now we should kind of disable the slight link verification, at least for the immediate R. 3. Release, and then maybe in the 3.1, we can open it up in Eqp. As well as in the Ecp. Portal also. So meanwhile we can sort out all these open items.
+
+208
+00:24:15.980 --> 00:24:16.300
+Manish Dharod: Today.
+
+209
+00:24:16.300 --> 00:24:25.020
+Unnamalai Subramanian: Like whatever that I mean how to show that notes, attachments. And then even for Jarvis team. Also, they are saying, it's a stretch goal.
+
+210
+00:24:26.390 --> 00:24:28.779
+Srikanth Reddy: Okay, okay, alright.
+
+211
+00:24:29.764 --> 00:24:37.969
+Srikanth Reddy: I need to drop off for another meeting. So if you guys are continuing it, can one of you please publish the minutes of meeting.
+
+212
+00:24:38.420 --> 00:24:40.169
+Srikanth Reddy: Yeah, thank you.
+
+213
+00:24:40.650 --> 00:24:41.260
+Manish Dharod: Okay.
+
+214
+00:24:41.440 --> 00:24:55.510
+Manish Dharod: yeah. So no, I think, maybe. Do you need all of this down somewhere? So it's clear what the requirement is, I think. That's what we don't have today. Right? I think.
+
+215
+00:24:56.230 --> 00:24:59.170
+Unnamalai Subramanian: Yes, yes, I think we can put all of.
+
+216
+00:24:59.170 --> 00:25:01.395
+Manish Dharod: And and does. Yeah.
+
+217
+00:25:02.460 --> 00:25:08.470
+Manish Dharod: sheet. I was just wondering, is this lighting verification very specific to cross, connect only.
+
+218
+00:25:09.110 --> 00:25:09.780
+Ajay Singh: Yes.
+
+219
+00:25:09.980 --> 00:25:21.080
+Unnamalai Subramanian: For now it is for cross connect, and it can happen for fabric. Also, whenever fabric port is being ordered, there also, customer can ask for it. So on the fabric portal. I don't know whether we are showing the slide link as an option. There.
+
+220
+00:25:22.760 --> 00:25:26.559
+Manish Dharod: I don't think I've seen that as an option I will double check with Manju, though.
+
+221
+00:25:27.070 --> 00:25:28.010
+Unnamalai Subramanian: Okay. Sure.
+
+222
+00:25:28.540 --> 00:25:41.519
+Manish Dharod: Yeah, I haven't seen that but yeah, let me, because usually I mean in the past, maybe it's it's it was done as part of the you know that. Turn up call and all that right. Once we automated it, I don't know whether
+
+223
+00:25:41.928 --> 00:25:52.381
+Manish Dharod: it is. It is a option that they choose. I'll I'll find out from mind you. But either case, let me let me write it down again, I think and then provide that.
+
+224
+00:25:52.980 --> 00:25:57.789
+Manish Dharod: you know, epic or user story to you, and then we can go from there. Oh, no.
+
+225
+00:25:59.790 --> 00:26:08.050
+Unnamalai Subramanian: Sure manish, I think we should definitely bring this up to Luda's attention. So that right? Like we as a team from at the program level. We have to take a decision for lightly verification.
+
+226
+00:26:08.630 --> 00:26:10.370
+Manish Dharod: Yeah, yeah, okay, sure, yeah.
+
+227
+00:26:10.370 --> 00:26:18.960
+Ajay Singh: And and then, Una, right? We, I think, like technically, we will need one more Api to give us all the activities under a domain order. So I think that is missing right now.
+
+228
+00:26:22.070 --> 00:26:23.200
+Unnamalai Subramanian: Got it sure. Rajit.
+
+229
+00:26:23.440 --> 00:26:36.190
+Ajay Singh: Yeah, yeah, it is that they can just give me the activity. Id, that is fine, because by activity, id, it's already there. So which is fine. But I think we need one Api, which will give us all the activities under a domain order. Because I think
+
+230
+00:26:36.650 --> 00:26:40.819
+Ajay Singh: if I just show the 0 index. I don't know which one I will show, like
+
+231
+00:26:40.920 --> 00:26:44.620
+Ajay Singh: the network cable connection or the light link verification. So I need to know.
+
+232
+00:26:45.250 --> 00:26:45.840
+Ajay Singh: Yeah.
+
+233
+00:26:45.840 --> 00:26:48.889
+Manish Dharod: And is that something you need? Ajay right now for R. 3.
+
+234
+00:26:51.600 --> 00:26:59.039
+Ajay Singh: If lightlink verification is there, I think it should be there. If we are not having that, because the problem is.
+
+235
+00:26:59.570 --> 00:27:19.840
+Ajay Singh: I can then just assume manish does a 0 index. I can that you imagine that I can just show 0 because I don't know how many activities are there, because I'm not getting that value so it could turn out to be wrong. One like it could turn out to be a light link verification instead of a network cable connection. So I don't know.
+
+236
+00:27:19.840 --> 00:27:20.300
+Manish Dharod: Right.
+
+237
+00:27:20.300 --> 00:27:25.200
+Ajay Singh: But but yeah, so we'll check on that. Yeah.
+
+238
+00:27:25.810 --> 00:27:27.219
+Manish Dharod: Got it? Got it? Okay, sounds good.
+
+239
+00:27:28.000 --> 00:27:28.510
+Unnamalai Subramanian: So
+
+240
+00:27:28.510 --> 00:27:44.669
+Unnamalai Subramanian: I mean overall. There are 3 dependencies right? Like one Jarvis team is saying. It's a stretch goal for them right? And then for us from the Ecp. Also. Now, if it is going to be a separate activity, how do we show this visibility to our customers right then there are some dependency on the Ecp side also.
+
+241
+00:27:45.000 --> 00:27:51.399
+Unnamalai Subramanian: Then the 3rd one was, okay. Customer is asking for a lightly verification. How do we expose this notes and attachments to the customer.
+
+242
+00:27:51.510 --> 00:28:04.540
+Unnamalai Subramanian: because there is no 2 way comms. There is no external visibility currently defined for our 3 release right? So these are all the 3 main dependencies. And these are the reasons where we are saying, maybe we might just need to consider this for 3 dot one.
+
+243
+00:28:05.610 --> 00:28:17.420
+Manish Dharod: Sure and do we? I don't know if you ajay, you know. But do we know how many customers, or or you know what percentage of customers for cross connect are asking for this? Do we know.
+
+244
+00:28:18.200 --> 00:28:20.619
+Ajay Singh: Hmm! I think we can try to find out that.
+
+245
+00:28:20.900 --> 00:28:21.580
+Manish Dharod: Okay.
+
+246
+00:28:22.700 --> 00:28:37.570
+Unnamalai Subramanian: Yeah, it's, I think it is very limited. Patch cable is the more. But I think right, link is less. But we can check. Yeah, the data point will also help us to kind of I mean, even if you're deferring it or descoping it. Right? Like, okay, that would be a good data point to share.
+
+247
+00:28:38.520 --> 00:28:41.489
+Manish Dharod: Yeah, yeah. So I should ask, Sonadi, is it
+
+248
+00:28:44.750 --> 00:28:46.639
+Manish Dharod: okay? I'll ask her. Okay, alright. Thank you.
+
+249
+00:28:46.640 --> 00:28:51.259
+Unnamalai Subramanian: One is for Sonali and other one is for the fabric Portal team, also like for.
+
+250
+00:28:51.260 --> 00:28:52.230
+Manish Dharod: Find out from them.
+
+251
+00:28:52.560 --> 00:28:53.529
+Manish Dharod: Sure. Sure. Sure.
+
+252
+00:28:54.590 --> 00:28:55.660
+Manish Dharod: Okay. Sounds good.
+
+253
+00:28:55.660 --> 00:29:03.200
+Ajay Singh: Okay, manish so far. Just to conclude, we will be showing the the 1st activity, whichever comes. Unless there's Api.
+
+254
+00:29:03.320 --> 00:29:10.659
+Ajay Singh: I will discuss with you offline, and then we will just show the green check boxes, the one which we discussed. There will not be any note attachment activity.
+
+255
+00:29:10.830 --> 00:29:13.850
+Ajay Singh: So, yeah, yeah, so that's the our scope. So
+
+256
+00:29:14.010 --> 00:29:20.959
+Ajay Singh: I'll share that, ma'am. And we'll take it from there. Yeah, okay, connect with you later. So.
+
+257
+00:29:20.960 --> 00:29:21.935
+Jyoti Kumari: Yeah, yeah, you can.
+
+258
+00:29:22.480 --> 00:29:23.339
+Ajay Singh: Okay? Bye.
+
