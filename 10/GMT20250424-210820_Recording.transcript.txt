@@ -1,0 +1,1458 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.989
+Doyle Barras: And I'm happy to to retrack on it. So.
+
+2
+00:00:03.360 --> 00:00:12.940
+Manish Dharod: Alright. Okay. So yeah. So I think what the your 1st feedback on the on this left panel is like.
+
+3
+00:00:12.940 --> 00:00:34.860
+Doyle Barras: Yeah, like, fundamentally, you know, we I would prefer in in Krishna, seriously, Christian, feel free to chime in and and add, add or or have different view, like I'd prefer to, you know, have it? You know the the physical. The 1st physical part is the cabinet, the patch panels, and the circuits go inside of cabinets, so maybe Orient the view
+
+4
+00:00:34.920 --> 00:00:44.979
+Doyle Barras: from the sense of you know, how do those physical things come together? Particularly like in in the way this view looks right now, when we have multiple cabinets.
+
+5
+00:00:45.140 --> 00:01:09.609
+Doyle Barras: right? You know, you could conceivably be in a place where one of those cabinet items is completed, one of those patch panel items are completed. But it's not necessarily intuitive that it's actually that patch panel that's in that cabinet. That's done. It could actually be separate. And so it starts becoming unclear. So I think if we maybe orient everything, you know by the cabinet itself.
+
+6
+00:01:10.020 --> 00:01:10.370
+Manish Dharod: With the.
+
+7
+00:01:10.370 --> 00:01:12.280
+Doyle Barras: Patch panel in the circuits.
+
+8
+00:01:12.450 --> 00:01:15.960
+Doyle Barras: Would you know those would would kind of fit inside of it?
+
+9
+00:01:16.200 --> 00:01:24.839
+Doyle Barras: It's and it's almost like, Can you scroll any more down on the okay, because you see how like the fabric port is.
+
+10
+00:01:24.840 --> 00:01:25.200
+Manish Dharod: Yes, come.
+
+11
+00:01:25.200 --> 00:01:39.910
+Doyle Barras: Like the fabric port. It's a connection, you know. It's kind of like that same idea. Maybe just it's cabinet, patch, panel and circuitry, because the draw cap on an order is only delivered once the circuits are delivered.
+
+12
+00:01:40.090 --> 00:01:40.680
+Manish Dharod: Hmm.
+
+13
+00:01:40.680 --> 00:01:43.630
+Doyle Barras: And it's in in Krishna. Correct me here.
+
+14
+00:01:44.300 --> 00:01:50.820
+Doyle Barras: It's usually always at the same time right? Or is it the the drop caps delivered when the entire order is delivered.
+
+15
+00:01:51.570 --> 00:01:53.680
+Krishna Lingampalli: It's it's at the same time.
+
+16
+00:01:53.840 --> 00:01:58.000
+Doyle Barras: Okay, yeah. So you know. So I don't feel like we have to separate out the dropout piece. Manish?
+
+17
+00:01:59.480 --> 00:02:00.150
+Doyle Barras: So.
+
+18
+00:02:00.150 --> 00:02:02.239
+Manish Dharod: Okay, got it. So
+
+19
+00:02:02.989 --> 00:02:11.789
+Manish Dharod: and then, what about do we? Then we don't need this logical grouping of space and power. Right? Is that correct?
+
+20
+00:02:11.790 --> 00:02:17.220
+Doyle Barras: That. That's what I'm kind of thinking, you know, like we could get rid of that. And just do cabinet patch, panel circuit.
+
+21
+00:02:17.220 --> 00:02:20.609
+Manish Dharod: Got. It makes sense. So something like.
+
+22
+00:02:20.610 --> 00:02:26.490
+Doyle Barras: Yeah. Yeah. And by the way, I want Christian, I wanted to give you an opportunity to kind of voice your opinion, too. But.
+
+23
+00:02:27.070 --> 00:02:36.469
+Krishna Lingampalli: Yeah. So the way I kind of see it is the way you see it, Doyle is to put a hierarchy. It's kind of like in a Siebel quote
+
+24
+00:02:36.610 --> 00:02:42.550
+Krishna Lingampalli: you, you have the hierarchy of the Cabinet, the power, then the A/C circuits are underneath.
+
+25
+00:02:42.550 --> 00:02:42.960
+Manish Dharod: It's.
+
+26
+00:02:42.960 --> 00:02:43.870
+Krishna Lingampalli: Shame.
+
+27
+00:02:45.640 --> 00:02:46.550
+Krishna Lingampalli: Yeah.
+
+28
+00:02:47.350 --> 00:02:48.758
+Manish Dharod: Okay, makes sense. Okay.
+
+29
+00:02:49.727 --> 00:03:03.509
+Manish Dharod: and so let, I'm just now, you know. So let's imagine there is no space here. There is a cabinet. There is patch, panel and A/C circuit under under the cabinet.
+
+30
+00:03:04.568 --> 00:03:07.361
+Manish Dharod: You know, indented right
+
+31
+00:03:08.380 --> 00:03:15.605
+Manish Dharod: and so, and that there could be a you know. Of course there'll be second cabinet, and the same thing goes in there.
+
+32
+00:03:16.560 --> 00:03:22.099
+Manish Dharod: Now, in terms of the identification
+
+33
+00:03:22.470 --> 00:03:28.171
+Manish Dharod: for a given cabinet at the time when the order is placed right.
+
+34
+00:03:29.600 --> 00:03:44.480
+Manish Dharod: I am thinking there is not going to be any identifier that we can pick, meaning customer. Don't customers don't provide cabinet name, you know, or anything like that. Right? A friendly name that they want to add at at the time of order.
+
+35
+00:03:44.710 --> 00:03:45.969
+Doyle Barras: Is that accurate.
+
+36
+00:03:46.280 --> 00:03:54.080
+Doyle Barras: correct? And you know, and it's not until the order is created and these activities kick off
+
+37
+00:03:54.330 --> 00:04:00.150
+Doyle Barras: that we even know which cabinet, or which cabinets are being actually assigned.
+
+38
+00:04:00.340 --> 00:04:01.550
+Manish Dharod: Hmm! Got it.
+
+39
+00:04:01.777 --> 00:04:09.970
+Doyle Barras: You know. So if anything I don't know if you're actually going here or not manish. But as you were talking, I was like, yeah, how do I know, actually, which cabinet that is, if
+
+40
+00:04:09.970 --> 00:04:10.390
+Doyle Barras: yeah.
+
+41
+00:04:10.390 --> 00:04:18.700
+Doyle Barras: like, which one is it? Right? You know. So there, it might be helpful to have like something, you know, that's like the Cabinet identification.
+
+42
+00:04:19.089 --> 00:04:21.759
+Manish Dharod: Cab Id, or something like that.
+
+43
+00:04:21.769 --> 00:04:47.359
+Manish Dharod: Now, one thing I wanted to. So okay. So the left part, I think, is clearer to me, I think. I will talk to my engineering team and designer to kind of 1st designer to kind of mark up a new approach, and then share that with you. Now, on the the right side of it. For each of these right
+
+44
+00:04:47.449 --> 00:05:07.271
+Manish Dharod: cabinet, patch, panel, and A/C circuit, all 3 of them. The pattern on the right side, we are thinking, would be the same just same thing with port, by the way, and network cable connection also, which is order tracker. It'll tell you where that is in terms of the fulfillment.
+
+45
+00:05:07.919 --> 00:05:13.425
+Manish Dharod: you know, or if there is configuration needed in some cases. Then there is that
+
+46
+00:05:14.109 --> 00:05:29.259
+Manish Dharod: Then the details tab where we show some attributes. I'll show that in a second, and then, you know, contacts. And I was told that contacts actually is at individual
+
+47
+00:05:29.709 --> 00:05:36.059
+Manish Dharod: element, level. And correct me. If that is not what your understanding is.
+
+48
+00:05:38.350 --> 00:05:41.790
+Doyle Barras: Like would those be like technical contacts.
+
+49
+00:05:42.020 --> 00:05:47.165
+Manish Dharod: Yeah, there could be. Yeah, one of the contact type is a technical contact.
+
+50
+00:05:47.900 --> 00:05:48.790
+Doyle Barras: Yeah.
+
+51
+00:05:49.030 --> 00:06:00.469
+Doyle Barras: yeah. I I know when we do self service orders today, we just provide one contact, you know. Sometimes it's the business contact. It could be a technical contact. But it's for everything in the order.
+
+52
+00:06:00.850 --> 00:06:05.970
+Doyle Barras: I don't know honestly, on the Siebel side what we do today, Krishna, do do you know.
+
+53
+00:06:06.510 --> 00:06:07.310
+Krishna Lingampalli: No.
+
+54
+00:06:07.730 --> 00:06:22.869
+Manish Dharod: No, okay, okay, I can find out. Yeah, I want to. That is one clarification I need to get. And then based on that you can decide whether this is really fitting here, or actually it should fit at the secure cabin express level.
+
+55
+00:06:23.250 --> 00:06:27.299
+Doyle Barras: Well, that, or even at the order level, right? I mean.
+
+56
+00:06:28.350 --> 00:06:42.380
+Doyle Barras: I mean, I could see like, maybe you would have a different network contact to get fabric going as opposed to the person you would contact about the cabinet, you know. So I can. I can kind of see that I don't know if we do it today, but I can kind of see how that
+
+57
+00:06:42.600 --> 00:06:43.426
+Doyle Barras: could happen.
+
+58
+00:06:43.840 --> 00:06:44.250
+Manish Dharod: Hmm.
+
+59
+00:06:44.711 --> 00:06:47.019
+Doyle Barras: And and and this is
+
+60
+00:06:48.180 --> 00:06:50.950
+Doyle Barras: what would be the function of it in this case? Right? Because.
+
+61
+00:06:51.210 --> 00:06:55.569
+Doyle Barras: like, I'm I'm already the customer, and I'm coming in to look here.
+
+62
+00:06:57.490 --> 00:07:02.260
+Doyle Barras: Wouldn't the contact just say myself typically.
+
+63
+00:07:04.598 --> 00:07:10.979
+Manish Dharod: Yeah, I mean, you mean, or, yeah, ordering contact is the guy who is ordering it.
+
+64
+00:07:11.870 --> 00:07:13.110
+Manish Dharod: Now.
+
+65
+00:07:13.410 --> 00:07:16.869
+Doyle Barras: Yeah, I'm I'm just trying to say, like, what what good is the contact tab?
+
+66
+00:07:17.010 --> 00:07:22.409
+Doyle Barras: If I'm the customer, what is it? Gonna tell me, is it? Gonna tell me who I need to go talk to in my own team?
+
+67
+00:07:23.040 --> 00:07:24.900
+Manish Dharod: Well, I think
+
+68
+00:07:25.620 --> 00:07:35.498
+Manish Dharod: it's it's I mean, if somebody wants in my, if if in my organization there are multiple users when they come here.
+
+69
+00:07:35.960 --> 00:08:02.040
+Manish Dharod: they should be able to kind of see what technical contact was, provided, what notification contact because there could be. By the way I was told that you can. You can add more than one technical contact, and and those, so you know, for different sces. I want different people to kind of manage that. So that part where do I see that this is? Maybe the place is what
+
+70
+00:08:02.340 --> 00:08:03.939
+Manish Dharod: in the thought processes.
+
+71
+00:08:04.190 --> 00:08:04.850
+Doyle Barras: Okay.
+
+72
+00:08:05.090 --> 00:08:10.190
+Doyle Barras: yeah, I mean, I, I think we just need to kind of figure out where where the contacts are used. And then.
+
+73
+00:08:10.190 --> 00:08:11.210
+Manish Dharod: Yeah, okay.
+
+74
+00:08:11.860 --> 00:08:19.860
+Doyle Barras: I don't. I don't have a general problem with including it, you know. I just I guess if all 3 of us worked for the same company, and I created the order.
+
+75
+00:08:20.120 --> 00:08:20.620
+Manish Dharod: Yeah.
+
+76
+00:08:20.620 --> 00:08:23.190
+Doyle Barras: But you don't know what I who I included.
+
+77
+00:08:23.470 --> 00:08:23.800
+Manish Dharod: Yeah.
+
+78
+00:08:23.800 --> 00:08:26.590
+Doyle Barras: Maybe that'd be helpful right? Because you'd lock in and go. Oh.
+
+79
+00:08:27.020 --> 00:08:33.670
+Doyle Barras: you should have put Krishna instead, right like. That's why that's why nobody knows right? So I I can see a case where it could be useful.
+
+80
+00:08:33.909 --> 00:08:57.059
+Manish Dharod: Yeah, yeah. Okay, now, let's go one tab at a time. So order tracker. You know, my understanding is that for sce in general, and cabinet, patch, panel, and A/C circuit, all 3 of them. There is no customer, you know, configuration step that needs to happen once the order is placed right
+
+81
+00:08:57.590 --> 00:09:04.660
+Manish Dharod: correct, like cross, connect, or port, where customer actually needs to go in and do some configuration.
+
+82
+00:09:05.330 --> 00:09:06.190
+Doyle Barras: Correct.
+
+83
+00:09:06.190 --> 00:09:13.310
+Manish Dharod: Right? Okay? So that's where that's why it's only fulfillment. And the next step is kind of completion in this case.
+
+84
+00:09:13.730 --> 00:09:25.320
+Manish Dharod: if if there are and this is where I think, double click on the view. More details like, if there is any issue in fulfillment.
+
+85
+00:09:25.720 --> 00:09:48.149
+Manish Dharod: I'm assuming there may be a back and forth between the Ivx operations and the customer that may need to happen. And this is where it will lie under before it's it's completed, of course. That's the idea overall. As one of the reasons why this will come into picture view. More details.
+
+86
+00:09:50.220 --> 00:09:56.749
+Doyle Barras: Okay. So I'm assuming Krishna. Maybe a case for this would be I don't know what like
+
+87
+00:09:57.680 --> 00:10:01.689
+Doyle Barras: cabinet wasn't available whenever the order finally came through.
+
+88
+00:10:01.860 --> 00:10:04.029
+Doyle Barras: We need to move a cabinet location.
+
+89
+00:10:04.860 --> 00:10:12.409
+Doyle Barras: just I guess, where Ops would kind of say, hey, that you know, we understood you wanted this cabinet, but it's not available. We're gonna put you here.
+
+90
+00:10:14.620 --> 00:10:15.660
+Krishna Lingampalli: Yeah.
+
+91
+00:10:18.040 --> 00:10:18.800
+Manish Dharod: Okay.
+
+92
+00:10:19.350 --> 00:10:28.730
+Manish Dharod: Alright. So let's move on to the details. Tab and one of the reasons I had set up this call was to figure out
+
+93
+00:10:29.330 --> 00:10:45.008
+Manish Dharod: what? Okay? So before I go to details, tab within cabinet patch, panel and A/C circuit at the Sce level. Right? That means this, when I click on the top level. Sce.
+
+94
+00:10:45.670 --> 00:11:14.320
+Manish Dharod: what attributes we want to show. And of course the the charges, by the way, will show up here at this level. Right? And this is let's call it attributes at the Sce level. And then the details tab that we need to talk about will be at each cabinet patch, panel and A/C circuit level also. So what are the attributes that we need to add? And so I got.
+
+95
+00:11:14.770 --> 00:11:17.890
+Manish Dharod: I had a chat with
+
+96
+00:11:18.020 --> 00:11:38.610
+Manish Dharod: with Andrew. He gave some inputs. I have, I I can open that spreadsheet to to kind of talk about it. But just wanted to before I go there. Just wanted to, you know. Make it make sure that we got. We're all clear on this part, right? I'm just gonna go and talk about these.
+
+97
+00:11:38.900 --> 00:11:39.680
+Manish Dharod: Yeah, that's.
+
+98
+00:11:39.860 --> 00:11:41.220
+Doyle Barras: Yeah, that's fine. Yeah.
+
+99
+00:11:41.470 --> 00:11:46.710
+Manish Dharod: Yeah, let me do that. Let me open the so
+
+100
+00:11:48.570 --> 00:11:52.890
+Manish Dharod: the spreadsheet I will open the spreadsheet that
+
+101
+00:11:53.070 --> 00:12:03.619
+Manish Dharod: I am managing or creating, and then there is also one I will open where namas is maintaining the
+
+102
+00:12:03.850 --> 00:12:23.836
+Manish Dharod: all the detailed, you know, like characteristics, as they call it, right product spec characteristics, service, spec characteristics and so on. So let me just go over this list that I extracted out of whatever I needed, and then I can get input from you guys. So 1st for the sce level, right?
+
+103
+00:12:24.750 --> 00:12:28.100
+Manish Dharod: these are what I kind of extracted out of
+
+104
+00:12:28.380 --> 00:12:39.080
+Manish Dharod: sheet. And I was getting input from Andrew. And I made notes at that point over here. If you guys can take a look at that and tell me if
+
+105
+00:12:39.350 --> 00:12:43.119
+Manish Dharod: this makes sense or what we need to put and not put there.
+
+106
+00:12:45.940 --> 00:12:48.440
+Krishna Lingampalli: Oh, for row number 9.
+
+107
+00:12:49.140 --> 00:12:54.119
+Krishna Lingampalli: We are capable of cabinets in multiple dimensions today.
+
+108
+00:12:56.490 --> 00:13:01.439
+Manish Dharod: Oh, no, okay, got it, this one. Are we going to have cabinets or multiple dimensions? And okay.
+
+109
+00:13:01.580 --> 00:13:03.590
+Manish Dharod: we even today, it's possible.
+
+110
+00:13:03.810 --> 00:13:05.550
+Doyle Barras: Yes. Okay.
+
+111
+00:13:06.750 --> 00:13:07.870
+Manish Dharod: So
+
+112
+00:13:09.225 --> 00:13:20.389
+Doyle Barras: Question, Christian, though, but like right now in a single pof, do we have multiple cabinet sizes in a given pof, or do we always put those as separate.
+
+113
+00:13:22.870 --> 00:13:26.869
+Krishna Lingampalli: You. You can have multiple cap sizes in a pof.
+
+114
+00:13:27.260 --> 00:13:47.690
+Doyle Barras: Okay, we'll just have to kind of confirm whether or not you know. So the the distinction manishes in a given ibx. We do have multiple cabinet sizes, absolutely 100%. The question is, is, as we move into Eqp are, are all those gonna fall under one offering? If they mix or we're gonna separate them out. Right? So.
+
+115
+00:13:48.510 --> 00:13:49.169
+Manish Dharod: Hmm, okay.
+
+116
+00:13:49.444 --> 00:13:53.839
+Doyle Barras: That that's the thing we'd have to sort out. But Krishna is right. Multiple multiple cabinets.
+
+117
+00:13:53.840 --> 00:13:54.220
+Manish Dharod: Possible.
+
+118
+00:13:54.570 --> 00:14:06.519
+Manish Dharod: Now. So then, one question, then, do we need to put this attribute at the Se. Level at all? Or can we just put them under each cabinet level details, basically.
+
+119
+00:14:08.900 --> 00:14:09.750
+Doyle Barras: One.
+
+120
+00:14:13.810 --> 00:14:19.540
+Doyle Barras: We definitely, we definitely want them at the cabinet level details. The would you mind flipping back to the figma?
+
+121
+00:14:19.540 --> 00:14:19.880
+Doyle Barras: Oh, yeah.
+
+122
+00:14:19.880 --> 00:14:26.889
+Doyle Barras: real fast one of the one of the things I liked about. If you could go back to the one at the product level.
+
+123
+00:14:26.890 --> 00:14:28.159
+Manish Dharod: Product, level yeah.
+
+124
+00:14:28.510 --> 00:14:31.870
+Doyle Barras: The only thing that was kind of helpful here was kind of like.
+
+125
+00:14:32.040 --> 00:14:40.670
+Doyle Barras: oh, yeah, that's the one I bought that had the 1,200 deep cabinets, and it was 2 of them, right, like, you know. In a sense, it's just like it's kind of like if I bought a bunch of stuff.
+
+126
+00:14:40.860 --> 00:14:41.410
+Manish Dharod: Yeah.
+
+127
+00:14:41.410 --> 00:14:43.910
+Doyle Barras: At least it gives me like notionally like
+
+128
+00:14:44.338 --> 00:14:52.980
+Doyle Barras: which one is this? Right? Be, you know. Maybe I buy them all the same, and it doesn't matter. So while you're right, it's kind of like, well.
+
+129
+00:14:53.250 --> 00:14:59.319
+Doyle Barras: we have the cabinet dimensions here, and we have it at the next level down. Is that redundant, and do we get rid of one?
+
+130
+00:14:59.510 --> 00:15:03.749
+Doyle Barras: It's definitely redundant. But my, my initial reaction is.
+
+131
+00:15:04.180 --> 00:15:09.589
+Doyle Barras: We leave it here, too. So people just kind of know, like high level. What did I get.
+
+132
+00:15:10.280 --> 00:15:11.069
+Manish Dharod: Makes sense.
+
+133
+00:15:11.070 --> 00:15:11.959
+Doyle Barras: Even though we have to repeat.
+
+134
+00:15:11.960 --> 00:15:12.480
+Manish Dharod: Good idea.
+
+135
+00:15:12.480 --> 00:15:13.710
+Doyle Barras: That's kind of my thought. So.
+
+136
+00:15:13.710 --> 00:15:30.120
+Manish Dharod: Yeah, yeah, no, I I think that's exactly the right approach to take. I mean, we don't. The less number of clicks, the more the less number of searching and all that we let customers have to do, because a, as you said right, the when I click on it
+
+137
+00:15:30.370 --> 00:15:43.420
+Manish Dharod: just at an intuitive sense. What I want to know is, okay. What did I order overall? And so all the all the important parts that I want to see here. Even if it's duplicate, it's okay. I we should just show them here. I think.
+
+138
+00:15:43.420 --> 00:15:44.969
+Doyle Barras: Right, yeah, yeah.
+
+139
+00:15:45.260 --> 00:15:45.660
+Manish Dharod: Okay. Okay.
+
+140
+00:15:45.660 --> 00:15:53.190
+Doyle Barras: Okay? And then if you want to flip back to the spreadsheet I kind of looked at a little bit earlier. So I agree. Row 5.
+
+141
+00:15:53.330 --> 00:16:18.040
+Doyle Barras: We don't need to show cabby. Not at all. I I do agree. Number cabinets. We need cage pricing correct. You know, it's always cage level pricing. And it's nothing that we'd really kind of telescope or telescope to the to the customers. So agree with that comment. There, you know, draw cap, we definitely need. What's location in this case? What's the context of location.
+
+142
+00:16:18.040 --> 00:16:27.330
+Manish Dharod: Yeah, let me let me go back to sheet and take a look at what exactly he has it here.
+
+143
+00:16:27.746 --> 00:16:32.740
+Doyle Barras: On site off. Oh, oh, oh, oh, okay. Row no. Row 11.
+
+144
+00:16:34.867 --> 00:16:37.730
+Manish Dharod: Oh, row 11. You said, Okay.
+
+145
+00:16:37.730 --> 00:16:41.420
+Doyle Barras: Hey, Krishna, I think that might be onshore offshore. Man.
+
+146
+00:16:43.100 --> 00:16:50.720
+Manish Dharod: Oh, actually sorry Andrew just messaged me today that it's not applicable anymore.
+
+147
+00:16:51.160 --> 00:16:57.486
+Doyle Barras: Oh, okay, alright, then that's I mean, regardless. I I tend to agree with it like location doesn't feel like something they need to know
+
+148
+00:16:58.184 --> 00:17:00.009
+Doyle Barras: so I agree with it. There.
+
+149
+00:17:00.010 --> 00:17:00.919
+Manish Dharod: Oh, so! Not.
+
+150
+00:17:01.560 --> 00:17:02.662
+Manish Dharod: It's good. Okay?
+
+151
+00:17:03.613 --> 00:17:04.780
+Doyle Barras: Yeah, space.
+
+152
+00:17:04.780 --> 00:17:15.369
+Manish Dharod: On going going back to Number 9. So now what you're saying is there? It's a possibility that we may have 2 dimensions and then show we should show both right? Basically at that point.
+
+153
+00:17:16.010 --> 00:17:17.200
+Krishna Lingampalli: More than 2.
+
+154
+00:17:17.470 --> 00:17:20.820
+Manish Dharod: Okay, we may have 2.
+
+155
+00:17:20.829 --> 00:17:23.519
+Doyle Barras: Not more than 2, only 3.
+
+156
+00:17:24.630 --> 00:17:31.919
+Manish Dharod: Oh, so like in a in an Sce cabinet dimension variability
+
+157
+00:17:32.150 --> 00:17:40.669
+Manish Dharod: could be, you know, you know, kind of so you could have more than one cabinet dimension.
+
+158
+00:17:43.060 --> 00:17:56.450
+Doyle Barras: Oh, I guess you're right, Christian. It's more than 3 if we account heights, but basically manish. You know, the cabinet is always 600 wide. And then there's 3 options on the depth, 1,000 1,100 1,200 deep.
+
+159
+00:17:56.740 --> 00:17:57.610
+Manish Dharod: Okay, got it?
+
+160
+00:17:58.093 --> 00:17:58.576
+Doyle Barras: So
+
+161
+00:17:59.940 --> 00:18:09.900
+Doyle Barras: The the next comment on space type I agree with, I think I think I saw in Figma. The space type was also secure cab express. But I don't feel like we need that. So I I agree with that comment.
+
+162
+00:18:09.900 --> 00:18:10.790
+Manish Dharod: Got it. Okay.
+
+163
+00:18:11.131 --> 00:18:20.680
+Doyle Barras: Same thing on the selling model as well. He's right. In general. We don't sell cw, based products anymore. Those have been mostly sunset. I think there's
+
+164
+00:18:20.870 --> 00:18:26.229
+Doyle Barras: 11 cabby that still have it in the world. I feel like that's enough. We no, don't worry.
+
+165
+00:18:26.230 --> 00:18:37.689
+Manish Dharod: Got it. So if I go back and just check so number of cabinets draw cap, cabinet dimensions. Those are the 3 that we are saying primarily, we need so far.
+
+166
+00:18:37.990 --> 00:18:46.289
+Doyle Barras: Correct. And this is at the high. This is at the high level, right? This is at the product level. Yeah, Krishna, anything else you can think of.
+
+167
+00:18:48.373 --> 00:18:57.650
+Manish Dharod: I think we should show cage pricing, because in quotes today in Sibo, I'm pretty sure we show cage pricing equals y.
+
+168
+00:18:58.390 --> 00:19:00.883
+Doyle Barras: Yeah, no. But the thing is is
+
+169
+00:19:02.020 --> 00:19:08.770
+Doyle Barras: Well, there's a couple of things that come to mind. One right now expresses only cage level.
+
+170
+00:19:08.950 --> 00:19:10.530
+Doyle Barras: So it's always the same.
+
+171
+00:19:10.830 --> 00:19:18.270
+Doyle Barras: And then 2 like, I don't know, man, I kind of feel like that's like internal laundry that I don't like. I wanna, I don't want customers to really
+
+172
+00:19:18.540 --> 00:19:21.569
+Doyle Barras: continue to see right? Because that's really our business.
+
+173
+00:19:21.870 --> 00:19:28.229
+Doyle Barras: How we manage and do pricing. It's not really something I want to advertise to them, you know. So.
+
+174
+00:19:29.190 --> 00:19:29.910
+Krishna Lingampalli: Okay.
+
+175
+00:19:30.330 --> 00:19:31.010
+Manish Dharod: Yeah, okay.
+
+176
+00:19:31.260 --> 00:19:39.789
+Doyle Barras: So, Manisha, I don't know. We're going to get through everything in 3 min. I mean I I could stay a little bit longer, if if necessary, or we can queue up again. But
+
+177
+00:19:39.790 --> 00:19:43.750
+Doyle Barras: if you have time, I think I'll appreciate if we can just stay longer and get it done.
+
+178
+00:19:44.280 --> 00:19:47.789
+Doyle Barras: Yeah, no, that's fine. No, Krishna, you have time to to stay or.
+
+179
+00:19:48.450 --> 00:19:55.349
+Krishna Lingampalli: I do, but I have to step out for a couple of minutes to pick up my Doordash order from the office lobby.
+
+180
+00:19:55.350 --> 00:19:56.090
+Doyle Barras: Okay.
+
+181
+00:19:56.090 --> 00:19:58.570
+Manish Dharod: Terrific, alright.
+
+182
+00:19:58.570 --> 00:20:00.520
+Krishna Lingampalli: That's fine. Okay.
+
+183
+00:20:00.860 --> 00:20:04.031
+Manish Dharod: Going to the cabinet level now.
+
+184
+00:20:06.130 --> 00:20:07.790
+Manish Dharod: He says. Remove this.
+
+185
+00:20:08.390 --> 00:20:17.109
+Doyle Barras: Yeah. So the cabinet rating is us, you know, basically taking the number of cabinets and the total drop across the number of cabinets and giving an average rating.
+
+186
+00:20:17.879 --> 00:20:23.939
+Manish Dharod: I do agree with him. That's more something that we use internally. And it's an average and.
+
+187
+00:20:24.300 --> 00:20:25.890
+Doyle Barras: I, yeah, I agree with him.
+
+188
+00:20:25.890 --> 00:20:26.640
+Manish Dharod: Got it. Okay.
+
+189
+00:20:27.260 --> 00:20:27.960
+Manish Dharod: Oh, yeah.
+
+190
+00:20:27.960 --> 00:20:30.889
+Doyle Barras: I don't know what Cap Id is, by the way, so.
+
+191
+00:20:30.890 --> 00:20:31.590
+Manish Dharod: Remove it.
+
+192
+00:20:31.940 --> 00:20:32.840
+Doyle Barras: Yeah.
+
+193
+00:20:33.070 --> 00:20:36.099
+Manish Dharod: Okay, so these 4 look all good.
+
+194
+00:20:37.650 --> 00:20:41.970
+Doyle Barras: Yeah, I think so. Lock type.
+
+195
+00:20:42.220 --> 00:20:46.589
+Doyle Barras: By and far, right now they're all. I think they're all the same. But.
+
+196
+00:20:46.780 --> 00:20:47.510
+Manish Dharod: Hmm.
+
+197
+00:20:48.000 --> 00:20:52.424
+Doyle Barras: Maybe not always the case. I I feel like that. One's okay. Yeah, I feel like, that's good.
+
+198
+00:20:52.670 --> 00:20:53.580
+Manish Dharod: Got it.
+
+199
+00:20:54.033 --> 00:20:58.109
+Doyle Barras: Cabinet type is this like closed cabinet? Open cabinet.
+
+200
+00:20:59.181 --> 00:21:00.668
+Manish Dharod: Let me check. Okay,
+
+201
+00:21:08.080 --> 00:21:09.400
+Manish Dharod: can type
+
+202
+00:21:16.310 --> 00:21:18.119
+Manish Dharod: this one. Okay?
+
+203
+00:21:20.910 --> 00:21:23.269
+Doyle Barras: Yeah, we don't. We don't need that. Yeah.
+
+204
+00:21:23.270 --> 00:21:31.020
+Manish Dharod: No, okay, all right. So this one, no manufacturer, is this relevant.
+
+205
+00:21:31.340 --> 00:21:34.579
+Doyle Barras: Oh, man, that's a hard one. Dude.
+
+206
+00:21:35.530 --> 00:21:46.479
+Doyle Barras: Well, no, because like it like, by the way, like honestly, product, answer is no right, because, like we. It's a standard cabinet you're not having to buy it. Don't worry about it.
+
+207
+00:21:46.480 --> 00:21:47.080
+Manish Dharod: Yeah.
+
+208
+00:21:47.080 --> 00:21:52.380
+Doyle Barras: You know. So so that's my reaction. My my pause to be honest is, if I'm the customer, though it's like well.
+
+209
+00:21:52.960 --> 00:21:55.199
+Doyle Barras: kind of like to know like which one is it.
+
+210
+00:21:55.340 --> 00:21:55.800
+Manish Dharod: Yeah.
+
+211
+00:21:55.800 --> 00:22:10.169
+Doyle Barras: Just you like like, is it a eating cabinet? Is it your cabinet? Is it a right line cabinet, you know. But I think for now, how about we? We keep it off, for now, you know, because I feel like
+
+212
+00:22:10.330 --> 00:22:17.860
+Doyle Barras: it would be easier for us to add it if we get enough like feedback as opposed to no feedback, and it's just there. So.
+
+213
+00:22:17.860 --> 00:22:24.350
+Manish Dharod: Yeah, sure. Sure. No, that's fine. I mean, I think the only reason, you know, I guess we would want to add is, if
+
+214
+00:22:24.870 --> 00:22:38.050
+Manish Dharod: if in any material whatsoever. Right do we even talk about this kind of stuff to the customer, saying, Oh, hey! By the way, you know, we we only from this kind of manufacturer, so.
+
+215
+00:22:38.050 --> 00:22:48.192
+Doyle Barras: No, no, we don't. And and in the cases where customers are like, I really need to know, we send them a data sheet for the manufacturer that's in that that location. So.
+
+216
+00:22:49.040 --> 00:22:49.409
+Manish Dharod: Okay.
+
+217
+00:22:49.780 --> 00:22:50.120
+Doyle Barras: Okay.
+
+218
+00:22:50.460 --> 00:22:58.850
+Manish Dharod: Now on the patch panel. I think, he said I he has no idea. And then I wasn't sure what to pick from on sheet service.
+
+219
+00:22:59.110 --> 00:23:03.159
+Doyle Barras: Okay, yeah. I mean, so for for patch panel man, I kind of feel like
+
+220
+00:23:03.300 --> 00:23:11.660
+Doyle Barras: some. If there's an identifier, probably should include that right cause, like, you know, like patch panels should have some kind of asset number.
+
+221
+00:23:11.990 --> 00:23:17.127
+Manish Dharod: Okay, let me just give me one second. Here, patch panel. Let me see what
+
+222
+00:23:17.720 --> 00:23:23.320
+Manish Dharod: what Numus has in terms of the list of things here.
+
+223
+00:23:24.250 --> 00:23:32.637
+Doyle Barras: Yeah. So like the the cabinet number, I don't think we need, because, like, particularly if we change how we nest them, it'll be apparent right.
+
+224
+00:23:34.960 --> 00:23:37.780
+Doyle Barras: Lc, connectors allowed.
+
+225
+00:23:38.560 --> 00:23:40.810
+Doyle Barras: I don't think so.
+
+226
+00:23:42.566 --> 00:23:48.300
+Doyle Barras: Batch panel case. Id cabin id delegate die.
+
+227
+00:23:50.170 --> 00:23:58.920
+Doyle Barras: I think we grab the patch panel type and maximum ports.
+
+228
+00:24:00.410 --> 00:24:02.500
+Manish Dharod: This one right? Panel type. You mean. Sorry.
+
+229
+00:24:02.500 --> 00:24:03.819
+Doyle Barras: Yeah. Correct. Yeah. Penalty.
+
+230
+00:24:03.820 --> 00:24:08.690
+Manish Dharod: Channel type. Okay? And then, what else you said?
+
+231
+00:24:09.150 --> 00:24:11.389
+Doyle Barras: Patch panel, maximum ports.
+
+232
+00:24:11.610 --> 00:24:12.415
+Manish Dharod: Okay.
+
+233
+00:24:14.830 --> 00:24:15.640
+Manish Dharod: I'm sorry.
+
+234
+00:24:20.150 --> 00:24:21.060
+Manish Dharod: Too many things.
+
+235
+00:24:21.060 --> 00:24:22.820
+Doyle Barras: Yeah, I know. And too many spreadsheets, dude.
+
+236
+00:24:23.436 --> 00:24:26.520
+Manish Dharod: Alright. Okay. I need to.
+
+237
+00:24:26.520 --> 00:24:27.800
+Doyle Barras: Row, 47.
+
+238
+00:24:27.800 --> 00:24:30.719
+Manish Dharod: 47. Yeah. This one here. Okay, got it?
+
+239
+00:24:30.720 --> 00:24:37.850
+Doyle Barras: Yeah. And then the only thing that I'm I'm like I see on 48. It says, serial number.
+
+240
+00:24:38.120 --> 00:24:38.730
+Manish Dharod: Yeah.
+
+241
+00:24:38.730 --> 00:24:41.709
+Doyle Barras: And you know, so like, I do think
+
+242
+00:24:41.860 --> 00:24:47.900
+Doyle Barras: like you know, including like whatever the asset number is, for the panel would be good.
+
+243
+00:24:47.900 --> 00:24:48.680
+Manish Dharod: Yeah.
+
+244
+00:24:48.680 --> 00:24:57.389
+Doyle Barras: Now the the problem. What I don't know manish, is, if the order is still in flight.
+
+245
+00:24:57.390 --> 00:24:58.250
+Manish Dharod: Hmm.
+
+246
+00:24:58.790 --> 00:25:01.940
+Doyle Barras: It may not be assetized yet.
+
+247
+00:25:02.240 --> 00:25:03.650
+Manish Dharod: Yeah, that's true.
+
+248
+00:25:03.650 --> 00:25:09.669
+Doyle Barras: Once it's done, it could be helpful like. If they're troubleshooting. Something with cross connects, they could go back and go
+
+249
+00:25:09.670 --> 00:25:10.150
+Doyle Barras: correct.
+
+250
+00:25:10.150 --> 00:25:15.899
+Doyle Barras: Oh, the asset number is X. So I'm assuming that's the serial number. I'm not really sure.
+
+251
+00:25:16.440 --> 00:25:21.070
+Manish Dharod: Yeah, I will. I will find out if this number.
+
+252
+00:25:21.240 --> 00:25:30.220
+Doyle Barras: So Krishna, we're just kinda rolling through on on the cabinet side. We I was suggesting that we don't include cabinet type like open, close quarter 8.th
+
+253
+00:25:30.600 --> 00:25:41.010
+Doyle Barras: Not not include the manufacturer for now, and we added it for some reason there's enough feedback that we should, just because you know the customers don't have a choice on the
+
+254
+00:25:41.170 --> 00:25:42.209
+Doyle Barras: the type right.
+
+255
+00:25:43.200 --> 00:25:43.980
+Krishna Lingampalli: Yeah.
+
+256
+00:25:43.980 --> 00:25:58.491
+Doyle Barras: And it doesn't really change. Usually, it's you know, it's the dimensions right? And then on the patch panel it'd just be the type, you know, Lc. 48 ports, and then, whatever the serial number is, so that if they need to use it for something else.
+
+257
+00:25:59.610 --> 00:26:02.350
+Doyle Barras: does that work for you? Is there anything else you could think of.
+
+258
+00:26:06.530 --> 00:26:07.420
+Krishna Lingampalli: No.
+
+259
+00:26:07.630 --> 00:26:08.310
+Manish Dharod: Okay.
+
+260
+00:26:09.580 --> 00:26:23.989
+Manish Dharod: alright cool. So that so these 3 for the patch panel. All right, let me just move to A/C circuits and then let me just filter everything out and just keep A/C circuit here.
+
+261
+00:26:24.530 --> 00:26:31.640
+Manish Dharod: Okay, so let's take a look on the left 1st circuit usable. Kva.
+
+262
+00:26:32.490 --> 00:26:33.090
+Doyle Barras: That's okay.
+
+263
+00:26:33.090 --> 00:26:36.750
+Manish Dharod: Good A/C type. Do we need that.
+
+264
+00:26:38.420 --> 00:26:41.349
+Doyle Barras: Can you go to novices, spreadsheet? I'm not sure what's.
+
+265
+00:26:41.350 --> 00:26:44.640
+Manish Dharod: A/C type. What exactly is that? Let me see.
+
+266
+00:26:44.950 --> 00:26:47.033
+Krishna Lingampalli: That's just voltage. Well, no
+
+267
+00:26:48.820 --> 00:26:49.779
+Manish Dharod: It says primary.
+
+268
+00:26:49.780 --> 00:26:53.599
+Doyle Barras: Primary redundant. So yeah, I, I,
+
+269
+00:26:54.050 --> 00:26:57.889
+Doyle Barras: yeah, because the yeah, I think we should include that actually.
+
+270
+00:26:57.890 --> 00:26:58.570
+Manish Dharod: Okay, we do.
+
+271
+00:26:58.570 --> 00:27:10.021
+Doyle Barras: Right be because, like manish like, when those circuits go in, they always go in as a pair. So I think them understanding. Oh, that's the primary. This one is the secondary or the redundant.
+
+272
+00:27:10.670 --> 00:27:13.970
+Doyle Barras: Think that one would be good Christian thoughts.
+
+273
+00:27:14.100 --> 00:27:14.780
+Doyle Barras: Then.
+
+274
+00:27:14.780 --> 00:27:16.949
+Krishna Lingampalli: Yeah, we absolutely need to have it.
+
+275
+00:27:17.240 --> 00:27:17.760
+Doyle Barras: Yeah. Okay.
+
+276
+00:27:20.570 --> 00:27:21.610
+Doyle Barras: Then.
+
+277
+00:27:21.610 --> 00:27:22.240
+Manish Dharod: Voltage.
+
+278
+00:27:22.240 --> 00:27:27.530
+Doyle Barras: Phase Breakered average.
+
+279
+00:27:27.770 --> 00:27:28.470
+Manish Dharod: Yeah.
+
+280
+00:27:28.470 --> 00:27:33.139
+Doyle Barras: I think right, Krishna, right? Cause it's it's they should know. It's 2, 8, 30, right.
+
+281
+00:27:33.820 --> 00:27:34.690
+Krishna Lingampalli: Yeah.
+
+282
+00:27:35.066 --> 00:27:37.700
+Doyle Barras: Sold, Ambridge agreed. We don't need that.
+
+283
+00:27:37.700 --> 00:27:39.750
+Manish Dharod: Okay. Don't need it. Okay.
+
+284
+00:27:40.850 --> 00:27:45.030
+Doyle Barras: Circuit number would be good and then receptacle type, I think, is definite.
+
+285
+00:27:45.560 --> 00:27:46.310
+Manish Dharod: Okay. Good.
+
+286
+00:27:47.030 --> 00:27:52.150
+Doyle Barras: Max circuit number. I'm assuming Krishna. That's like we can only do
+
+287
+00:27:52.770 --> 00:27:55.359
+Doyle Barras: 2, 2 sets, 2 redundant pairs.
+
+288
+00:27:57.150 --> 00:28:05.510
+Krishna Lingampalli: Yeah, so well, yeah, we can only do 2 pairs. But manish, does Max circuit number refer to
+
+289
+00:28:05.980 --> 00:28:10.134
+Krishna Lingampalli: just the maximum you can select of one circuit type.
+
+290
+00:28:11.310 --> 00:28:11.775
+Manish Dharod: Hmm!
+
+291
+00:28:12.530 --> 00:28:15.649
+Manish Dharod: I'll have to find out. I don't know. Honestly.
+
+292
+00:28:15.650 --> 00:28:20.809
+Doyle Barras: Yeah, I'm not seeing much here. And then if you if you scroll to the right manish, it's looking like it's like a text.
+
+293
+00:28:21.070 --> 00:28:21.820
+Doyle Barras: It's a street.
+
+294
+00:28:21.820 --> 00:28:24.709
+Manish Dharod: Yeah, I don't know what.
+
+295
+00:28:24.710 --> 00:28:25.520
+Doyle Barras: Yeah, I.
+
+296
+00:28:25.860 --> 00:28:31.479
+Doyle Barras: And it's not mandatory, like, at least in in the product. Spec, you know, from a
+
+297
+00:28:31.660 --> 00:28:35.140
+Doyle Barras: yeah, I think we just leave it, man. I think we drop it.
+
+298
+00:28:35.470 --> 00:28:40.990
+Manish Dharod: Yeah, I'll I'll check with Namis, but I'll let you know if there's anything I find out which is.
+
+299
+00:28:40.990 --> 00:28:41.760
+Doyle Barras: Okay.
+
+300
+00:28:41.760 --> 00:28:43.754
+Manish Dharod: Different. Okay, so
+
+301
+00:28:44.730 --> 00:29:05.749
+Manish Dharod: this is all good. And now so the details we captured now at the if you go back at the top level. These 3, I mean, okay, let me put this way. Anything from cabinet, patch, panel or A/C circuit. You think we should move up also?
+
+302
+00:29:07.030 --> 00:29:08.150
+Manish Dharod: What a show.
+
+303
+00:29:12.330 --> 00:29:16.399
+Doyle Barras: I I'm not convinced we should at least myself
+
+304
+00:29:16.580 --> 00:29:23.400
+Doyle Barras: more than anything. It's cause. It's like it's gonna fall apart. Once you have multiple cabinets that aren't configured the same
+
+305
+00:29:23.766 --> 00:29:28.720
+Doyle Barras: right? And then it's like, what am I really looking at at that point? Right? Like, I feel like it's gonna be really like.
+
+306
+00:29:29.060 --> 00:29:40.119
+Doyle Barras: okay, I've I've got a couple of cabinets, and I got a couple of circuit types. But which ones go where I like. I feel like, we'll really lose that. And I'm concerned, it's gonna be just kind of like confusing.
+
+307
+00:29:40.740 --> 00:29:41.330
+Manish Dharod: Yeah.
+
+308
+00:29:41.644 --> 00:29:44.789
+Doyle Barras: Christian. I don't know what you think about that, but.
+
+309
+00:29:45.420 --> 00:29:46.630
+Krishna Lingampalli: Can you go back.
+
+310
+00:29:47.680 --> 00:29:50.590
+Doyle Barras: Just real quick, manish. Would you mind going back to the figma.
+
+311
+00:29:50.900 --> 00:29:51.480
+Manish Dharod: Goodbye. Yeah,
+
+312
+00:29:51.770 --> 00:29:54.235
+Doyle Barras: Design, and so we could just see it again.
+
+313
+00:29:54.640 --> 00:29:58.279
+Doyle Barras: So it's at this level, Krishna, right like, at this highest level, right.
+
+314
+00:30:00.370 --> 00:30:02.149
+Krishna Lingampalli: I think we need it.
+
+315
+00:30:02.460 --> 00:30:08.379
+Doyle Barras: You think so like. So we would just, you know, we would just do cabinet inventions, number of cabinets.
+
+316
+00:30:09.800 --> 00:30:12.140
+Doyle Barras: Then just circuit types.
+
+317
+00:30:14.210 --> 00:30:15.030
+Krishna Lingampalli: Yeah.
+
+318
+00:30:15.030 --> 00:30:19.490
+Doyle Barras: Or circuits, and then we would just show, like, however many circuits we have.
+
+319
+00:30:20.700 --> 00:30:21.320
+Krishna Lingampalli: Yeah.
+
+320
+00:30:22.800 --> 00:30:27.269
+Doyle Barras: Okay. I'm I'm I'm open to it. By the way, I'm I'm not not opposed.
+
+321
+00:30:27.720 --> 00:30:30.649
+Manish Dharod: Which is a circuit number. Is it.
+
+322
+00:30:31.480 --> 00:30:38.589
+Doyle Barras: No, it'd be voltage and breaker to amperage.
+
+323
+00:30:39.060 --> 00:30:40.020
+Manish Dharod: These 2.
+
+324
+00:30:40.390 --> 00:30:43.540
+Doyle Barras: Yeah. Well, actually, phase phase 2. Sorry.
+
+325
+00:30:43.970 --> 00:30:47.110
+Doyle Barras: So 35, 6 and 7.
+
+326
+00:30:47.110 --> 00:30:49.209
+Manish Dharod: Okay. All 3 should go up also.
+
+327
+00:30:50.680 --> 00:30:51.320
+Doyle Barras: Yep.
+
+328
+00:30:52.910 --> 00:30:53.840
+Manish Dharod: You got it?
+
+329
+00:30:55.710 --> 00:30:56.660
+Manish Dharod: But
+
+330
+00:30:57.620 --> 00:31:08.850
+Manish Dharod: but but would would that be so for different A/C circuits? So there are 2, let's say, 2 A/C circuits, for example, or the Sce level. We should
+
+331
+00:31:09.310 --> 00:31:14.720
+Manish Dharod: will. Will that be 2 different voltages, 2 different bay phases, and and breakhead amperage.
+
+332
+00:31:15.659 --> 00:31:21.959
+Doyle Barras: Not inside a given cabinet? No, because, like particularly primary redundant, are always matched, that they're always identical.
+
+333
+00:31:22.150 --> 00:31:27.560
+Doyle Barras: So that's not a problem, you know, the only place where we come in is, say, like customer, has 2 cabinets.
+
+334
+00:31:27.690 --> 00:31:46.280
+Doyle Barras: One of them has a single phase, circuits has single phase circuits, the other one has 3 phase circuits that could happen right? So in that case it would almost be like cabinet dimensions. You'd list out the unique cabinet dimensions, and and maybe what you'd say is number up at the top number cabinets, too.
+
+335
+00:31:46.420 --> 00:31:50.659
+Doyle Barras: Cabinet dimensions, blah blah A/C circuits blah blah
+
+336
+00:31:51.781 --> 00:31:57.320
+Doyle Barras: and and then I think that the A/C circuits we could string these together right, you know, to where.
+
+337
+00:31:57.320 --> 00:31:57.770
+Manish Dharod: Got it.
+
+338
+00:31:58.210 --> 00:32:02.690
+Doyle Barras: 30 volt. 30, you know. Sorry. 30 volts, 2 0. 8 volt.
+
+339
+00:32:03.120 --> 00:32:03.790
+Manish Dharod: Got it.
+
+340
+00:32:03.790 --> 00:32:08.450
+Doyle Barras: 30 amp. Single phase, right? Like we could stitch those as a single.
+
+341
+00:32:08.830 --> 00:32:10.000
+Manish Dharod: String. Yeah, makes.
+
+342
+00:32:10.000 --> 00:32:13.260
+Doyle Barras: Yeah, we we don't need them to be separate rows.
+
+343
+00:32:13.260 --> 00:32:16.120
+Manish Dharod: Yeah. Okay. Let's see this.
+
+344
+00:32:16.780 --> 00:32:24.810
+Manish Dharod: Yeah, let me add that. So here it'll be voltage phase
+
+345
+00:32:35.180 --> 00:32:43.650
+Manish Dharod: right? This would be at oh, each cabinet!
+
+346
+00:32:44.390 --> 00:32:46.710
+Manish Dharod: Oh, for each A/C circuit they're saying.
+
+347
+00:32:47.960 --> 00:32:54.750
+Doyle Barras: Yeah. And the and the order we would do is voltage breaker to amperage, and then phase.
+
+348
+00:32:54.790 --> 00:32:55.510
+Manish Dharod: Oh, okay.
+
+349
+00:32:58.270 --> 00:33:06.609
+Doyle Barras: Maybe more than you care about at the this moment. But you know, it's like, if not, what's gonna happen is it's gonna end up kind of weird on the ui, right, you know. So just.
+
+350
+00:33:06.610 --> 00:33:15.559
+Manish Dharod: Yeah, yeah, we'll see. I think it should be okay. I think it looks should look fine. So now for, ej, okay, so maybe we'll we'll
+
+351
+00:33:16.080 --> 00:33:34.229
+Manish Dharod: we'll put it under A/C circuit and then club or I, don't we? We don't need to. You know. Kind of say anything in front of it. We can just have 2 lines. Let's say, if there are 2 different, then one line below the other. Having these 3 values basically.
+
+352
+00:33:34.810 --> 00:33:41.151
+Doyle Barras: Right? Yeah, we're we're basically just giving them the uniques. Right here are the unique combinations you have and what you purchased.
+
+353
+00:33:41.440 --> 00:33:49.490
+Manish Dharod: Correct. Correct. Okay, I think, this does it for me. I think any anything else
+
+354
+00:33:50.650 --> 00:33:52.269
+Manish Dharod: from your end that I need to.
+
+355
+00:33:52.750 --> 00:34:00.020
+Manish Dharod: No, I mean, if, if, since since you're recording, though like, do I have to say like, I reserve the right to see the final product and give more feedback.
+
+356
+00:34:00.020 --> 00:34:01.030
+Manish Dharod: of course.
+
+357
+00:34:01.030 --> 00:34:12.569
+Doyle Barras: I mean, like I I feel like it works, Krishna. I'm comfortable. I don't know about you. I I still feel like it. You know I'd love to see it come together, you know, to actually see it. So we kind of put eyeballs and go, yeah, that's it, right. But.
+
+358
+00:34:12.570 --> 00:34:13.110
+Manish Dharod: Yeah.
+
+359
+00:34:15.540 --> 00:34:28.349
+Manish Dharod: Oh, for sure, I can get get that for you guys. You know. I'll I'll send it as as soon as Kay has it. And then, once you guys confirm, that's when I will ask my engineering team to make the changes.
+
+360
+00:34:28.350 --> 00:34:31.750
+Doyle Barras: Okay, Krishna, what do you think? Man works.
+
+361
+00:34:32.500 --> 00:34:33.370
+Krishna Lingampalli: Yeah.
+
+362
+00:34:33.370 --> 00:34:34.940
+Manish Dharod: I'm good, cool.
+
+363
+00:34:34.940 --> 00:34:40.669
+Doyle Barras: Awesome. Alrighty, man! Well, thanks for getting us together. Manish chat with you soon, man. See you.
+
+364
+00:34:40.670 --> 00:34:41.960
+Manish Dharod: Alright, bye! Take care.
+
