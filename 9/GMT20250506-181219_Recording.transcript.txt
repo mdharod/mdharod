@@ -1,0 +1,2398 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.155
+Manish Dharod: The thing, so maybe we can start with the dashboard here.
+
+2
+00:00:09.660 --> 00:00:19.090
+Manish Dharod: My recollection is that essentially, this dashboard will show the orders from both the new stack and the old stack.
+
+3
+00:00:19.300 --> 00:00:19.780
+Kiran Vinnakota: But not
+
+4
+00:00:20.570 --> 00:00:34.549
+Kiran Vinnakota: manish manish for your planning perspective you want to take go by story, by story or epic, by epic. So you can check market. Okay, this done, tomorrow. We know where it stopped.
+
+5
+00:00:35.740 --> 00:00:40.108
+Manish Dharod: That's a good idea. Let me let me do one thing. Let me go to
+
+6
+00:00:51.650 --> 00:00:53.929
+Manish Dharod: So I think he changed it. Let's see it.
+
+7
+00:00:57.710 --> 00:01:05.330
+Manish Dharod: Okay? So what I was thinking I can do is in the releases.
+
+8
+00:01:05.730 --> 00:01:14.980
+Manish Dharod: I can create a page where we can just document, all the you know, internal
+
+9
+00:01:15.160 --> 00:01:21.079
+Manish Dharod: feedback, or whatever it is that as we as we go along and that will help
+
+10
+00:01:29.710 --> 00:01:38.988
+Manish Dharod: alright. Okay. So what I can do is maybe put down these. So this is the 1st one is
+
+11
+00:01:39.840 --> 00:01:43.290
+Manish Dharod: This guy, which is this is the epic.
+
+12
+00:01:43.430 --> 00:01:47.649
+Kiran Vinnakota: And what I can do is add oops. Sorry.
+
+13
+00:01:50.010 --> 00:01:54.437
+Manish Dharod: I will add 1st epic here and then that way.
+
+14
+00:01:56.080 --> 00:02:05.370
+Manish Dharod: okay. Then, actually, the one that I was looking at currently was related to really speaking the coexistence actually.
+
+15
+00:02:05.750 --> 00:02:10.480
+Manish Dharod: So let me put that as well for one second.
+
+16
+00:02:11.830 --> 00:02:15.309
+Manish Dharod: And then one other thing. By the way, do you know?
+
+17
+00:02:15.841 --> 00:02:20.479
+Manish Dharod: How? How do you pronounce her name? Deanne, or Diane.
+
+18
+00:02:20.760 --> 00:02:21.180
+Srividhya Sitaraman: No.
+
+19
+00:02:21.180 --> 00:02:23.669
+Manish Dharod: She joined as a Cda.
+
+20
+00:02:24.090 --> 00:02:26.710
+Manish Dharod: Are you guys aware under Radhika.
+
+21
+00:02:26.910 --> 00:02:28.280
+Srividhya Sitaraman: - no.
+
+22
+00:02:28.280 --> 00:02:29.390
+Manish Dharod: Oh, really. Okay.
+
+23
+00:02:29.390 --> 00:02:30.950
+Srividhya Sitaraman: Diet espresso espresso.
+
+24
+00:02:30.950 --> 00:02:32.729
+Manish Dharod: Yeah, yeah, yeah, yeah, right.
+
+25
+00:02:33.985 --> 00:02:34.930
+Srividhya Sitaraman: No.
+
+26
+00:02:35.240 --> 00:02:40.567
+Manish Dharod: No. Oh, is it okay? Okay? Oh, you guys, you guys, we're going to have
+
+27
+00:02:41.880 --> 00:02:45.189
+Manish Dharod: a team meeting for Radhika's team or not? Not yet.
+
+28
+00:02:45.190 --> 00:02:47.760
+Srividhya Sitaraman: Yeah, yeah, we had it yesterday, but within us.
+
+29
+00:02:47.760 --> 00:02:49.730
+Manish Dharod: Oh, she she wasn't there.
+
+30
+00:02:49.890 --> 00:02:54.198
+Srividhya Sitaraman: No, she wasn't there. She was usually she used to report to Hussein.
+
+31
+00:02:54.710 --> 00:02:56.859
+Srividhya Sitaraman: I'm not sure now she's reporting to.
+
+32
+00:02:56.860 --> 00:03:02.209
+Manish Dharod: Oh, is it okay? Sorry. So then I may be wrong. She may be reporting to Hussein, but.
+
+33
+00:03:02.210 --> 00:03:05.717
+Srividhya Sitaraman: No, she started reporting to Radhika now, but before it was Suzanne
+
+34
+00:03:06.120 --> 00:03:11.949
+Manish Dharod: Okay, okay, okay, got it. Yeah. So I had a call. She had to set up a call with me today.
+
+35
+00:03:12.220 --> 00:03:12.550
+Srividhya Sitaraman: Hmm.
+
+36
+00:03:12.550 --> 00:03:20.889
+Manish Dharod: And so you know, she was trying to, you know, get slowly the understanding of what what is going on, and everything.
+
+37
+00:03:21.310 --> 00:03:24.050
+Srividhya Sitaraman: Process will be for the operator. Portal.
+
+38
+00:03:25.940 --> 00:03:28.200
+Manish Dharod: She will be for sorry. Say that again.
+
+39
+00:03:28.200 --> 00:03:30.330
+Srividhya Sitaraman: So will be for operator Portal, Cda.
+
+40
+00:03:31.360 --> 00:03:32.279
+Manish Dharod: No both.
+
+41
+00:03:32.880 --> 00:03:39.709
+Srividhya Sitaraman: Okay, because I forgot his name.
+
+42
+00:03:40.060 --> 00:03:42.129
+Srividhya Sitaraman: There is one more Cda for us. No.
+
+43
+00:03:44.521 --> 00:03:47.130
+Manish Dharod: Yeah. Say that again.
+
+44
+00:03:47.451 --> 00:03:49.059
+Kiran Vinnakota: For us right? See what's.
+
+45
+00:03:49.060 --> 00:03:55.364
+Manish Dharod: So you let's no, but I think that's what my understanding is that it's changing. Now it's going to be
+
+46
+00:03:55.900 --> 00:03:56.800
+Manish Dharod: Diane.
+
+47
+00:03:57.430 --> 00:03:59.120
+Srividhya Sitaraman: Hmm, I see. Okay.
+
+48
+00:03:59.120 --> 00:04:08.019
+Manish Dharod: Yeah, yeah, okay. So this one, I'm just going to like for. Now, what I was just going to do is
+
+49
+00:04:08.800 --> 00:04:10.220
+Manish Dharod: dashboard, right
+
+50
+00:04:12.560 --> 00:04:20.869
+Manish Dharod: And so this is how you are thinking. Here. Correct, Kiran. Maybe these are the 4 main epics, and then under each of them we will go one by one, right.
+
+51
+00:04:20.870 --> 00:04:26.479
+Kiran Vinnakota: Exactly so that you know, we'll know what we are covering it. And if there is an issue, we can say that, okay, under this this is an issue.
+
+52
+00:04:26.650 --> 00:04:27.590
+Manish Dharod: Yeah, yeah.
+
+53
+00:04:27.590 --> 00:04:28.040
+Kiran Vinnakota: You can.
+
+54
+00:04:28.040 --> 00:04:37.069
+Manish Dharod: List of new and old stack orders right? So here, if I go back to this.
+
+55
+00:04:37.270 --> 00:04:37.960
+Manish Dharod: Oh.
+
+56
+00:04:43.410 --> 00:04:46.219
+Kiran Vinnakota: You created that epic right, manish those epics.
+
+57
+00:04:46.220 --> 00:04:47.049
+Manish Dharod: Correct. Yeah.
+
+58
+00:04:47.050 --> 00:04:50.959
+Kiran Vinnakota: That means there will be proper description of the acceptance and all. Okay.
+
+59
+00:04:51.090 --> 00:04:51.660
+Manish Dharod: Yeah.
+
+60
+00:04:56.650 --> 00:05:00.310
+Manish Dharod: Okay. So I think, here.
+
+61
+00:05:00.820 --> 00:05:06.479
+Manish Dharod: if I go to one of these as an example, it will get me to the
+
+62
+00:05:07.510 --> 00:05:10.467
+Manish Dharod: already unavailable. Okay, so do you know?
+
+63
+00:05:11.840 --> 00:05:16.090
+Manish Dharod: so it is. It is going to the new. Looks like the oh, okay.
+
+64
+00:05:16.090 --> 00:05:23.235
+Srividhya Sitaraman: Yeah, yeah, it depends on the status. Right? So for nature, it goes if the data is there, then it will show. Sometimes they create
+
+65
+00:05:24.052 --> 00:05:29.020
+Srividhya Sitaraman: junk order. So that's why we say order order. Details are not available.
+
+66
+00:05:29.280 --> 00:05:31.140
+Manish Dharod: Hmm, got it? Yeah. So.
+
+67
+00:05:31.140 --> 00:05:34.640
+Srividhya Sitaraman: Can you scroll down? Probably a little bit down
+
+68
+00:05:35.613 --> 00:05:39.829
+Srividhya Sitaraman: that? The 56. Can you try the 56 accessories.
+
+69
+00:05:39.830 --> 00:05:40.750
+Manish Dharod: Yeah, okay.
+
+70
+00:05:45.330 --> 00:05:45.770
+Srividhya Sitaraman: Yeah.
+
+71
+00:05:45.770 --> 00:05:49.210
+Manish Dharod: Okay, okay, got it.
+
+72
+00:05:52.500 --> 00:06:05.050
+Manish Dharod: alright. So this is the new stack order. So one thing is, I want to check. I don't know if you guys are aware I know Jyoti is the one who is working on this. But
+
+73
+00:06:05.440 --> 00:06:13.070
+Manish Dharod: there were other attributes at the order header level that K. Had in the markup.
+
+74
+00:06:14.000 --> 00:06:23.909
+Manish Dharod: That is something that I wanted to check, because there was there were 2 lines here. There was more like billing account number, and all those things as well.
+
+75
+00:06:24.332 --> 00:06:25.600
+Kiran Vinnakota: Do you mean?
+
+76
+00:06:25.600 --> 00:06:28.750
+Manish Dharod: Yeah, yeah, yeah, right? I had mentioned this, too.
+
+77
+00:06:30.330 --> 00:06:38.839
+Manish Dharod: to. I think jyoti, or maybe just ajay. But this is something that I wanted to kind of capture. Okay, so let me just.
+
+78
+00:06:38.840 --> 00:06:41.920
+Kiran Vinnakota: Enhancement. Manish is a bug, or there is enhancement.
+
+79
+00:06:43.238 --> 00:06:50.980
+Manish Dharod: I think it's a bug in some sense, meaning that that was always the case. That markup was always there.
+
+80
+00:06:51.452 --> 00:06:54.290
+Kiran Vinnakota: Why I'm asking that right? Because
+
+81
+00:06:54.883 --> 00:07:02.650
+Kiran Vinnakota: if it's there in the since the beginning of our ux, right then, I think. But we we missed it then. Otherwise it's announcement.
+
+82
+00:07:03.630 --> 00:07:04.749
+Kiran Vinnakota: yeah, we'll look at it.
+
+83
+00:07:04.750 --> 00:07:06.099
+Kiran Vinnakota: Okay, they don't have it.
+
+84
+00:07:06.810 --> 00:07:08.409
+Kiran Vinnakota: Someone should work on it right.
+
+85
+00:07:09.630 --> 00:07:15.980
+Manish Dharod: Okay, transaction details,
+
+86
+00:08:36.260 --> 00:08:38.230
+Kiran Vinnakota: And these are all 3 only right, manish.
+
+87
+00:08:39.710 --> 00:08:43.770
+Manish Dharod: Yes, okay. So this I added,
+
+88
+00:08:44.940 --> 00:08:50.620
+Manish Dharod: alright, let's take a look. So accessories, okay,
+
+89
+00:08:58.870 --> 00:09:06.270
+Manish Dharod: okay, contact ordering contact is there? Or, okay? Okay, got it?
+
+90
+00:09:07.680 --> 00:09:09.100
+Manish Dharod: The part.
+
+91
+00:09:10.520 --> 00:09:19.120
+Manish Dharod: Okay, no documents. Now, this is another question I had, should we?
+
+92
+00:09:20.815 --> 00:09:25.010
+Manish Dharod: Okay, maybe this is something that I will.
+
+93
+00:09:25.750 --> 00:09:28.224
+Manish Dharod: I need to. I need to think about it.
+
+94
+00:09:29.560 --> 00:09:34.369
+Srividhya Sitaraman: Not. Everything will have data, so probably we need to disable it or something, or don't show.
+
+95
+00:09:35.330 --> 00:09:39.110
+Manish Dharod: Yeah, I'm just thinking whether
+
+96
+00:09:40.640 --> 00:09:56.400
+Manish Dharod: I mean. So the question is whether whether it should be a link here, if it's not there, or should it be disabled, and so that I can check with a K and find out? Oh, why would it? What is happening? Okay, let me just check one second.
+
+97
+00:09:57.000 --> 00:10:01.400
+Manish Dharod: It's the okay control shift. Okay? Control shift. Okay.
+
+98
+00:10:05.150 --> 00:10:13.129
+Manish Dharod: yeah. This one. I need to find out from I need to talk to K and see what approach we want to take on the
+
+99
+00:10:13.410 --> 00:10:21.239
+Manish Dharod: looks like the order tracker is looking fine, estimated completion date. Do you guys know where this is coming from.
+
+100
+00:10:22.540 --> 00:10:27.179
+Srividhya Sitaraman: No, I only provide those details. If that completion date is
+
+101
+00:10:29.810 --> 00:10:32.319
+Srividhya Sitaraman: on a great date, right? It should be the same.
+
+102
+00:10:34.410 --> 00:10:37.580
+Srividhya Sitaraman: I can cross, verify with the data. Once again.
+
+103
+00:10:40.300 --> 00:10:42.630
+Srividhya Sitaraman: Yeah, you can check my other things if you don't mind.
+
+104
+00:10:42.630 --> 00:10:45.449
+Manish Dharod: Let me just make a note of that.
+
+105
+00:10:46.170 --> 00:10:47.930
+Srividhya Sitaraman: Can you ping me the order? Number.
+
+106
+00:10:48.450 --> 00:10:49.420
+Manish Dharod: Okay
+
+107
+00:10:53.130 --> 00:10:54.880
+Manish Dharod: in the chat here.
+
+108
+00:11:08.110 --> 00:11:13.757
+Manish Dharod: I think we may need to add an info icon. I'm just wondering on that
+
+109
+00:11:25.700 --> 00:11:28.929
+Kiran Vinnakota: That that is, that would be question 2 K.
+
+110
+00:11:29.390 --> 00:11:30.110
+Manish Dharod: Yeah.
+
+111
+00:11:41.910 --> 00:11:42.830
+Kiran Vinnakota: Makes sense.
+
+112
+00:12:01.570 --> 00:12:03.295
+Manish Dharod: Okay. And then
+
+113
+00:12:09.340 --> 00:12:14.129
+Kiran Vinnakota: What would be there in more details? Inside that view more details.
+
+114
+00:12:15.948 --> 00:12:18.589
+Manish Dharod: What will be there? Yeah.
+
+115
+00:12:18.968 --> 00:12:21.239
+Kiran Vinnakota: Know that available like that. So.
+
+116
+00:12:21.240 --> 00:12:24.529
+Manish Dharod: That's a good question. Actually, you know. That's a.
+
+117
+00:12:24.530 --> 00:12:28.009
+Srividhya Sitaraman: But start configurations. If there is anything right.
+
+118
+00:12:29.070 --> 00:12:31.870
+Manish Dharod: Right. But in this case there isn't anything like that right.
+
+119
+00:12:32.100 --> 00:12:32.800
+Srividhya Sitaraman: Hmm.
+
+120
+00:12:32.800 --> 00:12:35.849
+Manish Dharod: So why do we have the link? Why do we have like, yeah.
+
+121
+00:12:41.880 --> 00:12:43.170
+Manish Dharod: okay.
+
+122
+00:13:11.680 --> 00:13:15.149
+Manish Dharod: Oh, it captured our.
+
+123
+00:13:16.410 --> 00:13:18.009
+Manish Dharod: Okay. I'm just
+
+124
+00:13:30.360 --> 00:13:39.929
+Manish Dharod: so I think one thing you know we could do is maybe starting
+
+125
+00:13:40.400 --> 00:13:45.559
+Manish Dharod: for maybe tomorrow one thing I will do is that today tomorrow
+
+126
+00:13:45.740 --> 00:13:51.570
+Manish Dharod: I will go over a bunch of these things myself, I will add, you know, kind of
+
+127
+00:13:51.890 --> 00:13:57.700
+Manish Dharod: comment. So you guys don't have to sit through this if if you don't want to, and then
+
+128
+00:13:57.980 --> 00:14:12.556
+Manish Dharod: maybe we can use the times that we have set up to to discuss anything that is you know. Is there in in the in the wiki, or we do anything related to? Maybe
+
+129
+00:14:13.170 --> 00:14:20.220
+Manish Dharod: stuff that you can answer for me, and things like that just want to be mindful of
+
+130
+00:14:20.600 --> 00:14:22.779
+Manish Dharod: that of your time.
+
+131
+00:14:23.630 --> 00:14:24.440
+Manish Dharod: Good enough.
+
+132
+00:14:32.870 --> 00:14:36.350
+Manish Dharod: Okay. Alright. Then, going back here.
+
+133
+00:14:37.370 --> 00:14:52.050
+Manish Dharod: Yeah. The update to you know. I think I had. I had talked to. I have to check whether I created a user story. I think I did on changing this structure here.
+
+134
+00:14:53.030 --> 00:14:58.810
+Kiran Vinnakota: So this is something that I will add later. But okay, let me go to the next one.
+
+135
+00:14:59.650 --> 00:15:08.890
+Kiran Vinnakota: The power access. Yeah. What? This exactly means what happens if I click.
+
+136
+00:15:08.890 --> 00:15:11.130
+Manish Dharod: Oh, yeah, it's a good point
+
+137
+00:15:14.600 --> 00:15:17.310
+Manish Dharod: closed, complete.
+
+138
+00:15:17.650 --> 00:15:21.869
+Kiran Vinnakota: Well for me, saying it's confused, little confused, so.
+
+139
+00:15:21.870 --> 00:15:29.860
+Manish Dharod: Right? Right? Order status. Yes, I mean, yeah. The status, the status is something that I can. I can revisit. Actually.
+
+140
+00:15:30.776 --> 00:15:39.344
+Manish Dharod: I can revisit the statuses, all the statuses again with K, and find out
+
+141
+00:15:41.450 --> 00:15:44.619
+Manish Dharod: whether we need to make any changes on that. That's a good one.
+
+142
+00:15:47.090 --> 00:15:53.389
+Manish Dharod: Hmm, okay, okay, let me click on cabinet. Now.
+
+143
+00:15:54.000 --> 00:16:00.299
+Kiran Vinnakota: No, you want to go is different tabs also. No, like, you just need to order tracker. Right? You want to go details. Tab also.
+
+144
+00:16:00.300 --> 00:16:02.879
+Manish Dharod: Checked. Yeah, like this. Right? You mean.
+
+145
+00:16:02.880 --> 00:16:05.550
+Kiran Vinnakota: Any any problems. Right here we are. You are expecting.
+
+146
+00:16:05.979 --> 00:16:12.230
+Manish Dharod: This is fine. This is fine services specification
+
+147
+00:16:15.820 --> 00:16:24.510
+Manish Dharod: ordering contact. Maybe maybe what I'll do is kind of change the
+
+148
+00:16:25.890 --> 00:16:30.430
+Manish Dharod: title on this. Okay, contact is fine.
+
+149
+00:16:32.600 --> 00:16:34.979
+Manish Dharod: Yeah, contact is fine. I think.
+
+150
+00:16:36.620 --> 00:16:40.369
+Manish Dharod: This one I already kind of looked at.
+
+151
+00:16:42.710 --> 00:16:48.009
+Manish Dharod: So it looks like this is maybe, oh, okay, no, this not fake data. Okay. So
+
+152
+00:16:48.500 --> 00:16:51.630
+Manish Dharod: the certificate service specification here is showing up.
+
+153
+00:16:52.493 --> 00:16:54.910
+Manish Dharod: Contact is again the same.
+
+154
+00:16:56.860 --> 00:17:00.540
+Manish Dharod: Okay, batch panel.
+
+155
+00:17:03.500 --> 00:17:04.909
+Manish Dharod: Okay? It's
+
+156
+00:17:08.589 --> 00:17:12.605
+Manish Dharod: yeah, I will. What I'll do is I'll find out
+
+157
+00:17:13.490 --> 00:17:19.850
+Manish Dharod: The the exact list of attributes here that I have provided in this in the spreadsheet.
+
+158
+00:17:20.000 --> 00:17:22.015
+Manish Dharod: you know, so attributes
+
+159
+00:17:26.119 --> 00:17:28.600
+Manish Dharod: attributes in the details. Section.
+
+160
+00:17:39.460 --> 00:17:43.290
+Manish Dharod: Okay, so this one is for me to kind of.
+
+161
+00:17:43.290 --> 00:17:46.890
+Kiran Vinnakota: The second one is revisiting stat just status review.
+
+162
+00:17:47.870 --> 00:17:49.290
+Manish Dharod: Yeah, yeah.
+
+163
+00:17:49.290 --> 00:17:51.210
+Kiran Vinnakota: Your, yeah.
+
+164
+00:17:53.640 --> 00:17:56.090
+Manish Dharod: For sure I will.
+
+165
+00:17:56.370 --> 00:18:01.850
+Manish Dharod: So I'll go through my, the snapshots that I have taken. Okay, so
+
+166
+00:18:02.130 --> 00:18:11.669
+Manish Dharod: this shows up like that. Okay, now going back to the transaction history page, or maybe I'll just go to the dashboard again. Let me see. Go to the dashboard.
+
+167
+00:18:13.340 --> 00:18:18.131
+Manish Dharod: Okay, how do I go to dashboard. Okay, maybe like this. Okay, over
+
+168
+00:18:20.340 --> 00:18:24.109
+Manish Dharod: alright. And then, I'm just looking for the older.
+
+169
+00:18:26.980 --> 00:18:29.810
+Kiran Vinnakota: By seeing the Id. I think we should be able to tell that right.
+
+170
+00:18:29.810 --> 00:18:33.809
+Manish Dharod: I'm thinking, yeah, I'm thinking it should be a longer one, is what I recall.
+
+171
+00:18:33.810 --> 00:18:35.549
+Kiran Vinnakota: That's what Jay told us. Yeah.
+
+172
+00:18:36.650 --> 00:18:37.440
+Manish Dharod: Hmm!
+
+173
+00:18:38.790 --> 00:18:44.290
+Manish Dharod: Maybe there isn't. I thought, Okay, maybe this one let me check. No, it is not the one.
+
+174
+00:18:44.290 --> 00:18:50.429
+Srividhya Sitaraman: Go to the main page, right? Or in the order, order and transactions to page. Yeah.
+
+175
+00:18:50.590 --> 00:18:52.429
+Manish Dharod: He's here. Okay, okay, yeah.
+
+176
+00:18:52.720 --> 00:18:53.799
+Srividhya Sitaraman: Still is gone.
+
+177
+00:18:54.160 --> 00:18:59.080
+Kiran Vinnakota: There is one that can go up, manage. There's 1 id different can go up. Let co-OP, I said.
+
+178
+00:18:59.980 --> 00:19:00.920
+Kiran Vinnakota: Different. Id.
+
+179
+00:19:01.210 --> 00:19:01.890
+Manish Dharod: This one?
+
+180
+00:19:02.200 --> 00:19:03.769
+Manish Dharod: Oh, no, that's the same on number 3.
+
+181
+00:19:03.770 --> 00:19:04.450
+Manish Dharod: Yeah.
+
+182
+00:19:05.380 --> 00:19:08.850
+Srividhya Sitaraman: Still down the status will look different manish if you scroll.
+
+183
+00:19:08.850 --> 00:19:10.780
+Manish Dharod: Shaders will also look, okay, okay.
+
+184
+00:19:10.780 --> 00:19:12.030
+Srividhya Sitaraman: All uppercase.
+
+185
+00:19:13.470 --> 00:19:13.940
+Manish Dharod: Okay.
+
+186
+00:19:20.290 --> 00:19:25.220
+Srividhya Sitaraman: Around like 1,000 datas are coming from the new one.
+
+187
+00:19:25.950 --> 00:19:28.300
+Manish Dharod: Okay, here, this one, right? This one, right?
+
+188
+00:19:28.300 --> 00:19:31.380
+Srividhya Sitaraman: No, it's it will take you to the review. Order page, not this one.
+
+189
+00:19:31.520 --> 00:19:32.660
+Srividhya Sitaraman: Still down.
+
+190
+00:19:32.830 --> 00:19:33.440
+Manish Dharod: Okay.
+
+191
+00:19:33.440 --> 00:19:39.170
+Srividhya Sitaraman: Okay. What we can do is that we can go to the old tab, get the number and search here. If you go go to the old tab, right
+
+192
+00:19:39.350 --> 00:19:40.600
+Srividhya Sitaraman: the classic tab.
+
+193
+00:19:41.658 --> 00:19:45.249
+Manish Dharod: Classic tab. Where where is that?
+
+194
+00:19:45.270 --> 00:19:48.120
+Srividhya Sitaraman: If you scroll back orders and ticket history.
+
+195
+00:19:48.340 --> 00:19:49.862
+Manish Dharod: Order integration. Okay?
+
+196
+00:19:50.370 --> 00:19:53.450
+Srividhya Sitaraman: Yeah, click on the link orders and ticket history.
+
+197
+00:19:53.450 --> 00:19:54.589
+Manish Dharod: This one here, okay.
+
+198
+00:19:55.150 --> 00:19:58.130
+Srividhya Sitaraman: Then go here, get the number one, hyphen, 2, 1 0.
+
+199
+00:19:58.360 --> 00:19:59.090
+Kiran Vinnakota: It won't work.
+
+200
+00:19:59.100 --> 00:20:00.749
+Manish Dharod: Oh, why is there 2 tabs here?
+
+201
+00:20:00.750 --> 00:20:03.170
+Manish Dharod: Yeah, yeah, I'm removing it. So if you see, okay.
+
+202
+00:20:04.150 --> 00:20:06.720
+Manish Dharod: here's what what will happen here. Now.
+
+203
+00:20:06.720 --> 00:20:11.349
+Srividhya Sitaraman: Oh, yeah, I'll remove it. And then, yeah, whatever you saw before is the one you will see it.
+
+204
+00:20:12.720 --> 00:20:15.760
+Srividhya Sitaraman: This is still this is not still fixed.
+
+205
+00:20:15.760 --> 00:20:16.350
+Manish Dharod: Got it?
+
+206
+00:20:16.350 --> 00:20:20.430
+Manish Dharod: Yeah. So this, this is what will show up here. Correct?
+
+207
+00:20:20.430 --> 00:20:21.730
+Manish Dharod: Correct? Correct. Yeah.
+
+208
+00:20:21.730 --> 00:20:22.410
+Manish Dharod: Okay, got it.
+
+209
+00:20:22.410 --> 00:20:24.030
+Srividhya Sitaraman: Can you copy this order? Number.
+
+210
+00:20:24.450 --> 00:20:25.150
+Manish Dharod: This one.
+
+211
+00:20:25.380 --> 00:20:27.070
+Srividhya Sitaraman: These are all old ones. Yeah.
+
+212
+00:20:27.180 --> 00:20:28.190
+Manish Dharod: Oh, okay.
+
+213
+00:20:28.190 --> 00:20:29.830
+Srividhya Sitaraman: And then search over there.
+
+214
+00:20:30.250 --> 00:20:34.200
+Manish Dharod: Okay, got it. Let me just do that copy.
+
+215
+00:20:36.430 --> 00:20:37.820
+Manish Dharod: Okay, here, right.
+
+216
+00:20:41.630 --> 00:20:42.709
+Kiran Vinnakota: Take longer id.
+
+217
+00:20:42.710 --> 00:20:43.450
+Manish Dharod: That's the one.
+
+218
+00:20:43.450 --> 00:20:44.110
+Manish Dharod: Oh.
+
+219
+00:20:44.460 --> 00:20:46.200
+Srividhya Sitaraman: So that's how you can do it.
+
+220
+00:20:46.200 --> 00:20:51.119
+Manish Dharod: But then, okay, how come then? Oh, is it because we have filtered it right now?
+
+221
+00:20:51.120 --> 00:20:54.549
+Srividhya Sitaraman: No, no, no filtering, we are adding, having both. But I think.
+
+222
+00:20:54.550 --> 00:20:55.880
+Manish Dharod: Oh, there are too many of them.
+
+223
+00:20:55.880 --> 00:20:57.950
+Srividhya Sitaraman: Yeah, too many of them. They are creating so many orders.
+
+224
+00:20:57.950 --> 00:20:59.210
+Manish Dharod: Oh, got it? Got it? Okay.
+
+225
+00:20:59.210 --> 00:21:00.409
+Srividhya Sitaraman: I don't do so.
+
+226
+00:21:00.410 --> 00:21:01.310
+Manish Dharod: Got it. Okay?
+
+227
+00:21:02.640 --> 00:21:09.645
+Manish Dharod: Actually, you know, load more button should be there. But it is. It is not very clear to me that there is something
+
+228
+00:21:10.199 --> 00:21:14.190
+Srividhya Sitaraman: There should be a loading icon that will come if you drag all the way down.
+
+229
+00:21:14.190 --> 00:21:15.719
+Kiran Vinnakota: Scroll back to now.
+
+230
+00:21:15.720 --> 00:21:19.099
+Srividhya Sitaraman: Did you drag? Did you scroll all the way down.
+
+231
+00:21:19.520 --> 00:21:25.830
+Manish Dharod: Yeah, I did. I mean, so like, for example, you see here, if I go down, nothing shows up here
+
+232
+00:21:26.520 --> 00:21:29.829
+Manish Dharod: now. Suddenly it shows up like as in like, yeah.
+
+233
+00:21:29.830 --> 00:21:37.939
+Srividhya Sitaraman: Yeah, actually, there should in the local. I was just seeing that there was a loader. Like loading, loading icon. Right? I'm not sure. Why, it's not showing up there.
+
+234
+00:21:40.340 --> 00:21:44.150
+Srividhya Sitaraman: Show it. If we are loading anything we'll show that loader. Icon.
+
+235
+00:21:46.090 --> 00:21:50.290
+Manish Dharod: Okay, maybe. Here. Now, let's say.
+
+236
+00:21:51.700 --> 00:21:53.420
+Kiran Vinnakota: They are old orders.
+
+237
+00:21:54.800 --> 00:22:01.640
+Manish Dharod: Okay, yeah, I think. What I would say is that
+
+238
+00:22:01.760 --> 00:22:07.190
+Manish Dharod: low? I mean load more. Typically, I would say, just having
+
+239
+00:22:09.246 --> 00:22:17.570
+Manish Dharod: I know it's it's not something that we can maybe change now, but ideally a load more button is is probably.
+
+240
+00:22:17.570 --> 00:22:20.880
+Srividhya Sitaraman: Can I share? Screen, manish so you can see what I'm talking.
+
+241
+00:22:21.110 --> 00:22:25.208
+Manish Dharod: Yeah, yeah, I know, I think, what you're saying in terms of
+
+242
+00:22:25.930 --> 00:22:28.779
+Srividhya Sitaraman: The icon see my screen.
+
+243
+00:22:29.150 --> 00:22:29.890
+Manish Dharod: Yeah, yeah.
+
+244
+00:22:30.620 --> 00:22:37.629
+Srividhya Sitaraman: Oh, okay, it's not showing when I'm
+
+245
+00:22:38.170 --> 00:22:41.289
+Srividhya Sitaraman: it was showing before one second, I'll reload.
+
+246
+00:22:46.790 --> 00:22:48.710
+Srividhya Sitaraman: Yeah, I see the bunch. You see, this.
+
+247
+00:22:48.710 --> 00:22:50.159
+Manish Dharod: Hmm, yeah.
+
+248
+00:22:51.150 --> 00:22:56.830
+Srividhya Sitaraman: So that's the one that you see. See that all the way you have to pull it and hold it. See, you see, it.
+
+249
+00:22:56.830 --> 00:23:01.899
+Manish Dharod: Yeah. Well, it's a yeah. It's kinda half.
+
+250
+00:23:02.300 --> 00:23:02.730
+Kiran Vinnakota: My.
+
+251
+00:23:02.730 --> 00:23:04.830
+Manish Dharod: Being half not working kind of a thing.
+
+252
+00:23:05.030 --> 00:23:07.490
+Srividhya Sitaraman: Okay, yeah, you can see here, you can see the lot.
+
+253
+00:23:07.760 --> 00:23:09.110
+Manish Dharod: Yeah, yeah, yeah.
+
+254
+00:23:09.540 --> 00:23:10.680
+Srividhya Sitaraman: Yeah.
+
+255
+00:23:10.680 --> 00:23:12.600
+Kiran Vinnakota: Manisha. I have one more basic question
+
+256
+00:23:12.770 --> 00:23:22.290
+Kiran Vinnakota: is that the intention to keep different case of statuses there, like, you know, uppercase lower case we don't need to show that to the customer.
+
+257
+00:23:23.142 --> 00:23:27.479
+Srividhya Sitaraman: We are just integrated with the new Apa, yeah.
+
+258
+00:23:27.760 --> 00:23:31.340
+Srividhya Sitaraman: yeah, I mean, we need to open the bug, or is it
+
+259
+00:23:31.340 --> 00:23:36.519
+Srividhya Sitaraman: he's working on it, and already yesterday Ajay asked him to work on it. So he's working on it.
+
+260
+00:23:36.790 --> 00:23:42.129
+Srividhya Sitaraman: We have to 1st map it like whatever what? All the different status we want to show. So.
+
+261
+00:23:43.060 --> 00:23:47.070
+Kiran Vinnakota: Okay, cool, good. Good. I thought. Like you. There's intention to keep that difference.
+
+262
+00:23:47.450 --> 00:23:53.850
+Srividhya Sitaraman: No, no! Each one is working on different tasks. So, Senji, that guy is working on this one.
+
+263
+00:23:55.750 --> 00:24:02.870
+Srividhya Sitaraman: But you can add the loader manish. If you think something else you want instead of the loader icon. Probably you can note it down in the beginning.
+
+264
+00:24:03.040 --> 00:24:09.169
+Manish Dharod: Right? Right? Yeah. Makes sense. I have added it here. Let's see. Yeah, I mean,
+
+265
+00:24:13.990 --> 00:24:14.710
+Manish Dharod: yeah.
+
+266
+00:24:14.870 --> 00:24:21.560
+Manish Dharod: I mean again, I mean, most of these things are not like showstoppers, or, you know, absolute must-haves.
+
+267
+00:24:21.670 --> 00:24:28.600
+Manish Dharod: But as we go along we just put those down, and then we keep fixing them. And then kind of
+
+268
+00:24:29.030 --> 00:24:31.959
+Manish Dharod: whenever we are ready, we can just
+
+269
+00:24:32.690 --> 00:24:47.989
+Manish Dharod: update them and launch them. Basically, you know, we don't have to wait for like for these kinds of things right? We don't have to wait for releases. I'm assuming we'll have to check with Ajay because end to end testing. And this and that we don't have to do so much of
+
+270
+00:24:48.330 --> 00:24:54.899
+Manish Dharod: unnecessary, you know, processes for making changes like that and then launching right?
+
+271
+00:24:55.720 --> 00:24:57.599
+Manish Dharod: You guys are on the same page or.
+
+272
+00:24:58.010 --> 00:25:02.489
+Srividhya Sitaraman: Yeah. Well, it depends. They have. That's why they have the dot release. Right?
+
+273
+00:25:02.800 --> 00:25:03.749
+Srividhya Sitaraman: I don't know.
+
+274
+00:25:04.350 --> 00:25:12.203
+Manish Dharod: Well, but see, the dot release is also my thought process is that it's kinda
+
+275
+00:25:13.070 --> 00:25:14.230
+Manish Dharod: Also.
+
+276
+00:25:14.230 --> 00:25:14.770
+Srividhya Sitaraman: Yeah, yeah, we.
+
+277
+00:25:14.770 --> 00:25:15.550
+Manish Dharod: Overloaded.
+
+278
+00:25:16.520 --> 00:25:16.970
+Kiran Vinnakota: Yeah.
+
+279
+00:25:16.970 --> 00:25:19.119
+Srividhya Sitaraman: Attached. So it's just the UN. Back in.
+
+280
+00:25:19.120 --> 00:25:28.280
+Manish Dharod: Yeah. So we have to. Yeah, we have to figure out, what are the what is the patch? You know. Release approach. Generally speaking.
+
+281
+00:25:28.280 --> 00:25:32.249
+Kiran Vinnakota: Timeframe manish. I didn't. I didn't hear any timeframe for R. 3 dot one.
+
+282
+00:25:33.390 --> 00:25:35.472
+Kiran Vinnakota: Yeah, we don't know yet. Actually, yeah.
+
+283
+00:25:35.770 --> 00:25:41.360
+Kiran Vinnakota: For the time. We'll know like, how much we can deliver, right? Like, you know, because you know everything, we're pushing to our
+
+284
+00:25:41.600 --> 00:25:42.260
+Kiran Vinnakota: okay.
+
+285
+00:25:44.320 --> 00:25:46.199
+Manish Dharod: Right? Right? Right? Right? Right?
+
+286
+00:25:47.020 --> 00:25:49.811
+Manish Dharod: Give me one second. I'm just gonna put
+
+287
+00:25:50.380 --> 00:25:54.116
+Manish Dharod: general topics as well here so that I don't forget.
+
+288
+00:26:22.400 --> 00:26:31.099
+Manish Dharod: Okay, alright, okay. Okay. So this we discussed
+
+289
+00:26:32.244 --> 00:26:36.090
+Manish Dharod: and then we said that, okay, some of these, yeah, we'll go to the.
+
+290
+00:26:36.740 --> 00:26:42.270
+Kiran Vinnakota: But just just just that for for our purpose.
+
+291
+00:26:42.910 --> 00:26:47.749
+Kiran Vinnakota: Keep it. That status are inconsistent, like, you know, rights at the case just for tracking. That's it.
+
+292
+00:26:47.750 --> 00:26:49.260
+Manish Dharod: I said that I mentioned that. Yeah.
+
+293
+00:26:49.260 --> 00:26:51.230
+Kiran Vinnakota: Oh, sorry I missed it. Ok, sorry. I was typing.
+
+294
+00:26:51.230 --> 00:26:57.330
+Manish Dharod: I wrote it here for now. Where is this? Here? Yeah.
+
+295
+00:26:57.590 --> 00:26:58.730
+Kiran Vinnakota: Oh, cool. Yeah.
+
+296
+00:27:00.320 --> 00:27:09.519
+Manish Dharod: Okay? And then for one thing, is that for you know, R. 3 dot one, let's say.
+
+297
+00:27:09.650 --> 00:27:19.319
+Manish Dharod: is it possible to have a a unified view
+
+298
+00:27:23.020 --> 00:27:28.210
+Manish Dharod: transaction details between. Yeah.
+
+299
+00:27:38.080 --> 00:27:42.890
+Manish Dharod: okay, so this is something that we will discuss.
+
+300
+00:27:45.960 --> 00:27:49.319
+Srividhya Sitaraman: No, I'm doing it now, so it's not like R. 3 dot.
+
+301
+00:27:49.320 --> 00:27:54.969
+Manish Dharod: Really meaning. You are working on making this go away.
+
+302
+00:27:55.860 --> 00:27:57.840
+Srividhya Sitaraman: Oh, no, no! Go away with what?
+
+303
+00:27:57.980 --> 00:27:58.710
+Srividhya Sitaraman: Well, then.
+
+304
+00:27:58.710 --> 00:27:59.290
+Manish Dharod: New.
+
+305
+00:27:59.290 --> 00:28:03.310
+Srividhya Sitaraman: No, no, no. I thought you were talking about the tab which we said in the beginning, right? Okay.
+
+306
+00:28:03.310 --> 00:28:05.173
+Manish Dharod: Oh, no, no, not that. Not that.
+
+307
+00:28:07.400 --> 00:28:12.090
+Manish Dharod: I mean, go away with this, because I think.
+
+308
+00:28:12.260 --> 00:28:24.509
+Manish Dharod: yeah, this is this is ugly, I mean ugly. The the page itself is fine. It's just that the difference between the 2 is so stark.
+
+309
+00:28:24.510 --> 00:28:25.290
+Kiran Vinnakota: Yeah.
+
+310
+00:28:25.460 --> 00:28:38.380
+Manish Dharod: That it kind of gives a bad impression. Really, I mean. So you know, I think again, you know, I understand that we want to do one thing at a time, but the the low, the less
+
+311
+00:28:39.763 --> 00:28:45.519
+Manish Dharod: we expose our, you know, dirty laundry, the better. It is.
+
+312
+00:28:47.080 --> 00:28:59.880
+Manish Dharod: This is something that, you know, we we have to try to do. And this is this is the kind of stuff which I think we should in parallel start working like asap pretty much.
+
+313
+00:29:01.090 --> 00:29:13.749
+Manish Dharod: Okay. All right. Now, going back to order history. Oh, not this one like. So how do I go to the new? If I if I want to go to the new view, I do.
+
+314
+00:29:13.750 --> 00:29:16.739
+Srividhya Sitaraman: And the transaction is stream only on the left hand, but.
+
+315
+00:29:16.740 --> 00:29:18.670
+Manish Dharod: Okay, yeah, yeah, okay, this one, right? Right?
+
+316
+00:29:21.660 --> 00:29:23.180
+Manish Dharod: Okay, got it.
+
+317
+00:29:24.190 --> 00:29:29.320
+Manish Dharod: And then next, maybe we can look at now.
+
+318
+00:29:30.246 --> 00:29:37.579
+Manish Dharod: The feature that you were working on should be there, is it? Now? Pawn tip is working right. This one.
+
+319
+00:29:39.510 --> 00:29:41.669
+Srividhya Sitaraman: Yeah. Pending.
+
+320
+00:29:41.860 --> 00:29:43.639
+Kiran Vinnakota: Yeah. Change. Order. My money. Okay?
+
+321
+00:29:43.800 --> 00:29:57.060
+Manish Dharod: Yeah, okay. Removed. Okay, yeah. Let me, I'm going through these things.
+
+322
+00:29:58.520 --> 00:30:01.229
+Manish Dharod: I need to check on the
+
+323
+00:30:02.640 --> 00:30:11.370
+Manish Dharod: on the status name here. Okay? And then breakdown. Okay, the install.
+
+324
+00:30:11.580 --> 00:30:13.930
+Manish Dharod: Okay, this is good. I like it.
+
+325
+00:30:14.930 --> 00:30:18.090
+Manish Dharod: 1,500 early termination. Okay?
+
+326
+00:30:19.580 --> 00:30:26.130
+Manish Dharod: Oh, monthly recurring charge from 100 to 0 Gigahert.
+
+327
+00:30:26.460 --> 00:30:35.520
+Manish Dharod: and then additional detail. Additional instructions. Please contact me once the technical work is completed. Attachments.
+
+328
+00:30:35.940 --> 00:30:41.590
+Manish Dharod: Okay, okay, so this is, I guess, just a
+
+329
+00:30:42.190 --> 00:30:46.339
+Manish Dharod: oh, it is actually okay, it is downloading a Pdf, okay, got it.
+
+330
+00:30:46.750 --> 00:30:52.379
+Manish Dharod: Okay, okay, so this is working
+
+331
+00:30:52.860 --> 00:30:58.930
+Manish Dharod: customer, requested Date. Oh, is that something which is valid?
+
+332
+00:30:59.240 --> 00:31:00.180
+Manish Dharod: Further.
+
+333
+00:31:00.430 --> 00:31:01.379
+Srividhya Sitaraman: Yeah, right, we have.
+
+334
+00:31:01.380 --> 00:31:04.730
+Manish Dharod: Oh, okay, okay. Got it. Okay. I wasn't
+
+335
+00:31:05.720 --> 00:31:09.399
+Manish Dharod: aware of this. Okay, customer requested date.
+
+336
+00:31:09.400 --> 00:31:10.040
+Kiran Vinnakota: Manish.
+
+337
+00:31:10.655 --> 00:31:11.270
+Manish Dharod: Yeah.
+
+338
+00:31:11.680 --> 00:31:14.709
+Kiran Vinnakota: Matter of the data. People doesn't understand that format.
+
+339
+00:31:16.340 --> 00:31:21.270
+Manish Dharod: Oh, yeah, that's a good point for sure. No.
+
+340
+00:31:21.270 --> 00:31:29.450
+Srividhya Sitaraman: The Ui displays. Whatever the Api is in. So depends on what care you you access it. Maybe you can check that.
+
+341
+00:31:31.040 --> 00:31:34.339
+Srividhya Sitaraman: I don't think a ux will have it. The Apa will fix it.
+
+342
+00:31:36.080 --> 00:31:37.159
+Srividhya Sitaraman: That comes.
+
+343
+00:31:37.160 --> 00:31:38.370
+Srividhya Sitaraman: Okay. Let me check.
+
+344
+00:31:38.370 --> 00:31:42.620
+Manish Dharod: What she has as a though.
+
+345
+00:31:58.730 --> 00:32:00.160
+Kiran Vinnakota: But it's taking so long.
+
+346
+00:32:00.640 --> 00:32:06.879
+Manish Dharod: Yeah, figma is always like that. And this page also has too many things. By the way, it has like a lot of stuff.
+
+347
+00:32:07.060 --> 00:32:16.760
+Manish Dharod: So that's why it takes long. Okay, so change order. Right? This one is change order. Oh, where did it go? Sorry. Here, this one.
+
+348
+00:32:17.260 --> 00:32:19.579
+Manish Dharod: So if I go here.
+
+349
+00:32:21.030 --> 00:32:24.429
+Manish Dharod: Purchase. Okay, she didn't even have that actually.
+
+350
+00:32:24.710 --> 00:32:27.620
+Srividhya Sitaraman: Yeah, before it was there, I think. Then they are removed.
+
+351
+00:32:28.370 --> 00:32:29.770
+Kiran Vinnakota: But we don't need that at all.
+
+352
+00:32:32.360 --> 00:32:41.380
+Manish Dharod: Huh? Okay, got it. Okay? So that one needs to be added. Right? Let me see. So purchase order is there in her markup? I think right.
+
+353
+00:32:41.550 --> 00:32:42.429
+Srividhya Sitaraman: Yeah, we just need to.
+
+354
+00:32:42.430 --> 00:32:46.627
+Manish Dharod: Daughter, is there? Okay? So I think this one she needs to add,
+
+355
+00:32:46.950 --> 00:32:48.989
+Srividhya Sitaraman: Add or remove. Remove from ui.
+
+356
+00:32:49.310 --> 00:32:49.920
+Srividhya Sitaraman: Okay.
+
+357
+00:32:50.730 --> 00:32:53.999
+Srividhya Sitaraman: Just he had ux had it before last month.
+
+358
+00:32:54.200 --> 00:33:00.069
+Manish Dharod: Is it? Huh? Okay, is it? Okay? Let me check with the I will add it here.
+
+359
+00:33:31.660 --> 00:33:35.656
+Manish Dharod: Okay, alright, yeah. Next next 2 weeks are. Gonna be busy.
+
+360
+00:33:36.720 --> 00:33:41.460
+Manish Dharod: Oh, oh, boy, there's a lot of stuff that slowly and steadily we need to.
+
+361
+00:33:42.310 --> 00:33:46.130
+Manish Dharod: which is good. I mean, we have one sprint for that. Exactly right, I think.
+
+362
+00:33:46.160 --> 00:33:47.939
+Kiran Vinnakota: Yeah, that's what we were thinking.
+
+363
+00:33:48.180 --> 00:33:51.930
+Manish Dharod: Okay, so contact information,
+
+364
+00:33:53.270 --> 00:33:58.650
+Kiran Vinnakota: What is the right right top corner manish? What does that means? Ordering contact means? What what does that mean?
+
+365
+00:33:58.650 --> 00:34:06.050
+Manish Dharod: This one. Right? Yeah. So there are 3 contacts ordering contact, technical contact and notification contact.
+
+366
+00:34:06.940 --> 00:34:12.900
+Kiran Vinnakota: Okay, because it looks like that, that the string is lying there as if some, some, some debug text.
+
+367
+00:34:13.239 --> 00:34:17.099
+Manish Dharod: Hmm, yeah, that's true. Actually, it looks looks kind of weird, right? Yeah.
+
+368
+00:34:17.100 --> 00:34:17.839
+Kiran Vinnakota: Do you inform me.
+
+369
+00:34:18.614 --> 00:34:19.120
+Manish Dharod: Yeah.
+
+370
+00:34:19.260 --> 00:34:21.879
+Kiran Vinnakota: The screen. So sorry. That's why I'm giving my feedback on this.
+
+371
+00:34:21.880 --> 00:34:23.620
+Manish Dharod: Yeah, no, that's a good point.
+
+372
+00:34:25.300 --> 00:34:27.670
+Manish Dharod: That is a good point.
+
+373
+00:34:28.840 --> 00:34:32.490
+Manish Dharod: And then also, do you know, Shividya, whether
+
+374
+00:34:33.130 --> 00:34:41.369
+Manish Dharod: is it because the technical and the notification contact were not part of this order. Change, order is that.
+
+375
+00:34:42.300 --> 00:34:46.439
+Srividhya Sitaraman: If data again, if the data comes from
+
+376
+00:34:47.020 --> 00:34:55.139
+Srividhya Sitaraman: data comes from the operator portal, then we will show it. But Kay told me it is just the ordering contact, not other contacts. As you said, right.
+
+377
+00:34:57.360 --> 00:35:07.859
+Srividhya Sitaraman: So their Ap. Won't return those things technical and other things. But this contact information is same as that of how we display for cross, connect, and other stuff.
+
+378
+00:35:08.100 --> 00:35:08.850
+Manish Dharod: Oh!
+
+379
+00:35:08.850 --> 00:35:10.999
+Srividhya Sitaraman: We are using same component.
+
+380
+00:35:11.910 --> 00:35:15.419
+Manish Dharod: Hmm, okay, meaning, this is also like that in.
+
+381
+00:35:15.420 --> 00:35:16.580
+Srividhya Sitaraman: Yes, yes.
+
+382
+00:35:16.580 --> 00:35:17.510
+Manish Dharod: Okay. Okay. Okay. Yeah.
+
+383
+00:35:17.510 --> 00:35:20.840
+Kiran Vinnakota: If you, if you bring it down right, that would make sense.
+
+384
+00:35:20.840 --> 00:35:30.059
+Manish Dharod: I think we could do that, or or there could be sections like ordering contact here and then below that, I know. But yeah, let me let me kind of
+
+385
+00:35:30.630 --> 00:35:34.416
+Manish Dharod: talk to Kay. What scenarios that are there?
+
+386
+00:35:36.290 --> 00:35:40.229
+Manish Dharod: and then find out what would be the best best approach moving forward. But
+
+387
+00:35:40.350 --> 00:35:42.769
+Manish Dharod: this would help, I think, for now.
+
+388
+00:35:43.250 --> 00:35:52.540
+Manish Dharod: okay, and then the format, also the the number of the way it is written here and here is different. Right here is plus something, and here it is not right.
+
+389
+00:35:53.080 --> 00:36:00.850
+Kiran Vinnakota: And also, if, for example, if there's no value, I think I've seen this previous screen, that there is a dash, some dash, we're keeping it. There is no data
+
+390
+00:36:02.370 --> 00:36:03.060
+Kiran Vinnakota: you want to.
+
+391
+00:36:03.060 --> 00:36:05.129
+Manish Dharod: Which is which is fine, I think.
+
+392
+00:36:05.390 --> 00:36:08.220
+Kiran Vinnakota: Following the standard that are not, that.
+
+393
+00:36:08.850 --> 00:36:12.850
+Manish Dharod: So if there is no secondary phone number given, then yeah, it can be hyphen. Right?
+
+394
+00:36:12.850 --> 00:36:15.019
+Kiran Vinnakota: Hyphen. Yeah, I'm sorry I'm on the hyphen. Yeah.
+
+395
+00:36:15.020 --> 00:36:15.889
+Manish Dharod: Yeah, which is fine.
+
+396
+00:36:15.890 --> 00:36:20.789
+Kiran Vinnakota: That would also, and help set contract ordering contract where, whenever there is no ordering contact. Also, if you, Typhon.
+
+397
+00:36:20.790 --> 00:36:24.269
+Manish Dharod: There won't be any such scenario. I think that is not a possibility. I think.
+
+398
+00:36:25.080 --> 00:36:27.350
+Manish Dharod: Yeah, ordering contact is absolutely a must.
+
+399
+00:36:27.880 --> 00:36:28.350
+Kiran Vinnakota: Okay.
+
+400
+00:36:28.350 --> 00:36:28.920
+Manish Dharod: There you go.
+
+401
+00:36:29.400 --> 00:36:36.539
+Manish Dharod: Okay, this is good. Okay. Now, here, summary. Pdf, this, this is, this is still in the works I'm assuming.
+
+402
+00:36:37.900 --> 00:36:40.339
+Manish Dharod: Okay, yeah, there is nothing here. Right? Okay.
+
+403
+00:36:40.840 --> 00:36:43.070
+Manish Dharod: yeah. This is the one where
+
+404
+00:36:43.450 --> 00:36:51.810
+Manish Dharod: we need to include the T's and C's as well, I guess. Yeah, you must view. Okay.
+
+405
+00:36:54.060 --> 00:36:58.360
+Manish Dharod: okay, so this is also kind of looking.
+
+406
+00:36:58.490 --> 00:37:04.300
+Manish Dharod: I don't know. They're strange or whatnot. But okay, let me let me check on the on her mock up.
+
+407
+00:37:05.970 --> 00:37:07.280
+Kiran Vinnakota: I should be busy.
+
+408
+00:37:08.510 --> 00:37:12.209
+Manish Dharod: Okay, it is having. Okay, maybe it's just a.
+
+409
+00:37:12.950 --> 00:37:16.549
+Manish Dharod: The spacing is kind of weird. So that's why I was thinking, okay, fine.
+
+410
+00:37:20.190 --> 00:37:23.990
+Manish Dharod: Oh, okay. So this one is, looks like in the works.
+
+411
+00:37:26.650 --> 00:37:30.310
+Manish Dharod: There is no, there should be 3, 2 options here. Actually.
+
+412
+00:37:30.560 --> 00:37:32.640
+Kiran Vinnakota: It's on that rules. Right? Yeah.
+
+413
+00:37:32.640 --> 00:37:38.660
+Manish Dharod: Yeah. Yeah. So I'm just gonna take a snapshot. Maybe she's she's working on it.
+
+414
+00:37:40.010 --> 00:37:45.229
+Kiran Vinnakota: Yeah, last week she she asked me to give the contract number I gave her.
+
+415
+00:37:45.880 --> 00:37:46.500
+Manish Dharod: Okay.
+
+416
+00:37:46.660 --> 00:37:49.210
+Kiran Vinnakota: Let me click on this.
+
+417
+00:37:49.680 --> 00:37:52.070
+Manish Dharod: This this?
+
+418
+00:37:52.500 --> 00:37:57.109
+Manish Dharod: Oh, see, when I click on this, it says optional.
+
+419
+00:37:57.610 --> 00:38:00.790
+Manish Dharod: and I click on this, and this, it says, required.
+
+420
+00:38:00.790 --> 00:38:01.810
+Kiran Vinnakota: Good catch.
+
+421
+00:38:02.250 --> 00:38:04.639
+Manish Dharod: That's kind of weird. Okay? All right.
+
+422
+00:38:05.390 --> 00:38:08.420
+Kiran Vinnakota: Oh, in? Oh, okay, yeah.
+
+423
+00:38:13.120 --> 00:38:13.690
+Srividhya Sitaraman: Right.
+
+424
+00:38:13.690 --> 00:38:19.940
+Srividhya Sitaraman: because you click on the approve order that might be optional, so that it is retaining the same here.
+
+425
+00:38:24.670 --> 00:38:25.789
+Manish Dharod: What do you mean?
+
+426
+00:38:26.008 --> 00:38:29.500
+Srividhya Sitaraman: Click on the approve order. You don't need to give any comment right? Click on that.
+
+427
+00:38:31.230 --> 00:38:33.030
+Manish Dharod: But then that will not.
+
+428
+00:38:33.030 --> 00:38:38.080
+Srividhya Sitaraman: No, I'm just thinking, can you click on? Approve order? Do we just approve? Nothing will happen.
+
+429
+00:38:39.590 --> 00:38:41.440
+Srividhya Sitaraman: No comments. Oh, okay.
+
+430
+00:38:41.910 --> 00:38:43.900
+Manish Dharod: No no comments, no comments.
+
+431
+00:38:44.240 --> 00:38:47.100
+Kiran Vinnakota: That is required, terms and conditions required. I think.
+
+432
+00:38:47.100 --> 00:38:56.029
+Manish Dharod: Yeah, yeah, yeah. Okay, so I think, yeah, I will. I will put this as well in there. Okay.
+
+433
+00:38:56.430 --> 00:39:01.610
+Manish Dharod: this is good. I close this, where do I hope?
+
+434
+00:39:01.940 --> 00:39:10.179
+Manish Dharod: Okay, all right, I'm landing here, which is fine. Oh, here also, this needs to be like a lower case, I think right.
+
+435
+00:39:10.980 --> 00:39:13.980
+Manish Dharod: but that's fine. I put that, anyway in general.
+
+436
+00:39:14.540 --> 00:39:15.080
+Manish Dharod: Oh.
+
+437
+00:39:15.080 --> 00:39:21.549
+Srividhya Sitaraman: I think we'll go with this uppercase and underscore. That's the standard.
+
+438
+00:39:21.550 --> 00:39:23.130
+Kiran Vinnakota: Is it? Do we follow that? I understand.
+
+439
+00:39:23.130 --> 00:39:24.960
+Manish Dharod: Not for customers, receiving.
+
+440
+00:39:26.243 --> 00:39:27.089
+Kiran Vinnakota: For you.
+
+441
+00:39:27.310 --> 00:39:31.069
+Manish Dharod: If if we want to do that, we should do that for everything, not for just one thing.
+
+442
+00:39:31.400 --> 00:39:35.490
+Srividhya Sitaraman: Yeah, yeah. But whichever has the 2 words? Right?
+
+443
+00:39:37.360 --> 00:39:39.309
+Srividhya Sitaraman: Yeah, probably we can remove it.
+
+444
+00:39:39.810 --> 00:39:42.530
+Kiran Vinnakota: The pending space signature, if at all. That is the case.
+
+445
+00:39:42.670 --> 00:39:45.149
+Manish Dharod: Yeah, yeah, no, I think we should be consistent.
+
+446
+00:39:46.582 --> 00:39:54.237
+Manish Dharod: So I'll I'll comment on that. So this one, okay, is good. Now let's just take a look at this
+
+447
+00:39:54.620 --> 00:39:57.849
+Kiran Vinnakota: Do any filter or anything like that check the filters also manish.
+
+448
+00:39:57.850 --> 00:40:08.639
+Manish Dharod: Yeah, I'm checking. So this is the columns that we can add or hide, okay, so so okay, yeah, this one has always puzzled me.
+
+449
+00:40:08.760 --> 00:40:11.150
+Manish Dharod: Why do we need this? Actually.
+
+450
+00:40:12.960 --> 00:40:18.280
+Manish Dharod: yeah, okay, customer has no idea what a Qp means. 1st of all.
+
+451
+00:40:20.300 --> 00:40:21.100
+Kiran Vinnakota: Doors.
+
+452
+00:40:21.890 --> 00:40:23.330
+Manish Dharod: Okay.
+
+453
+00:40:23.900 --> 00:40:26.390
+Kiran Vinnakota: Everything sources here. All right. No.
+
+454
+00:40:26.720 --> 00:40:29.789
+Manish Dharod: I mean there is blank, I see.
+
+455
+00:40:30.350 --> 00:40:31.100
+Kiran Vinnakota: Okay.
+
+456
+00:40:32.905 --> 00:40:37.670
+Manish Dharod: Oh, there is a internal portal, I see.
+
+457
+00:40:38.600 --> 00:40:40.770
+Manish Dharod: That's interesting. Okay.
+
+458
+00:40:40.770 --> 00:40:46.109
+Kiran Vinnakota: Is it customers you're saying? Is, customer understands this. That's what I mean, useful to customer.
+
+459
+00:40:46.110 --> 00:40:49.510
+Manish Dharod: No, no, I'm saying the reverse customer does not understand this.
+
+460
+00:40:49.510 --> 00:40:50.350
+Kiran Vinnakota: Okay. Okay.
+
+461
+00:40:50.580 --> 00:40:53.869
+Manish Dharod: What does customer understand with Eqp. Nothing.
+
+462
+00:40:53.870 --> 00:40:54.560
+Kiran Vinnakota: So.
+
+463
+00:40:55.450 --> 00:40:56.263
+Manish Dharod: What is
+
+464
+00:40:56.710 --> 00:40:57.759
+Kiran Vinnakota: Yeah, that's true.
+
+465
+00:40:57.760 --> 00:41:02.020
+Manish Dharod: Agent, Assist Internal Portal.
+
+466
+00:41:02.830 --> 00:41:03.789
+Kiran Vinnakota: Yeah, that's right.
+
+467
+00:41:03.790 --> 00:41:05.470
+Manish Dharod: Blank. Mean, right?
+
+468
+00:41:06.350 --> 00:41:12.570
+Manish Dharod: so, okay, all right, this is a good catch. We will. We will kind of. I'll put that down as well.
+
+469
+00:41:14.290 --> 00:41:16.739
+Manish Dharod: oh, all right, so.
+
+470
+00:41:17.140 --> 00:41:19.169
+Kiran Vinnakota: Yeah, if you go, and we can play there for.
+
+471
+00:41:19.170 --> 00:41:33.649
+Manish Dharod: I thought there was a number we were gonna show as well. Right? Billing account number no. Okay. We should be showing billing account number as well. Not just the name, because lot of times names are common actually. And we allow that, especially for the old.
+
+472
+00:41:35.940 --> 00:41:38.079
+Manish Dharod: Okay, let me see.
+
+473
+00:41:39.580 --> 00:41:42.599
+Kiran Vinnakota: So you want to have 2 columns manish or in the same column. You have both.
+
+474
+00:41:42.600 --> 00:41:47.669
+Manish Dharod: No, no, I think in her markup, I think we we see here, right? I think.
+
+475
+00:41:53.190 --> 00:42:01.260
+Manish Dharod: okay. We are looking at order, history, transaction, history, right? Transaction history. Page. Okay. Here, yeah. See here.
+
+476
+00:42:01.260 --> 00:42:05.390
+Kiran Vinnakota: Oh, like the same column, but bottom they want. Yeah, good. This looks good.
+
+477
+00:42:05.760 --> 00:42:07.080
+Manish Dharod: Yeah, yeah, that's exactly.
+
+478
+00:42:07.080 --> 00:42:09.909
+Srividhya Sitaraman: What is there in the other one old data? Right?
+
+479
+00:42:11.360 --> 00:42:12.760
+Manish Dharod: What is there in the.
+
+480
+00:42:12.920 --> 00:42:16.459
+Srividhya Sitaraman: One. If you go back to that classic one, see.
+
+481
+00:42:16.730 --> 00:42:22.220
+Manish Dharod: Classic. Oh, the orders and details. I mean this one. Yeah, okay. Here.
+
+482
+00:42:23.530 --> 00:42:23.910
+Srividhya Sitaraman: And.
+
+483
+00:42:23.910 --> 00:42:29.540
+Manish Dharod: This one doesn't even have it actually. Oh, but there may be column here that I can add. No! Oh.
+
+484
+00:42:29.540 --> 00:42:32.449
+Srividhya Sitaraman: They have it, they have it separate account, name and number. Okay.
+
+485
+00:42:32.450 --> 00:42:35.160
+Manish Dharod: Yeah, yeah, yeah. Yeah. No. I entered.
+
+486
+00:42:37.730 --> 00:42:43.010
+Srividhya Sitaraman: No, no, I was thinking that they have the same billing account with just the name. That's why I asked.
+
+487
+00:42:43.765 --> 00:42:44.340
+Manish Dharod: Yeah.
+
+488
+00:42:45.160 --> 00:42:47.349
+Srividhya Sitaraman: Because we show both data here, right?
+
+489
+00:42:47.510 --> 00:42:49.860
+Srividhya Sitaraman: Hmm, yeah, okay.
+
+490
+00:42:50.060 --> 00:42:59.169
+Manish Dharod: Yeah, we should add both here. So that I will make a comment on. So this is okay. These 2 are
+
+491
+00:42:59.830 --> 00:43:06.220
+Manish Dharod: mandatory. Everything else looks like is optional. Okay, that is also optional.
+
+492
+00:43:06.220 --> 00:43:07.900
+Kiran Vinnakota: Wait a hard transformation here.
+
+493
+00:43:08.870 --> 00:43:11.569
+Kiran Vinnakota: Yeah, you can drag and drop the order. The columns.
+
+494
+00:43:11.930 --> 00:43:15.709
+Manish Dharod: Oh, yeah, okay, interesting. That's slick.
+
+495
+00:43:17.600 --> 00:43:19.430
+Manish Dharod: Okay, that's good.
+
+496
+00:43:21.390 --> 00:43:23.170
+Manish Dharod: No, no, it did not work. Huh?
+
+497
+00:43:23.620 --> 00:43:25.789
+Manish Dharod: Is that drag drop doesn't work, or what?
+
+498
+00:43:26.950 --> 00:43:34.330
+Manish Dharod: Yeah, okay. I put it here, apply, did it work.
+
+499
+00:43:34.370 --> 00:43:35.379
+Kiran Vinnakota: No, I didn't book. You want 3.
+
+500
+00:43:36.510 --> 00:43:39.727
+Manish Dharod: Okay ordering. Okay? So I'll just make
+
+501
+00:43:42.100 --> 00:43:44.219
+Kiran Vinnakota: Do you think refresh might work or no?
+
+502
+00:43:48.037 --> 00:43:54.070
+Manish Dharod: Refresh might work, you think. Okay, let me check. So if I have this thing like that, apply again.
+
+503
+00:43:54.360 --> 00:43:56.729
+Manish Dharod: I close it. I.
+
+504
+00:43:56.740 --> 00:44:01.170
+Srividhya Sitaraman: Refresh will refresh the even the moment. I think not very mode.
+
+505
+00:44:01.770 --> 00:44:03.380
+Srividhya Sitaraman: It will default to old.
+
+506
+00:44:04.410 --> 00:44:09.209
+Manish Dharod: Yeah, it's the same. Basically, there's no change. Okay.
+
+507
+00:44:09.210 --> 00:44:12.740
+Srividhya Sitaraman: So if you go to the filter, then it would have gone back to the original place.
+
+508
+00:44:14.930 --> 00:44:16.230
+Manish Dharod: Yeah, true.
+
+509
+00:44:16.705 --> 00:44:17.980
+Kiran Vinnakota: Even this guy is gone.
+
+510
+00:44:18.210 --> 00:44:19.910
+Manish Dharod: Yeah, yeah, this one changes.
+
+511
+00:44:19.910 --> 00:44:22.600
+Kiran Vinnakota: Yeah, this is a problem does not change, does not storage.
+
+512
+00:44:22.600 --> 00:44:24.410
+Manish Dharod: Should also not change. Yeah.
+
+513
+00:44:24.410 --> 00:44:25.870
+Kiran Vinnakota: Actually exactly. It is not saved.
+
+514
+00:44:25.870 --> 00:44:28.870
+Manish Dharod: They should not change. Okay, yeah, yeah, that's good. Yeah.
+
+515
+00:44:28.870 --> 00:44:33.910
+Kiran Vinnakota: Not only for this session, right? The entire thing is saving right. This, when I say apply it, saves.
+
+516
+00:44:33.910 --> 00:44:40.030
+Manish Dharod: Think we should have it ideally. You know. I mean, that's how ideally it should be right we should
+
+517
+00:44:41.010 --> 00:44:45.630
+Manish Dharod: under user profile. Then we can save these kinds of settings.
+
+518
+00:44:46.300 --> 00:44:47.070
+Kiran Vinnakota: Yeah.
+
+519
+00:44:47.070 --> 00:44:57.450
+Manish Dharod: Right? Because typically that's the that's the expectation, you know, every time you log in and you come on this page, you don't want to keep changing that again and again. Correct.
+
+520
+00:44:57.450 --> 00:44:58.269
+Kiran Vinnakota: Alright! Correct.
+
+521
+00:44:58.460 --> 00:44:59.710
+Manish Dharod: And that's the idea I have.
+
+522
+00:44:59.710 --> 00:45:07.799
+Kiran Vinnakota: I mean the applies there, but there's no save. And that's why, like, you know, I mean, that's why I asked the question that I mean, what is your intention?
+
+523
+00:45:07.800 --> 00:45:20.370
+Manish Dharod: I think, generally see these days. I'm seeing right. I mean, you don't have to have 2 different ones. Apply means, basically, it saves it right forever. I mean, then you can always change it if you want. But
+
+524
+00:45:20.510 --> 00:45:30.920
+Manish Dharod: you typically when you're looking at these kinds of filters, you, or if you. If you don't want it next time, then you reset it back again.
+
+525
+00:45:32.390 --> 00:45:36.350
+Manish Dharod: But by default, if you apply, it just saves it.
+
+526
+00:45:37.610 --> 00:45:38.310
+Manish Dharod: Date.
+
+527
+00:45:39.550 --> 00:45:45.659
+Manish Dharod: That should be the approach. Yeah, okay, good. So this one. And then this is a filters.
+
+528
+00:45:46.810 --> 00:45:51.030
+Kiran Vinnakota: You are noted down right, manish, that is not getting saved are not.
+
+529
+00:45:51.030 --> 00:46:03.783
+Manish Dharod: Yeah, I will actually see. This is, I mean, there is so much we went through that I haven't written down. So this is why I recorded the call. And you know what I'm gonna do after that right? Use our friendly AI.
+
+530
+00:46:04.637 --> 00:46:08.440
+Kiran Vinnakota: I understood. Okay, there goes.
+
+531
+00:46:09.830 --> 00:46:12.440
+Manish Dharod: To save time into all this typing.
+
+532
+00:46:13.160 --> 00:46:14.000
+Manish Dharod: Okay?
+
+533
+00:46:14.710 --> 00:46:19.800
+Manish Dharod: Now I click, let's say, click on created and apply.
+
+534
+00:46:22.910 --> 00:46:24.350
+Manish Dharod: Oh, no, it doesn't.
+
+535
+00:46:24.350 --> 00:46:25.810
+Srividhya Sitaraman: I think it's not done it.
+
+536
+00:46:26.120 --> 00:46:28.370
+Manish Dharod: Okay. See if it doesn't already done. Okay?
+
+537
+00:46:28.370 --> 00:46:29.239
+Srividhya Sitaraman: Yeah, they are working.
+
+538
+00:46:29.240 --> 00:46:33.500
+Kiran Vinnakota: So stats created right, left side. What is it in where you change it to Creator status?
+
+539
+00:46:33.960 --> 00:46:34.859
+Manish Dharod: What thing?
+
+540
+00:46:34.860 --> 00:46:37.060
+Kiran Vinnakota: The second drop down. What is that?
+
+541
+00:46:38.350 --> 00:46:41.770
+Manish Dharod: This one. Yeah, it shows it shows this, whatever I select.
+
+542
+00:46:42.059 --> 00:46:45.530
+Kiran Vinnakota: Change that right? That means so filled using my, so I mean,
+
+543
+00:46:46.384 --> 00:46:50.729
+Kiran Vinnakota: Shivija, you're saying the filters are not at applying. I mean, not done.
+
+544
+00:46:51.360 --> 00:46:56.999
+Manish Dharod: The Senji is working on yesterday, only they asked him to work on. So I do. He will complete it probably this week.
+
+545
+00:46:57.000 --> 00:46:59.409
+Manish Dharod: so Shenzy is a part of our team now.
+
+546
+00:47:00.720 --> 00:47:02.119
+Srividhya Sitaraman: The Ssz.
+
+547
+00:47:02.120 --> 00:47:07.570
+Manish Dharod: Oh, sorry. Okay, I thought, shenzy, as in shenzy, the.
+
+548
+00:47:08.910 --> 00:47:12.329
+Kiran Vinnakota: Not that person.
+
+549
+00:47:12.330 --> 00:47:13.050
+Manish Dharod: Got it. Okay.
+
+550
+00:47:15.670 --> 00:47:18.689
+Kiran Vinnakota: So yeah, filters are not not still fully done, as you see.
+
+551
+00:47:18.690 --> 00:47:21.160
+Manish Dharod: Yeah, yeah, that's fine. Okay, yeah, no problem.
+
+552
+00:47:21.300 --> 00:47:27.629
+Manish Dharod: Okay, this is that. And then the order source Econic assisted portal. Oh, here only 2. By the way.
+
+553
+00:47:28.780 --> 00:47:35.450
+Srividhya Sitaraman: Again. These are, they are not correct. If you see the description and the product name they won't match. So yeah.
+
+554
+00:47:35.650 --> 00:47:43.409
+Manish Dharod: Yeah, okay, okay, got it. Okay, product. So these are these, maybe working. No, maybe not.
+
+555
+00:47:46.790 --> 00:47:49.950
+Manish Dharod: No, maybe not. Yeah, no, not yet. Okay.
+
+556
+00:47:50.070 --> 00:47:50.830
+Kiran Vinnakota: Document.
+
+557
+00:47:51.100 --> 00:47:58.599
+Manish Dharod: Okay, so this is fine. This is fine number order location location. Huh? Okay, let's see, is is this search working.
+
+558
+00:47:59.080 --> 00:48:01.230
+Kiran Vinnakota: Yeah, we did right before previously.
+
+559
+00:48:01.970 --> 00:48:02.780
+Manish Dharod: Oh!
+
+560
+00:48:02.780 --> 00:48:04.980
+Manish Dharod: The more you search that old.
+
+561
+00:48:05.270 --> 00:48:09.330
+Kiran Vinnakota: Number that worked, but looks like you're saying.
+
+562
+00:48:09.330 --> 00:48:10.430
+Manish Dharod: What is not working.
+
+563
+00:48:11.170 --> 00:48:14.479
+Kiran Vinnakota: Order number. Look! Oh, I got you. There's the order number is working. But yeah.
+
+564
+00:48:15.278 --> 00:48:18.280
+Manish Dharod: Let me, just take a look.
+
+565
+00:48:18.480 --> 00:48:19.450
+Kiran Vinnakota: Good one.
+
+566
+00:48:20.060 --> 00:48:22.780
+Kiran Vinnakota: This this should be a fixed.
+
+567
+00:48:22.950 --> 00:48:24.099
+Manish Dharod: Yeah, yeah, yeah.
+
+568
+00:48:24.100 --> 00:48:27.069
+Kiran Vinnakota: Because we are showing that local location. Also, we can search.
+
+569
+00:48:27.240 --> 00:48:35.029
+Manish Dharod: Correct each. When when we searched for location, DC, 14, it should have shown those. Right? Okay.
+
+570
+00:48:35.940 --> 00:48:42.809
+Manish Dharod: okay, I think this. This is good exercise. I hope you you enjoyed it.
+
+571
+00:48:42.810 --> 00:48:46.839
+Kiran Vinnakota: No, no, this is good manish, because, you know we are. 3 eyes are here right. We all.
+
+572
+00:48:46.840 --> 00:48:55.799
+Manish Dharod: I think so exactly. This is my. This is the reason why I set up this call with you guys, because, you know, I can. Only, you know, kind of.
+
+573
+00:48:56.370 --> 00:48:58.444
+Kiran Vinnakota: I. I only have one brain.
+
+574
+00:48:58.790 --> 00:49:05.629
+Kiran Vinnakota: We ask questions to you. You also think that? Oh, yeah, I mean, we. I didn't mean this way. I didn't intention this way.
+
+575
+00:49:05.630 --> 00:49:10.279
+Manish Dharod: Exactly. Exactly. I think this is what is very helpful.
+
+576
+00:49:10.280 --> 00:49:15.489
+Kiran Vinnakota: I might know already, but I haven't gone through all these things, so at least you know.
+
+577
+00:49:16.280 --> 00:49:26.329
+Manish Dharod: Correct right? So we will continue on this kind of exercise the day after tomorrow, and every basically 2 days we will meet in the meantime
+
+578
+00:49:26.440 --> 00:49:34.240
+Manish Dharod: I'll do, I mean, let me know, because, see, I I think I'm going to do this now pretty much every day.
+
+579
+00:49:35.020 --> 00:49:36.640
+Manish Dharod: I have to
+
+580
+00:49:37.370 --> 00:49:52.590
+Manish Dharod: to make sure I'm giving feedback fast enough. So if you want to join, let's say me. Tomorrow I will set up another call for tomorrow, but if you want to just skip that and just meet today after tomorrow, that's fine, too.
+
+581
+00:49:52.750 --> 00:49:55.043
+Kiran Vinnakota: I'm fine manish because I can spend them.
+
+582
+00:49:55.520 --> 00:49:56.060
+Manish Dharod: Okay. Great.
+
+583
+00:49:56.060 --> 00:49:58.680
+Kiran Vinnakota: Understand. The product is good. Help help me out!
+
+584
+00:49:58.680 --> 00:50:01.020
+Manish Dharod: Be that'll be great. Okay, sounds good. And then.
+
+585
+00:50:01.020 --> 00:50:05.280
+Kiran Vinnakota: Unless there is some other important meeting comes in. I can't join. That's okay. But yeah.
+
+586
+00:50:05.280 --> 00:50:06.020
+Manish Dharod: Yeah, okay.
+
+587
+00:50:06.880 --> 00:50:07.740
+Srividhya Sitaraman: Tomorrow.
+
+588
+00:50:08.000 --> 00:50:08.750
+Manish Dharod: Say that again.
+
+589
+00:50:08.770 --> 00:50:10.740
+Srividhya Sitaraman: Same time. Right same meeting right.
+
+590
+00:50:11.183 --> 00:50:17.020
+Manish Dharod: Let me check if I if I have any any conflict
+
+591
+00:50:17.730 --> 00:50:22.679
+Srividhya Sitaraman: Oh, I, okay, okay. I have appointment dentist appointment at 1030, probably in the afternoon.
+
+592
+00:50:23.160 --> 00:50:29.690
+Manish Dharod: No, yeah. So I can set up if one Pm. Works for you guys, I can set up at one Pm. Or 1 30 pm. Maybe.
+
+593
+00:50:29.690 --> 00:50:30.820
+Srividhya Sitaraman: So one is fine. Yeah.
+
+594
+00:50:30.820 --> 00:50:37.609
+Manish Dharod: One is fine. Okay, so I'll set up one Pm. For both of our 3 of us to do it this tomorrow. Sound. Okay.
+
+595
+00:50:38.630 --> 00:50:41.369
+Manish Dharod: okay, thank you. Guys appreciate.
+
+596
+00:50:41.570 --> 00:50:43.579
+Kiran Vinnakota: Quick, a quick update. So can I do.
+
+597
+00:50:43.580 --> 00:50:46.199
+Manish Dharod: Yeah, yeah. Let me stop the recording. Okay?
+
+598
+00:50:46.710 --> 00:50:47.060
+Kiran Vinnakota: Yeah.
+
+599
+00:50:47.260 --> 00:50:48.180
+Srividhya Sitaraman: Right? Okay.
+
