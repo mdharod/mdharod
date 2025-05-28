@@ -1,0 +1,2166 @@
+WEBVTT
+
+1
+00:00:01.020 --> 00:00:02.810
+Usue Aguirre: For? Now, yeah.
+
+2
+00:00:02.810 --> 00:00:17.949
+Manish Dharod: Alright, sure. So maybe we can start off with maybe kind of focusing on. You know, one segment. So are we talking about net new. Should we talk about first, st or we should talk about existing customers first.st
+
+3
+00:00:19.710 --> 00:00:20.710
+Usue Aguirre: Hey?
+
+4
+00:00:21.260 --> 00:00:24.119
+Usue Aguirre: Let's let's talk about net new first.st
+
+5
+00:00:24.120 --> 00:00:24.810
+Manish Dharod: Okay.
+
+6
+00:00:25.565 --> 00:00:26.010
+Usue Aguirre: Okay.
+
+7
+00:00:26.010 --> 00:00:26.750
+Usue Aguirre: Alright. Sounds, good.
+
+8
+00:00:26.750 --> 00:00:27.900
+Usue Aguirre: Existing.
+
+9
+00:00:27.900 --> 00:00:38.767
+Manish Dharod: Yeah. Yeah. So you know, for the net new customers. I think the main friction, I would say, is that
+
+10
+00:00:39.847 --> 00:00:54.552
+Manish Dharod: when they 1st of all, there is a, you know, a user sign up and the you know, you can call it the the org setup and permission setup. So that's the 1st part of it. Right?
+
+11
+00:00:55.110 --> 00:01:08.439
+Manish Dharod: and then, once they do that, they have a user credential for their admin. They then today in today's flows, they have to create a a billing account
+
+12
+00:01:08.690 --> 00:01:13.210
+Manish Dharod: and online in fabric portal. Now
+
+13
+00:01:13.790 --> 00:01:22.900
+Manish Dharod: that billing account goes now into into what is called, we call it as as a pending state
+
+14
+00:01:23.910 --> 00:01:36.540
+Manish Dharod: and at that point they, the customers, are able to place orders for fabric port as an example for network edge as an example. So we don't stop them
+
+15
+00:01:36.600 --> 00:01:54.799
+Manish Dharod: in placing orders at that point. Right? The form itself, you know, takes like I would say, probably you know less than I mean, maybe 5 min, because there are a few fields that we ask them to fill out. Yeah. Their name address, billing, account contact, and so on. So forth. Right?
+
+16
+00:01:55.690 --> 00:01:56.200
+Usue Aguirre: Yes.
+
+17
+00:01:56.200 --> 00:02:01.450
+Manish Dharod: And so 1st thing to understand is, we don't stop them from ordering.
+
+18
+00:02:03.130 --> 00:02:03.800
+Usue Aguirre: Yes.
+
+19
+00:02:03.800 --> 00:02:10.949
+Manish Dharod: Now, second thing is that that order does not go into Siebil
+
+20
+00:02:12.016 --> 00:02:19.780
+Manish Dharod: and in in case of fabric port it's not provisioned until
+
+21
+00:02:20.466 --> 00:02:44.840
+Manish Dharod: the Sales Ops team does their manual validation to check. If it's a legitimate, legitimate company. The address that they give is is the right one for their company, name and all that and then, if everything looks good, they will. allow this billing account creation to proceed. So that is about 24 h. Sla
+
+22
+00:02:45.539 --> 00:02:51.900
+Manish Dharod: and then it will. It will generally take a couple of hours for the systems to process it. So
+
+23
+00:02:52.130 --> 00:02:54.446
+Manish Dharod: that's the flow today. Right?
+
+24
+00:02:55.150 --> 00:02:59.759
+Manish Dharod: And so now let's talk about
+
+25
+00:03:00.580 --> 00:03:04.129
+Manish Dharod: the scenario where they need to trial something.
+
+26
+00:03:05.265 --> 00:03:05.779
+Usue Aguirre: Hmm.
+
+27
+00:03:06.870 --> 00:03:13.319
+Manish Dharod: 1st question is, you know, do do you think they
+
+28
+00:03:13.490 --> 00:03:20.318
+Manish Dharod: at that point, asking them to billing, create billing account? In the 1st place is a problem.
+
+29
+00:03:21.750 --> 00:03:27.400
+Manish Dharod: you know, we don't have credit cards. So what do you think on the that front.
+
+30
+00:03:29.800 --> 00:03:39.859
+Usue Aguirre: I mean you. You either have to provide a a credit card or a billing account. Right? So I don't think it's a totally logical question. Request.
+
+31
+00:03:40.020 --> 00:03:43.244
+Manish Dharod: Yeah, not have anything meaning, you know.
+
+32
+00:03:43.670 --> 00:03:44.400
+Usue Aguirre: Exactly.
+
+33
+00:03:44.400 --> 00:03:52.949
+Manish Dharod: Without. Yeah. So I think that's I think we are on the same page. Then. Right? I mean, creation of billing account is not such a big friction, in my view, because it's only
+
+34
+00:03:52.950 --> 00:03:53.650
+Manish Dharod: next 5 min.
+
+35
+00:03:54.070 --> 00:03:55.329
+Manish Dharod: Barely right.
+
+36
+00:03:55.490 --> 00:03:58.379
+Manish Dharod: And if you are, you know
+
+37
+00:03:58.520 --> 00:04:14.019
+Manish Dharod: serious about it, I think for you creation of that billing account is not like such a. It's it's not a consumer, you know, product where you you are just trying. And then you may not really are not super serious. So you know, I I'm.
+
+38
+00:04:14.020 --> 00:04:14.590
+Usue Aguirre: As you mean.
+
+39
+00:04:14.590 --> 00:04:19.060
+Manish Dharod: For now we are not targeting that segment yet meaning
+
+40
+00:04:19.420 --> 00:04:26.419
+Manish Dharod: very, very, you know, initial kind of thought process customers. Usually they have.
+
+41
+00:04:26.420 --> 00:04:26.820
+Usue Aguirre: Yes.
+
+42
+00:04:26.820 --> 00:04:28.879
+Manish Dharod: Have made up their mind. Okay, right?
+
+43
+00:04:29.130 --> 00:04:29.650
+Manish Dharod: Alright.
+
+44
+00:04:29.650 --> 00:04:34.469
+Usue Aguirre: Exactly exactly with those we. What we can target is a demo, for example, right?
+
+45
+00:04:34.470 --> 00:04:35.750
+Manish Dharod: Yeah, right, right.
+
+46
+00:04:35.750 --> 00:04:54.820
+Usue Aguirre: Those who target a demo that they can like book a demo right? And they can. They can reach out to sales or something like that, right? So with those that if they are on the fence, so yeah, I agree. I thought, that creating the billing account. For some reason it was more complex than what you are telling me.
+
+47
+00:04:55.390 --> 00:05:00.293
+Manish Dharod: Oh, no, no, actually, not at all. I think this is something that
+
+48
+00:05:01.350 --> 00:05:14.964
+Manish Dharod: you know, we should. Or I can put a a small video video together. That shows how that onboarding works, including billing account creation. So that it's clear to everyone.
+
+49
+00:05:15.610 --> 00:05:22.130
+Manish Dharod: and it can be just you know, one or 2 min video. But okay, let's go back to
+
+50
+00:05:22.250 --> 00:05:25.399
+Manish Dharod: the next step. Right? So let's say, I created a billing account.
+
+51
+00:05:26.930 --> 00:05:28.479
+Manish Dharod: It is in the pending state.
+
+52
+00:05:29.080 --> 00:05:29.640
+Manish Dharod: Okay.
+
+53
+00:05:29.640 --> 00:05:30.100
+Usue Aguirre: Okay.
+
+54
+00:05:30.484 --> 00:05:45.480
+Manish Dharod: Sales. Ops has not validated yet, and it's okay, right? We. We don't want to stop them. So now tell me one thing are we talking about a trials for Fcr first, st or any other product.
+
+55
+00:05:46.560 --> 00:05:47.820
+Usue Aguirre: For all products.
+
+56
+00:05:47.920 --> 00:05:49.460
+Usue Aguirre: So also ports.
+
+57
+00:05:50.753 --> 00:06:02.760
+Manish Dharod: Also ports. Okay, got it. So let's just take a ports for an example for a second, and then what? So now tell me what, when you say trials right, what.
+
+58
+00:06:02.760 --> 00:06:03.220
+Usue Aguirre: Hmm.
+
+59
+00:06:03.220 --> 00:06:08.749
+Manish Dharod: What is it that you want customers to understand? What? What does trial mean from their perspective
+
+60
+00:06:10.200 --> 00:06:11.389
+Manish Dharod: for a port.
+
+61
+00:06:11.857 --> 00:06:24.469
+Usue Aguirre: So the trial for them is like to start to to set up a to to try their to try fabric capabilities in a real life, scenario.
+
+62
+00:06:24.795 --> 00:06:25.120
+Manish Dharod: Yeah.
+
+63
+00:06:25.120 --> 00:06:32.629
+Usue Aguirre: For a limited period of time and without any kind of financial risk, so they won't be paying anything right? So that's.
+
+64
+00:06:34.660 --> 00:06:41.260
+Manish Dharod: Maybe maybe we should take a Fcr as an example, because I think port. There is a physical, you know, cross country.
+
+65
+00:06:41.260 --> 00:06:41.889
+Usue Aguirre: I'm missing it.
+
+66
+00:06:41.890 --> 00:06:46.400
+Manish Dharod: So let's just take back to Fcr for you. So fcr, I want to
+
+67
+00:06:47.196 --> 00:06:53.909
+Manish Dharod: instantiate and fcr create a fabric cloud router and
+
+68
+00:06:54.300 --> 00:06:56.979
+Manish Dharod: try it for, say, a month.
+
+69
+00:06:57.728 --> 00:07:04.909
+Manish Dharod: and I I am expecting cus equinix to not charge me for that 1st month.
+
+70
+00:07:05.340 --> 00:07:06.900
+Usue Aguirre: Exactly, exactly.
+
+71
+00:07:06.900 --> 00:07:11.211
+Manish Dharod: Okay, not charge me for that 1st month. Okay? And then
+
+72
+00:07:12.380 --> 00:07:18.070
+Manish Dharod: after the first, st you know 1st month, if I don't.
+
+73
+00:07:18.856 --> 00:07:22.559
+Manish Dharod: You know. What do you say? Cancel it, or delete.
+
+74
+00:07:23.400 --> 00:07:29.720
+Manish Dharod: Do you want equinix to, you know? Start charging or start the billing after one month.
+
+75
+00:07:29.720 --> 00:07:30.530
+Usue Aguirre: Yes.
+
+76
+00:07:30.530 --> 00:07:31.740
+Manish Dharod: Right automatically, right?
+
+77
+00:07:32.290 --> 00:07:33.720
+Manish Dharod: Yes, that's right.
+
+78
+00:07:33.720 --> 00:07:34.390
+Manish Dharod: Got it.
+
+79
+00:07:35.107 --> 00:07:38.570
+Manish Dharod: Okay. And then let's say.
+
+80
+00:07:38.680 --> 00:07:52.780
+Manish Dharod: if I do want to cancel it within that month. I I just deinstall the you know, delete that fcr on the portal, and that's pretty much it I can. Later in the future I can come back again to do it right.
+
+81
+00:07:52.780 --> 00:07:54.400
+Usue Aguirre: Yeah, yeah, that's correct. Yes.
+
+82
+00:07:54.400 --> 00:07:59.110
+Manish Dharod: Right? Okay? So now, I think.
+
+83
+00:07:59.280 --> 00:08:09.309
+Manish Dharod: see, my, my perspective is that we should be able to do all this from primarily from
+
+84
+00:08:09.650 --> 00:08:17.570
+Manish Dharod: your end. Just let me think about it one second. So so, okay, if you want this order
+
+85
+00:08:18.080 --> 00:08:22.609
+Manish Dharod: to go this this trial order to go into our
+
+86
+00:08:23.502 --> 00:08:30.009
+Manish Dharod: systems, right? Meaning our billing system and all that.
+
+87
+00:08:30.700 --> 00:08:31.370
+Manish Dharod: Then.
+
+88
+00:08:31.370 --> 00:08:31.730
+Usue Aguirre: Yeah.
+
+89
+00:08:31.730 --> 00:08:35.940
+Manish Dharod: Then it's a different flow. But if you don't even want that 1st month
+
+90
+00:08:36.260 --> 00:08:43.540
+Manish Dharod: order to go into civil at all, then it's a it's a different you know, Flow, that we can think about.
+
+91
+00:08:44.470 --> 00:08:47.419
+Usue Aguirre: It depends on what is the solution? Right?
+
+92
+00:08:47.800 --> 00:08:49.690
+Usue Aguirre: You want to do?
+
+93
+00:08:49.690 --> 00:08:52.029
+Usue Aguirre: Yeah, sure. Go ahead. Go ahead. Sorry.
+
+94
+00:08:52.360 --> 00:08:54.640
+Usue Aguirre: Maybe we can do a deferred billing
+
+95
+00:08:54.740 --> 00:09:07.620
+Usue Aguirre: right? And in that case, right? We did further billing for one month, and and then I think that goes to civil right, that is, that goes to civil and civil, is intelligent enough than after the month they started
+
+96
+00:09:07.840 --> 00:09:08.680
+Usue Aguirre: charging, billing.
+
+97
+00:09:08.680 --> 00:09:10.120
+Manish Dharod: Start, date, right? Okay.
+
+98
+00:09:10.510 --> 00:09:37.960
+Manish Dharod: So say so. Let's take both approaches. So one the one approach is, let's say that we do send that order into civil or or whatever the new system is service. Now, let's say, and but we we send it with a deferred billing, and that is going to be 30 days from the date of purchase, or whatever right or trial start now.
+
+99
+00:09:38.934 --> 00:09:48.920
+Manish Dharod: Question we will have to answer is, do we need some kind of a pricing element
+
+100
+00:09:49.180 --> 00:09:52.830
+Manish Dharod: or a product type, or attribute
+
+101
+00:09:53.240 --> 00:10:01.849
+Manish Dharod: in the downstream systems to identify this as a trial for any reason, or.
+
+102
+00:10:01.850 --> 00:10:02.330
+Usue Aguirre: Thank you.
+
+103
+00:10:02.330 --> 00:10:12.410
+Manish Dharod: Just with the regular products. Queue if we just say deferred billing, is that good enough? So that that is something we can check with the downstream systems team. Okay?
+
+104
+00:10:12.840 --> 00:10:21.059
+Usue Aguirre: Yeah, I'm inclined for the Latin right? But that is because that has to do with the trial scope.
+
+105
+00:10:21.170 --> 00:10:28.100
+Usue Aguirre: I think that the trial scope should be a product that they can upgrade to broad.
+
+106
+00:10:28.220 --> 00:10:40.870
+Usue Aguirre: that they can seamlessly, like shift into prod right, without any concern about the level of functionality. But I know, for example, Fcr lab is the other approach. We created an adoc
+
+107
+00:10:40.970 --> 00:10:50.609
+Usue Aguirre: skew, right? But it that seems to be like too small, like the capacity, and the capabilities that we are offering are too, too.
+
+108
+00:10:50.850 --> 00:11:02.640
+Usue Aguirre: Are not that a good fit for prop? So I don't want to have that issue right ideally, it's just something that is like a a commercial proof. Right? So.
+
+109
+00:11:02.640 --> 00:11:04.280
+Manish Dharod: Right, so.
+
+110
+00:11:04.280 --> 00:11:04.699
+Usue Aguirre: It's funny. Yeah.
+
+111
+00:11:04.700 --> 00:11:12.799
+Manish Dharod: Having said that right? I think, how? Okay? So we should talk about solutioning in terms of how do we want to achieve
+
+112
+00:11:12.970 --> 00:11:16.996
+Manish Dharod: the objective of trial, but make sure that
+
+113
+00:11:17.840 --> 00:11:22.160
+Manish Dharod: there isn't you know a ton of use.
+
+114
+00:11:22.160 --> 00:11:23.130
+Usue Aguirre: Yes.
+
+115
+00:11:23.130 --> 00:11:23.860
+Manish Dharod: Right!
+
+116
+00:11:23.970 --> 00:11:24.470
+Manish Dharod: Oh.
+
+117
+00:11:24.470 --> 00:11:25.150
+Usue Aguirre: Yes.
+
+118
+00:11:25.540 --> 00:11:29.090
+Manish Dharod: So Fcr perspective. Let's take, for example. Now.
+
+119
+00:11:29.840 --> 00:11:35.260
+Manish Dharod: Are there? So is there something that we
+
+120
+00:11:35.530 --> 00:11:40.570
+Manish Dharod: are? Let's say, worried about in terms of
+
+121
+00:11:40.710 --> 00:11:45.959
+Manish Dharod: too much of usage in that 1st month. Is there something in the in the Fcr product.
+
+122
+00:11:46.910 --> 00:12:00.700
+Usue Aguirre: I don't think that Fcr is problematic that way. But ports might be problematic, right? Because ports like have like a configuration activities that have that that needs to take place right?
+
+123
+00:12:00.700 --> 00:12:02.120
+Manish Dharod: Not just that I mean.
+
+124
+00:12:02.120 --> 00:12:02.450
+Usue Aguirre: But yeah.
+
+125
+00:12:02.450 --> 00:12:11.860
+Manish Dharod: And see in in case of yeah, in case of network edge, right? You could actually send
+
+126
+00:12:11.960 --> 00:12:16.199
+Manish Dharod: a ton of traffic if there is no limit.
+
+127
+00:12:17.720 --> 00:12:18.280
+Usue Aguirre: Okay.
+
+128
+00:12:18.540 --> 00:12:27.380
+Manish Dharod: And in that 1st month we could have a huge amount of traffic go, through and
+
+129
+00:12:27.380 --> 00:12:48.589
+Manish Dharod: so there has to be some, I guess, some kind of a limit on that. So similarly, I'm just wondering, is there anything in Fcr that we have to be careful about when you talk about this? Because if that's the case, then there needs to be some version or or some approach that we need to take to restrict that trial period in terms of the usage.
+
+130
+00:12:49.690 --> 00:12:52.570
+Usue Aguirre: Okay, okay, okay, okay, yeah, I I
+
+131
+00:12:52.990 --> 00:13:08.889
+Usue Aguirre: I get what I get what you mean. So it's in any case, right? Do we want to put our restriction in that trial period right, not necessarily a new skew, but a restriction in the in the usage.
+
+132
+00:13:09.080 --> 00:13:09.420
+Manish Dharod: Correct.
+
+133
+00:13:10.016 --> 00:13:10.613
+Usue Aguirre: Yeah,
+
+134
+00:13:11.210 --> 00:13:26.210
+Manish Dharod: Because because even with the restriction, you can still allow that customer to move that same Fcr into production. But now, when they move into production, which is next month. The restriction is gone. Basically, right? So.
+
+135
+00:13:26.210 --> 00:13:26.860
+Usue Aguirre: Yes.
+
+136
+00:13:26.860 --> 00:13:34.109
+Manish Dharod: The restriction could be more at the at the provisioning level. Sort of
+
+137
+00:13:36.460 --> 00:13:43.560
+Manish Dharod: you don't need to implement any kind of restriction at the at the billing, or a transaction level per se.
+
+138
+00:13:44.480 --> 00:13:45.829
+Usue Aguirre: Exactly, exactly.
+
+139
+00:13:45.830 --> 00:13:47.469
+Manish Dharod: Right, right, so.
+
+140
+00:13:47.470 --> 00:13:49.210
+Usue Aguirre: Maybe yeah.
+
+141
+00:13:49.210 --> 00:13:50.000
+Manish Dharod: Go ahead! Seth!
+
+142
+00:13:51.060 --> 00:13:59.539
+Usue Aguirre: So maybe you only allow certain packages to have the the trial right? Maybe only the basic. We are creating a basic package now on June.
+
+143
+00:13:59.700 --> 00:14:15.279
+Usue Aguirre: So trials are only applicable to basic or trials are only applicable to ports to to 10, gig ports standard in up to certain number. Yeah. Like? Yes, yes.
+
+144
+00:14:15.790 --> 00:14:24.439
+Usue Aguirre: So they they enjoy the full capability. Sorry. Sorry. But he has to they enjoy the full capability, but with usage restriction.
+
+145
+00:14:24.640 --> 00:14:32.585
+Manish Dharod: That's right. So and then, if they want to upgrade, let's say after one month, if they want to upgrade from basic to the most advanced right?
+
+146
+00:14:33.300 --> 00:14:35.819
+Manish Dharod: They shouldn't. They shouldn't have any restriction on that.
+
+147
+00:14:36.520 --> 00:14:37.920
+Usue Aguirre: No, exactly.
+
+148
+00:14:38.110 --> 00:14:40.940
+Manish Dharod: Right? Okay, that is the goal right here. So.
+
+149
+00:14:40.940 --> 00:14:41.550
+Usue Aguirre: Yes.
+
+150
+00:14:41.910 --> 00:14:46.159
+Manish Dharod: Yeah. So I think, you know, net net right?
+
+151
+00:14:48.150 --> 00:14:53.540
+Manish Dharod: We can. We can actually achieve all of this with 2 days
+
+152
+00:14:53.910 --> 00:15:22.380
+Manish Dharod: flow. And and so, as we said, I think there are 2. Broadly speaking, there are 2 approaches. We one is, we send the order into stable or service now, but with deferred billing. Start. Okay? And and then really, all the restrictions on usage and other things are are taken care on the product side on the provisioning side.
+
+153
+00:15:22.380 --> 00:15:23.050
+Manish Dharod: All right.
+
+154
+00:15:23.050 --> 00:15:23.395
+Manish Dharod: Okay.
+
+155
+00:15:23.740 --> 00:15:24.180
+Usue Aguirre: Yes.
+
+156
+00:15:24.180 --> 00:15:27.800
+Manish Dharod: And then the second approach is, we
+
+157
+00:15:27.880 --> 00:15:36.349
+Manish Dharod: don't even send that order to Siebil or service. Now for the 1st month. And we send
+
+158
+00:15:36.687 --> 00:15:59.360
+Manish Dharod: of course we do need to send an email to them, saying that you know your trial has started. Please go ahead and use it and so on. So that email should go out from the product side. Then you know, Siebil will not have any clue or service now, will not have any clue. But but I think the one thing I'm just kind of thinking out loud here is that
+
+159
+00:15:59.733 --> 00:16:07.960
+Manish Dharod: not sending to Siebel, and service now in the past has been a problem, because all of our other things like support.
+
+160
+00:16:08.500 --> 00:16:09.570
+Usue Aguirre: Hey!
+
+161
+00:16:09.570 --> 00:16:18.982
+Manish Dharod: And you know, case management, and so on. So forth. Those things are all tied to our transaction system. You cannot,
+
+162
+00:16:19.410 --> 00:16:20.020
+Usue Aguirre: Yes.
+
+163
+00:16:20.020 --> 00:16:33.989
+Manish Dharod: You know that that is the problem. So so in some sense, now that I'm thinking about from the past, I'm just trying to recall everything that you went through Network Edge, and you can double check by the way with with Mandar Mandar Joshi.
+
+164
+00:16:33.990 --> 00:16:34.340
+Usue Aguirre: Yeah.
+
+165
+00:16:34.340 --> 00:16:37.059
+Manish Dharod: To see what they have done. But
+
+166
+00:16:37.529 --> 00:16:51.459
+Manish Dharod: I think my recollection is is fundamentally that it's better to send it to the billing system and the transaction system because of support and case management type being tied to it. Otherwise it doesn't even show up. So.
+
+167
+00:16:52.715 --> 00:17:00.880
+Manish Dharod: Yeah. So I think billing start date would be the way probably to go. We can. We can once. You kind of
+
+168
+00:17:01.588 --> 00:17:09.541
+Manish Dharod: you know, brainstorm, this approach and and check check with Mandar Joshi to see what their experience has been.
+
+169
+00:17:10.310 --> 00:17:10.659
+Usue Aguirre: Yes.
+
+170
+00:17:10.660 --> 00:17:14.389
+Manish Dharod: Then I think we can reach out to
+
+171
+00:17:14.530 --> 00:17:25.029
+Manish Dharod: the Siebil or and and the service. Now, team to, I think probably we should just target the new I don't know how how quickly you want this, but either way.
+
+172
+00:17:25.030 --> 00:17:25.730
+Manish Dharod: matter which
+
+173
+00:17:25.730 --> 00:17:34.710
+Manish Dharod: team it is. We can just start the conversation, saying, Hey, is there a billing start date functionality? So we can include the finance, the see. Here's
+
+174
+00:17:35.620 --> 00:17:39.740
+Manish Dharod: when we, if we are doing this in a proper way. We need a legal.
+
+175
+00:17:40.260 --> 00:17:48.290
+Manish Dharod: We need finance. Okay? And we need the It side of things.
+
+176
+00:17:48.680 --> 00:17:55.350
+Manish Dharod: all 3 teams being on the same page along with actually support as well. So 4 teams.
+
+177
+00:17:55.350 --> 00:17:57.622
+Usue Aguirre: Yes, yes, absolutely.
+
+178
+00:17:58.674 --> 00:18:13.090
+Manish Dharod: Yeah. So I think next steps in, I mean, if I'm let me know if I'm missing anything else but the approach we could take is just you know, if you if you think about billing, start date as an approach is that
+
+179
+00:18:13.600 --> 00:18:28.778
+Manish Dharod: we can continue based on Mandar Joshi's experience. And what about the you know constraints on the usage and so on, so forth. How are they gonna be getting implemented. If that's the case on the provisioning side and
+
+180
+00:18:29.300 --> 00:18:32.309
+Manish Dharod: then if you come back saying, Yeah, if this kind of
+
+181
+00:18:32.560 --> 00:18:38.520
+Manish Dharod: approach has worked for network edge, and it can work for Fcr and fabric port. We can then
+
+182
+00:18:38.980 --> 00:18:43.999
+Manish Dharod: go and meet these 4 teams that I talked about and then start the conversation.
+
+183
+00:18:44.360 --> 00:18:50.229
+Usue Aguirre: Exactly. Exactly. I know that, Eia. They are implementing it as well in the portal on June.
+
+184
+00:18:50.720 --> 00:18:51.140
+Usue Aguirre: I'll tell you
+
+185
+00:18:51.140 --> 00:19:01.829
+Usue Aguirre: everything around that. Yes, they're gonna articulate it with a promo like with a promo code that the customer can redeem in the portal, and then they have the defer billing.
+
+186
+00:19:02.350 --> 00:19:02.910
+Usue Aguirre: If I'm gonna.
+
+187
+00:19:02.910 --> 00:19:03.269
+Manish Dharod: That's a lot.
+
+188
+00:19:03.270 --> 00:19:07.799
+Usue Aguirre: About that. Do you want to to be in the call as well, or or do.
+
+189
+00:19:07.800 --> 00:19:21.200
+Manish Dharod: Yeah, yeah, I think so. I think so. You can. You can add me to it because I want to understand when they said they've implemented promo code like, actually go into the into the downstream system. Or how does it work? I don't know.
+
+190
+00:19:21.770 --> 00:19:24.620
+Usue Aguirre: I don't know, either. I want to hear everything about that. Yes, yes.
+
+191
+00:19:24.620 --> 00:19:25.699
+Manish Dharod: Okay. Sure. Sure. Sure.
+
+192
+00:19:25.700 --> 00:19:33.559
+Usue Aguirre: Yeah. So so an another angle that we are looking at is, you know, that we have. We have the Aws marketplace right?
+
+193
+00:19:34.030 --> 00:19:35.640
+Manish Dharod: Aws, yes. Yes. Okay.
+
+194
+00:19:35.640 --> 00:19:55.009
+Usue Aguirre: So another another angle was like, okay, let's let's do the trials. Right? Let's do the trials within the Aws marketplace. Let's include ports, because we only have Fcr and aws have had like, I mean, had their own system like to enable trials. In fact, we have now, like 15 days
+
+195
+00:19:55.340 --> 00:19:57.350
+Usue Aguirre: trial. They offer that.
+
+196
+00:19:57.490 --> 00:20:09.969
+Usue Aguirre: So maybe for the time being, until we are in the new code to cash right? We we we leverage the Aws marketplace for customers that are not in the new go to cash.
+
+197
+00:20:10.520 --> 00:20:11.080
+Manish Dharod: Okay. Yeah.
+
+198
+00:20:11.830 --> 00:20:12.580
+Usue Aguirre: Sure.
+
+199
+00:20:12.580 --> 00:20:13.330
+Manish Dharod: Sure that could.
+
+200
+00:20:13.330 --> 00:20:14.690
+Usue Aguirre: What do you think about that.
+
+201
+00:20:14.880 --> 00:20:26.089
+Manish Dharod: Yeah, I mean, it's just it's just that, you know. See? Basically, the I think aws marketplace is a is a is a good channel. Right? But
+
+202
+00:20:27.825 --> 00:20:30.700
+Manish Dharod: I'm not sure you know
+
+203
+00:20:31.340 --> 00:20:35.049
+Manish Dharod: how much percentage of all our customers
+
+204
+00:20:35.710 --> 00:20:44.428
+Manish Dharod: will be. Okay with that approach, because, you know, they 1st of all.
+
+205
+00:20:45.462 --> 00:20:54.219
+Manish Dharod: are they? You know, users of? Aws, number one, right? What if they are not? What if they are using azure? And gcp, maybe for most part.
+
+206
+00:20:54.470 --> 00:20:54.720
+Usue Aguirre: So.
+
+207
+00:20:54.720 --> 00:20:59.830
+Manish Dharod: Second thing is that just because of this
+
+208
+00:21:00.000 --> 00:21:03.840
+Manish Dharod: thing, they have to now interface with another company.
+
+209
+00:21:04.020 --> 00:21:08.979
+Manish Dharod: And so the integration between a bit. I mean the whole.
+
+210
+00:21:09.380 --> 00:21:22.125
+Manish Dharod: because the customer side also is kinda little bit complicated, right? Because they they go purchase over there. They come here to do some kind of a Co. You know, either configuration or something else.
+
+211
+00:21:22.470 --> 00:21:23.060
+Usue Aguirre: Yes.
+
+212
+00:21:23.060 --> 00:21:27.822
+Manish Dharod: And so it's it's not, you know, ideal.
+
+213
+00:21:28.430 --> 00:21:28.855
+Usue Aguirre: Yeah.
+
+214
+00:21:29.280 --> 00:21:29.600
+Manish Dharod: Right.
+
+215
+00:21:29.600 --> 00:21:32.170
+Usue Aguirre: I don't think they're good. Yeah. Oh, sorry. Sorry.
+
+216
+00:21:32.170 --> 00:21:33.579
+Manish Dharod: No, that's all. I mean. Yeah.
+
+217
+00:21:33.990 --> 00:21:42.650
+Usue Aguirre: I think that there's a perception. What I'm realizing is that there's a perception that the account creation is an incredibly like cumbersome process.
+
+218
+00:21:43.030 --> 00:21:45.159
+Usue Aguirre: But I'm not hearing that.
+
+219
+00:21:45.160 --> 00:21:53.675
+Manish Dharod: No, no, I I would like to understand from someone who thinks that way, and then understand, what part do they think is cumbersome?
+
+220
+00:21:54.610 --> 00:22:07.754
+Manish Dharod: and then we can kind of you know, have a chat on that. Now, of course, the the validation of a net new customer is a manual process today, no doubt about it. Right?
+
+221
+00:22:09.010 --> 00:22:14.137
+Manish Dharod: but you know, without the credit card I think
+
+222
+00:22:14.940 --> 00:22:21.600
+Manish Dharod: I mean, see, I don't see this being such a huge deal. If we
+
+223
+00:22:21.930 --> 00:22:43.629
+Manish Dharod: don't stop customers from placing orders, and even to the extent we can actually even provision immediately. By taking you know. Potentially, okay, let me think about that part. Okay, so one, okay, one thing is work something that I've I've seen is that the net new customers, let's say, if we take the order right now.
+
+224
+00:22:43.820 --> 00:22:50.849
+Manish Dharod: do we provision it before the Sales Ops team has validated that this is a legit company right
+
+225
+00:22:51.240 --> 00:22:51.840
+Usue Aguirre: Hmm.
+
+226
+00:22:51.840 --> 00:23:16.070
+Manish Dharod: That has been an open question. Now, Network Edge does provision that right? And they they take that risk of that 24 h. And then let's say, if if the in the 24 h, if some they don't, they don't think that it's a legitimate company, or whatever they will reject it. And so the network edge team gets the you know a notification from us
+
+227
+00:23:16.330 --> 00:23:21.070
+Manish Dharod: billing, you know, Eva assets saying that, hey, this was rejected
+
+228
+00:23:21.638 --> 00:23:34.080
+Manish Dharod: so they can take the action if they want to, you know, deprovision, the device or whatnot. So that's 1 1 friction, which is that waiting for 24 h
+
+229
+00:23:34.190 --> 00:23:37.370
+Manish Dharod: before customer is validated.
+
+230
+00:23:38.400 --> 00:23:39.210
+Usue Aguirre: Yeah.
+
+231
+00:23:39.490 --> 00:23:46.599
+Manish Dharod: Right now I see again. I don't know if it is such a big.
+
+232
+00:23:47.210 --> 00:23:47.810
+Usue Aguirre: I don't think.
+
+233
+00:23:47.810 --> 00:24:05.239
+Manish Dharod: So they don't need to. So here's the thing, we, what the the constraint we have right now, the friction that will be there is the following, customers will have to 1st of all on board themselves a lot, including billing account creation. Okay.
+
+234
+00:24:06.560 --> 00:24:12.410
+Manish Dharod: And then they can go for trials within
+
+235
+00:24:12.680 --> 00:24:16.190
+Manish Dharod: 24 to 48 h, whatever we can decide right?
+
+236
+00:24:17.420 --> 00:24:18.250
+Manish Dharod: And
+
+237
+00:24:18.380 --> 00:24:29.879
+Manish Dharod: that's the restriction. They they can't do the the beginning of the trial and and start using the the service within that 1st day of onboarding.
+
+238
+00:24:29.880 --> 00:24:30.409
+Usue Aguirre: The point.
+
+239
+00:24:30.410 --> 00:24:31.529
+Manish Dharod: Constraint. I see.
+
+240
+00:24:32.310 --> 00:24:39.990
+Usue Aguirre: Yeah, yeah, yes, yes. So if if you see, let me see, I'm gonna share my screen. So we were looking at what Mega port is doing.
+
+241
+00:24:41.250 --> 00:24:49.080
+Usue Aguirre: So am I certain? Yeah, that they have a free trial for a month? Right? But they still
+
+242
+00:24:49.480 --> 00:24:55.060
+Usue Aguirre: so, 1st of all, this is not an instant process. So then.
+
+243
+00:24:55.060 --> 00:24:55.400
+Manish Dharod: Really.
+
+244
+00:24:55.400 --> 00:25:13.439
+Usue Aguirre: You have to enter. Yeah, you see, you have to enter. You have to qualify, claim your free trial right? And then they evaluate. If you are a good fit or not right. And so it doesn't seem to me that this is not. This is not automatic either.
+
+245
+00:25:14.120 --> 00:25:14.700
+Manish Dharod: Yeah.
+
+246
+00:25:15.290 --> 00:25:21.189
+Usue Aguirre: It looks like it's like full like commercial capabilities. Right?
+
+247
+00:25:21.190 --> 00:25:22.139
+Manish Dharod: Yeah, yeah.
+
+248
+00:25:22.140 --> 00:25:31.210
+Usue Aguirre: No cost for 3 days. They have a little bit of a of a restriction in terms of the usage. That is, it comes later.
+
+249
+00:25:31.380 --> 00:25:31.780
+Manish Dharod: Yep.
+
+250
+00:25:31.780 --> 00:25:38.950
+Usue Aguirre: Will email, you freighter, unlocking one month of a Mega port, a Mega port port or Mega Port Cloud Gruntor. So.
+
+251
+00:25:40.190 --> 00:25:46.890
+Usue Aguirre: But it's once your account is set up and your eligibility is confirmed. We'll email your free trial code
+
+252
+00:25:47.300 --> 00:25:57.890
+Usue Aguirre: unlocking one month free. So here is the same. No, nobody up gives trial automatically, unless you have, like the like. The credits like.
+
+253
+00:25:57.890 --> 00:25:58.460
+Manish Dharod: Exactly.
+
+254
+00:25:58.460 --> 00:26:04.109
+Usue Aguirre: Credits that. That's another thing that I think that we have to go there down the road right? But right now.
+
+255
+00:26:05.130 --> 00:26:05.760
+Usue Aguirre: So yeah.
+
+256
+00:26:06.480 --> 00:26:21.549
+Manish Dharod: I, I think this is, yeah. So okay, so now let's think about this for a second. If we want to put if we want to take the same exact route. So, by the way, we have. You know a minute. Do you have another meeting after this?
+
+257
+00:26:22.995 --> 00:26:26.830
+Usue Aguirre: Let me see, I don't think so.
+
+258
+00:26:27.190 --> 00:26:28.670
+Usue Aguirre: No, I don't think so either.
+
+259
+00:26:28.670 --> 00:26:36.569
+Manish Dharod: So we can talk about. So what I was thinking is that, okay? So let's just say we want to have the same exact approach on our website. Right?
+
+260
+00:26:37.300 --> 00:26:38.510
+Manish Dharod: They sign up
+
+261
+00:26:39.393 --> 00:26:48.909
+Manish Dharod: now, the the the good part about this flow is that there is no quote unquote onboarding at all, pretty much.
+
+262
+00:26:50.060 --> 00:26:50.860
+Usue Aguirre: Licenses. Yeah.
+
+263
+00:26:50.860 --> 00:26:59.402
+Manish Dharod: The sense that. So okay, I don't know if somebody has actually tried this and then see what happens after
+
+264
+00:26:59.950 --> 00:27:03.169
+Manish Dharod: Do do so. In other words.
+
+265
+00:27:03.740 --> 00:27:16.530
+Manish Dharod: do we want to? You know, basically eliminate all the you know our permissions? And and even billing account creation completely in the sense that we automate all of that
+
+266
+00:27:16.740 --> 00:27:17.640
+Manish Dharod: for them.
+
+267
+00:27:19.310 --> 00:27:20.000
+Usue Aguirre: Hmm.
+
+268
+00:27:20.000 --> 00:27:31.518
+Manish Dharod: So imagine, imagine this way. They they give us this information only, which is business, email, company, name, you know, and so on. They don't give us their
+
+269
+00:27:32.130 --> 00:27:33.140
+Manish Dharod: address.
+
+270
+00:27:34.840 --> 00:27:37.830
+Manish Dharod: Their billing contact.
+
+271
+00:27:38.440 --> 00:27:42.609
+Manish Dharod: Right? We. We just assume that this guy is the billing contact for now.
+
+272
+00:27:43.280 --> 00:27:49.899
+Manish Dharod: So the only thing that is missing here is the billing address.
+
+273
+00:27:50.600 --> 00:27:54.069
+Usue Aguirre: Yeah, they use credit card. I think lots of yeah.
+
+274
+00:27:54.070 --> 00:27:54.670
+Manish Dharod: Oh, they do!
+
+275
+00:27:54.670 --> 00:27:59.480
+Usue Aguirre: So you will see. Yes, yes, they use credit card. Let me see where
+
+276
+00:28:03.760 --> 00:28:06.590
+Usue Aguirre: a valid payment is required to activate the trial
+
+277
+00:28:06.840 --> 00:28:13.110
+Usue Aguirre: after the free period. Standard pricing applies unless the service is canceled before the end of the trial.
+
+278
+00:28:13.430 --> 00:28:17.920
+Usue Aguirre: So a valid payment method is required to activate the trial
+
+279
+00:28:18.420 --> 00:28:21.530
+Usue Aguirre: makeup orders and whatnot. So you said so
+
+280
+00:28:21.530 --> 00:28:25.139
+Usue Aguirre: here we don't. They don't make any reference to credit card.
+
+281
+00:28:25.590 --> 00:28:26.250
+Manish Dharod: They don't.
+
+282
+00:28:26.250 --> 00:28:28.030
+Usue Aguirre: That. Yeah, yeah, yeah, yeah.
+
+283
+00:28:28.760 --> 00:28:29.470
+Manish Dharod: They don't.
+
+284
+00:28:29.470 --> 00:28:30.350
+Usue Aguirre: A new reference.
+
+285
+00:28:30.350 --> 00:28:34.940
+Manish Dharod: So so I'm just thinking again. Now. So let's just say we have the same form
+
+286
+00:28:35.210 --> 00:28:37.970
+Manish Dharod: for for on our website, okay.
+
+287
+00:28:38.140 --> 00:28:39.020
+Usue Aguirre: Yes.
+
+288
+00:28:39.020 --> 00:28:47.110
+Manish Dharod: We automatically in this scenario, like assumption, is that we are treating them as net new book.
+
+289
+00:28:48.980 --> 00:28:51.550
+Manish Dharod: Okay, so what we will do is
+
+290
+00:28:51.720 --> 00:28:53.790
+Manish Dharod: once they fill out this form.
+
+291
+00:28:55.500 --> 00:29:00.539
+Manish Dharod: Maybe you can get an email, saying, Hey, this guy filled out this form.
+
+292
+00:29:01.230 --> 00:29:07.170
+Manish Dharod: Okay, approve them for a second. Okay, let's say, let's just.
+
+293
+00:29:07.170 --> 00:29:07.530
+Usue Aguirre: Yeah.
+
+294
+00:29:07.530 --> 00:29:11.139
+Manish Dharod: That way. So you you do that.
+
+295
+00:29:12.010 --> 00:29:19.060
+Manish Dharod: and then you click on a button somewhere. Internal, you know. Internal thing saying that. Okay, these guys are approved. So then
+
+296
+00:29:19.160 --> 00:29:20.660
+Manish Dharod: what happens is
+
+297
+00:29:21.080 --> 00:29:28.480
+Manish Dharod: we will, we can auto create an org for them. We can auto create a a user for them.
+
+298
+00:29:29.420 --> 00:29:34.990
+Manish Dharod: And we can auto auto, you know, assign them as the admin right to this guy as the Admin.
+
+299
+00:29:35.610 --> 00:29:40.700
+Manish Dharod: And also we can. We can auto create billing account for them.
+
+300
+00:29:42.610 --> 00:29:44.450
+Manish Dharod: What will be missing
+
+301
+00:29:45.070 --> 00:30:09.630
+Manish Dharod: in that billing account scenario is the billing address right? So what we could do is that we can auto create the billing account. None of the rest of the stuff they have to fill out. The only thing pending is the billing address. So what we can do as as a flow. Is that once you approve, we can send them an email saying, Okay.
+
+302
+00:30:09.640 --> 00:30:19.159
+Manish Dharod: you have to do 2 things. One is, create your password, and all that, because they have to log in number one and number 2.
+
+303
+00:30:19.620 --> 00:30:21.580
+Manish Dharod: Give us your billing address.
+
+304
+00:30:22.040 --> 00:30:22.950
+Usue Aguirre: Yes.
+
+305
+00:30:22.950 --> 00:30:29.909
+Manish Dharod: Because it's the same thing as they saying, Oh, give us your payment method here, right in the Mega.
+
+306
+00:30:29.910 --> 00:30:32.350
+Usue Aguirre: Exactly. Exactly. Yeah, yeah, yeah, they are different.
+
+307
+00:30:32.350 --> 00:30:32.690
+Manish Dharod: In, the.
+
+308
+00:30:32.690 --> 00:30:34.740
+Usue Aguirre: Payment method. Yes. Yeah.
+
+309
+00:30:34.740 --> 00:30:42.860
+Manish Dharod: So yeah, so they create the password. They give us the billing address, and.
+
+310
+00:30:43.440 --> 00:30:46.470
+Manish Dharod: Our existing flow will completely work.
+
+311
+00:30:47.690 --> 00:30:49.240
+Usue Aguirre: Exactly, exactly.
+
+312
+00:30:50.380 --> 00:30:53.319
+Manish Dharod: It will give the same perception, exactly same perception.
+
+313
+00:30:53.320 --> 00:30:57.110
+Usue Aguirre: We get the same perception. Yes, yeah, yeah.
+
+314
+00:30:57.110 --> 00:31:04.389
+Manish Dharod: Okay, no. In other words, we are eliminating the complex onboarding process. Basically.
+
+315
+00:31:06.195 --> 00:31:12.800
+Usue Aguirre: Yeah, I agree. I'm curious. Now let me see.
+
+316
+00:31:12.800 --> 00:31:13.130
+Manish Dharod: Yeah.
+
+317
+00:31:14.800 --> 00:31:23.419
+Manish Dharod: And, by the way, when you when you pitch this to anybody moving forward, I think maybe this is the approach you take. You should just say.
+
+318
+00:31:23.740 --> 00:31:27.499
+Manish Dharod: this is precisely what we will do for Equinix. That's it done.
+
+319
+00:31:27.920 --> 00:31:28.590
+Usue Aguirre: Yep.
+
+320
+00:31:28.770 --> 00:31:29.310
+Manish Dharod: Okay?
+
+321
+00:31:29.310 --> 00:31:32.500
+Manish Dharod: And and that is our goal.
+
+322
+00:31:34.240 --> 00:31:34.960
+Manish Dharod: Now
+
+323
+00:31:34.960 --> 00:31:42.130
+Manish Dharod: we have to figure out a solution for this. But the the customer experience should be exactly like megaport. That's it. Done.
+
+324
+00:31:42.730 --> 00:31:43.470
+Usue Aguirre: Yeah.
+
+325
+00:31:44.750 --> 00:31:53.389
+Usue Aguirre: One thing that I have found out is, do we want to have this in our web page? Or do we want it to be an email that we sent to to search.
+
+326
+00:31:53.390 --> 00:31:55.300
+Manish Dharod: Yeah, I mean, yeah, that that yeah
+
+327
+00:31:55.650 --> 00:31:59.920
+Manish Dharod: guys can think about in terms of marketing and all that. So what.
+
+328
+00:31:59.920 --> 00:32:00.470
+Usue Aguirre: The best of.
+
+329
+00:32:00.470 --> 00:32:05.000
+Manish Dharod: Approach. I mean, I think you know, if you really want to scale this.
+
+330
+00:32:06.630 --> 00:32:25.410
+Manish Dharod: you know. I think putting it on our web page is completely fine. I don't know how many people are just randomly gonna come and do this. Usually it's always some kind of a sales conversation in beginning some guy from Equinix is talking to them, and then just pointing them to this page, saying, Hey, go here, and then sign up.
+
+331
+00:32:26.010 --> 00:32:31.209
+Usue Aguirre: Exactly, and we always reserve the right to to consider them elig- eligible. Right? So.
+
+332
+00:32:31.210 --> 00:32:32.970
+Manish Dharod: Correct, correct.
+
+333
+00:32:32.970 --> 00:32:42.180
+Usue Aguirre: So yeah, let me see, for example, these, how soon you want to, immediately, once a month or so I don't know immediately. Let's see what they claim your free trial. Let's see.
+
+334
+00:32:43.120 --> 00:32:49.250
+Usue Aguirre: let's see about it. We received your request and we are reviewing it. What's next? Okay, let let me screenshot this
+
+335
+00:32:50.520 --> 00:32:53.550
+Usue Aguirre: right and check your inbox.
+
+336
+00:32:53.930 --> 00:32:57.729
+Usue Aguirre: Quick steps to help you create an account. Create a mega portal.
+
+337
+00:32:57.860 --> 00:33:00.050
+Usue Aguirre: Well, to receive your free trial code.
+
+338
+00:33:00.450 --> 00:33:06.840
+Usue Aguirre: Once your account is set up and we'll send you the free trial code by email terms and conditions. Apply. Okay, okay.
+
+339
+00:33:09.740 --> 00:33:10.590
+Manish Dharod: Yeah.
+
+340
+00:33:13.150 --> 00:33:16.899
+Usue Aguirre: I think we can do this. Yeah, let me take this over.
+
+341
+00:33:17.030 --> 00:33:20.840
+Usue Aguirre: There's no warranty. A free trial code request will be renewed. Yeah.
+
+342
+00:33:22.760 --> 00:33:29.110
+Usue Aguirre: trial, avoid a payment after the free standard price. Yeah, okay.
+
+343
+00:33:32.040 --> 00:33:40.559
+Usue Aguirre: I think that there are like, yeah, there are things we need to debunk, because I have heard many times that account creation is like, and yeah, I mean.
+
+344
+00:33:40.560 --> 00:33:43.949
+Manish Dharod: No, but I think I think the the part which
+
+345
+00:33:44.110 --> 00:33:47.279
+Manish Dharod: you know now that I think about it right, I think what
+
+346
+00:33:47.640 --> 00:33:53.100
+Manish Dharod: the the the issue is here is that entire onboarding process?
+
+347
+00:33:53.210 --> 00:34:02.830
+Manish Dharod: Okay, including billing account creation. So so I think in this scenario, the way that I think about it is that
+
+348
+00:34:03.320 --> 00:34:07.009
+Manish Dharod: we don't even show the form to create a billing account.
+
+349
+00:34:08.675 --> 00:34:09.380
+Usue Aguirre: Hmm.
+
+350
+00:34:09.380 --> 00:34:11.159
+Manish Dharod: Auto, create a billing account.
+
+351
+00:34:12.030 --> 00:34:12.820
+Usue Aguirre: Yeah.
+
+352
+00:34:13.010 --> 00:34:25.989
+Manish Dharod: Right. The only part, as I said, that is missing is the billing address and maybe you know, maybe maybe we take a different approach than megaport. We actually ask the address also.
+
+353
+00:34:26.469 --> 00:34:30.359
+Usue Aguirre: Yes, here, right and like in the in the question. Yes.
+
+354
+00:34:30.360 --> 00:34:35.500
+Manish Dharod: Then we don't even need that second step as a as a separate thing, we just create.
+
+355
+00:34:35.500 --> 00:34:36.110
+Usue Aguirre: Yes.
+
+356
+00:34:36.110 --> 00:34:41.290
+Manish Dharod: Full on billing account. And, by the way, so you you get
+
+357
+00:34:42.090 --> 00:34:45.000
+Manish Dharod: 24 h to approve from your
+
+358
+00:34:45.420 --> 00:34:50.790
+Manish Dharod: which is the fabric product management, and at the same time in parallel.
+
+359
+00:34:51.530 --> 00:34:52.480
+Usue Aguirre: Hmm.
+
+360
+00:34:52.980 --> 00:35:11.611
+Manish Dharod: This can also, you know, create a billing account if that's what we want. Right? If we want to do this in parallel. We can create a billing account request in Sfdc. And and the Sales. Ops team will do the manual validation to see if it's a legit company or not. Right
+
+361
+00:35:11.950 --> 00:35:12.340
+Usue Aguirre: Hmm.
+
+362
+00:35:12.340 --> 00:35:16.250
+Manish Dharod: Either we could do it that way which is parallel, or 1st you.
+
+363
+00:35:17.290 --> 00:35:18.280
+Usue Aguirre: Yes.
+
+364
+00:35:18.280 --> 00:35:24.204
+Manish Dharod: You consider this as all legit and everything else? You then you know.
+
+365
+00:35:26.530 --> 00:35:29.399
+Manish Dharod: you know. Say that. Okay, this is approved. And then
+
+366
+00:35:30.130 --> 00:35:34.170
+Manish Dharod: the billing account creation automation happens. After that.
+
+367
+00:35:34.900 --> 00:35:40.520
+Usue Aguirre: Yeah, maybe that's better. So we don't have a proliferation of billing accounts.
+
+368
+00:35:40.520 --> 00:35:55.330
+Manish Dharod: We don't have proliferation, and then we don't get into this situation and and then sales Ops team will obviously love it because and it will, it will fast. It will make their process much faster, because you already did the
+
+369
+00:35:55.640 --> 00:35:58.679
+Manish Dharod: the the due diligence on the company.
+
+370
+00:35:59.310 --> 00:36:00.650
+Usue Aguirre: Yeah. Yes.
+
+371
+00:36:00.650 --> 00:36:04.500
+Manish Dharod: You already kind of validate that it's a legit company.
+
+372
+00:36:06.280 --> 00:36:10.440
+Manish Dharod: right? And this is exactly what they are doing. By the way, for the most part.
+
+373
+00:36:11.190 --> 00:36:11.870
+Usue Aguirre: Yeah.
+
+374
+00:36:12.270 --> 00:36:16.169
+Manish Dharod: Right? So their process will become much, much faster also.
+
+375
+00:36:16.578 --> 00:36:18.250
+Manish Dharod: Yeah, I'm just thinking out loud.
+
+376
+00:36:21.900 --> 00:36:27.059
+Usue Aguirre: Yeah, definitely, definitely. Let me see, if I got an email from there.
+
+377
+00:36:27.060 --> 00:36:29.490
+Manish Dharod: And and this all of this, by the way.
+
+378
+00:36:31.440 --> 00:36:34.600
+Manish Dharod: If we can do the delayed billing.
+
+379
+00:36:34.850 --> 00:36:35.390
+Usue Aguirre: Yes.
+
+380
+00:36:35.390 --> 00:36:40.150
+Manish Dharod: Can be done oh, like immediately.
+
+381
+00:36:41.620 --> 00:36:42.310
+Usue Aguirre: Yeah.
+
+382
+00:36:43.770 --> 00:36:58.710
+Usue Aguirre: we. The only thing is that, how do we make? How do we are? How do we channel that, delayed Billing. Right? If we want to do it, with a promo code, then we need to have to to the to make some developments in fabric.
+
+383
+00:36:58.710 --> 00:37:04.550
+Manish Dharod: Yeah, I mean, I, I'm just thinking, why do we even bother the promo code? Basically, right?
+
+384
+00:37:04.550 --> 00:37:05.410
+Usue Aguirre: Because.
+
+385
+00:37:05.410 --> 00:37:10.820
+Manish Dharod: Here's the thing right. The fact that they filled out this form that you approved them right
+
+386
+00:37:11.348 --> 00:37:13.721
+Manish Dharod: itself is a promo code. I mean.
+
+387
+00:37:14.060 --> 00:37:14.410
+Usue Aguirre: Yes.
+
+388
+00:37:14.410 --> 00:37:16.709
+Manish Dharod: So so we just
+
+389
+00:37:17.070 --> 00:37:30.869
+Manish Dharod: basically in the from the systems perspective on the back end perspective and all that, we just treat it with a delayed billing, and that's all there is to it. There is no other promo code or anything need delayed. Billing is all the all that is needed. That's it.
+
+390
+00:37:31.580 --> 00:37:37.069
+Usue Aguirre: But we want the delayed billing to happen only for a particular subset of products. Right.
+
+391
+00:37:37.070 --> 00:37:45.360
+Manish Dharod: Yeah. But yeah, that's that's totally fine. Because when when you when you are going to from fabric Fcr side, when you are creating an order.
+
+392
+00:37:46.750 --> 00:38:02.129
+Manish Dharod: You already know this, that okay, you have. This guy has been approved. This is net new. This guy has been approved for trial, and so when they send an order, when you guys send an order into Siebil or service, now, you will already
+
+393
+00:38:03.020 --> 00:38:07.280
+Manish Dharod: know that, and then you will send a delayed billing of 30 days. That's it.
+
+394
+00:38:07.960 --> 00:38:15.349
+Usue Aguirre: But what about? They start to order? Not one port, but 5 ports, unlimited local connections, a hundred gig, so.
+
+395
+00:38:15.350 --> 00:38:18.250
+Manish Dharod: Yeah, the the you mean, the restrictions on the on, the what.
+
+396
+00:38:18.250 --> 00:38:19.070
+Usue Aguirre: Yes.
+
+397
+00:38:19.070 --> 00:38:21.200
+Manish Dharod: Trial, see.
+
+398
+00:38:21.750 --> 00:38:22.130
+Usue Aguirre: Gotcha.
+
+399
+00:38:22.130 --> 00:38:30.749
+Manish Dharod: The part which will be primarily on the portal side, which is, which is your team, will have to build those constraints.
+
+400
+00:38:31.220 --> 00:38:48.229
+Usue Aguirre: Yes, yes, and I feel that that you build it. You you build it like with a service token, or with that that restricts the scope of the order. So you pro you provide them with a service token right, which at the end of the day looks like a code right.
+
+401
+00:38:48.230 --> 00:38:49.000
+Manish Dharod: Yeah.
+
+402
+00:38:49.000 --> 00:39:00.799
+Usue Aguirre: But in that service token they will only be able like to order one port with a certain number of disease similar to what we do with Aws marketplace.
+
+403
+00:39:00.800 --> 00:39:07.990
+Manish Dharod: So just question is that service token flow has to be put in place on the portal right.
+
+404
+00:39:08.610 --> 00:39:11.050
+Usue Aguirre: Yes, I think that's that's the thing.
+
+405
+00:39:11.220 --> 00:39:15.936
+Usue Aguirre: Yeah, that's that's a new thing, right?
+
+406
+00:39:17.020 --> 00:39:19.729
+Usue Aguirre: It's technically like a promo code. Right for me.
+
+407
+00:39:19.730 --> 00:39:25.089
+Manish Dharod: Yes. But again, what I'm saying is that why? Why do you even need
+
+408
+00:39:25.610 --> 00:39:35.610
+Manish Dharod: that service token to be entered by customer? Because, okay, this whole process itself says that they are a trial customer, correct.
+
+409
+00:39:36.060 --> 00:39:36.500
+Usue Aguirre: Yes.
+
+410
+00:39:36.500 --> 00:39:41.280
+Manish Dharod: Right. So all we need is some kind of an attribute
+
+411
+00:39:41.730 --> 00:39:46.744
+Manish Dharod: at that billing account level or the org level. Whenever we can decide
+
+412
+00:39:47.690 --> 00:39:54.149
+Manish Dharod: That you know, we can add, which says, Hey, this is a
+
+413
+00:39:54.580 --> 00:40:00.899
+Manish Dharod: quote unquote trial customer for this, this particular product, or whatever right? And then.
+
+414
+00:40:01.660 --> 00:40:09.530
+Manish Dharod: That's all that is needed. Our systems will read this and understand it, and no promo code, no service token. Nothing is needed from custom.
+
+415
+00:40:12.680 --> 00:40:13.670
+Usue Aguirre: Okay.
+
+416
+00:40:14.120 --> 00:40:16.820
+Manish Dharod: Yeah, I'm just trying to reduce the number of
+
+417
+00:40:17.200 --> 00:40:21.509
+Manish Dharod: basically, you know things that customer has to even bother about.
+
+418
+00:40:22.830 --> 00:40:31.470
+Usue Aguirre: So we put the restriction of, for this customer like it's only allowed to order a 1 gig port in the first.st
+
+419
+00:40:32.010 --> 00:40:38.289
+Usue Aguirre: It I want to port in the 1st month, and we put that restriction us at at an account level.
+
+420
+00:40:39.430 --> 00:40:48.779
+Manish Dharod: Well, you so so what I'm thinking is the one potential solution approach is this following right? Which is that when we create the
+
+421
+00:40:49.910 --> 00:40:51.020
+Manish Dharod: org.
+
+422
+00:40:51.670 --> 00:40:59.780
+Manish Dharod: Maybe maybe we should do it at the Org level for a second. Okay, I'm just thinking out loud here. Instead of billing account level, we should do it at the org level.
+
+423
+00:41:00.060 --> 00:41:06.390
+Manish Dharod: Okay, we add, let's say, couple of attributes
+
+424
+00:41:06.580 --> 00:41:08.500
+Manish Dharod: at the org level which says,
+
+425
+00:41:10.170 --> 00:41:13.580
+Manish Dharod: is this a trial customer? Yes, and.
+
+426
+00:41:15.150 --> 00:41:18.210
+Manish Dharod: This is a trial customer. For what product.
+
+427
+00:41:18.680 --> 00:41:41.929
+Manish Dharod: what number of products? It could be multiple. Right? Let's just say, for now it's just Fcr, for example, okay, so all the systems, including portal, which is your system, can read that those 2 values from the org level saying that, okay, this is A, this is a trial customer. This is for Fcr, so this is how I'm going to show the experience.
+
+428
+00:41:44.670 --> 00:41:45.610
+Usue Aguirre: Okay.
+
+429
+00:41:46.260 --> 00:42:01.339
+Manish Dharod: That could be one way. If if I mean, see, there are 2, yeah, 2 ways to do. One is either we save that information in that org level and then do it automatically, or, like you are saying, we provide them some kind of a code.
+
+430
+00:42:02.440 --> 00:42:07.120
+Manish Dharod: And then we don't have to do any new attributes at the odd level. We just.
+
+431
+00:42:07.710 --> 00:42:15.019
+Manish Dharod: That service token, or the promo code, or whatever, as the approach to understand that. Oh, okay, this is the kind of customer.
+
+432
+00:42:16.330 --> 00:42:19.259
+Usue Aguirre: Yeah, that my point with the code
+
+433
+00:42:19.600 --> 00:42:25.790
+Usue Aguirre: is that that code can only be redeemed against a number of ports or a type of ports correct.
+
+434
+00:42:25.790 --> 00:42:36.199
+Usue Aguirre: that will be for free, but they are welcome like to like to order other products remotely sees, but they will pay full for those right. Yes.
+
+435
+00:42:36.200 --> 00:42:43.429
+Manish Dharod: Yeah, yeah, no. I think. I think. Then then, in that case, right? Some kind of a promo code or service code might make sense that way that way. We are not.
+
+436
+00:42:43.979 --> 00:42:48.470
+Manish Dharod: adding new attributes at the org level, and all of that kind of stuff. So.
+
+437
+00:42:48.470 --> 00:42:49.510
+Usue Aguirre: Maybe dancing that.
+
+438
+00:42:49.510 --> 00:42:59.260
+Manish Dharod: Could be a A. So then everything, all of that is under your control, meaning fabric team and Fcr team control. You.
+
+439
+00:42:59.260 --> 00:42:59.710
+Usue Aguirre: Yes.
+
+440
+00:42:59.710 --> 00:43:09.699
+Manish Dharod: Take the service token. You understand that this is the kind of customer it is. And then you show the experience based on that you don't rely on the attributes at the org level.
+
+441
+00:43:10.310 --> 00:43:13.600
+Usue Aguirre: Yes, exactly. Exactly excellent, miss.
+
+442
+00:43:13.600 --> 00:43:14.180
+Usue Aguirre: Exactly.
+
+443
+00:43:15.530 --> 00:43:21.709
+Usue Aguirre: Yeah, yeah. That's SIM. And that's similar to the Aws marketplace. Aws marketplace.
+
+444
+00:43:22.010 --> 00:43:22.690
+Usue Aguirre: They enter.
+
+445
+00:43:22.690 --> 00:43:23.130
+Manish Dharod: Service.
+
+446
+00:43:23.130 --> 00:43:30.749
+Usue Aguirre: Token somewhere, and then they are exposed only to the, to the, to the resources. They can order.
+
+447
+00:43:30.750 --> 00:43:31.970
+Manish Dharod: Yeah, yeah, no. I think.
+
+448
+00:43:32.495 --> 00:43:35.650
+Usue Aguirre: Yes, yes, yes, that might be.
+
+449
+00:43:36.360 --> 00:43:41.969
+Usue Aguirre: I don't know. I'm I'm gonna talk to the to the solution architect for aws. Now.
+
+450
+00:43:43.230 --> 00:43:44.609
+Usue Aguirre: what what they need to.
+
+451
+00:43:44.910 --> 00:43:45.850
+Usue Aguirre: Yeah.
+
+452
+00:43:45.980 --> 00:43:47.490
+Usue Aguirre: And a.
+
+453
+00:43:48.220 --> 00:43:58.260
+Usue Aguirre: so this is something that that is possible to do today, right with some development on the portal side. And you say it's possible to do today. Is it possible to do today.
+
+454
+00:43:58.260 --> 00:44:12.179
+Manish Dharod: You. You can actually do it today. I I can. I can show you the whole thing. So here's the you know, if I if I can. And if I think about this right quickly, like, okay, so customer will fill out this form.
+
+455
+00:44:12.880 --> 00:44:13.650
+Usue Aguirre: Yes.
+
+456
+00:44:13.650 --> 00:44:17.020
+Manish Dharod: You will get the notification.
+
+457
+00:44:17.290 --> 00:44:25.679
+Manish Dharod: Okay? As like a fabric product manager. Then we need to build a a web page internal web page
+
+458
+00:44:25.790 --> 00:44:29.669
+Manish Dharod: that you can go in and and approve or not approve. Kind of thing. Okay.
+
+459
+00:44:30.690 --> 00:44:34.429
+Manish Dharod: That is a new development that your team will need to do.
+
+460
+00:44:35.140 --> 00:44:35.930
+Usue Aguirre: Yes.
+
+461
+00:44:36.070 --> 00:44:41.489
+Manish Dharod: Okay. So let's say you have that now you you click on. Approve.
+
+462
+00:44:42.480 --> 00:44:43.080
+Usue Aguirre: Hmm.
+
+463
+00:44:43.080 --> 00:44:46.880
+Manish Dharod: Okay, you approved it at that point
+
+464
+00:44:48.638 --> 00:44:54.640
+Manish Dharod: your team needs to call user creation org creation.
+
+465
+00:44:55.330 --> 00:44:59.530
+Manish Dharod: And you know, permissions set up and
+
+466
+00:44:59.840 --> 00:45:04.940
+Manish Dharod: the billing account creation. All of that, all the Apis are available internally.
+
+467
+00:45:05.510 --> 00:45:06.650
+Usue Aguirre: Okay, okay.
+
+468
+00:45:06.650 --> 00:45:14.650
+Manish Dharod: So you will, you will. Your team will kind of once you, once you hit, approve, they will create all of this automatically.
+
+469
+00:45:16.010 --> 00:45:17.590
+Usue Aguirre: Okay. Wow, yes. Yes.
+
+470
+00:45:17.820 --> 00:45:18.900
+Manish Dharod: And
+
+471
+00:45:19.550 --> 00:45:24.940
+Manish Dharod: and the customer will get an email saying, Hey, you know your thing is approved. Go ahead and create a password.
+
+472
+00:45:27.350 --> 00:45:35.749
+Manish Dharod: Okay? So they will create the password. And you will also, you know, provide them the service token with that email in the same email.
+
+473
+00:45:37.040 --> 00:45:37.890
+Usue Aguirre: Exactly.
+
+474
+00:45:37.890 --> 00:45:50.970
+Manish Dharod: They got the. They got the thing they they come in. This they create the user credentials with the password they use. Now the they go into the Fcr ordering. They they see
+
+475
+00:45:51.110 --> 00:45:53.820
+Manish Dharod: the service token option.
+
+476
+00:45:55.310 --> 00:46:03.010
+Manish Dharod: No, no billing account needed for them, and all that right? So they see the Service token meaning billing account is already created. Sorry. Okay.
+
+477
+00:46:03.010 --> 00:46:03.750
+Usue Aguirre: It's not really clear.
+
+478
+00:46:04.093 --> 00:46:10.619
+Manish Dharod: But they don't have to worry about it. They just put the service token in that experience, and then
+
+479
+00:46:11.676 --> 00:46:33.130
+Manish Dharod: your ordering service will will, an experience will take that service. Token. Understand that this is the type of the customer they will. They will show that experience, and once the order is placed for trial. You guys will call the order Api with
+
+480
+00:46:33.510 --> 00:46:36.899
+Manish Dharod: with the billing start date as 30 days from then.
+
+481
+00:46:37.510 --> 00:46:38.990
+Usue Aguirre: Yes, exactly. Exactly.
+
+482
+00:46:38.990 --> 00:46:41.159
+Manish Dharod: Okay. And and I think this is it.
+
+483
+00:46:42.530 --> 00:46:53.839
+Usue Aguirre: Yeah, yeah, yeah, that that's how it will be. And then, yeah, the customer, either, we will need to send maybe a a reminder before the 3.rd That's the expiry expiration date.
+
+484
+00:46:53.840 --> 00:46:54.300
+Manish Dharod: The rack.
+
+485
+00:46:54.300 --> 00:46:56.349
+Usue Aguirre: And then, yeah, it's a
+
+486
+00:46:56.820 --> 00:47:01.676
+Usue Aguirre: if they they delete, that's fine, but if they continue, then then they will start billing.
+
+487
+00:47:01.980 --> 00:47:05.140
+Manish Dharod: That will all have to be at the experience layer, which is your layer? Yeah.
+
+488
+00:47:05.140 --> 00:47:07.329
+Usue Aguirre: Yes, yes, yes, yes, that's correct. Yes.
+
+489
+00:47:07.330 --> 00:47:09.219
+Manish Dharod: So that will be also new development. Yes.
+
+490
+00:47:10.340 --> 00:47:11.100
+Usue Aguirre: Yeah.
+
+491
+00:47:11.990 --> 00:47:22.226
+Usue Aguirre: And the good thing of this is that within the service token, we can configure different types of offerings. Right? Maybe down the road we'll include.
+
+492
+00:47:23.570 --> 00:47:28.410
+Usue Aguirre: Okay, let's see, I'm I'm losing my voice. My kids are sick, and they they have like
+
+493
+00:47:28.410 --> 00:47:29.310
+Usue Aguirre: and sold it
+
+494
+00:47:29.310 --> 00:47:34.040
+Usue Aguirre: throat pain, and they don't. They are losing their voices, and I realize that I'm losing my voice too.
+
+495
+00:47:34.290 --> 00:47:36.210
+Manish Dharod: Oh, wow. Okay, okay. Yeah. Take care.
+
+496
+00:47:36.860 --> 00:47:48.610
+Usue Aguirre: Oh, my goodness, so I I think this will be great. I may maybe down the road. I think the the dollar credits that will be like even better right? I have right
+
+497
+00:47:48.610 --> 00:47:53.610
+Usue Aguirre: for sure, because that will be also taken care of in the billing domain. Right.
+
+498
+00:47:53.750 --> 00:47:54.270
+Manish Dharod: Yes.
+
+499
+00:47:54.270 --> 00:47:54.990
+Usue Aguirre: Yeah.
+
+500
+00:47:55.470 --> 00:48:06.059
+Usue Aguirre: yeah, I made some research on the Csps, for example, they don't have like this kind of this kind of programs. Yeah, what they have is the is the dollar credits. Right?
+
+501
+00:48:06.060 --> 00:48:06.879
+Manish Dharod: Yeah. Yeah.
+
+502
+00:48:07.619 --> 00:48:13.870
+Usue Aguirre: And they have, like the 3 tiers. And and of course they have, like a usage based that makes
+
+503
+00:48:14.070 --> 00:48:23.380
+Usue Aguirre: makes like trying the service without the the not not paying much the the best option. Right? Our problem is with the 12 months for the ports.
+
+504
+00:48:24.130 --> 00:48:25.040
+Manish Dharod: So, yeah.
+
+505
+00:48:25.040 --> 00:48:31.699
+Usue Aguirre: I'm thinking that even like make the ports on demand will be even like a step in a good direction. For this.
+
+506
+00:48:32.020 --> 00:48:32.650
+Manish Dharod: Yeah.
+
+507
+00:48:34.150 --> 00:48:43.209
+Usue Aguirre: Idea. Okay, I think that for the moment we we are fine, I'm gonna try to set up like a sort of a like middle board.
+
+508
+00:48:43.700 --> 00:48:44.150
+Manish Dharod: Yeah.
+
+509
+00:48:44.150 --> 00:48:51.869
+Usue Aguirre: And and we we'll have. We didn't talk about existing customers right? We can have a call on that one.
+
+510
+00:48:52.160 --> 00:48:54.380
+Manish Dharod: Yeah, we can talk about existing customers as well.
+
+511
+00:48:54.380 --> 00:48:54.720
+Usue Aguirre: Yeah.
+
+512
+00:48:54.720 --> 00:48:56.030
+Manish Dharod: But you know I mean.
+
+513
+00:48:56.030 --> 00:48:56.370
+Usue Aguirre: Yes.
+
+514
+00:48:56.370 --> 00:48:58.680
+Manish Dharod: I think now that I think about it.
+
+515
+00:48:58.680 --> 00:48:59.220
+Usue Aguirre: Yes.
+
+516
+00:48:59.220 --> 00:49:15.220
+Manish Dharod: See? It's gonna be fairly simple, because now, the existing customers, they already have the account. Billing account. They already have the user credentials. All they have to do is put this service token, and the rest of the thing exactly is the same.
+
+517
+00:49:15.920 --> 00:49:31.269
+Usue Aguirre: Exactly exactly they may have may maybe, like different approaches, may. Maybe it's more a proof of concept, right? So maybe they they. It's like more specific, right? More more. But yeah, maybe with the service token, we can handle everything
+
+518
+00:49:31.460 --> 00:49:36.389
+Usue Aguirre: service, token management like to unreach the service, token management, capabilities.
+
+519
+00:49:36.390 --> 00:49:46.750
+Manish Dharod: Yeah, whether you want to call it Service Token or promotion code up up to you. I don't know whether service token means something else for customers. But either either one of them, basically, you know, kind of it works. Yeah.
+
+520
+00:49:47.270 --> 00:49:52.629
+Usue Aguirre: Yeah, behind the scenes is a service token right? But to the customer we can call it promo code. Yes.
+
+521
+00:49:52.630 --> 00:49:53.540
+Manish Dharod: Yeah, exactly.
+
+522
+00:49:54.548 --> 00:49:58.039
+Usue Aguirre: Okay, great. Thank you. This was great.
+
+523
+00:49:58.430 --> 00:49:58.970
+Usue Aguirre: Yeah. Yeah.
+
+524
+00:49:59.185 --> 00:50:00.909
+Usue Aguirre: Share with you my notes. Yeah. Tell me.
+
+525
+00:50:00.910 --> 00:50:05.931
+Manish Dharod: Yeah, yeah. So just yeah, just send me the recording of this call a link. And then,
+
+526
+00:50:06.210 --> 00:50:06.590
+Usue Aguirre: Desk.
+
+527
+00:50:06.590 --> 00:50:09.981
+Manish Dharod: What I can do is I I've been, you know, using
+
+528
+00:50:11.129 --> 00:50:17.279
+Manish Dharod: equinix you know, established AI to kind of come up with all the
+
+529
+00:50:17.720 --> 00:50:30.099
+Manish Dharod: you know, the notes and and summary, and this and that, so I I don't know if you already do that all all the time. But this is something that I've been doing, and it's very helpful. So I can. If if I can try to do this here.
+
+530
+00:50:30.240 --> 00:50:30.770
+Manish Dharod: yeah.
+
+531
+00:50:31.064 --> 00:50:32.830
+Usue Aguirre: Okay, thank you. Thank you. Yeah.
+
+532
+00:50:32.830 --> 00:50:33.200
+Manish Dharod: Yeah.
+
+533
+00:50:34.740 --> 00:50:39.940
+Manish Dharod: And by the way, you can auto create even even mirror diagram. Okay, I can show you that.
+
+534
+00:50:40.630 --> 00:50:43.030
+Usue Aguirre: Oh, really, with a no problem.
+
+535
+00:50:43.260 --> 00:50:44.239
+Manish Dharod: Yeah, I mean.
+
+536
+00:50:44.240 --> 00:50:44.630
+Usue Aguirre: Hi.
+
+537
+00:50:44.630 --> 00:50:49.099
+Manish Dharod: Show you. I can show you the flow and how it works, and then we can talk about it.
+
+538
+00:50:49.800 --> 00:50:53.430
+Usue Aguirre: Oh, my goodness, yes, yes, I'm gonna set up a call with you tomorrow.
+
+539
+00:50:55.260 --> 00:50:56.410
+Usue Aguirre: Thank you. Thank you.
+
+540
+00:50:56.410 --> 00:50:57.270
+Manish Dharod: No. Problem, yeah.
+
+541
+00:50:57.270 --> 00:50:59.431
+Usue Aguirre: Take care! Talk to you later. Bye.
+
